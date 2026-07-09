@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "name": "west_valley_fault_trace_APPROXIMATE",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Valley Fault (APPROXIMATE trace — REPLACE before publishing)",
+        "status": "PLACEHOLDER",
+        "note": "Hand-digitized approximation of the WVF surface trace for pipeline development only. Before any public deployment, replace with the authoritative trace: (a) PHIVOLCS Valley Fault System atlas / HazardHunterPH export, or (b) GEM Global Active Faults Database (github.com/GEMScienceTools/gem-global-active-faults, Philippine Fault: Valley segment). Downstream distances change materially with trace accuracy near the fault.",
+        "source": "manual approximation, 2026-07"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [121.062, 14.870],
+          [121.078, 14.800],
+          [121.095, 14.720],
+          [121.100, 14.660],
+          [121.092, 14.600],
+          [121.078, 14.550],
+          [121.060, 14.500],
+          [121.040, 14.450],
+          [121.030, 14.400],
+          [121.020, 14.340],
+          [121.000, 14.280],
+          [120.980, 14.220]
+        ]
+      }
+    }
+  ]
+}

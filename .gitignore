@@ -1,0 +1,21 @@
+# EM-DAT license forbids redistribution — raw data never enters git
+model/data/raw/
+
+# Trained models are rebuildable; commit only if you want reproducible demos
+model/models/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / Next.js
+web/node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+
+# OS / editor
+.DS_Store
+*.ipynb_checkpoints
