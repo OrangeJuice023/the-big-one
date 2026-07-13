@@ -7,9 +7,17 @@ not satisfied, and what I think the candidate answers are.
 
 ## 1. Separating aleatoric and epistemic uncertainty in the loss chain
 
-**What I did:** LightGBM quantile regression (P10/P50/P90) captures total
-predictive uncertainty in one bundle. The GMPE's published sigma (~0.7–0.9
-intensity units) is currently reported but not propagated.
+**Status: partially addressed in v0.2.** The scenario engine now runs a
+nested Monte Carlo (60x60): AWW12 sigma sampled with partial spatial
+correlation (aleatoric) and priors over fragility parameters and the
+capital-output ratio (epistemic), split via the law of total variance
+(result: roughly 2/3 aleatoric, 1/3 epistemic at M7.2). Still open: the
+epistemic priors are elicited, not fitted; the ML model's own parameter
+uncertainty is not yet in the decomposition.
+
+**What I did originally (v0.1):** LightGBM quantile regression captured total
+predictive uncertainty in one bundle, with GMPE sigma reported but not
+propagated.
 
 **Why I'm not satisfied:** The chain mixes fundamentally different
 uncertainties — irreducible randomness in ground shaking (aleatoric) versus

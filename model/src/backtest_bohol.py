@@ -116,6 +116,57 @@ def loss_check(b: dict) -> None:
               "given the floor-only caveat. Report the gap, don't hide it.")
 
 
+def chain_check(b: dict) -> None:
+    """v0.2 chain check: the SAME exposure x fragility Monte Carlo used for
+    the Metro Manila scenarios, applied to Bohol 2013 with documented rough
+    exposure. Every assumption is a visible parameter — this is a
+    plausibility check of the chain, not a fit.
+
+    Rough Bohol 2013 exposure (all flagged, replace when better data lands):
+      population ~1.3M (2010 census: 1,255,128)
+      per-capita nominal output ~PHP 120k (PH 2013 avg) x 0.6 provincial
+        income factor (Bohol below national average)
+      capital stock = K_RATIO x annual output (same prior as scenarios)
+      intensity exposure bands (PHIVOLCS isoseismal, coarse):
+        20% of exposure at MMI 8, 55% at MMI 7, 25% at MMI 6
+    """
+    import numpy as np
+
+    from src.scenarios import (
+        K_RATIO_MEAN, K_RATIO_SD, MDR_MAX_MEAN, MDR_MAX_SD,
+        M0_MEAN, M0_SD, mdr,
+    )
+
+    POP, PC_OUT, INCOME_F = 1.3e6, 120e3, 0.6
+    BANDS = [(8.0, 0.20), (7.0, 0.55), (6.0, 0.25)]
+    PHP_USD_2013 = 43.0
+    annual_output = POP * PC_OUT * INCOME_F
+
+    rng = np.random.default_rng(42)
+    n = 4000
+    k = np.maximum(1.5, rng.normal(K_RATIO_MEAN, K_RATIO_SD, n))
+    mx = np.clip(rng.normal(MDR_MAX_MEAN, MDR_MAX_SD, n), 0.10, 0.60)
+    m0 = rng.normal(M0_MEAN, M0_SD, n)
+    eps = rng.normal(0.0, 0.8, n)  # common intensity uncertainty per draw
+
+    loss = np.zeros(n)
+    for mmi_band, share in BANDS:
+        loss += share * (mx / (1.0 + np.exp(-1.4 * (np.clip(mmi_band + eps, 1, 12) - m0))))
+    loss = loss * k * annual_output  # PHP
+
+    q = lambda p: float(np.percentile(loss, p)) / PHP_USD_2013
+    floor = b["infrastructure_damage_usd"]
+    print(f"v0.2 chain check (exposure x fragility MC, rough Bohol exposure):")
+    print(f"  predicted total direct loss: P10 ${q(10)/1e6:.0f}M | "
+          f"P50 ${q(50)/1e6:.0f}M | P90 ${q(90)/1e6:.0f}M")
+    print(f"  observed monetized FLOOR: ${floor/1e6:.0f}M (infrastructure only)")
+    ok = q(90) >= floor and q(50) / floor < 30
+    print("  CHAIN CHECK:", "PASS — same engine as the NCR scenarios is "
+          "consistent with Bohol ground truth" if ok else
+          "OUTSIDE plausible range — revisit fragility priors or exposure "
+          "assumptions before trusting NCR numbers")
+
+
 def main() -> None:
     b = json.load(open(BENCH))["bohol_2013_backtest"]
     print(f"=== Backtest: {b['event']} (Mw {b['magnitude']}, "
@@ -123,6 +174,8 @@ def main() -> None:
     hazard_check(b)
     print()
     loss_check(b)
+    print()
+    chain_check(b)
 
 
 if __name__ == "__main__":

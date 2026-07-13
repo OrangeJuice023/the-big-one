@@ -12,9 +12,18 @@ export type LguResult = {
   loss_php: Quantiles;
 };
 
+export type UqSplit = {
+  aleatoric_share: number;
+  epistemic_share: number;
+  note?: string;
+};
+
 export type Scenario = {
   magnitude: number;
   fault: string;
+  engine?: string;
+  uq?: UqSplit;
+  ml_event_check_usd?: Quantiles | null;
   generated: string;
   weighting: 'grdp' | 'population_fallback';
   php_per_usd: number;

@@ -48,6 +48,19 @@ export default function SummaryStats({
           {formatMoney(usd.q50, 'USD')} · range {formatMoney(q10, 'PHP')}–{formatMoney(q90, 'PHP')}
         </div>
       </div>
+      {scenario.uq && (
+        <div className="stat">
+          <div className="stat-label">Where the uncertainty comes from</div>
+          <div className="stat-value" style={{ fontSize: 20 }}>
+            {Math.round(scenario.uq.aleatoric_share * 100)}% shaking ·{' '}
+            {Math.round(scenario.uq.epistemic_share * 100)}% model
+          </div>
+          <div className="stat-sub">
+            aleatoric (ground-motion randomness) vs epistemic
+            (fragility &amp; capital-ratio priors), Monte Carlo variance split
+          </div>
+        </div>
+      )}
       <div className="stat">
         <div className="stat-label">Share of GDP</div>
         <div className="stat-value">{gdpShare}%</div>
