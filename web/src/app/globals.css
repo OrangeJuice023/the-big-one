@@ -82,3 +82,23 @@ article.prose a { color: var(--accent); }
   .sidebar { width: 100%; max-width: none; border-left: none; border-top: 1px solid var(--border); }
   .map-wrap { min-height: 45vh; }
 }
+
+.simulate-btn {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.simulate-btn:hover:not(:disabled) { background: #8f1d1d; }
+.simulate-btn:disabled { opacity: 0.5; cursor: default; }
+.comparables { border-top: 1px solid var(--border); padding-top: 12px; }
+.comparable-row { padding: 7px 0; border-bottom: 1px dashed var(--border); }
+.comparable-head { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; }
+.comparable-name { font-weight: 600; }
+.comparable-loss { color: var(--accent); font-weight: 700; white-space: nowrap; }
+.comparable-context { font-size: 11.5px; color: var(--muted); margin-top: 1px; }

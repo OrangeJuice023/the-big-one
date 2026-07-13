@@ -7,7 +7,16 @@ import { mmiColor } from '@/lib/scenarios';
 type Props = {
   scenario: Scenario | null;
   onSelectLgu: (lgu: string) => void;
+  /** Increment to trigger the rupture simulation animation. */
+  simToken?: number;
 };
+
+// Animation timing: rupture propagates along the fault, then shaking arrives
+// at each LGU after (rrup / WAVE_SPEED). Speeds are visually compressed —
+// real S-waves travel ~3.5 km/s; we render faster so the cascade is legible.
+const RUPTURE_MS = 2200;
+const WAVE_SPEED_KM_S = 9;
+const WAVE_LEAD_MS = 400;
 
 /**
  * MapLibre GL map on a zero-cost basemap (OpenFreeMap — no API key).
@@ -17,11 +26,14 @@ type Props = {
  * labels at LGU centroids. Without it, the map falls back to circle markers
  * sized by P50 loss. The fault trace renders in both modes.
  */
-export default function LossMap({ scenario, onSelectLgu }: Props) {
+export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
   const boundariesRef = useRef<any>(null); // raw FeatureCollection or null
   const readyRef = useRef(false);
+  const traceRef = useRef<[number, number][]>([]); // fault [lon,lat] vertices
+  const scenarioRef = useRef<Scenario | null>(null);
+  const animRef = useRef<number>(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -75,12 +87,28 @@ export default function LossMap({ scenario, onSelectLgu }: Props) {
         // Fault trace above the fills.
         try {
           const ft = await (await fetch('data/fault-trace.geojson')).json();
+          traceRef.current = ft.features[0].geometry.coordinates;
           map.addSource('fault', { type: 'geojson', data: ft });
           map.addLayer({
             id: 'fault-line',
             type: 'line',
             source: 'fault',
             paint: { 'line-color': '#7a0000', 'line-width': 2.5, 'line-dasharray': [2, 1.5] },
+          });
+          // Bright overlay line that "grows" during the rupture simulation.
+          map.addSource('rupture', {
+            type: 'geojson',
+            data: { type: 'FeatureCollection', features: [] },
+          });
+          map.addLayer({
+            id: 'rupture-line',
+            type: 'line',
+            source: 'rupture',
+            paint: {
+              'line-color': '#ff2d00',
+              'line-width': 5,
+              'line-blur': 0.5,
+            },
           });
         } catch { /* trace optional */ }
 
@@ -135,6 +163,7 @@ export default function LossMap({ scenario, onSelectLgu }: Props) {
   // Push scenario data into the map whenever it changes.
   useEffect(() => {
     const map = mapRef.current;
+    scenarioRef.current = scenario;
     if (!map || !scenario) return;
 
     const apply = () => {
@@ -178,6 +207,100 @@ export default function LossMap({ scenario, onSelectLgu }: Props) {
     if (readyRef.current) apply();
     else map.once('scenario-ready', apply);
   }, [scenario]);
+
+  // Rupture simulation: progressive fault rupture, then per-LGU shaking
+  // arrival ordered by distance to the fault (uses each LGU's rrup_km).
+  useEffect(() => {
+    if (!simToken) return;
+    const map = mapRef.current;
+    const s = scenarioRef.current;
+    const trace = traceRef.current;
+    if (!map || !s || trace.length < 2 || !readyRef.current) return;
+
+    cancelAnimationFrame(animRef.current);
+
+    // Cumulative planar lengths along the trace (visual interpolation only).
+    const cum: number[] = [0];
+    for (let i = 1; i < trace.length; i++) {
+      const dx = trace[i][0] - trace[i - 1][0];
+      const dy = trace[i][1] - trace[i - 1][1];
+      cum.push(cum[i - 1] + Math.hypot(dx, dy));
+    }
+    const total = cum[cum.length - 1];
+
+    const partialTrace = (frac: number): [number, number][] => {
+      const target = frac * total;
+      const pts: [number, number][] = [trace[0]];
+      for (let i = 1; i < trace.length; i++) {
+        if (cum[i] <= target) {
+          pts.push(trace[i]);
+        } else {
+          const seg = cum[i] - cum[i - 1];
+          const t = seg > 0 ? (target - cum[i - 1]) / seg : 0;
+          pts.push([
+            trace[i - 1][0] + t * (trace[i][0] - trace[i - 1][0]),
+            trace[i - 1][1] + t * (trace[i][1] - trace[i - 1][1]),
+          ]);
+          break;
+        }
+      }
+      return pts;
+    };
+
+    const byLgu = new Map(s.lgus.map((l) => [l.lgu, l]));
+    const arrivalMs = (rrup: number) =>
+      WAVE_LEAD_MS + (rrup / WAVE_SPEED_KM_S) * 1000;
+    const maxArrival =
+      Math.max(...s.lgus.map((l) => arrivalMs(l.rrup_km))) + 600;
+    const start = performance.now();
+
+    const frame = (now: number) => {
+      const t = now - start;
+
+      // Phase A: rupture grows along the fault.
+      const rupSrc: any = map.getSource('rupture');
+      if (rupSrc) {
+        const frac = Math.min(1, t / RUPTURE_MS);
+        rupSrc.setData({
+          type: 'FeatureCollection',
+          features: [{
+            type: 'Feature',
+            properties: {},
+            geometry: { type: 'LineString', coordinates: partialTrace(frac) },
+          }],
+        });
+      }
+
+      // Phase B: LGUs flip from neutral to MMI color as shaking arrives.
+      if (boundariesRef.current && map.getSource('lgus')) {
+        (map.getSource('lgus') as any).setData({
+          ...boundariesRef.current,
+          features: boundariesRef.current.features.map((f: any) => {
+            const d = byLgu.get(f.properties.lgu);
+            const arrived = d && t >= arrivalMs(d.rrup_km);
+            return {
+              ...f,
+              properties: {
+                ...f.properties,
+                color: arrived ? mmiColor(d!.mmi) : '#e8e6e1',
+                mmi: d?.mmi ?? null,
+              },
+            };
+          }),
+        });
+      }
+
+      if (t < Math.max(RUPTURE_MS, maxArrival)) {
+        animRef.current = requestAnimationFrame(frame);
+      } else {
+        // End state: fade the rupture overlay, restore steady colors.
+        rupSrc?.setData({ type: 'FeatureCollection', features: [] });
+      }
+    };
+    animRef.current = requestAnimationFrame(frame);
+    return () => cancelAnimationFrame(animRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [simToken]);
 
   return <div ref={containerRef} style={{ width: '100%', height: '100%' }} />;
 }

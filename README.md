@@ -15,6 +15,22 @@ order; `docs/methodology.md` for the modeling write-up; and
 deliberately leaves open (uncertainty decomposition, validation under
 covariate shift, Mmax as an uncertain parameter).
 
+## Features
+
+- Interactive NCR choropleth (17 LGUs, PSGC 2023 boundaries) with a
+  **"Simulate rupture"** animation: the fault ruptures progressively, shaking
+  reaches each LGU in distance order (using each LGU's actual rupture
+  distance), and the national loss counter counts up to the scenario P50.
+- Magnitude scenarios M6.0-M7.2 (PHIVOLCS maximum-credible anchor) plus an
+  M7.5 paleoseismic stress test.
+- P10/P50/P90 loss intervals per LGU and nationally.
+- **Real-event comparables panel**: Kobe 1995, Haiti 2010, Bohol 2013 - same
+  magnitude class, losses five orders of magnitude apart. The empirical case
+  for wide uncertainty intervals (all figures cited in
+  `model/data/external/benchmarks.json`).
+- Bohol 2013 backtest (`src/backtest_bohol.py`) - the hazard check passes
+  against observed PEIS intensities.
+
 ## Quick start (frontend, with placeholder data)
 
 Synthetic placeholder scenarios ship in `web/public/data/scenarios/` so the UI

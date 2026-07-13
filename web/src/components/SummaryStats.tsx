@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import type { Scenario } from '@/lib/scenarios';
 import { formatMoney } from '@/lib/scenarios';
 
@@ -8,15 +9,41 @@ import { formatMoney } from '@/lib/scenarios';
 const PH_GDP_PHP = 26.5e12;
 const MMEIRS_BENCH_USD = 48e9;
 
-export default function SummaryStats({ scenario }: { scenario: Scenario }) {
+export default function SummaryStats({
+  scenario,
+  simToken = 0,
+}: {
+  scenario: Scenario;
+  simToken?: number;
+}) {
   const { q10, q50, q90 } = scenario.national_loss_php;
+  // Count-up of the headline number during the rupture simulation.
+  const [displayP50, setDisplayP50] = useState(q50);
+  const rafRef = useRef(0);
+  useEffect(() => setDisplayP50(q50), [q50]);
+  useEffect(() => {
+    if (!simToken) return;
+    cancelAnimationFrame(rafRef.current);
+    const DELAY = 900, DURATION = 3200;
+    const start = performance.now();
+    const tick = (now: number) => {
+      const t = Math.max(0, now - start - DELAY);
+      const p = Math.min(1, t / DURATION);
+      const eased = 1 - Math.pow(1 - p, 3);
+      setDisplayP50(q50 * eased);
+      if (p < 1) rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [simToken]);
   const usd = scenario.national_loss_usd;
-  const gdpShare = ((q50 / PH_GDP_PHP) * 100).toFixed(1);
+  const gdpShare = ((displayP50 / PH_GDP_PHP) * 100).toFixed(1);
   return (
     <div className="stats">
       <div className="stat">
         <div className="stat-label">National loss (P50)</div>
-        <div className="stat-value">{formatMoney(q50, 'PHP')}</div>
+        <div className="stat-value">{formatMoney(displayP50, 'PHP')}</div>
         <div className="stat-sub">
           {formatMoney(usd.q50, 'USD')} · range {formatMoney(q10, 'PHP')}–{formatMoney(q90, 'PHP')}
         </div>
