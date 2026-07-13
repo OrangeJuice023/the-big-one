@@ -4,10 +4,11 @@ export const metadata = { title: 'Methodology — The Big One Loss Estimator' };
 
 export default function Methodology() {
   return (
-    <article className="prose">
-      <p>
-        <Link href="/">← back to the map</Link>
-      </p>
+    <main className="page-main">
+      <article className="prose">
+        <Link href="/" className="back-link">
+          ← back to the map
+        </Link>
       <h1>Methodology</h1>
       <p>
         This page summarizes how the estimates are produced. The full write-up
@@ -79,6 +80,7 @@ export default function Methodology() {
         trace; and GRDP as an exposure proxy overweights economic output
         relative to building stock value.
       </p>
-    </article>
+      </article>
+    </main>
   );
 }

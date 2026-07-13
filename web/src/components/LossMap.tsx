@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Scenario } from '@/lib/scenarios';
 import { lossColor, mmiColor } from '@/lib/scenarios';
 
@@ -23,6 +23,12 @@ const SPIKE_GROW_MS = 900; // per-LGU spike growth after shaking arrives
 const SPIKE_RADIUS_M = 320;
 const SPIKE_MAX_HEIGHT_M = 16000; // tallest spike (scenario max P50 loss)
 const CAMERA = { pitch: 52, bearing: -17 };
+const BASEMAPS = {
+  minimal: 'https://tiles.openfreemap.org/styles/positron',
+  streets: 'https://tiles.openfreemap.org/styles/liberty',
+} as const;
+type ViewMode = '3d' | '2d';
+type Basemap = keyof typeof BASEMAPS;
 
 /** Small n-gon around a centroid, used as the extrusion footprint. */
 function spikeFootprint(lon: number, lat: number, n = 12): [number, number][] {
@@ -54,6 +60,12 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
   const traceRef = useRef<[number, number][]>([]); // fault [lon,lat] vertices
   const scenarioRef = useRef<Scenario | null>(null);
   const animRef = useRef<number>(0);
+  const [viewMode, setViewMode] = useState<ViewMode>('3d');
+  const [basemap, setBasemap] = useState<Basemap>('minimal');
+  const viewModeRef = useRef<ViewMode>('3d');
+  const reducedMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
   /** Build spike features; heightScale in [0,1] per LGU (keyed by name). */
   const spikeFeatures = (s: Scenario, heightScale?: (lgu: string) => number) => {
@@ -82,7 +94,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
 
       const map = new maplibregl.Map({
         container: containerRef.current,
-        style: 'https://tiles.openfreemap.org/styles/positron',
+        style: BASEMAPS.minimal,
         center: [121.0, 14.55],
         zoom: 10.1,
         pitch: CAMERA.pitch,
@@ -95,12 +107,15 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
       );
       mapRef.current = map;
 
-      map.on('load', async () => {
+      const ensureLayers = async () => {
+        if (map.getSource('spikes')) return; // already present on this style
         // Optional choropleth boundaries (shipped with the repo).
-        try {
-          const res = await fetch('data/lgu-boundaries.geojson');
-          if (res.ok) boundariesRef.current = await res.json();
-        } catch { /* fall back to circles */ }
+        if (!boundariesRef.current) {
+          try {
+            const res = await fetch('data/lgu-boundaries.geojson');
+            if (res.ok) boundariesRef.current = await res.json();
+          } catch { /* fall back to circles */ }
+        }
 
         if (boundariesRef.current) {
           map.addSource('lgus', { type: 'geojson', data: boundariesRef.current });
@@ -129,9 +144,21 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
 
         // Fault trace above the fills.
         try {
-          const ft = await (await fetch('data/fault-trace.geojson')).json();
-          traceRef.current = ft.features[0].geometry.coordinates;
-          map.addSource('fault', { type: 'geojson', data: ft });
+          if (!traceRef.current.length) {
+            const ft = await (await fetch('data/fault-trace.geojson')).json();
+            traceRef.current = ft.features[0].geometry.coordinates;
+          }
+          map.addSource('fault', {
+            type: 'geojson',
+            data: {
+              type: 'FeatureCollection',
+              features: [{
+                type: 'Feature',
+                properties: {},
+                geometry: { type: 'LineString', coordinates: traceRef.current },
+              }],
+            },
+          });
           map.addLayer({
             id: 'fault-line',
             type: 'line',
@@ -207,8 +234,21 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
           paint: { 'text-color': '#2b2b2b', 'text-halo-color': '#ffffff', 'text-halo-width': 1.2 },
         });
 
+        // Respect the current view mode after (re)adding layers.
+        map.setLayoutProperty(
+          'loss-spikes',
+          'visibility',
+          viewModeRef.current === '3d' ? 'visible' : 'none'
+        );
+
         readyRef.current = true;
         map.fire('scenario-ready' as any);
+      };
+
+      map.on('load', ensureLayers);
+      // After a basemap switch (setStyle), sources/layers are wiped — re-add.
+      map.on('styledata', () => {
+        if (map.isStyleLoaded() && !map.getSource('spikes')) ensureLayers();
       });
     })();
     return () => {
@@ -267,8 +307,9 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
       });
     };
 
-    if (readyRef.current) apply();
-    else map.once('scenario-ready', apply);
+    if (readyRef.current && map.getSource('spikes')) apply();
+    map.on('scenario-ready', apply);
+    return () => map.off('scenario-ready', apply);
   }, [scenario]);
 
   // Rupture simulation: camera tilts, fault ruptures progressively, shaking
@@ -282,13 +323,16 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
 
     cancelAnimationFrame(animRef.current);
 
-    // Cinematic tilt + slow drift while the rupture runs.
-    map.easeTo({
-      pitch: 60,
-      bearing: CAMERA.bearing - 12,
-      duration: RUPTURE_MS,
-      essential: false,
-    });
+    // Cinematic tilt + slow drift while the rupture runs (3D mode only, and
+    // only when the user hasn't asked for reduced motion).
+    if (viewModeRef.current === '3d' && !reducedMotion) {
+      map.easeTo({
+        pitch: 60,
+        bearing: CAMERA.bearing - 12,
+        duration: RUPTURE_MS,
+        essential: false,
+      });
+    }
 
     // Cumulative planar lengths along the trace (visual interpolation only).
     const cum: number[] = [0];
@@ -387,5 +431,58 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [simToken]);
 
-  return <div ref={containerRef} style={{ width: '100%', height: '100%' }} />;
+  // View mode: 3D perspective with spikes vs flat 2D analyst view.
+  useEffect(() => {
+    viewModeRef.current = viewMode;
+    const map = mapRef.current;
+    if (!map) return;
+    const target =
+      viewMode === '3d'
+        ? { pitch: CAMERA.pitch, bearing: CAMERA.bearing }
+        : { pitch: 0, bearing: 0 };
+    if (reducedMotion) map.jumpTo(target);
+    else map.easeTo({ ...target, duration: 700 });
+    if (map.getLayer('loss-spikes')) {
+      map.setLayoutProperty(
+        'loss-spikes',
+        'visibility',
+        viewMode === '3d' ? 'visible' : 'none'
+      );
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [viewMode]);
+
+  // Basemap switch: setStyle wipes sources/layers; ensureLayers re-adds them
+  // via the 'styledata' listener, then 'scenario-ready' re-applies data.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    readyRef.current = false;
+    map.setStyle(BASEMAPS[basemap]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [basemap]);
+
+  return (
+    <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+      <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
+      <div className="map-controls">
+        <div className="seg" role="group" aria-label="View mode">
+          <button aria-pressed={viewMode === '3d'} onClick={() => setViewMode('3d')}>
+            3D
+          </button>
+          <button aria-pressed={viewMode === '2d'} onClick={() => setViewMode('2d')}>
+            2D
+          </button>
+        </div>
+        <div className="seg" role="group" aria-label="Basemap">
+          <button aria-pressed={basemap === 'minimal'} onClick={() => setBasemap('minimal')}>
+            Minimal
+          </button>
+          <button aria-pressed={basemap === 'streets'} onClick={() => setBasemap('streets')}>
+            Streets
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }

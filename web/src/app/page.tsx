@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import MagnitudeSlider from '@/components/MagnitudeSlider';
 import SummaryStats from '@/components/SummaryStats';
@@ -29,45 +28,41 @@ export default function Home() {
   }, [magnitude]);
 
   return (
-    <div className="layout">
-      <header className="topbar">
-        <h1>The Big One · West Valley Fault Scenario Loss Estimator</h1>
-        <nav>
-          <Link href="/methodology/">Methodology</Link>
-        </nav>
-      </header>
-      <div className="main">
-        <div className="map-wrap">
-          <LossMap scenario={scenario} onSelectLgu={setSelected} simToken={simToken} />
-        </div>
-        <aside className="sidebar">
-          {scenario?.synthetic && (
-            <div className="banner">
-              ⚠ Showing <strong>synthetic placeholder data</strong> for development.
-              These are not loss estimates. Run the model pipeline to replace them.
-            </div>
-          )}
-          {error && <div className="banner">{error}</div>}
-          <MagnitudeSlider magnitude={magnitude} onChange={setMagnitude} />
-          <button
-            className="simulate-btn"
-            disabled={!scenario}
-            onClick={() => setSimToken((t) => t + 1)}
-          >
-            ▶ Simulate rupture
-          </button>
-          {scenario && <SummaryStats scenario={scenario} simToken={simToken} />}
-          {scenario && <CityDetailPanel scenario={scenario} selected={selected} />}
-          <ComparablesPanel />
-          <p className="footer-note">
-            Scenario-based estimates with P10–P90 uncertainty ranges, not predictions.
-            Ground shaking via the Allen–Wald–Worden (2012) intensity prediction
-            equation; losses from quantile models trained on historical global
-            earthquake data (NOAA NCEI, EM-DAT). See the methodology page for data
-            sources, assumptions, and limitations.
-          </p>
-        </aside>
+    <div className="main">
+      <div className="map-wrap">
+        <LossMap scenario={scenario} onSelectLgu={setSelected} simToken={simToken} />
       </div>
+      <aside className="sidebar">
+        {scenario?.synthetic && (
+          <div className="banner" role="status">
+            Showing <strong>synthetic placeholder data</strong> for development.
+            These are not loss estimates. Run the model pipeline to replace them.
+          </div>
+        )}
+        {error && <div className="banner">{error}</div>}
+        <MagnitudeSlider magnitude={magnitude} onChange={setMagnitude} />
+        <button
+          className="simulate-btn"
+          disabled={!scenario}
+          onClick={() => setSimToken((t) => t + 1)}
+        >
+          <svg width="13" height="13" viewBox="0 0 12 12" aria-hidden="true">
+            <path d="M2.5 1.5v9l8-4.5z" fill="currentColor" />
+          </svg>
+          Simulate rupture
+        </button>
+        {scenario && <SummaryStats scenario={scenario} simToken={simToken} />}
+        {scenario && <CityDetailPanel scenario={scenario} selected={selected} />}
+        <ComparablesPanel />
+        <p className="footer-note">
+          Scenario-based estimates with P10–P90 uncertainty ranges, not
+          predictions. Ground shaking via the Allen–Wald–Worden (2012) intensity
+          prediction equation; losses from quantile models trained on historical
+          global earthquake data (NOAA NCEI, EM-DAT). See the methodology page
+          for data sources, assumptions, and limitations. Spike height encodes
+          the square root of median (P50) loss.
+        </p>
+      </aside>
     </div>
   );
 }
