@@ -43,10 +43,16 @@ MAGNITUDES = [round(6.0 + 0.1 * i, 1) for i in range(13)] + [7.5]
 
 # ---- economic constants (update + document vintage in methodology) ----------
 PHP_PER_USD = 58.0
-# NCR GRDP: ~31-32% of PHP 26.5T national nominal GDP (PSA 2024).
-# TODO: replace with the exact PSA NCR figure; used only for the
-# population-share fallback when exposure_ncr.csv GRDP is blank.
-NCR_GRDP_PHP = 8.4e12
+# Per-capita regional output (PHP, nominal, ~2024) for the population
+# fallback when exposure_ncr.csv GRDP is blank. Rough figures consistent
+# with PSA regional accounts orders of magnitude — TODO: replace with exact
+# PSA numbers and cite the release. NCR ~PHP 8.4T / 13.48M ≈ 623k.
+REGION_PC_GRDP_PHP = {
+    "NCR": 623e3,
+    "CALABARZON": 240e3,
+    "CENTRAL_LUZON": 230e3,
+}
+NCR_GRDP_PHP = 8.4e12  # retained for sensitivity.py scaling only
 
 # ---- epistemic priors (documented modeling choices, sampled in MC) ----------
 # Capital-output ratio: exposed capital stock ~ K x annual GRDP.
@@ -83,12 +89,16 @@ def load_exposure() -> tuple[pd.DataFrame, str]:
         exposure["grdp_php"] = exposure["grdp_php_billions"] * 1e9
         weighting = "grdp"
     else:
-        share = exposure["population_2020"] / exposure["population_2020"].sum()
-        exposure["grdp_php"] = share * NCR_GRDP_PHP
+        pc = exposure["region"].map(REGION_PC_GRDP_PHP)
+        if pc.isna().any():
+            missing = exposure.loc[pc.isna(), "region"].unique()
+            raise SystemExit(f"no per-capita GRDP for regions: {missing}")
+        exposure["grdp_php"] = exposure["population_2020"] * pc
         weighting = "population_fallback"
-        print("note: GRDP incomplete in exposure_ncr.csv — distributing "
-              f"NCR GRDP PHP {NCR_GRDP_PHP/1e12:.1f}T by population share "
-              "(flagged in JSON output)")
+        total = exposure["grdp_php"].sum()
+        print("note: GRDP incomplete in exposure_ncr.csv — using population x "
+              f"regional per-capita output (total PHP {total/1e12:.1f}T; "
+              "flagged in JSON output)")
     return exposure, weighting
 
 

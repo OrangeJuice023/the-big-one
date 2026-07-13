@@ -70,6 +70,53 @@ export default function Methodology() {
         benchmark.
       </p>
 
+      <h2>Sensitivity: which assumptions do the work?</h2>
+      <p>
+        A one-at-a-time tornado analysis at the M7.2 anchor (src/sensitivity.py)
+        shifts each modeling choice by one standard deviation. The fragility
+        midpoint dominates (P50 moves &minus;33% to +43%), followed by the
+        maximum damage ratio (&plusmn;26%) and the capital-output ratio
+        (&plusmn;14%); exposure passes through linearly (&plusmn;10% for
+        &plusmn;10%), and spatial correlation moves the interval width
+        (&plusmn;14%) far more than the median &mdash; consistent with theory.
+        Practical implication: calibrating the fragility curve to Philippine
+        damage data is the highest-value next step, and the current elicited
+        priors are the framework&apos;s main epistemic weakness.
+      </p>
+
+      <h2>Open research questions</h2>
+      <p>
+        Six questions are deliberately left open in this v0.2, in brief:
+        (1)&nbsp;the aleatoric/epistemic split is computed but the epistemic
+        priors are elicited rather than fitted; (2)&nbsp;one Philippine
+        backtest demonstrates transfer is possible, not reliable &mdash;
+        further events (1990 Luzon, 2022 Abra) are candidates;
+        (3)&nbsp;the monetized ground truth itself is a lower bound
+        (infrastructure-only reporting); (4)&nbsp;where the model should sit
+        on the physics&ndash;data spectrum, i.e. mechanistic fragility with
+        learned parameters; (5)&nbsp;maximum magnitude is treated as scenarios
+        plus a stress test rather than a probability distribution;
+        (6)&nbsp;spatial resolution is held at LGU level because finer
+        output without finer exposure would be false precision. The full
+        write-ups live in OPEN_QUESTIONS.md in the repository.
+      </p>
+
+      <h2>Sources and benchmarks</h2>
+      <p>
+        Intensity model: Allen, Wald &amp; Worden (2012), J. Seismology 16,
+        coefficients cross-checked against GEM OpenQuake. Loss data: NOAA NCEI
+        Significant Earthquake Database (public domain) and EM-DAT (CRED,
+        research license). Benchmarks: PHIVOLCS maximum-credible M7.2 for the
+        West Valley Fault and the 2013 PHIVOLCS-Australia estimate of
+        &#8369;2.4T building damage; World Bank ~US$48B total-loss estimate;
+        2013 Bohol ground truth from NDRRMC SitRep 35 (&#8369;2.257B
+        infrastructure, 73,002 houses damaged); comparables from Toyoda (2008)
+        for Kobe 1995 and the Haiti 2010 PDNA. Boundaries: PSGC 2023 via
+        faeldon/philippines-json-maps. Exposure: PSA 2020 Census population;
+        NCR GRDP distributed by population share pending city-level PSA
+        figures (flagged in every scenario file).
+      </p>
+
       <h2>Key limitations</h2>
       <p>
         Historical loss databases carry survivorship and reporting bias; only
