@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import type { Scenario } from '@/lib/scenarios';
-import { mmiColor } from '@/lib/scenarios';
+import { lossColor, mmiColor } from '@/lib/scenarios';
 
 type Props = {
   scenario: Scenario | null;
@@ -17,14 +17,34 @@ type Props = {
 const RUPTURE_MS = 2200;
 const WAVE_SPEED_KM_S = 9;
 const WAVE_LEAD_MS = 400;
+const SPIKE_GROW_MS = 900; // per-LGU spike growth after shaking arrives
+
+// 3D spike geometry/scale (visual encoding, stated on the methodology page).
+const SPIKE_RADIUS_M = 320;
+const SPIKE_MAX_HEIGHT_M = 16000; // tallest spike (scenario max P50 loss)
+const CAMERA = { pitch: 52, bearing: -17 };
+
+/** Small n-gon around a centroid, used as the extrusion footprint. */
+function spikeFootprint(lon: number, lat: number, n = 12): [number, number][] {
+  const dLat = SPIKE_RADIUS_M / 111320;
+  const dLon = dLat / Math.cos((lat * Math.PI) / 180);
+  const ring: [number, number][] = [];
+  for (let i = 0; i <= n; i++) {
+    const a = (2 * Math.PI * i) / n;
+    ring.push([lon + dLon * Math.cos(a), lat + dLat * Math.sin(a)]);
+  }
+  return ring;
+}
 
 /**
  * MapLibre GL map on a zero-cost basemap (OpenFreeMap — no API key).
  *
- * If public/data/lgu-boundaries.geojson is present (it ships with the repo),
- * LGU polygons are rendered as a choropleth colored by scenario MMI, with
- * labels at LGU centroids. Without it, the map falls back to circle markers
- * sized by P50 loss. The fault trace renders in both modes.
+ * Renders three data layers:
+ *  1. Choropleth of LGU polygons colored by scenario MMI (ships with repo).
+ *  2. Dashed fault trace + bright rupture overlay during simulation.
+ *  3. 3D loss spikes (fill-extrusion): one column per LGU, height scaled by
+ *     sqrt(P50 loss), color by loss share. During simulation the camera tilts
+ *     and spikes grow from the ground as shaking reaches each LGU.
  */
 export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,6 +54,24 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
   const traceRef = useRef<[number, number][]>([]); // fault [lon,lat] vertices
   const scenarioRef = useRef<Scenario | null>(null);
   const animRef = useRef<number>(0);
+
+  /** Build spike features; heightScale in [0,1] per LGU (keyed by name). */
+  const spikeFeatures = (s: Scenario, heightScale?: (lgu: string) => number) => {
+    const maxLoss = Math.max(...s.lgus.map((l) => l.loss_usd.q50));
+    return {
+      type: 'FeatureCollection',
+      features: s.lgus.map((l) => {
+        const frac = l.loss_usd.q50 / maxLoss;
+        const h =
+          SPIKE_MAX_HEIGHT_M * Math.sqrt(frac) * (heightScale ? heightScale(l.lgu) : 1);
+        return {
+          type: 'Feature',
+          geometry: { type: 'Polygon', coordinates: [spikeFootprint(l.lon, l.lat)] },
+          properties: { lgu: l.lgu, height: h, color: lossColor(frac) },
+        };
+      }),
+    };
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -45,11 +83,16 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
       const map = new maplibregl.Map({
         container: containerRef.current,
         style: 'https://tiles.openfreemap.org/styles/positron',
-        center: [121.02, 14.58],
-        zoom: 10.4,
+        center: [121.0, 14.55],
+        zoom: 10.1,
+        pitch: CAMERA.pitch,
+        bearing: CAMERA.bearing,
         attributionControl: { compact: true } as any,
       });
-      map.addControl(new maplibregl.NavigationControl(), 'top-right');
+      map.addControl(
+        new maplibregl.NavigationControl({ visualizePitch: true }),
+        'top-right'
+      );
       mapRef.current = map;
 
       map.on('load', async () => {
@@ -67,7 +110,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
             source: 'lgus',
             paint: {
               'fill-color': ['coalesce', ['get', 'color'], '#dddddd'],
-              'fill-opacity': 0.62,
+              'fill-opacity': 0.55,
             },
           });
           map.addLayer({
@@ -104,15 +147,32 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
             id: 'rupture-line',
             type: 'line',
             source: 'rupture',
-            paint: {
-              'line-color': '#ff2d00',
-              'line-width': 5,
-              'line-blur': 0.5,
-            },
+            paint: { 'line-color': '#ff2d00', 'line-width': 5, 'line-blur': 0.5 },
           });
         } catch { /* trace optional */ }
 
-        // Centroid markers: labels always; circles only in fallback mode.
+        // 3D loss spikes.
+        map.addSource('spikes', {
+          type: 'geojson',
+          data: { type: 'FeatureCollection', features: [] },
+        });
+        map.addLayer({
+          id: 'loss-spikes',
+          type: 'fill-extrusion',
+          source: 'spikes',
+          paint: {
+            'fill-extrusion-color': ['get', 'color'],
+            'fill-extrusion-height': ['get', 'height'],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.92,
+          },
+        });
+        map.on('click', 'loss-spikes', (e: any) => {
+          const f = e.features?.[0];
+          if (f) onSelectLgu(f.properties.lgu);
+        });
+
+        // Centroid labels (and fallback circles when no boundary polygons).
         map.addSource('markers', {
           type: 'geojson',
           data: { type: 'FeatureCollection', features: [] },
@@ -153,6 +213,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
     })();
     return () => {
       cancelled = true;
+      cancelAnimationFrame(animRef.current);
       mapRef.current?.remove();
       mapRef.current = null;
       readyRef.current = false;
@@ -171,7 +232,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
 
       // Choropleth: recolor polygons by MMI.
       if (boundariesRef.current && map.getSource('lgus')) {
-        const colored = {
+        (map.getSource('lgus') as any).setData({
           ...boundariesRef.current,
           features: boundariesRef.current.features.map((f: any) => {
             const d = byLgu.get(f.properties.lgu);
@@ -184,9 +245,11 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
               },
             };
           }),
-        };
-        (map.getSource('lgus') as any).setData(colored);
+        });
       }
+
+      // Spikes at full height for the steady state.
+      (map.getSource('spikes') as any)?.setData(spikeFeatures(scenario));
 
       // Centroids: labels (and circles in fallback mode).
       const maxLoss = Math.max(...scenario.lgus.map((l) => l.loss_usd.q50));
@@ -208,8 +271,8 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
     else map.once('scenario-ready', apply);
   }, [scenario]);
 
-  // Rupture simulation: progressive fault rupture, then per-LGU shaking
-  // arrival ordered by distance to the fault (uses each LGU's rrup_km).
+  // Rupture simulation: camera tilts, fault ruptures progressively, shaking
+  // arrives per LGU in distance order, and loss spikes grow from the ground.
   useEffect(() => {
     if (!simToken) return;
     const map = mapRef.current;
@@ -218,6 +281,14 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
     if (!map || !s || trace.length < 2 || !readyRef.current) return;
 
     cancelAnimationFrame(animRef.current);
+
+    // Cinematic tilt + slow drift while the rupture runs.
+    map.easeTo({
+      pitch: 60,
+      bearing: CAMERA.bearing - 12,
+      duration: RUPTURE_MS,
+      essential: false,
+    });
 
     // Cumulative planar lengths along the trace (visual interpolation only).
     const cum: number[] = [0];
@@ -248,10 +319,9 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
     };
 
     const byLgu = new Map(s.lgus.map((l) => [l.lgu, l]));
-    const arrivalMs = (rrup: number) =>
-      WAVE_LEAD_MS + (rrup / WAVE_SPEED_KM_S) * 1000;
+    const arrivalMs = (rrup: number) => WAVE_LEAD_MS + (rrup / WAVE_SPEED_KM_S) * 1000;
     const maxArrival =
-      Math.max(...s.lgus.map((l) => arrivalMs(l.rrup_km))) + 600;
+      Math.max(...s.lgus.map((l) => arrivalMs(l.rrup_km))) + SPIKE_GROW_MS + 400;
     const start = performance.now();
 
     const frame = (now: number) => {
@@ -271,7 +341,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
         });
       }
 
-      // Phase B: LGUs flip from neutral to MMI color as shaking arrives.
+      // Phase B: LGUs flip to MMI color as shaking arrives.
       if (boundariesRef.current && map.getSource('lgus')) {
         (map.getSource('lgus') as any).setData({
           ...boundariesRef.current,
@@ -290,10 +360,25 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
         });
       }
 
+      // Phase C: spikes grow from the ground after shaking arrives.
+      const spikeSrc: any = map.getSource('spikes');
+      if (spikeSrc) {
+        spikeSrc.setData(
+          spikeFeatures(s, (lgu) => {
+            const d = byLgu.get(lgu);
+            if (!d) return 0;
+            const dt = t - arrivalMs(d.rrup_km);
+            if (dt <= 0) return 0;
+            const p = Math.min(1, dt / SPIKE_GROW_MS);
+            return 1 - Math.pow(1 - p, 3); // ease-out growth
+          })
+        );
+      }
+
       if (t < Math.max(RUPTURE_MS, maxArrival)) {
         animRef.current = requestAnimationFrame(frame);
       } else {
-        // End state: fade the rupture overlay, restore steady colors.
+        // End state: clear rupture overlay; spikes remain at full height.
         rupSrc?.setData({ type: 'FeatureCollection', features: [] });
       }
     };

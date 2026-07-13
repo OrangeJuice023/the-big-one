@@ -62,3 +62,12 @@ export function mmiColor(mmi: number): string {
   if (mmi >= 5) return '#fee8c8';
   return '#f7f4ef';
 }
+
+/** Red ramp for loss spikes (fraction of the scenario's max LGU P50 loss). */
+export function lossColor(fracOfMax: number): string {
+  if (fracOfMax >= 0.6) return '#8f0d00';
+  if (fracOfMax >= 0.3) return '#d7301f';
+  if (fracOfMax >= 0.12) return '#ef6548';
+  if (fracOfMax >= 0.04) return '#fc8d59';
+  return '#fdbb84';
+}
