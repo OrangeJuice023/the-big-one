@@ -37,6 +37,7 @@ HERE = Path(__file__).resolve().parents[1]
 EXPOSURE = HERE / "data" / "external" / "exposure_ncr.csv"
 FAULT = HERE / "data" / "external" / "wvf_trace_approx.geojson"
 MODELS = HERE / "models"
+POSTERIOR = MODELS / "fragility_posterior.csv"
 WEB_DATA = HERE.parent / "web" / "public" / "data"
 
 MAGNITUDES = [round(6.0 + 0.1 * i, 1) for i in range(13)] + [7.5]
@@ -53,6 +54,11 @@ REGION_PC_GRDP_PHP = {
     "CENTRAL_LUZON": 230e3,
 }
 NCR_GRDP_PHP = 8.4e12  # retained for sensitivity.py scaling only
+# Published city GDP (PSA PPA) is at CONSTANT 2018 prices; exposure should
+# be nominal. PH implicit price deflator 2024 vs 2018 ~ 1.30 (TODO: cite
+# exact PSA deflator). Applied only to the CSV GRDP column; the per-capita
+# fallback constants are already nominal.
+GDP_DEFLATOR_2018_TO_2024 = 1.30
 
 # ---- epistemic priors (documented modeling choices, sampled in MC) ----------
 # Capital-output ratio: exposed capital stock ~ K x annual GRDP.
@@ -85,24 +91,38 @@ def load_exposure() -> tuple[pd.DataFrame, str]:
         distance_to_fault_km(r.centroid_lat, r.centroid_lon, trace)
         for r in exposure.itertuples()
     ]
-    if exposure["grdp_php_billions"].notna().all():
-        exposure["grdp_php"] = exposure["grdp_php_billions"] * 1e9
+    pc = exposure["region"].map(REGION_PC_GRDP_PHP)
+    if pc.isna().any():
+        missing = exposure.loc[pc.isna(), "region"].unique()
+        raise SystemExit(f"no per-capita GRDP for regions: {missing}")
+    fallback = exposure["population_2020"] * pc
+    published = exposure["grdp_php_billions"] * 1e9 * GDP_DEFLATOR_2018_TO_2024
+    exposure["grdp_php"] = published.fillna(fallback)
+    n_pub = published.notna().sum()
+    if n_pub == len(exposure):
         weighting = "grdp"
-    else:
-        pc = exposure["region"].map(REGION_PC_GRDP_PHP)
-        if pc.isna().any():
-            missing = exposure.loc[pc.isna(), "region"].unique()
-            raise SystemExit(f"no per-capita GRDP for regions: {missing}")
-        exposure["grdp_php"] = exposure["population_2020"] * pc
+    elif n_pub == 0:
         weighting = "population_fallback"
-        total = exposure["grdp_php"].sum()
-        print("note: GRDP incomplete in exposure_ncr.csv — using population x "
-              f"regional per-capita output (total PHP {total/1e12:.1f}T; "
-              "flagged in JSON output)")
+    else:
+        weighting = "mixed_grdp_population"
+        print(f"note: exposure weighting is MIXED — {n_pub}/{len(exposure)} LGUs "
+              "use published PSA city GDP (x1.30 deflator to nominal), the rest "
+              "population x regional per-capita (flagged in JSON output)")
+    print(f"total exposure base: PHP {exposure['grdp_php'].sum()/1e12:.1f}T annual output")
     return exposure, weighting
 
 
-def run_mc(exposure: pd.DataFrame, magnitude: float, rng: np.random.Generator):
+def load_posterior() -> pd.DataFrame | None:
+    """ABC-calibrated fragility posterior (src.calibrate), if present.
+    When available, epistemic draws come from data-informed samples instead
+    of elicited priors — this is the learned component of the model."""
+    if POSTERIOR.exists():
+        return pd.read_csv(POSTERIOR)
+    return None
+
+
+def run_mc(exposure: pd.DataFrame, magnitude: float, rng: np.random.Generator,
+           posterior: pd.DataFrame | None = None):
     """Nested MC. Returns per-draw national losses (epi x alea) and per-LGU
     flattened draws, in PHP."""
     n_lgu = len(exposure)
@@ -114,9 +134,13 @@ def run_mc(exposure: pd.DataFrame, magnitude: float, rng: np.random.Generator):
     lgu_draws = np.empty((N_EPISTEMIC * N_ALEATORIC, n_lgu))
 
     for j in range(N_EPISTEMIC):
-        k_ratio = max(1.5, rng.normal(K_RATIO_MEAN, K_RATIO_SD))
-        mdr_max = float(np.clip(rng.normal(MDR_MAX_MEAN, MDR_MAX_SD), 0.10, 0.60))
-        m0 = rng.normal(M0_MEAN, M0_SD)
+        if posterior is not None:
+            row = posterior.iloc[rng.integers(len(posterior))]
+            k_ratio, mdr_max, m0 = float(row.k_ratio), float(row.mdr_max), float(row.m0)
+        else:
+            k_ratio = max(1.5, rng.normal(K_RATIO_MEAN, K_RATIO_SD))
+            mdr_max = float(np.clip(rng.normal(MDR_MAX_MEAN, MDR_MAX_SD), 0.10, 0.60))
+            m0 = rng.normal(M0_MEAN, M0_SD)
         capital = capital_base * k_ratio
 
         eta_common = rng.standard_normal(N_ALEATORIC)
@@ -164,6 +188,13 @@ def ml_event_check(magnitude: float, max_mmi: float) -> dict | None:
 
 def main() -> None:
     exposure, weighting = load_exposure()
+    posterior = load_posterior()
+    engine = ("v0.3 exposure x fragility Monte Carlo, ABC-calibrated on Luzon 1990 "
+              f"({N_EPISTEMIC}x{N_ALEATORIC} nested draws)"
+              if posterior is not None else
+              f"v0.2 exposure x fragility Monte Carlo ({N_EPISTEMIC}x{N_ALEATORIC} nested draws)")
+    if posterior is not None:
+        print(f"using ABC posterior ({len(posterior):,} samples) for epistemic draws")
     WEB_DATA.joinpath("scenarios").mkdir(parents=True, exist_ok=True)
 
     for m in MAGNITUDES:
@@ -171,7 +202,7 @@ def main() -> None:
         # scenario differences reflect physics, not Monte Carlo noise
         # (and the loss-vs-magnitude curve is monotone as it should be).
         rng = np.random.default_rng(SEED)
-        national, lgu_draws = run_mc(exposure, m, rng)
+        national, lgu_draws = run_mc(exposure, m, rng, posterior)
         flat = national.ravel()
         q = lambda a, p: float(np.percentile(a, p))
         med_mmi = [clamp_mmi(mmi(m, r)) for r in exposure["rrup_km"]]
@@ -196,8 +227,7 @@ def main() -> None:
         check = ml_event_check(m, max(med_mmi))
         payload = {
             "magnitude": m,
-            "engine": "v0.2 exposure x fragility Monte Carlo "
-                      f"({N_EPISTEMIC}x{N_ALEATORIC} nested draws)",
+            "engine": engine,
             "fault": "West Valley Fault (approximate trace)",
             "generated": date.today().isoformat(),
             "weighting": weighting,

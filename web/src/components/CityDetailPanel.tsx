@@ -2,22 +2,24 @@
 
 import type { Scenario } from '@/lib/scenarios';
 import { formatMoney } from '@/lib/scenarios';
+import { COPY, type CopyMode } from '@/lib/copy';
 
-type Props = { scenario: Scenario; selected: string | null };
+type Props = { scenario: Scenario; selected: string | null; mode?: CopyMode };
 
-export default function CityDetailPanel({ scenario, selected }: Props) {
+export default function CityDetailPanel({ scenario, selected, mode = 'sci' }: Props) {
+  const c = COPY[mode];
   const rows = [...scenario.lgus].sort((a, b) => b.loss_usd.q50 - a.loss_usd.q50);
   return (
     <div className="city-panel">
-      <div className="stat-label">Per-city estimates</div>
+      <div className="stat-label">{c.tableLabel}</div>
       <table>
         <thead>
           <tr>
             <th>LGU</th>
-            <th className="num">MMI</th>
-            <th className="num">Rrup km</th>
-            <th className="num">Loss P50</th>
-            <th className="num">P10–P90</th>
+            <th className="num">{c.thMmi}</th>
+            <th className="num">{c.thRrup}</th>
+            <th className="num">{c.thP50}</th>
+            <th className="num">{c.thRange}</th>
           </tr>
         </thead>
         <tbody>

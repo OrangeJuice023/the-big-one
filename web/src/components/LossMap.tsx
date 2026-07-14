@@ -465,6 +465,11 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
       <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
+      <div className="map-legend">
+        <div><span className="lg-swatch pillar" /> pillar height = likely loss</div>
+        <div><span className="lg-swatch ground" /> ground color = shaking strength</div>
+        <div><span className="lg-swatch fault" /> dashed line = West Valley Fault</div>
+      </div>
       <div className="map-controls">
         <div className="seg" role="group" aria-label="View mode">
           <button aria-pressed={viewMode === '3d'} onClick={() => setViewMode('3d')}>

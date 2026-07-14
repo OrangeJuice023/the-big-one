@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Scenario } from '@/lib/scenarios';
 import { formatMoney } from '@/lib/scenarios';
+import { COPY, type CopyMode } from '@/lib/copy';
 
 // PSA 2024 nominal GDP, ~PHP 26.5T — update alongside exposure data and
 // document the vintage in docs/methodology.md.
@@ -12,10 +13,13 @@ const MMEIRS_BENCH_USD = 48e9;
 export default function SummaryStats({
   scenario,
   simToken = 0,
+  mode = 'sci',
 }: {
   scenario: Scenario;
   simToken?: number;
+  mode?: CopyMode;
 }) {
+  const c = COPY[mode];
   const { q10, q50, q90 } = scenario.national_loss_php;
   // Count-up of the headline number during the rupture simulation.
   const [displayP50, setDisplayP50] = useState(q50);
@@ -42,27 +46,26 @@ export default function SummaryStats({
   return (
     <div className="stats">
       <div className="stat">
-        <div className="stat-label">National loss (P50)</div>
+        <div className="stat-label">{c.nationalLoss}</div>
         <div className="stat-value">{formatMoney(displayP50, 'PHP')}</div>
         <div className="stat-sub">
-          {formatMoney(usd.q50, 'USD')} · range {formatMoney(q10, 'PHP')}–{formatMoney(q90, 'PHP')}
+          {c.nationalSub(formatMoney(usd.q50, 'USD'), formatMoney(q10, 'PHP'), formatMoney(q90, 'PHP'))}
         </div>
       </div>
       {scenario.uq && (
         <div className="stat">
-          <div className="stat-label">Where the uncertainty comes from</div>
+          <div className="stat-label">{c.uqLabel}</div>
           <div className="stat-value" style={{ fontSize: 20 }}>
-            {Math.round(scenario.uq.aleatoric_share * 100)}% shaking ·{' '}
-            {Math.round(scenario.uq.epistemic_share * 100)}% model
+            {c.uqValue(
+              Math.round(scenario.uq.aleatoric_share * 100),
+              Math.round(scenario.uq.epistemic_share * 100)
+            )}
           </div>
-          <div className="stat-sub">
-            aleatoric (ground-motion randomness) vs epistemic
-            (fragility &amp; capital-ratio priors), Monte Carlo variance split
-          </div>
+          <div className="stat-sub">{c.uqSub}</div>
         </div>
       )}
       <div className="stat">
-        <div className="stat-label">Share of GDP</div>
+        <div className="stat-label">{c.gdpLabel}</div>
         <div className="stat-value">{gdpShare}%</div>
         <div className="stat-sub">vs PHP 26.5T (2024 nominal)</div>
       </div>

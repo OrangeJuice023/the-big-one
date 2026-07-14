@@ -55,9 +55,10 @@ python -m src.ingest.noaa        # 2. pull NOAA NCEI significant earthquakes
 python -m src.ingest.emdat
 python -m src.features           # 3. build training table
 python -m src.train              # 4. train quantile models + metrics.json
-python -m src.scenarios          # 5. write real JSONs into web/public/data/
-python -m src.validate           # 6. MMEIRS sanity check (M7.2 vs ~$48B)
-python -m src.backtest_bohol     # 7. backtest vs the 2013 Bohol M7.2 event
+python -m src.calibrate          # 5. ABC-calibrate fragility on Luzon 1990
+python -m src.scenarios          # 6. write real JSONs into web/public/data/
+python -m src.validate           # 7. MMEIRS sanity check (M7.2 vs ~$48B)
+python -m src.backtest_bohol     # 8. OUT-OF-SAMPLE validation vs Bohol 2013
 ```
 
 ## Deploy (free)

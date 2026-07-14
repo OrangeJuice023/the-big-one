@@ -7,6 +7,7 @@ import SummaryStats from '@/components/SummaryStats';
 import CityDetailPanel from '@/components/CityDetailPanel';
 import ComparablesPanel from '@/components/ComparablesPanel';
 import { loadScenario, type Scenario } from '@/lib/scenarios';
+import { COPY, type CopyMode } from '@/lib/copy';
 
 const LossMap = dynamic(() => import('@/components/LossMap'), { ssr: false });
 
@@ -16,6 +17,7 @@ export default function Home() {
   const [selected, setSelected] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [simToken, setSimToken] = useState(0);
+  const [mode, setMode] = useState<CopyMode>('sci');
 
   useEffect(() => {
     let alive = true;
@@ -40,6 +42,14 @@ export default function Home() {
           </div>
         )}
         {error && <div className="banner">{error}</div>}
+        <div className="seg mode-toggle" role="group" aria-label="Explanation level">
+          <button aria-pressed={mode === 'sci'} onClick={() => setMode('sci')}>
+            Scientific
+          </button>
+          <button aria-pressed={mode === 'basic'} onClick={() => setMode('basic')}>
+            Simple
+          </button>
+        </div>
         <MagnitudeSlider magnitude={magnitude} onChange={setMagnitude} />
         <button
           className="simulate-btn"
@@ -51,17 +61,10 @@ export default function Home() {
           </svg>
           Simulate rupture
         </button>
-        {scenario && <SummaryStats scenario={scenario} simToken={simToken} />}
-        {scenario && <CityDetailPanel scenario={scenario} selected={selected} />}
+        {scenario && <SummaryStats scenario={scenario} simToken={simToken} mode={mode} />}
+        {scenario && <CityDetailPanel scenario={scenario} selected={selected} mode={mode} />}
         <ComparablesPanel />
-        <p className="footer-note">
-          Scenario-based estimates with P10–P90 uncertainty ranges, not
-          predictions. Ground shaking via the Allen–Wald–Worden (2012) intensity
-          prediction equation; losses from quantile models trained on historical
-          global earthquake data (NOAA NCEI, EM-DAT). See the methodology page
-          for data sources, assumptions, and limitations. Spike height encodes
-          the square root of median (P50) loss.
-        </p>
+        <p className="footer-note">{COPY[mode].footer}</p>
       </aside>
     </div>
   );

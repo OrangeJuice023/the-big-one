@@ -9,124 +9,170 @@ export default function Methodology() {
         <Link href="/" className="back-link">
           ← back to the map
         </Link>
-      <h1>Methodology</h1>
-      <p>
-        This page summarizes how the estimates are produced. The full write-up
-        lives in <code>docs/methodology.md</code> in the repository and should be
-        expanded there first, then mirrored here.
-      </p>
+        <h1>Methodology</h1>
+        <p>
+          This page describes the v0.3 modeling chain end to end. The source of
+          truth is the open repository; everything below is reproducible from
+          the committed pipeline.
+        </p>
 
-      <h2>What this is (and is not)</h2>
-      <p>
-        This is scenario-based loss estimation with quantified uncertainty — the
-        same framing used by USGS PAGER and GEM OpenQuake — not a prediction of
-        when an earthquake will occur or a precise forecast of damages. Every
-        figure is presented as a P10/P50/P90 range.
-      </p>
+        <h2>What this is (and is not)</h2>
+        <p>
+          Scenario-based loss estimation with quantified uncertainty — the same
+          framing used by USGS PAGER and GEM OpenQuake — not a prediction of
+          when an earthquake will occur or a precise forecast of damages. Every
+          figure is a P10/P50/P90 range, and the model is never tuned to match
+          any published benchmark.
+        </p>
 
-      <h2>Scenario magnitude range</h2>
-      <p>
-        Scenarios span M6.0&ndash;M7.2, anchored on the PHIVOLCS maximum-credible
-        magnitude of 7.2 for the ~100-km West Valley Fault. An M7.5 stress test
-        is included to reflect paleoseismic upper-bound estimates that exceed
-        the official maximum-credible value &mdash; treating the maximum
-        magnitude itself as an epistemically uncertain parameter rather than a
-        settled constant.
-      </p>
+        <h2>Scenario magnitude range</h2>
+        <p>
+          Scenarios span M6.0–M7.2, anchored on the PHIVOLCS maximum-credible
+          magnitude of 7.2 for the ~100-km West Valley Fault, plus an M7.5
+          stress test reflecting paleoseismic upper-bound estimates — treating
+          maximum magnitude itself as an epistemically uncertain parameter.
+        </p>
 
-      <h2>Ground shaking</h2>
-      <p>
-        For each scenario magnitude (M6.5–M7.6), shaking intensity per LGU is
-        computed with the Allen, Wald &amp; Worden (2012) intensity prediction
-        equation for active crustal regions (rupture-distance version,
-        coefficients cross-checked against the GEM OpenQuake implementation),
-        using the distance from each LGU centroid to the West Valley Fault
-        surface trace.
-      </p>
+        <h2>Ground shaking</h2>
+        <p>
+          For each scenario magnitude, shaking intensity per LGU is computed
+          with the Allen, Wald &amp; Worden (2012) intensity prediction
+          equation for active crustal regions (rupture-distance version,
+          coefficients cross-checked against the GEM OpenQuake implementation),
+          using the distance from each LGU centroid to the West Valley Fault
+          surface trace. The equation&apos;s published, distance-dependent
+          sigma is carried forward into the Monte Carlo rather than discarded.
+        </p>
 
-      <h2>Loss model</h2>
-      <p>
-        LightGBM quantile regressors (α = 0.1, 0.5, 0.9) are trained on
-        historical earthquake losses from the NOAA NCEI Significant Earthquake
-        Database and EM-DAT, with losses adjusted to constant 2026 US dollars.
-        Event-level predictions are allocated across LGUs in proportion to
-        exposure weight times an intensity-dependent damage ratio.
-      </p>
+        <h2>Exposure</h2>
+        <p>
+          Thirty-five LGUs: all seventeen NCR cities and the municipality of
+          Pateros, plus eighteen fault-corridor LGUs in Bulacan, Rizal, Laguna,
+          and Cavite. Exposure value per LGU is annual economic output scaled
+          by a capital-output ratio. Where the PSA publishes city-level GDP
+          (eight NCR cities covering roughly 85% of the regional economy,
+          2024 Provincial Product Accounts), those figures are used, adjusted
+          from constant 2018 prices to nominal with a documented deflator;
+          the remaining LGUs use population times regional per-capita output.
+          Every scenario file flags this mixed weighting.
+        </p>
 
-      <h2>Validation and the Bohol 2013 backtest</h2>
-      <p>
-        Models are evaluated on a temporal holdout (events from 2010 onward) and
-        must beat a magnitude-only baseline. Because the West Valley Fault
-        scenario cannot be validated directly (it has not occurred), the
-        pipeline is backtested against the 2013 Mw 7.2 Bohol earthquake — same
-        magnitude, shallow, on Philippine territory, with published ground
-        truth: 222 deaths, 73,002 damaged houses, and ₱2.257B in monetized
-        infrastructure damage (NDRRMC). The intensity model must reproduce the
-        observed PEIS VIII epicentral / PEIS VII regional pattern, and the loss
-        interval must be consistent with the monetized floor. Separately, the
-        M7.2 WVF national P50 is compared against the PHIVOLCS 2013 estimate of
-        ₱2.4T in building damage and the World Bank's ~USD 48B total-loss
-        figure as sanity anchors — the model is never tuned to match any
-        benchmark.
-      </p>
+        <h2>Loss model</h2>
+        <p>
+          Losses are generated by a mechanistic exposure × fragility chain
+          inside a nested Monte Carlo (60 epistemic × 60 aleatoric draws).
+          Aleatoric uncertainty samples the intensity-prediction sigma with
+          partial spatial correlation across LGUs (a common event-wide term,
+          ρ = 0.5). Epistemic uncertainty samples the fragility curve and
+          capital-output ratio — and as of v0.3 those parameters are
+          <em> learned, not elicited</em> (next section). Losses use a
+          logistic mean-damage-ratio curve in intensity; common random numbers
+          across magnitudes keep the loss–magnitude curve monotone.
+        </p>
 
-      <h2>Sensitivity: which assumptions do the work?</h2>
-      <p>
-        A one-at-a-time tornado analysis at the M7.2 anchor (src/sensitivity.py)
-        shifts each modeling choice by one standard deviation. The fragility
-        midpoint dominates (P50 moves &minus;33% to +43%), followed by the
-        maximum damage ratio (&plusmn;26%) and the capital-output ratio
-        (&plusmn;14%); exposure passes through linearly (&plusmn;10% for
-        &plusmn;10%), and spatial correlation moves the interval width
-        (&plusmn;14%) far more than the median &mdash; consistent with theory.
-        Practical implication: calibrating the fragility curve to Philippine
-        damage data is the highest-value next step, and the current elicited
-        priors are the framework&apos;s main epistemic weakness.
-      </p>
+        <h2>The learned component (where the machine learning lives)</h2>
+        <p>
+          The fragility parameters and capital-output ratio are calibrated by
+          likelihood-free (ABC rejection) inference against the 1990 Mw 7.7
+          Luzon earthquake: 200,000 prior draws are pushed through the same
+          mechanistic forward model, and draws whose predicted total falls
+          within an explicit interval-censoring window of the reported US$370M
+          loss are retained as the posterior (~77,000 samples). This is
+          physics-informed learning in the precise sense that the mechanistic
+          structure (attenuation physics, exposure accounting, fragility form)
+          constrains the hypothesis space while data updates the parameters.
+          Separately, gradient-boosted quantile models trained on ~514 global
+          historical events (NOAA NCEI, EM-DAT) are retained as an event-level
+          cross-check in every scenario file: being exposure-blind, they
+          underestimate the Metro Manila scenario by roughly two orders of
+          magnitude — the empirical demonstration of why the hybrid is needed.
+        </p>
 
-      <h2>Open research questions</h2>
-      <p>
-        Six questions are deliberately left open in this v0.2, in brief:
-        (1)&nbsp;the aleatoric/epistemic split is computed but the epistemic
-        priors are elicited rather than fitted; (2)&nbsp;one Philippine
-        backtest demonstrates transfer is possible, not reliable &mdash;
-        further events (1990 Luzon, 2022 Abra) are candidates;
-        (3)&nbsp;the monetized ground truth itself is a lower bound
-        (infrastructure-only reporting); (4)&nbsp;where the model should sit
-        on the physics&ndash;data spectrum, i.e. mechanistic fragility with
-        learned parameters; (5)&nbsp;maximum magnitude is treated as scenarios
-        plus a stress test rather than a probability distribution;
-        (6)&nbsp;spatial resolution is held at LGU level because finer
-        output without finer exposure would be false precision. The full
-        write-ups live in OPEN_QUESTIONS.md in the repository.
-      </p>
+        <h2>Validation: calibrate on 1990, hold out 2013</h2>
+        <p>
+          Because the West Valley Fault scenario has no observed precedent, the
+          chain is validated on real Philippine earthquakes with a strict
+          split: the 1990 Luzon event is used for calibration only, and the
+          2013 Mw 7.2 Bohol earthquake is held out entirely. Out of sample, the
+          hazard component reproduces Bohol&apos;s observed PEIS VIII
+          epicentral / PEIS VII regional pattern within published sigma, and
+          the calibrated loss chain predicts a P10–P90 of roughly US$45M–600M
+          against the ₱2.257B (~US$52M) infrastructure-only monetized floor
+          (NDRRMC) — consistent, given that 73,002 damaged houses were counted
+          in units rather than pesos. As sanity anchors, the M7.2 national P50
+          (~US$44B) sits at roughly 0.9× the World Bank&apos;s ~US$48B
+          estimate and within the same order as the PHIVOLCS 2013 ₱2.4T
+          building-damage figure; the successive versions moved from 0.01× to
+          0.92× of the anchor purely through data and calibration improvements,
+          never through tuning.
+        </p>
 
-      <h2>Sources and benchmarks</h2>
-      <p>
-        Intensity model: Allen, Wald &amp; Worden (2012), J. Seismology 16,
-        coefficients cross-checked against GEM OpenQuake. Loss data: NOAA NCEI
-        Significant Earthquake Database (public domain) and EM-DAT (CRED,
-        research license). Benchmarks: PHIVOLCS maximum-credible M7.2 for the
-        West Valley Fault and the 2013 PHIVOLCS-Australia estimate of
-        &#8369;2.4T building damage; World Bank ~US$48B total-loss estimate;
-        2013 Bohol ground truth from NDRRMC SitRep 35 (&#8369;2.257B
-        infrastructure, 73,002 houses damaged); comparables from Toyoda (2008)
-        for Kobe 1995 and the Haiti 2010 PDNA. Boundaries: PSGC 2023 via
-        faeldon/philippines-json-maps. Exposure: PSA 2020 Census population;
-        NCR GRDP distributed by population share pending city-level PSA
-        figures (flagged in every scenario file).
-      </p>
+        <h2>Uncertainty decomposition</h2>
+        <p>
+          The law of total variance over the nested Monte Carlo splits
+          national-loss uncertainty into roughly two-thirds aleatoric
+          (ground-motion randomness) and one-third epistemic (calibrated
+          fragility and capital-ratio posterior) at M7.2 — reported live on
+          the map for every scenario.
+        </p>
 
-      <h2>Key limitations</h2>
-      <p>
-        Historical loss databases carry survivorship and reporting bias; only
-        direct losses are modeled (no business interruption or supply-chain
-        effects); LGU-centroid distances ignore intra-city variation; no
-        liquefaction or fire-following modeling; the fault trace currently used
-        is an approximation pending replacement with the authoritative PHIVOLCS
-        trace; and GRDP as an exposure proxy overweights economic output
-        relative to building stock value.
-      </p>
+        <h2>Sensitivity: which assumptions do the work?</h2>
+        <p>
+          A one-at-a-time tornado at the M7.2 anchor showed the fragility
+          midpoint dominating (P50 −33% to +43% per prior standard deviation),
+          followed by the maximum damage ratio and capital-output ratio, with
+          exposure passing through linearly and spatial correlation moving
+          interval width far more than the median — consistent with theory.
+          That finding is what motivated the v0.3 calibration: the dominant
+          assumption is now data-informed rather than elicited.
+        </p>
+
+        <h2>Open research questions (statuses)</h2>
+        <p>
+          (1)&nbsp;Aleatoric/epistemic separation — addressed in v0.3 via the
+          calibrated posterior, with caveats: one calibration event, and the
+          interval-censoring window is itself an assumption.
+          (2)&nbsp;Validation under covariate shift — one held-out Philippine
+          event (Bohol) passes; further candidates (2022 Abra, 2019 Mindanao)
+          would strengthen the claim. (3)&nbsp;Ground truth is interval-censored
+          — official totals undercount housing; handled explicitly but crudely.
+          (4)&nbsp;Physics–data spectrum — addressed: mechanistic form with
+          learned parameters. (5)&nbsp;Maximum magnitude — still scenarios plus
+          a stress test rather than a distribution over Mmax.
+          (6)&nbsp;Spatial resolution — held at LGU level; finer output without
+          finer exposure would be false precision. Full write-ups in
+          OPEN_QUESTIONS.md in the repository.
+        </p>
+
+        <h2>Sources and benchmarks</h2>
+        <p>
+          Intensity model: Allen, Wald &amp; Worden (2012), J. Seismology 16,
+          coefficients cross-checked against GEM OpenQuake. Historical losses:
+          NOAA NCEI Significant Earthquake Database (public domain) and EM-DAT
+          (CRED, research license). Calibration event: 1990 Luzon (NOAA/NDCC:
+          2,412 deaths, ~US$369.6M). Validation event: 2013 Bohol (NDRRMC
+          SitRep 35: ₱2.257B infrastructure, 73,002 houses damaged).
+          Benchmarks: PHIVOLCS maximum-credible M7.2 and the 2013
+          PHIVOLCS-Australia ₱2.4T building-damage estimate; World Bank
+          ~US$48B. Exposure: PSA 2024 Provincial Product Accounts (city GDP)
+          and 2020 Census population. Comparables: Toyoda (2008) for Kobe;
+          Haiti 2010 PDNA. Boundaries: PSGC 2023 via
+          faeldon/philippines-json-maps.
+        </p>
+
+        <h2>Key limitations</h2>
+        <p>
+          Fragility is calibrated on a single event with a coarse
+          interval-censoring window; historical loss databases carry
+          survivorship and reporting bias; only direct losses are modeled (no
+          business interruption or supply-chain effects); LGU-centroid
+          distances ignore intra-city variation (most material for large
+          corridor municipalities like Antipolo and Rodriguez); no
+          liquefaction, site amplification, or fire-following modeling; the
+          committed fault trace is an approximation pending the authoritative
+          PHIVOLCS trace; and annual output scaled by a capital ratio remains
+          an imperfect proxy for building stock value.
+        </p>
       </article>
     </main>
   );

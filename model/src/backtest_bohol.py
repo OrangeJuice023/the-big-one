@@ -142,11 +142,21 @@ def chain_check(b: dict) -> None:
     PHP_USD_2013 = 43.0
     annual_output = POP * PC_OUT * INCOME_F
 
+    from src.scenarios import load_posterior
     rng = np.random.default_rng(42)
     n = 4000
-    k = np.maximum(1.5, rng.normal(K_RATIO_MEAN, K_RATIO_SD, n))
-    mx = np.clip(rng.normal(MDR_MAX_MEAN, MDR_MAX_SD, n), 0.10, 0.60)
-    m0 = rng.normal(M0_MEAN, M0_SD, n)
+    post = load_posterior()
+    if post is not None:
+        idx = rng.integers(len(post), size=n)
+        k = post["k_ratio"].to_numpy()[idx]
+        mx = post["mdr_max"].to_numpy()[idx]
+        m0 = post["m0"].to_numpy()[idx]
+        print("  (using ABC posterior calibrated on Luzon 1990 — Bohol is "
+              "HELD OUT, so this is out-of-sample validation)")
+    else:
+        k = np.maximum(1.5, rng.normal(K_RATIO_MEAN, K_RATIO_SD, n))
+        mx = np.clip(rng.normal(MDR_MAX_MEAN, MDR_MAX_SD, n), 0.10, 0.60)
+        m0 = rng.normal(M0_MEAN, M0_SD, n)
     eps = rng.normal(0.0, 0.8, n)  # common intensity uncertainty per draw
 
     loss = np.zeros(n)
@@ -156,7 +166,7 @@ def chain_check(b: dict) -> None:
 
     q = lambda p: float(np.percentile(loss, p)) / PHP_USD_2013
     floor = b["infrastructure_damage_usd"]
-    print(f"v0.2 chain check (exposure x fragility MC, rough Bohol exposure):")
+    print("chain check (exposure x fragility MC, rough Bohol exposure):")
     print(f"  predicted total direct loss: P10 ${q(10)/1e6:.0f}M | "
           f"P50 ${q(50)/1e6:.0f}M | P90 ${q(90)/1e6:.0f}M")
     print(f"  observed monetized FLOOR: ${floor/1e6:.0f}M (infrastructure only)")

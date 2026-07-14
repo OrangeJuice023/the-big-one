@@ -7,7 +7,7 @@ not satisfied, and what I think the candidate answers are.
 
 ## 1. Separating aleatoric and epistemic uncertainty in the loss chain
 
-**Status: partially addressed in v0.2.** The scenario engine now runs a
+**Status: addressed in v0.3 (with caveats).** Fragility parameters are now LEARNED via ABC rejection calibrated on the 1990 Luzon earthquake (src/calibrate.py), replacing elicited priors in the epistemic layer; the 2013 Bohol event is held out for out-of-sample validation. Remaining: one calibration event; interval-censoring window is itself an assumption. Previously (v0.2): The scenario engine now runs a
 nested Monte Carlo (60x60): AWW12 sigma sampled with partial spatial
 correlation (aleatoric) and priors over fragility parameters and the
 capital-output ratio (epistemic), split via the law of total variance

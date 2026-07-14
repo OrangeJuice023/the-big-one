@@ -68,5 +68,25 @@
         "context": "semi-rural island province; our backtest event"
       }
     ]
+  },
+  "luzon_1990_calibration": {
+    "event": "1990 Luzon earthquake",
+    "date": "1990-07-16",
+    "magnitude": 7.7,
+    "magnitude_note": "Mw 7.7 / Ms 7.8; 125-km surface rupture, Philippine Fault / Digdig Fault (strike-slip)",
+    "depth_km": 25,
+    "epicenter": {
+      "lat": 15.68,
+      "lon": 121.1,
+      "note": "near Rizal, Nueva Ecija"
+    },
+    "deaths": 2412,
+    "deaths_note": "NOAA NCEI lists 2,412; NDCC (Nov 1990) 1,283 dead + 321 missing; Wikipedia 1,621 \u2014 reporting varies",
+    "affected": 1597553,
+    "damage_usd_1990": 369600000.0,
+    "damage_source": "NOAA NCEI Significant Earthquake DB entry (369.6 damage, USD millions), consistent with NDCC-era reporting; treated as interval-censored (likely undercounts housing)",
+    "observed_intensity": "MMI VIII across Baguio-Cabanatuan-Dagupan corridor; RF VII felt in Manila (NOAA)",
+    "role": "CALIBRATION target for fragility parameters (v0.3). Bohol 2013 is held out as the independent validation event.",
+    "php_per_usd_1990": 24.3
   }
 }
