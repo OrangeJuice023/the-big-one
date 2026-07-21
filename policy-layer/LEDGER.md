@@ -114,36 +114,39 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 | Obligation | Makati | Marikina | Pasig | Quezon City | Pateros |
 |---|---|---|---|---|---|
 | **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | · | ✓ | ✓ |
-| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access | · | · | ✓ | · |
-| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ | · | ✓ | · |
-| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access | · | ◐ | ✓ | · |
+| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | · | ✓ | · |
+| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | · | ✓ | · |
+| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ◐ | ✓ | · |
 | **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | · | ✓ | · |
-| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | · | ✓ | ◐ !access |
-| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | · | ✓ | ◐ !access |
-| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | · | · | ✓ | · |
+| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | · | ✓ | ◐ !access-none |
+| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | · | ✓ | ◐ !access-none |
+| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | · | ✓ | · |
 
 ## Progress summary
 
 | LGU | present | partial | to-collect | absent | lapses |
 |---|---|---|---|---|---|
 | Makati | 5 | 2 | 1 | 0 | 2 |
-| Marikina | 3 | 2 | 3 | 0 | 0 |
+| Marikina | 3 | 5 | 0 | 0 | 3 |
 | Pasig | 0 | 1 | 7 | 0 | 0 |
 | Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 1 | 2 | 5 | 0 | 2 |
 
 ## Lapse register
 
-_Every logged lapse. `access` = exists but public can't view it — caps public-display obligations at partial._
+_Every logged lapse. Caps public-display obligations at partial. **Access sub-types:** `access-broken` = LGU attempted publish, link/portal fails (dead link, 404, "not currently available"). `access-foi` = deliberate on-request-only channel (eFOI, formal letter). `access-none` = LGU never attempted digital disclosure of the item. Bare `access` = unspecified or pre-split entry._
 
 | LGU | Obl | Lapse | Note | Verified |
 |---|---|---|---|---|
-| Makati | OB2 | **access** | Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal | partial |
-| Makati | OB4 | **access** | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | partial |
-| Pateros | OB6 | **access** | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). Non-LGU channels only | partial |
-| Pateros | OB7 | **access** | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). Statutory LDRRMF/QRF budget doc not on portal. | partial |
+| Makati | OB2 | **access-broken** | Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal | partial |
+| Makati | OB4 | **access-broken** | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | partial |
+| Marikina | OB2 | **access-foi** | LDRRMP exists and is actively shared on eFOI request (granted via Google Drive links or physical copies per eFOI transaction logs); not hosted for public download on marikina.gov.ph. RA 10121 §11(b)(1) 'publicly displayed' obligation not satisfied by on-request-only channel. | partial |
+| Marikina | OB3 | **access-foi** | DRRMO-creating ordinance identified: **Ordinance No. 132, s. 2011** (institutionalized MCDRRMO per RA 10121; updated Ord. 264 s. 1998 Rescue 161 framework). Full text NOT downloadable on marikina.gov.ph or open legislative portal; request certified copy from Sangguniang Panlungsod / City Secretary. Also present: Ord. 020 s.2023 (EQ Preparedness). | partial |
+| Marikina | OB8 | **access-foi** | Marikina CLUP 2018-2027 Vol.1 exists but not on LGU portal; available only on 3rd-party academic repos (Studocu/Scribd) OR by request from City Planning and Development Office (CPDO) / eFOI. Not officially published for public download. | partial |
+| Pateros | OB6 | **access-none** | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). LGU never attempted digital disclosure — all evidence via non-LGU channels (national news, national portals, Facebook). | partial |
+| Pateros | OB7 | **access-none** | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). LGU never attempted digital disclosure of statutory LDRRMF/QRF budget doc. | partial |
 
-_4 lapses logged._
+_7 lapses logged._
 
 ## Per-LGU detail
 
@@ -152,9 +155,9 @@ _4 lapses logged._
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
 | OB1 | ✓ present | — | Ord. 2012-037 + Ord. 2014-064 (Makati DRRMO created & staffed; 3 divisions) | corpus/Makati/makati_ord_2014-064.txt | 2026-07-21 |
-| OB2 | ◐ partial | access | Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal | corpus/Makati/makati_enhanced_drrm_plan_2019-2030.notes.md | 2026-07-21 |
+| OB2 | ◐ partial | access-broken | Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal | corpus/Makati/makati_enhanced_drrm_plan_2019-2030.notes.md | 2026-07-22 |
 | OB3 | ✓ present | — | Ord. 2012-037 (creation) + 2014-064 (staffing per JMC 2014-01) | corpus/Makati/makati_ord_2014-064.txt | 2026-07-21 |
-| OB4 | ◐ partial | access | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | PHIVOLCS-GeoServer | 2026-07-21 |
+| OB4 | ◐ partial | access-broken | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | PHIVOLCS-GeoServer | 2026-07-22 |
 | OB5 | ✓ present | — | CDP 2019-2025 §1.6 Hazard & Risk Profile: multi-hazard assessment incl. MMEIRS M7.2 WVF Intensity VIII + liquefaction + EQ-induced landslide + 200-yr flood; per-barangay exposure | https://makati.gov.ph/assets/uploads/downloads/2/221/381/pdf/FINAL_Makati%20CDP_Main%20Text_10152020.pdf | 2026-07-21 |
 | OB6 | · to-collect | unverified | Annual Report 2022 (scanned) is activity evidence for drills — not yet OCR'd/obtained | TODO | 2026-07-21 |
 | OB7 | ✓ present | — | 5% LDRRMF + 30% QRF (CDP / appropriation) | TODO | 2026-07-21 |
@@ -165,13 +168,13 @@ _4 lapses logged._
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
 | OB1 | ✓ present | — | MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023) | corpus/Marikina/ | 2026-07-21 |
-| OB2 | · to-collect | unverified | LDRRMP not yet collected | TODO | 2026-07-21 |
-| OB3 | ◐ partial | unverified | Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected. Context (secondary, ADPC 2008): a pre-RA10121 Disaster Management Office existed via Ord.264 s.1998 (Rescue 161) — historical only, not the current-law instrument | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
-| OB4 | · to-collect | unverified | No Marikina hazard-map artifact collected yet | TODO | 2026-07-21 |
+| OB2 | ◐ partial | access-foi | LDRRMP exists and is actively shared on eFOI request (granted via Google Drive links or physical copies per eFOI transaction logs); not hosted for public download on marikina.gov.ph. RA 10121 §11(b)(1) 'publicly displayed' obligation not satisfied by on-request-only channel. | corpus/Marikina/marikina_document_register.notes.md | 2026-07-22 |
+| OB3 | ◐ partial | access-foi | DRRMO-creating ordinance identified: **Ordinance No. 132, s. 2011** (institutionalized MCDRRMO per RA 10121; updated Ord. 264 s. 1998 Rescue 161 framework). Full text NOT downloadable on marikina.gov.ph or open legislative portal; request certified copy from Sangguniang Panlungsod / City Secretary. Also present: Ord. 020 s.2023 (EQ Preparedness). | corpus/Marikina/marikina_document_register.notes.md | 2026-07-22 |
+| OB4 | ◐ partial | — | Marikina-specific hazard maps accessible via national platforms — HazardHunterPH (hazardhunter.georisk.gov.ph) + PHIVOLCS FaultFinder / Valley Fault System Atlas — but not hosted on marikina.gov.ph. LGU passively benefits from national display; §12(c)(10) LGU-own-duty not directly discharged. | HazardHunterPH+PHIVOLCS-FaultFinder | 2026-07-22 |
 | OB5 | ◐ partial | — | Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109); SECONDARY corroboration: ADPC Safer Cities 22 (2008) documents Comprehensive EQ Disaster Reduction program (Ord.109 s.2005) + 1992/2004 flood-exposure figures | corpus/Marikina/ | 2026-07-21 |
 | OB6 | ✓ present | — | Ord. 020 s.2023 (enacted 22 Mar 2023; approved by Mayor 12 May 2023) institutionalizes EQ awareness & safety-DRILLS program via MCDRRMO; program part of MCDRRMO annual plan & budget with annual report to Mayor/Council | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
 | OB7 | ✓ present | — | Quick Response Fund invoked/authorized (Res. 109 s.2025) | corpus/Marikina/marikina_res_109_2025.txt | 2026-07-21 |
-| OB8 | · to-collect | unverified | CDP/CLUP DRR mainstreaming not verified | TODO | 2026-07-21 |
+| OB8 | ◐ partial | access-foi | Marikina CLUP 2018-2027 Vol.1 exists but not on LGU portal; available only on 3rd-party academic repos (Studocu/Scribd) OR by request from City Planning and Development Office (CPDO) / eFOI. Not officially published for public download. | corpus/Marikina/marikina_document_register.notes.md | 2026-07-22 |
 
 ### Pasig
 
@@ -208,7 +211,7 @@ _4 lapses logged._
 | OB3 | · to-collect | unverified | pateros.gov.ph hosts RESOLUTION-1988-2019.pdf index (bot-blocked direct fetch); no DRRM-creating ordinance surfaced. Manual browse of index PDF still to do. | TODO | 2026-07-22 |
 | OB4 | · to-collect | unverified | pateros.gov.ph exists but publishes no hazard maps; check PHIVOLCS Pateros tile availability. | TODO | 2026-07-22 |
 | OB5 | · to-collect | unverified | No formal risk assessment (only 3rd-party barangay flood anecdote 2018) | TODO | 2026-07-21 |
-| OB6 | ◐ partial | access | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). Non-LGU channels only | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-21 |
-| OB7 | ◐ partial | access | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). Statutory LDRRMF/QRF budget doc not on portal. | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-22 |
+| OB6 | ◐ partial | access-none | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). LGU never attempted digital disclosure — all evidence via non-LGU channels (national news, national portals, Facebook). | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-22 |
+| OB7 | ◐ partial | access-none | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). LGU never attempted digital disclosure of statutory LDRRMF/QRF budget doc. | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-22 |
 | OB8 | · to-collect | unverified | pateros.gov.ph exists but publishes no CDP/land-use DRR mainstreaming doc. | TODO | 2026-07-22 |
 

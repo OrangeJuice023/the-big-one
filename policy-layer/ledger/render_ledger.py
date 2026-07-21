@@ -24,7 +24,8 @@ LGUS = ["Makati", "Marikina", "Pasig", "Quezon City", "Pateros"]
 GLYPH = {"present": "✓", "partial": "◐", "to-collect": "·", "absent": "✗"}
 # real compliance lapses (surfaced in matrix flags + register); 'unverified' is
 # just a collection gap already conveyed by the to-collect status, so it's excluded
-REAL_LAPSES = {"access", "not-adopted", "outdated", "scope"}
+REAL_LAPSES = {"access", "access-broken", "access-foi", "access-none",
+               "not-adopted", "outdated", "scope"}
 
 rows = list(csv.DictReader(open(STATUS)))
 cell = defaultdict(dict)               # cell[lgu][obl] = row
@@ -53,8 +54,12 @@ def matrix():
 
 def lapse_register():
     out = ["## Lapse register\n",
-           "_Every logged lapse. `access` = exists but public can't view it — "
-           "caps public-display obligations at partial._\n",
+           "_Every logged lapse. Caps public-display obligations at partial. "
+           "**Access sub-types:** `access-broken` = LGU attempted publish, "
+           "link/portal fails (dead link, 404, \"not currently available\"). "
+           "`access-foi` = deliberate on-request-only channel (eFOI, formal "
+           "letter). `access-none` = LGU never attempted digital disclosure "
+           "of the item. Bare `access` = unspecified or pre-split entry._\n",
            "| LGU | Obl | Lapse | Note | Verified |",
            "|---|---|---|---|---|"]
     n = 0
