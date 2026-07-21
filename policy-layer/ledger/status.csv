@@ -31,11 +31,11 @@ Quezon City,OB5,present,,"QC HVRA 2013 (earthquake+flood, UDRI, hotspot barangay
 Quezon City,OB6,present,,"Mandatory drills Ord. SP-2674 s.2017 + Res. SP-6111 s.2014; QCDRRMO citywide EQ drills since 2015",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
 Quezon City,OB7,present,,"5% LDRRMF per RA 10121 sec.21; adopted annually by resolution (Res.1 s.2019 LDRRMF+Plan 2020 = PHP 1.18B)",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
 Quezon City,OB8,present,,"DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
-Pateros,OB1,partial,access,"LDRRMO/MDRRMC operate: BFP-NCR MDRRMC mtg 24-Jun-2026 + PIA Nov-2024 DRRMO Rescue hotlines + SubayBAYAN functioning DRRM office. No public creating ordinance; no official portal",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
-Pateros,OB2,to-collect,unverified,"LDRRM Program referenced (BFP MDRRMC 2026); no plan document; no official portal. Check DILG/OCD-NCR/FOI",TODO,no,2026-07-21
-Pateros,OB3,to-collect,unverified,"No DRRMO-creating ordinance surfaced; no official portal",TODO,no,2026-07-21
-Pateros,OB4,to-collect,unverified,"No LGU-published hazard maps; no official portal",TODO,no,2026-07-21
+Pateros,OB1,present,,"LDRRMO regulator-attested: DILG-NCR Local DRRMO Forum 14-Jul-2026 named officer Marko S. Pielago as panelist w/ Pasig/Navotas LDRRMOs; PIA/OCD-NCR co-organizing forum Jul-2025; BFP-NCR MDRRMC mtg 24-Jun-2026; PIA Nov-2024 DRRMO Rescue hotlines. RA 10121 §12(a) established.",corpus/Pateros/pateros_drrm_evidence.notes.md,yes,2026-07-22
+Pateros,OB2,to-collect,unverified,"LDRRM Program referenced (BFP MDRRMC 2026); no plan document. pateros.gov.ph exists but does not publish DRRM content. Check DILG/OCD-NCR/FOI.",TODO,no,2026-07-22
+Pateros,OB3,to-collect,unverified,"pateros.gov.ph hosts RESOLUTION-1988-2019.pdf index (bot-blocked direct fetch); no DRRM-creating ordinance surfaced. Manual browse of index PDF still to do.",TODO,no,2026-07-22
+Pateros,OB4,to-collect,unverified,"pateros.gov.ph exists but publishes no hazard maps; check PHIVOLCS Pateros tile availability.",TODO,no,2026-07-22
 Pateros,OB5,to-collect,unverified,"No formal risk assessment (only 3rd-party barangay flood anecdote 2018)",TODO,no,2026-07-21
 Pateros,OB6,partial,access,"Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). Non-LGU channels only",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
-Pateros,OB7,partial,access,"LGU DRRM appropriation: SubayBAYAN LFP 2021 DRRM-Pateros Rescue Equipment LGU counterpart P506728 + national P484952 = P991680 COMPLETED. No statutory LDRRMF/QRF budget doc",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
-Pateros,OB8,to-collect,unverified,"No CDP/land-use DRR mainstreaming doc surfaced; no official portal",TODO,no,2026-07-21
+Pateros,OB7,partial,access,"LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). Statutory LDRRMF/QRF budget doc not on portal.",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-22
+Pateros,OB8,to-collect,unverified,"pateros.gov.ph exists but publishes no CDP/land-use DRR mainstreaming doc.",TODO,no,2026-07-22
