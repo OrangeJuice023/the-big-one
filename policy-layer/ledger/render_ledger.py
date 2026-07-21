@@ -20,12 +20,12 @@ OBLIG = OrderedDict([
     ("OB7", ("LDRRM Fund incl. 30% QRF programmed",        "§21")),
     ("OB8", ("DRR mainstreamed into CDP/CLUP",             "§11(b)(2)")),
 ])
-LGUS = ["Makati", "Marikina", "Pasig", "Quezon City", "Pateros"]
+LGUS = ["Makati", "Marikina", "Pasig", "Quezon City", "Pateros", "Taguig"]
 GLYPH = {"present": "✓", "partial": "◐", "to-collect": "·", "absent": "✗"}
 # real compliance lapses (surfaced in matrix flags + register); 'unverified' is
 # just a collection gap already conveyed by the to-collect status, so it's excluded
 REAL_LAPSES = {"access", "access-broken", "access-foi", "access-none",
-               "not-adopted", "outdated", "scope"}
+               "access-opaque", "not-adopted", "outdated", "scope"}
 
 rows = list(csv.DictReader(open(STATUS)))
 cell = defaultdict(dict)               # cell[lgu][obl] = row
@@ -59,7 +59,10 @@ def lapse_register():
            "link/portal fails (dead link, 404, \"not currently available\"). "
            "`access-foi` = deliberate on-request-only channel (eFOI, formal "
            "letter). `access-none` = LGU never attempted digital disclosure "
-           "of the item. Bare `access` = unspecified or pre-split entry._\n",
+           "of the item. `access-opaque` = file is online but unindexable, "
+           "unfindable, and/or unsearchable due to naming, format, or missing "
+           "metadata (opaque filenames, scan-only PDFs w/o text layer). "
+           "Bare `access` = unspecified or pre-split entry._\n",
            "| LGU | Obl | Lapse | Note | Verified |",
            "|---|---|---|---|---|"]
     n = 0

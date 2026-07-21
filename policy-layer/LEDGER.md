@@ -111,16 +111,16 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
 
 Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = lapse flag (see register).
 
-| Obligation | Makati | Marikina | Pasig | Quezon City | Pateros |
-|---|---|---|---|---|---|
-| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | ✓ | ✓ | · |
-| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · |
-| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · |
-| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · |
-| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none |
-| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | ◐ | ✓ | ◐ !access-none |
-| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · |
+| Obligation | Makati | Marikina | Pasig | Quezon City | Pateros | Taguig |
+|---|---|---|---|---|---|---|
+| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ | · |
+| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | ✓ | ✓ | · | · |
+| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | · |
+| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · | · |
+| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · | · |
+| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none | · |
+| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | ◐ | ✓ | ◐ !access-none | · |
+| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | · |
 
 ## Progress summary
 
@@ -131,10 +131,11 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 | Pasig | 7 | 1 | 0 | 0 | 0 |
 | Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 1 | 2 | 5 | 0 | 2 |
+| Taguig | 0 | 0 | 8 | 0 | 0 |
 
 ## Lapse register
 
-_Every logged lapse. Caps public-display obligations at partial. **Access sub-types:** `access-broken` = LGU attempted publish, link/portal fails (dead link, 404, "not currently available"). `access-foi` = deliberate on-request-only channel (eFOI, formal letter). `access-none` = LGU never attempted digital disclosure of the item. Bare `access` = unspecified or pre-split entry._
+_Every logged lapse. Caps public-display obligations at partial. **Access sub-types:** `access-broken` = LGU attempted publish, link/portal fails (dead link, 404, "not currently available"). `access-foi` = deliberate on-request-only channel (eFOI, formal letter). `access-none` = LGU never attempted digital disclosure of the item. `access-opaque` = file is online but unindexable, unfindable, and/or unsearchable due to naming, format, or missing metadata (opaque filenames, scan-only PDFs w/o text layer). Bare `access` = unspecified or pre-split entry._
 
 | LGU | Obl | Lapse | Note | Verified |
 |---|---|---|---|---|
@@ -214,4 +215,17 @@ _7 lapses logged._
 | OB6 | ◐ partial | access-none | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). LGU never attempted digital disclosure — all evidence via non-LGU channels (national news, national portals, Facebook). | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-22 |
 | OB7 | ◐ partial | access-none | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). LGU never attempted digital disclosure of statutory LDRRMF/QRF budget doc. | corpus/Pateros/pateros_drrm_evidence.notes.md | 2026-07-22 |
 | OB8 | · to-collect | unverified | pateros.gov.ph exists but publishes no CDP/land-use DRR mainstreaming doc. | TODO | 2026-07-22 |
+
+### Taguig
+
+| Obl | Status | Lapse | Evidence | Source | Updated |
+|---|---|---|---|---|---|
+| OB1 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB2 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB3 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB4 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB5 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB6 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB7 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB8 | · to-collect | unverified | — | TODO | 2026-07-22 |
 
