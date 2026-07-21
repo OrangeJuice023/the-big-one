@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 const NAV = [
   { href: '/rationale/', label: 'Rationale' },
   { href: '/methodology/', label: 'Methodology' },
+  { href: '/policy/', label: 'Policy readiness' },
 ];
 
 /** Seismogram brand mark (inline SVG, no icon fonts). */
