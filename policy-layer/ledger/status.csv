@@ -1,12 +1,12 @@
 lgu,obl_id,status,lapse_type,evidence,source_url,verified,updated
 Makati,OB1,present,,"Ord. 2012-037 + Ord. 2014-064 (Makati DRRMO created & staffed; 3 divisions)",corpus/Makati/makati_ord_2014-064.txt,yes,2026-07-21
-Makati,OB2,to-collect,unverified,"LDRRMP not yet located; may be non-public",TODO,no,2026-07-21
+Makati,OB2,partial,access,"Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal",corpus/Makati/makati_enhanced_drrm_plan_2019-2030.notes.md,partial,2026-07-21
 Makati,OB3,present,,"Ord. 2012-037 (creation) + 2014-064 (staffing per JMC 2014-01)",corpus/Makati/makati_ord_2014-064.txt,yes,2026-07-21
 Makati,OB4,partial,access,"PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view",PHIVOLCS-GeoServer,partial,2026-07-21
-Makati,OB5,partial,,"Hazard tiles + CDP 2019-25 risk sections",corpus/Makati/,partial,2026-07-21
+Makati,OB5,present,,"CDP 2019-2025 §1.6 Hazard & Risk Profile: multi-hazard assessment incl. MMEIRS M7.2 WVF Intensity VIII + liquefaction + EQ-induced landslide + 200-yr flood; per-barangay exposure",https://makati.gov.ph/assets/uploads/downloads/2/221/381/pdf/FINAL_Makati%20CDP_Main%20Text_10152020.pdf,yes,2026-07-21
 Makati,OB6,to-collect,unverified,"Annual Report 2022 (scanned) is activity evidence for drills — not yet OCR'd/obtained",TODO,no,2026-07-21
 Makati,OB7,present,,"5% LDRRMF + 30% QRF (CDP / appropriation)",TODO,yes,2026-07-21
-Makati,OB8,present,,"CDP 2019-25 + Zoning ordinance w/ DRIVE zones (DRR mainstreamed)",TODO,yes,2026-07-21
+Makati,OB8,present,,"CDP 2019-25 DRRM chapters (§1.11.3 §4.3 §5.4) + Zoning Ord. 2012-102: DRIVE zones + WVF→OPN + 5m PHIVOLCS fault easement (§24 §30 §37)",https://makati.gov.ph/assets/uploads/staticmenu/docs/ordinance.pdf,yes,2026-07-21
 Marikina,OB1,present,,"MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023)",corpus/Marikina/,yes,2026-07-21
 Marikina,OB2,to-collect,unverified,"LDRRMP not yet collected",TODO,no,2026-07-21
 Marikina,OB3,partial,unverified,"Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected. Context (secondary, ADPC 2008): a pre-RA10121 Disaster Management Office existed via Ord.264 s.1998 (Rescue 161) — historical only, not the current-law instrument",corpus/Marikina/ordinance_020_2023.txt,partial,2026-07-21
@@ -31,11 +31,11 @@ Quezon City,OB5,present,,"QC HVRA 2013 (earthquake+flood, UDRI, hotspot barangay
 Quezon City,OB6,present,,"Mandatory drills Ord. SP-2674 s.2017 + Res. SP-6111 s.2014; QCDRRMO citywide EQ drills since 2015",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
 Quezon City,OB7,present,,"5% LDRRMF per RA 10121 sec.21; adopted annually by resolution (Res.1 s.2019 LDRRMF+Plan 2020 = PHP 1.18B)",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
 Quezon City,OB8,present,,"DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
-Pateros,OB1,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB2,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB3,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB4,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB5,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB6,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB7,to-collect,unverified,,TODO,no,2026-07-21
-Pateros,OB8,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB1,partial,access,"LDRRMO/MDRRMC operate: BFP-NCR MDRRMC mtg 24-Jun-2026 + PIA Nov-2024 DRRMO Rescue hotlines + SubayBAYAN functioning DRRM office. No public creating ordinance; no official portal",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
+Pateros,OB2,to-collect,unverified,"LDRRM Program referenced (BFP MDRRMC 2026); no plan document; no official portal. Check DILG/OCD-NCR/FOI",TODO,no,2026-07-21
+Pateros,OB3,to-collect,unverified,"No DRRMO-creating ordinance surfaced; no official portal",TODO,no,2026-07-21
+Pateros,OB4,to-collect,unverified,"No LGU-published hazard maps; no official portal",TODO,no,2026-07-21
+Pateros,OB5,to-collect,unverified,"No formal risk assessment (only 3rd-party barangay flood anecdote 2018)",TODO,no,2026-07-21
+Pateros,OB6,partial,access,"Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). Non-LGU channels only",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
+Pateros,OB7,partial,access,"LGU DRRM appropriation: SubayBAYAN LFP 2021 DRRM-Pateros Rescue Equipment LGU counterpart P506728 + national P484952 = P991680 COMPLETED. No statutory LDRRMF/QRF budget doc",corpus/Pateros/pateros_drrm_evidence.notes.md,partial,2026-07-21
+Pateros,OB8,to-collect,unverified,"No CDP/land-use DRR mainstreaming doc surfaced; no official portal",TODO,no,2026-07-21
