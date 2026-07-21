@@ -1,0 +1,1570 @@
+                           1
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+2
+
+
+
+
+                      L!STO DISASTER
+                   PREPAREDNESS MANUAL
+                  FOR LOCALIZED WEATHER
+                       DISTURBANCES
+                           (LWD)
+
+
+
+
+                               in partnership with
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                                                                                                                     3
+
+© Local Government Academy - DILG and Ateneo de Zamboanga University
+
+Published by:
+Ateneo de Zamboanga University
+Ateneo Center for Environment and Sustainability
+La Purisima, St.
+Zamboanga City
+7000 Philippines
+Tel. no (065)9910871 local 1300
+Email: rodriguezmars@adzu.edu.ph
+
+This research project is supported by the Department of Interior and Local Government- Local Government Academy (DILG-LGA) and to be cited as:
+
+
+
+065RGULJXH]-*$\LQJ(9(SLQR.%/DQJXD\DQ'LVDVWHU3UHSDUHGQHVV0DQXDOIRU/RFDOL]HG:HDWKHU'LVWXUEDQFHV=DPERDQJD&LW\8QGHUWKHRႈFHRI$WHQHR
+Center for Environment and Sustainability of Ateneo de Zamboanga University.
+
+The information on this Manual may be copied and distributed for research and educational purposes with proper acknowledgement of the source. While every care is taken to
+ensure the accuracy of this publication, the Ateneo de Zamboanga University disclaims all responsibility and all liability (including without limitation, liability in negligence) and
+costs which might incur as a result of the materials in this publication being inaccurate or incomplete in any way and for any reason.
+
+
+
+For questions/queries regarding this report, contact:
+Prof. Mario S. Rodriguez
+Project Leader
+ALeRTO-LGA Disaster Preparedness Manual for Localized Weather Disturbances
+Ateneo de Zamboanga University
+Zamboanga City, Philippines 7000
+E-mail: rodriguezmars@adzu.edu.ph
+
+Thelma T. Vecina
+Executive Director
+Local Governance Training and Development Division (LGTDD)
+Local Government Academy – DILG
+Ortigas Jr. Rd., Ortigas Center
+Pasig City, Philippines 1605
+E-mail: lgamail@lga.gov.ph
+
+National Library of the Philippines
+ISBN: 978-971-92800-4-0
+
+
+                                                                                                                     DISASTER PREPAREDNESS MANUAL
+I    TABLE OF CONTENTS
+
+
+
+    ACKNOWLEDGEMENT ...........................................................................................................           iv
+    MESSAGE DILG SECRETARY .............................................................................................                  v
+    MESSAGE DILG UNDER SECRETARY ...............................................................................                          vi
+    MESSAGE LGA EXECUTIVE DIRECTOR ...........................................................................                            vii
+    MESSAGE ADZU PRESIDENT .............................................................................................                  viii
+    ACRONYMS AND ABBREVIATIONS .......................................................................................                    ix
+    OPERATIONAL TERMS ...........................................................................................................         xi
+
+    OVERVIEW ............................................................................................................................... 1
+    PART I: ADDRESSING LOCAL WEATHER DISTURBANCES ................................................. 5
+       Understanding Localized Weather Disturbances ............................................................... 6
+       Understanding Flood Hazard Maps ................................................................................... 7
+       The ALeRTO Early Warning System .................................................................................. 9
+            Rainfall Threshold ....................................................................................................... 10
+            Water Level Threshold ................................................................................................ 10
+            Response Mechanism ................................................................................................ 12
+    PART II: CHECKLIST OF EARLY DISASTER PREPAREDNESS REQUIREMENTS.............. 13
+       Roles and Functions of the Province .................................................................................. 15
+       Roles and Functions of the Municipality/City ...................................................................... 18
+       Roles and Functions of Barangay ...................................................................................... 22
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                                                              TABLE OF CONTENTS   II
+
+
+
+
+PART III: LOCAL ACTION PLAN .............................................................................................. 27
+   Quick Guide on How the Local Action Plan is Activated ..................................................... 28
+   Developing Local Action Plan ............................................................................................ 29
+        A. Early Preparedness Requirements ......................................................................... 33
+        B. Alert Level ............................................................................................................... 35
+        C. Warning Threshold .................................................................................................. 37
+        D. General Action Areas .............................................................................................. 39
+        E. Critical Areas .......................................................................................................... 41
+        F. Responses to Alert Warning ................................................................................... 43
+REFERENCES ......................................................................................................................... 45
+ANNEXES ................................................................................................................................. 47
+        Annex I. Local Action Plan (LAP) of the Province ....................................................... 49
+        Annex II. Local Action Plan (LAP) of the City/Municipality .......................................... 57
+        Annex III. Local Action Plan (LAP) of the Barangay .................................................... 63
+
+
+
+
+                                                                                                              DISASTER PREPAREDNESS MANUAL
+III   LIST OF FIGURES AND TABLES
+
+
+      Figure 1. Three (3) Core Principles ................................................................................................           2
+      Figure 2. Detailed Flood Hazard Map of Tuguegarao, Cagayan, Philippines .................................                                      7
+      Figure 3. Flowchart of the ALeRTO Early Warning System ...........................................................                             9
+      Figure 4. PAGASA Rainfall Warning ..............................................................................................               10
+      Figure 5. Water Level Warning System ........................................................................................                  11
+      Figure 6. Sample Water Level Threshold Cross Section ................................................................                          11
+      Figure 7. Flow Chart of the Early Disaster Preparedness Requirements for the Province ............                                             17
+      Figure 8. Flow Chart of the Early Disaster Preparedness Requirements for the Municipality/City                                                 21
+      Figure 9. Flow Chart of the Early Disaster Preparedness Requirements for the Barangay ...........                                              25
+      Figure 10. Quick Guide on How the Local Action Plan is activated ...............................................                               28
+      Figure 11. Parts of the Local Action Plan .......................................................................................              31
+      )LJXUH(DUO\3UHSDUHGQHVV5HTXLUHPHQWVDQG0RGHRI9HUL¿FDWLRQ                                    
+      Figure 13. Alert Level .....................................................................................................................   35
+      Figure 14. Warning Threshold ........................................................................................................          37
+      Figure 15. General Action Areas ....................................................................................................           39
+      Figure 16. Critical Areas .................................................................................................................    41
+      Figure 17. Responses to Alert Warning ..........................................................................................               43
+
+
+
+      7DEOH7HFKQLFDO'HVFULSWLRQRIWKH'LႇHUHQW+\GURPHWHRURORJLFDO+D]DUGV 
+      7DEOH(DUO\'LVDVWHU3UHSDUHGQHVV5HTXLUHPHQWVDQGWKH0RGHVRI9HUL¿FDWLRQ 
+      Table 3. Early Disaster Preparedness Requirements for the Municipality/City .............................. 18
+      Table 4. Early Disaster Preparedness Requirements for the Barangay ......................................... 22
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+       ACKNOWLEDGEMENT IV
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+V   MESSAGE DILG SECRETARY
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+MESSAGE DILG UNDER SECRETARY VI
+
+
+
+
+    DISASTER PREPAREDNESS MANUAL
+VII   MESSAGE LGA EXECUTIVE DIRECTORY
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                                       MESSAGE ADZU PRESIDENT VIII
+
+Due to our geographical location, it could not be denied that the Philippines is one of the coun-
+WULHVLQWKHZRUOGEHLQJFRQVWDQWO\DႇHFWHGE\YDULRXVSKHQRPHQDGXHWRWKHFKDQJLQJFOLPDWH
+
+According to PAGASA, phenomena such as tropical cyclones, thunderstorms, the ITCZs gener-
+DWHODUJHDPRXQWVRIUDLQIDOOWKDWWUDQVODWHVWRLPPHQVHÀRRGLQJLQPRVWSDUWVRIWKHDUFKLSHODJR
+:HKDYHDOOVHHQWKHVHÀRRGLQJVFXOSDEOHIRUWKHGHVWUXFWLRQRISURSHUWLHVDQGORVVRIOLYHV
+
+7KH3KLOLSSLQHVKDYHIRXQGLWVYLJLODQFHWKURXJKRXWWKHVHFLUFXPVWDQFHVDQGWKHHႇRUWVDUHIHOW
+nationwide. The signing of RA 10121, or the Disaster Risk Reduction and Management Act of the
+Philippines in 2010 empowered the local government units to initiate actions towards managing
+local disasters. This was further strengthened with the issuance of the OPLAN L!STO: Disaster
+Preparedness Manual for Tropical Storm.
+To expand the coverage of these endeavors, furthering the disaster preparedness of the country,
+the DILG, as the main proponent of the OPLAN L!STO tapped the potential of the ALeRTO Early
+Warning System and Local Action Plan pioneered and innovated by the Ateneo de Zamboanga
+University.
+
+This multipartite partnership paves the way for the local government to streamline its prepared-
+QHVVQRWRQO\IRUWURSLFDOVWRUPVDQGW\SKRRQVEXWDOVRIRULPPLQHQWÀRRGLQJEURXJKWDERXWE\
+other local weather disruptions.
+
+The integration of ALeRTO Early Warning System- Local Action Plan to the OPLAN L!STO gave
+birth to the OPLAN L!STO: Disaster Preparedness Manual for Localized Weather Disturbances.
+This manual is a groundbreaking approach in promoting co-ownership of disaster management
+among all the units of the local government.
+
+The manual provides a platform to empower the Barangay level to actively respond to initiate
+DFWLRQDV¿UVWUHVSRQGHUVZKLOHWDNLQJLQWRDFFRXQWWKHUROHRIWKH0XQLFLSDO&LW\OHYHOZKRDUH
+the architect of the disaster management plans; and also the Provincial Level, who monitors and
+oversees the disaster management initiatives.
+
+The manual envisions the proper coordination and convergence of actions among these local                FR. KAREL S. SAN JUAN, SJ
+governments during an onslaught of a hazard, to better prepare the community.                                      President
+With this, I would like to extend my sincerest gratitude to the DILG- Local Government Academy
+and DILG- CODIX, for trusting Ateneo de Zamboanga University for a task as crucial as this. I           Atende de Zamboanga University
+would also like to extend my gratitude to the team members who generously gave their most
+HႇRUWLQGHYHORSLQJWKLVPDQXDO&RQJUDWXODWLRQV
+
+
+
+
+                                                                                                      DISASTER PREPAREDNESS MANUAL
+IX   ACRONYMS AND ABBREVIATIONS
+
+
+     AdZU          Ateneo de Zamboanga University         DRRM                Disaster Risk Reduction and
+     ALeRTO        Automated Water-level and Rain                             Management
+                   Monitoring using Near-Real Time        e-balde             Emergency Balde
+                   Observation                            EOC                 Emergency Operation Center
+     ARG           Automated Rain Gauges                  EPA                 Early Preparedness Action
+     AWLS          Automated Water Level Sensors          EDPR                Checklist of Early Disaster
+     BDRRMC        Barangay Disaster Risk Reduction                           Preparedness Requirements
+                   and Management Council                 EWS                 Early Warning System
+     BDRRMO        Barangay Disaster Risk Reduction       GeoSAFER Mindanao   Geo-Informatics for the Systematic
+                   DQG0DQDJHPHQW2ႈFH                                        $VVHVVPHQWRI)ORRG(ႇHFWVDQG
+     BERT          Barangay Emergency Response                                Risks for a Resilient Mindanao
+                   Teams                                  GPS                 Global Positioning System
+     BLGU          Barangay LGU                           ICS                 Incident Command System
+     BFP           Bureau of Fire Protection              IEC                 Information and Education
+     CODIX         &HQWUDO2ႈFH'LVDVWHU,QIRUPDWLRQ                         Campaign
+                   Coordinating Center                    ITCZ                Intertropical Convergence Zone
+     DENR          Department of Environment and          LAP                 Local Action Plan
+                   Natural Resources
+                                                          LDRRMC              Local Disaster Risk Reduction and
+     DILG          Department of the Interior and Local                       Management Council
+                   Government
+                                                          LDRRMO              Local Disaster Risk Reduction and
+     DOC           Disaster Operation Center                                  0DQDJHPHQW2ႈFH
+     DOST          Department of Science and              LGA                 Local Government Academy
+                   Technology
+                                                          LGU                 Local Government Unit
+     DOST-ASTI     DOST-Advanced Science and
+                   Technology Institute                   LPA                 Low Pressure Area
+     DREAM         Disaster Risk Exposure and
+                   Assessment for Mitigation
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                   ACRONYMS AND ABBREVIATIONS X
+
+
+LWD            Localized Weather Disturbance
+M/CDRRMC       Municipal /City Disaster Risk Reduction and Management Council
+M/CDRRMO       0XQLFLSDO&LW\'LVDVWHU5LVN5HGXFWLRQDQG0DQDJHPHQW2ႈFH
+MGB            Mines and Geosciences Bureau
+MHO            0XQLFLSDO+HDOWK2ႈFH
+MOA            Memorandum of Agreement
+MOU            Memorandum of Understanding
+MOV            0RGHVRI9HUL¿FDWLRQ
+MSWDO          0XQLFLSDO6RFLDO:HOIDUHDQG'HYHORSPHQW2ႈFH
+NGAMP          National Geohazard Assessment and Mapping Program
+OCD            2ႈFHRI&LYLO'HIHQVH
+PAGASA         Philippine Atmospheric, Geophysical and Astronomical Services
+               Administration
+PDANA          Post Disaster Assessment and Needs Analysis
+PDRRMC         Provincial Disaster Risk Reduction and Management Council
+PDRRMO         3URYLQFLDO'LVDVWHU5LVN5HGXFWLRQDQG0DQDJHPHQW2ႈFH
+Phil LiDAR 1   Hazard Mapping of the Philippines using Light Detection and
+               Ranging Technology
+PNP            Philippine National Police
+RDANA          Rapid Damage Assessment and Needs Analysis
+SB             Sangguniang Bayan
+SITREP         Situation Report
+SMS            Short Message Service
+UP             University of the Philippines
+WLMS           Water Level Monitoring Station
+
+
+
+
+                                                       DISASTER PREPAREDNESS MANUAL
+XII   OPERATIONAL TERMS
+
+  ALERT Level             Color-coded     warning        codes      Habagat               Southwest Monsoon. Warm moist
+                          that are based on rainfall and                                  winds from the southwest causing
+                          water level thresholds, indicates                               rains over the western portion of
+                          the preparedness level that the                                 the country from May to September
+                          government unit will be activating
+                                                                    Heavy Rains           When the rate of rainfall is
+  ALeRTO Orange Warning   Flooding is threatening, equivalent                             greater than 7.5mm per hour, the
+                          to 15 to 30 millimeter of rain or 80%                           sky is overcast and there is
+                          water level threshold of the river                              continuous precipitation.
+  ALeRTO Red Warning      6HULRXVÀRRGLQJH[SHFWHGLQORZ          ITCZ (Intertropical   Where the winds of the Northern
+                          lying areas, equivalent to more than      Convergence Zone)     Hemisphere      and     Southern
+                          30 millimeter of rain or 100% water                             Hemisphere converge causing a
+                          level threshold of the river                                    series of inclement weather such
+                                                                                          as LPAs and hurricanes
+  ALeRTO Yellow Warning   Flooding is possible, equivalent to
+                          7.5 to 15 millimeter of rain or 60%       Localized Weather     Any type of hydrometeorological
+                          water level threshold of the river        Disturbances          weather system such as Low
+                                                                                          Pressure Area (LPA), Intertropical
+  Amihan                  Northeast Monsoon. Cold winds
+                                                                                          Convergence        Zone       (ITCZ),
+                          from the northeast that brings rains
+                                                                                          Southwest        (Habagat)        and
+                          over the eastern side of the country.
+                                                                                          Northeast (Amihan) monsons
+  Cold Front              The forward edge of an advancing                                excluding tropical cyclones that
+                          cold air mass which is displacing                               brings heavy rainfall posing threat
+                          warmer air in its path.                                         RU PD\ LQFOXGH ÀRRGLQJ LQ FHUWDLQ
+                                                                                          locality.
+  Critical Areas          Areas in the province or municipality
+                          KLJKO\ YXOQHUDEOH WR ÀRRGLQJ DW D   Monsoon Rains         Heavy and/or continuous rains
+                          given warning threshold                                         associated with the Southwest or
+                                                                                          Northeast Monsoon
+  Critical Period         Upon receipt of SMS from ALeRTO
+                          with color coded alert warning and        Critical Responses    A list of minimum actions to be
+                          the required responses from the                                 conducted by the local government
+                          LGU.                                                            during the critical period. The
+                                                                                          LGUs are encouraged to input
+  Early Preparedness      Contains the minimum early                                      their current practices in this part.
+  Requirements (EPR)      preparedness actions of each local
+                          government unit.                          Warning Threshold     Trigger factor, or basis for the
+                                                                                          activation of the ALERT Level
+  General Action Area     The level of actions conducted                                  based on PAGASA rainfall data
+                          by the local government divided                                 thresholds and water level
+                          into three (3): Prepare, Response,                              thresholds
+                          and Monitor
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                                         OVERVIEW             1
+
+
+
+The occurrence of hydrometeorological events such            SUHFLSLWDWLRQZKLFKFDXVHVÀRRGLQJ8QIRUWXQDWHO\WKHVH
+as tropical cyclones, thunderstorms, low pressure            occurrences generate negative impacts to communities.
+area, and monsoons is typical in the Philippines due         ,WV HႇHFWV FDQ UDQJH IURP SURSHUW\ GDPDJH WR ORVV RI
+to its geographical location. According to the Philippine    lives. Thus, it was deemed essential to be managed
+Atmospheric, Geophysical and Astronomical Services           HႈFLHQWO\
+Administration (PAGASA), an average of twenty (20)
+tropical cyclones enter or form in the Philippine Area       With this premise, the L!STO Preparedness Manual
+of Responsibility (PAR) annually, and eight (8) or nine      for Localized Weather Disturbances was initiated and
+(9) of them make landfall. Heavy rain brought by these       developed with the main purpose of capacitating and
+hazards has become a perennial and a major problem in        enabling the LGUs in managing localized weather
+WKHFRXQWU\EHFDXVHRILWVGLYHUVHHႇHFWVRQSURSHUWLHV    disturbances that are not categorized as tropical
+economic activities, and human lives.                        F\FORQHV 7KH /672 0DQXDO IRU /:'V LV DQ RႇVKRRW
+                                                             of the existing L!STO Protocols intended for Governors
+As a result, L!STO, a national advocacy program for          and Mayors. This newly created L!STO Manual for
+disaster preparedness and resiliency was formulated by       /:'V H[WHQGV IRU WKH 3URYLQFLDO RႈFHV GRZQ WR WKH
+the Department of Interior and Local Government (DILG)       %DUDQJD\/*8 %/*8 ZKRDUHFRQVLGHUHGDVWKH³¿UVW
+in 2014. The L!STO Disaster Preparedness Manual for          responders” during the occurrences of LWDs and threats
+Tropical Storms provides the local government units          RIÀRRGLQJ
+ /*8V  DQG ',/* SHUVRQQHO WKH GLႇHUHQWLDWHG DFWLRQV
+needed to be undertaken, before, during, and after a         In recognition of the need to capacitate these LGUs
+disaster. This manual is activated once a tropical cyclone   to respond to LWDs, in 2020, the Local Government
+advisory is released by PAGASA. Through the L!STO            $FDGHP\ /*$ DQG&HQWUDO2ႈFH'LVDVWHU,QIRUPDWLRQ
+manual, the LGUs are readily equipped and prepared           Coordinating Center (CODIX) of the DILG entered into a
+WRUHVSRQGIRUWKHSRWHQWLDODGYHUVHHႇHFWVRIDWURSLFDO   multipartite agreement with the Department of Science
+cyclone.                                                     DQG7HFKQRORJ\ '267 ,;2ႈFHRI&LYLO'HIHQVH 2&' 
+                                                             IX, and the Ateneo de Zamboanga University (AdZU), to
+However, LWDs could take in the form of monsoons,            develop a disaster preparedness manual for localized
+and other weather phenomena like thunderstorms,              weather disturbances utilizing the innovation, such as
+Intertropical Convergence Zone (ITCZ)), and frontal          the Automated Water-Level and Rain Monitoring using
+passages that could also bring intense and excessive
+
+
+
+                                                                              DISASTER PREPAREDNESS MANUAL
+2    OVERVIEW
+
+    Near Real Time Observation (ALeRTO) Early Warning              During the data gathering for manual development,
+    System (EWS).                                                  WKH SDUWLFLSDWLQJ JRYHUQPHQW RႈFHV DQG DJHQFLHV
+                                                                   especially those from the municipalities and barangays
+    ALeRTO EWS has been pivotal in monitoring the local            acknowledged that an early warning system (EWS)
+    weather disturbances in the Zamboanga Peninsula                was deemed essential and necessary in addressing the
+    Region. It is currently being operated in the Region           occurrences of localized weather disturbances and its
+    to send early warning information to the LGUs from             SRVVLEOHHႇHFWVLQDORFDOLW\$Q(:6ZLOOHQDEOHDQDUHD
+    the municipal/city level down to the barangay. A               to prepare, monitor, and address or mitigate the possible
+    comprehensive system, its sensor-based technology is           impacts of hydrometeorological hazards even before its
+    tied up to the Local Action Plan (LAP), a guide to the         encounter.
+    disaster preparedness activities formulated through the
+    FROOHFWLYH HႇRUWV RI WKH UHJLRQDO JRYHUQPHQW DJHQFLHV   The inclusion of the checklist on the Early Preparedness
+    and the LGUs.                                                  Requirements (EPR) also allows the locality to better
+                                                                   facilitate the necessary actions prior to the critical period.
+    The manual revolves around three (3) core principles:          The EPR was adapted from the early preparedness
+                                                                   initiatives of the L!STO Manual o Disaster Preparedness
+                                                                   IRU 7URSLFDO &\FORQHV WDNLQJ Rႇ IURP LWV HOHPHQWV WKDW
+                                                                   contribute to the empowerment of the local government
+      The manual revolves around three (3) core principles:
+                                                                   in disaster preparedness for a local weather disturbance.
+
+                                                                   The comprehensive Local Action Plan (LAP) that
+                                                                   indicates the critical actions to be conducted by the
+                                                                   government units shall be activated thru the alert warning
+                                                                   integrated in the early warning system. The LAP is ideally
+                                                                   a convergence of initiatives from the provinces, cities,
+                                                                   PXQLFLSDOLWLHV DQG EDUDQJD\V LQ RUGHU WR KDYH HႈFLHQW
+                                                                   and systematic actions during a critical period.
+
+                 Figure 1. Three (3) Core Principles               The consultative approach adopted during the process
+                                                                   RI GHYHORSLQJ WKH /$3 HQDEOHG WKH GLႇHUHQW ORFDO
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                                            OVERVIEW          3
+
+
+
+government units to strategically manage the impact                 The manual comprises local action plans (LAP)
+RI /:'V VSHFL¿F WR WKHLU ORFDOLW\$V VXFK WKH FUHDWLRQ   that are activated upon the receipt of sensor-based
+of the LAP aids in nurturing partnership, initiative or             LQIRUPDWLRQ 7KXV WKH FXUUHQW PDQXDO LV FRQ¿QHG
+ingenuity, and resourcefulness, between and among                   to local government units with hydrometeorological
+these government bodies, which would help strengthen                sensors such as automated rain gauges and waterlevel
+coordination and cooperation in times of emergencies                sensors. Hence, it is expected that the DILG, together
+and threats, such as those brought about by LWDs.                   with LGA and ADZU, will continue on updating this
+                                                                    manual for improvement.
+Following the three core principles, the L!STO Manual
+for Disaster Preparedness for Localized Weather
+Disturbances contains three (3) parts:
+
+     Part I - Addressing Local Weather Disturbances-
+     this part contains a brief discussion on understanding
+     local weather disturbances, as well as the current
+     technologies used to monitor local hazards.
+
+     Part II - The Checklist of Early Disaster
+     Preparedness Requirements – this part contains
+     the minimum early preparedness actions each
+     local government (Province, City/Municipality, and
+     Barangay) must undertake prior to critical period.
+
+     Part III - The Local Action Plan- this part contains
+     the minimum progressive actions to be undertaken
+     during critical periods. The series of actions will
+     depend on the alert level warning, and shall be
+     implemented by each local government unit.
+
+
+
+
+                                                                                   DISASTER PREPAREDNESS MANUAL
+                                         5
+
+
+
+
+     PART I
+  ADDRESSING LOCAL
+WEATHER DISTURBANCES
+
+
+
+
+               DISASTER PREPAREDNESS MANUAL
+6      ADDRESSING LOCAL WEATHER DISTURBANCES
+
+    Understanding Localized Weather Disturbances
+
+    The geographical location of the Philippines exposes the country to several weather disturbances. It is common knowledge that typhoons
+    and tropical storms hit the country and have been causing massive distractions in various areas and localities over the past years.
+    Moreover, other hydrometeorological hazards such as heavy rains, monsoon rain, and weather phenomenon like thunderstorms, are
+    DOVREHLQJH[SHULHQFHG+HLJKWHQHGE\WKHFKDQJLQJFOLPDWHFRQGLWLRQVWKHVHZHDWKHUGLVWXUEDQFHVKDGEHHQDWWULEXWHGWRÀRRGLQJLQ
+    several areas in the country.
+
+    According to PAGASA, a thunderstorm is the only hydrometeorological hazard which could be considered a local weather system.
+    +RZHYHU LQ WKLV PDQXDO ORFDOL]HG ZHDWKHU GLVWXUEDQFH /:'  LV GH¿QHG RSHUDWLRQDOO\ WR LQFOXGH EXW LV QRW OLPLWHG WR DQ\ W\SH RI
+    K\GURPHWHRURORJLFDOKD]DUGVH[FHSWIRUWURSLFDOF\FORQHVWKDWFRXOGSRVHWKUHDWRIÀRRGLQJWRDႇHFWHGORFDOLWLHV7KLVZRXOGPHDQWKDW
+    other weather-related heavy rainfall events brought about by low-pressure area (LPA), intertropical convergence zone (ITCZ), monsoon
+    rains (southwest or Habagat and northeast or Amihan) are categorized as LWDs, especially, if the rain or precipitation poses a threat and
+    FDQLQGXFHÀRRGLQJLQWKHDUHD
+
+    7KHIROORZLQJDUHWKHWHFKQLFDOGHVFULSWLRQRIWKHGLႇHUHQWK\GURPHWHRURORJLFDOKD]DUGVZKLFKFRXOGFDXVHKLJKSUHFLSLWDWLRQDQGSRVH
+    WKUHDWVRIÀRRGLQJLQDUHDVZKHUHLWZLOORFFXU
+
+    7DEOH7HFKQLFDOGHVFULSWLRQRIWKHGLႇHUHQWK\GURPHWHRURORJLFDOKD]DUGV
+
+                     Thunderstorm                       A local scale weather system that can bring heavy rain, strong winds, and even thunder and
+                                                        lightning. A thunderstorm can last up to 2 hours.
+
+                          ITCZ                          It is the area where the winds of the Northern Hemisphere and Southern Hemisphere converge
+                                                        causing a series of inclement weather such as LPAs and hurricanes
+
+          (Intertropical Convergence Zone)              It is the area where the winds of the Northern Hemisphere and Southern Hemisphere converge
+                                                        causing a series of inclement weather such as LPAs and hurricanes
+
+                      Heavy Rains                       The rate of rainfall is greater than 7.5mm per hour. The sky is overcast and there is continuous
+                                                        precipitation.
+                    Monsoon Rains                       Heavy and/or continuous rains associated with the Southwest or Northeast Monsoon
+
+                       Cold Front                       The forward edge of an advancing cold air mass which is displacing warmer air in its path.
+
+    Source: PAGASA Website
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                            ADDRESSING LOCAL WEATHER DISTURBANCES                                  7
+
+
+
+
+Flood Hazard Map                                        and mitigation initiatives, comprehensive land-use planning, information
+                                                        GLVVHPLQDWLRQRQÀRRGULVNVDQGVXVWDLQDEOHGHYHORSPHQWDFWLYLWLHV
+The DENR-MGB, as an implementing agency,
+LV WDVNHG WR JHQHUDWH ÀRRG VXVFHSWLELOLW\ PDSV
+under the National Geohazard Assessment
+and Mapping Program (NGAMP). These
+agencies aim to identify areas in the country
+WKDW DUH VXVFHSWLEOH WR GLႇHUHQW JHRORJLF
+hazards focused on Rain-Induced Landslides
+(RIL), Flood Assessment/Mapping, Karst and
+Subsidence Hazard Assessment. The updating
+of 1:10,000 Scale Detailed RIL and Flood
+Susceptibility Maps, the Information, Education
+and Communication (IEC) Campaign, and the
+Vulnerability and Risk Assessment are all part of
+the NGAMP plans and programs of MGB.
+
+As of 2010, the bureau was able to disseminate
+a 1:10,000-scale rain induced landslide and
+ÀRRG VXVFHSWLELOLW\ PDSV WR DOO WKH EDUDQJD\V
+throughout the country through its province-
+wide intensive information education campaigns
+ ,(& 3DUWRIWKHVHHႇRUWVZDVWKHGLVWULEXWLRQRI
+infographics and IEC materials, such as posters,
+WRSURPRWHDZDUHQHVVRIWKHÀRRGVXVFHSWLELOLW\
+maps. (National Geohazard Assessment and
+Mapping Program, 2010)
+
+8VLQJWKHVFDOHVRIÀRRGVXVFHSWLELOLW\
+PDSVWKH/*8VLGHQWLI\ÀRRGSURQHDUHDVLQWKHLU
+city/municipality. The MGB Flood Susceptibility
+Maps can also serve as a platform from which                 Figure 2. Detailed Flood Hazard Map of Tuguegarao, Cagayan Province
+WKH /*8V FDQ EDVH WKHLU ÀRRG SUHSDUHGQHVV
+
+
+                                                                                       DISASTER PREPAREDNESS MANUAL
+8   ADDRESSING LOCAL WEATHER DISTURBANCES
+
+
+             There are IRXU ÀRRGVXVFHSWLELOLW\ FDWHJRULHV GHYHORSHG by MGB stated below. Each
+             FDWHJRU\LVGHSHQGHQWRQWKHLQIRUPDWLRQRIWKHUDLQLQGXFHGÀRRGLQWKHULYHUV\VWHP
+
+
+                         9HU\+LJK&ULWLFDO)ORRG6XVFHSWLELOLW\$UHDVOLNHO\WRH[SHULHQFHÀRRGKHLJKWV
+                         LQH[FHVVRIPHWHUVDQGRUÀRRGGXUDWLRQRIPRUHWKDQGD\V7KHVHDUHDV
+                         DUHLPPHGLDWHO\ÀRRGHGGXULQJKHDY\UDLQVRIVHYHUDOKRXUVLQFOXGHODQGIRUPV
+                         of topographic lows such as active river channels, abandoned river channels
+                         DQGDUHDVDORQJULYHUEDQNVDOVRSURQHWRÀDVKÀRRGV
+
+
+                         +LJK)ORRG6XVFHSWLELOLW\$UHDVOLNHO\WRH[SHULHQFHÀRRGKHLJKWVRIWR
+                         PHWHUVDQGRUÀRRGGXUDWLRQRIPRUHWKDQGD\V7KHVHDUHDVDUHLPPHGLDWHO\
+                         ÀRRGHGGXULQJKHDY\UDLQVRIVHYHUDOKRXUVLQFOXGHODQGIRUPVRIWRSRJUDSKLF
+                         lows such as active river channels, abandoned river channels and areas along
+                         ULYHUEDQNVDOVRSURQHWRÀDVKÀRRGV
+
+
+                         0RGHUDWH)ORRG6XVFHSWLELOLW\$UHDVOLNHO\WRH[SHULHQFHÀRRGKHLJKWVRI
+                         WR  PHWHU DQGRU ÀRRG GXUDWLRQ RI  WR  GD\V 7KHVH DUHDV DUH VXEMHFW
+                         to widespread inundation during prolonged and extensive heavy rainfall or
+                         H[WUHPHZHDWKHUFRQGLWLRQV)OXYLDOWHUUDFHVDOOXYLDOIDQVDQGLQ¿OOHGYDOOH\V
+                         DUHDUHDVPRGHUDWHO\VXEMHFWHGWRÀRRGLQJ
+
+
+                         /RZ)ORRG6XVFHSWLELOLW\$UHDVOLNHO\WRH[SHULHQFHÀRRGKHLJKWVRIOHVVWKDQ
+                         PHWHUDQGRUÀRRGGXUDWLRQRIOHVVWKDQGD\7KHVHDUHDVLQFOXGHORZ
+                         hills and gentle slopes. They also have sparse to moderate drainage density.
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                              ADDRESSING LOCAL WEATHER DISTURBANCES                                       9
+
+
+
+The ALeRTO Early Warning System
+
+The Automated Water-Level and Rain Monitoring
+Using Near Real Time Observation (ALeRTO) is
+an early warning system developed by the Ateneo
+de Zamboanga University-GeoSAFER Mindanao
+ZAMBASULTA Program in 2018. The ALeRTO
+utilizes the Automated Rain Gauges (ARGs) and
+Automated Water-Level Sensors (AWLS) installed
+LQWRWKHGLႇHUHQWULYHUV\VWHPVE\WKH'267$GYDQFHG                     Figure 3. Flowchart of the ALeRTO Early Warning System
+Science and Technology Institute (DOST-ASTI)
+.                                                             7KH$/H572V\VWHPLVDVWDQGDORQHSURJUDP2QFHWKHV\VWHPLGHQWL¿HV
+The data gathered by the technology comprised of the          the predetermined warning threshold values of the ARG and the AWLS, it
+water level from the Water Level Monitoring Stations          processes the data by itself and sends the interpreted data to the end user
+(WLMS) and volume of rain from the Automated Rain             via SMS.
+Gauges (ARG) with corresponding dates and times.
+These data are sent to the server of DOST-ASTI for            Rainfall Threshold
+data recording and storage. The DOST ASTI server
+functions as host to the repository of these data and         The rainfall threshold warning is in line with PAGASA’s color coded rainfall
+makes them available for online viewing. The data             DGYLVRULHV DV VKRZQ LQ WKH ¿JXUH EHORZ 7KH V\VWHP FRPSXWHV WKH
+fetched from the ASTI repository is also monitored by         accumulated rainfall from the Automated Rain Gauge (ARGs/Tandem)
+ALeRTO and forwarded to the stakeholders.                     sensors for one (1) hour and matches it with the rainfall warning threshold
+                                                              from PAGASA.
+The rain and water level thresholds are the two
+VLJQL¿FDQW SLHFHV RI LQIRUPDWLRQ WKDW DUH FDOFXODWHG   Low or Yellow level is equivalent to 7.5 to 15 millimeters of rain. Medium or
+DQGFODVVL¿HGLQWRWKUHHGLႇHUHQWFDWHJRULHVDQGFRORU       Orange Level is equivalent to 15 to 30 millimeters of rain. While High or Red
+warnings. Once the system detects that a particular           Level is equivalent to more than 30 millimeters of rain.
+sensor has reached a certain threshold, it will send out
+alert messages via SMS to registered users. The SMS           Once the rain data reaches the yellow warning threshold, the devices
+will contain the threshold interpretation along with the      automatically send out a text message/SMS to registered users. The same
+rain and water level values. The said data could also         process will transpire for the orange and red warning.
+be viewed through the ALeRTO Website.
+
+
+
+
+                                                                                         DISASTER PREPAREDNESS MANUAL
+10     ADDRESSING LOCAL WEATHER DISTURBANCES
+
+
+
+
+                           Figure 4. PAGASA Rainfall Warning
+
+     Disclaimer: According to PAGASA, the given rainfall warning threshold is only valid for Metro Manila or similar Urban Area. The values here are
+     REWDLQHGDIWHUDQDO\VLVRIÀRRGHYHQWVLQ0HWUR0DQLOD+RZHYHULQWKHDEVHQFHRIUDLQIDOOZDUQLQJWKUHVKROGWRRWKHUDUHDVWKHPDQXDOZLOOEH
+     utilizing this rainfall warning as a reference pending the analysis of rainfall warning threshold for other areas in the Philippines.
+
+
+
+     Water Level Threshold                                                                 real time data and the threshold value matches,
+                                                                                           the system will automatically send an SMS to the
+     To generate the threshold values for the water level, the cross section               UHJLVWHUHG XVHUV 7KH ¿UVW 606 LV VHQW ZKHQ LW
+     GDWD RI WKH ULYHU SUR¿OH ZKHUH WKH H[LVWLQJ $XWRPDWHG :DWHU /HYHO          UHDFKHVWKH¿UVWSHDNRUWKHEDQNIXOOWKUHVKROG
+     6HQVRU $:/6 LVGHWHUPLQHG7KHZDWHUOHYHOWKUHVKROGVDUHFODVVL¿HG                using the Yellow warning; and subsequently, the
+     into three categories, 60% bank full, 80% bank full and 100% bank full                Orange and Red warnings are sent out via SMS
+     or spilling over.                                                                     when bank full thresholds reach the 80% and 100%
+                                                                                           respectively. The system will send out SMS until
+     These generated water level thresholds are matched with near real-time                such time that the AWLS data coincides with the
+     data of the AWLS in the area. In the event that the value of the near                 river’s normal water level.
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                        ADDRESSING LOCAL WEATHER DISTURBANCES                                            11
+
+
+
+
+                                           %HORZLVDVDPSOH¿JXUHRIWKHFURVVVHFWLRQGDWDRIDULYHUZKHUHWKHEDVHOLQHZDWHU
+                                           OHYHO RI P DQG YDOXHV IRU WKH GLႇHUHQW ZDWHU OHYHO WKUHVKROG ZHUH VKRZQ )RU
+                                           every increment or decrease in the water level value, when the conditions are met, the
+                                           ALERTO System will send out SMS to the end users.
+
+
+
+
+Figure 5. Water Level Warning System
+
+
+                                                                   Figure 6. Sample Water Level Threshold Cross Section
+
+8VLQJWKHVDPSOH¿JXUHWKHEDVHOLQHLQIRUPDWLRQRIWKHZDWHUOHYHOGXULQJQRUPDOFRQGLWLRQVLVP7KHFURVVVHFWLRQDODUHD
+LVFRPSRVHGRIWKUHH¿[HGYDOXHV/RZ<HOORZRUPFRUUHVSVRQGVWRVL[W\  SHUFHQWRIWKHFURVVVHFWLRQDODUHD0HGLXP
+Orange or 2.0m corresponds to eighty (80) percent of the cross-sectional area. Lastly, High/Red or or 2.35m corresponds to one
+hundred (100) percent and above of the cross-sectional area. The maximum water level is the lower value of the spilling point of
+either the left or right banks.
+
+
+
+
+                                                                                     DISASTER PREPAREDNESS MANUAL
+12    ADDRESSING LOCAL WEATHER DISTURBANCES
+
+
+     Response Mechanism                                                              Orange Warning
+                                                                                     Ɣ &RQYHQHWKH/'550&
+     The ALeRTO website showcases the near real time data of                         Ɣ $FWLYDWH(PHUJHQF\2SHUDWLRQ&HQWHU
+     WKH VHQVRUV LQ WKH DႇHFWHG DUHDV DQG KRXVHV WKH UHVSRQVH              Ɣ $FWLYDWH,QFLGHQW&RPPDQG6\VWHP
+     mechanism and the database management system of ALERTO                          Ɣ 3UHSRVLWLRQRI5HVSRQVH&OXVWHU
+     EWS. Access to the response mechanism platform is given to                         - Security and Lifeline Cluster
+     the LGU via registration on the website.                                           - Humanitarian Cluster
+                                                                                     Ɣ ,PSOHPHQWSUHHPSWLYHHYDFXDWLRQLIDSSOLFDEOH
+     The response or feedback mechanism shall serve as basis for
+     monitoring the action and activities of the LGUs on the ground                  Red Warning
+     DV WKH\ UHVSRQG WR WKH ÀRRGLQJ RU D GLVDVWHU 7KH\ DUH RQO\         Ɣ $FWLYDWH5HVSRQVH&OXVWHU
+     given an hour to check the predetermined responses on the                          - Security and Lifeline Cluster
+     website. Once checked or inputted, the response is saved and                       - Humanitarian Cluster
+     cannot be altered or deleted. There are three color warnings in                    - Information and Awareness Cluster
+     the ALERTO EWS, yellow, orange, and red. YELLOW means                           Ɣ ,PSOHPHQW)RUFHG(YDFXDWLRQLIDSSOLFDEOH
+     monitoring, ORANGE means preparation, and RED means                             Ɣ 'HFODUH6WDWHRI&DODPLW\LIQHFHVVDU\
+     evacuation. For every color warning, the LGU is expected to                     Ɣ 6XEPLW D 6LWXDWLRQ 5HSRUW 6,75(3  WR KLJKHU
+     take a particular action or response.                                              LDRRMC
+                                                                                     Ɣ &RQGXFW 5DSLG 'DPDJH $VVHVVPHQW DQG 1HHGV
+                                                                                        Analysis (RDANA)
+           Yellow Warning
+           Ɣ ,QIRUP /'500& DQG %'550& DERXW WKH ORFDO                  These predetermined responses are parallel with the baseline
+              weather disturbance in one’s locality.                           responses shown in the local action plan (LAP) of the LGUs.
+           Ɣ 'LVVHPLQDWHSXEOLFZDUQLQJVLQIRUPDWLRQHGXFDWLRQ             Once the LGU receives an ALERTO SMS, the next step is to
+                                                                               check the ALERTO website and input the required activities
+           Ɣ ,VVXHDGYLVRU\SURKLELWLQJ¿VKLQJLQULYHUVDQGSUHYHQW
+                                                                               or responses that the LGU made after receiving the SMS.
+              people from crossing any bodies of water. Prohibit
+              recreational activities in rivers and/or areas near the          All ALERTO color-coded warnings and responses will be
+              rivers                                                           stored in the ALERTO Database Management System and
+           Ɣ 0RQLWRU 3$*$6$ DQG $/H572 IRU /RFDO :HDWKHU               access will be made available to the LGUs for historical
+              Updates                                                          data mining of ALERTO color warnings and responses.
+                                                                               Government line agencies such as the DILG, OCD, DOST,
+                                                                               DQG '6:' ZLOO EH DEOH WR PRQLWRU WKH GLႇHUHQW DFWLRQV DQG
+                                                                               activities that the LGUs were able to accomplish.
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                             13
+
+
+
+
+        PART II
+        CHECKLIST OF
+EARLY DISASTER PREPAREDNESS
+
+
+
+
+                   DISASTER PREPAREDNESS MANUAL
+14    CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+     The Checklist of Early Disaster Preparedness Requirements              The checklist is divided into three general categories parallel to the
+     (EDPR) for Localized Weather Disturbances (LWDs) is a list             L!STO Protocols for typhoons. These categories are:
+     of pre-disaster requirements to be laid out as prerequisite to
+     the Local Action Plan (LAP) based on a minimum standard                    Ɣ&UHDWHDQGLQVWLWXWLRQDOL]HVWUXFWXUHVV\VWHPV
+     preparedness protocol. The purpose of the checklist is to serve               policies and plans
+     as guide or reference for important initial actions to be done by          Ɣ %XLOGFRPSHWHQFLHV
+     WKHFRQFHUQHG/*8VGXULQJÀRRGLQJDVDUHVXOWRIWKHORFDOL]HG            Ɣ 0RELOL]HUHVRXUFHV
+     weather disturbances (LWDs).
+                                                                            This checklist has been based on the Operation L!STO Manual
+     To strengthen the disaster preparedness of our communities             Checklist for Early Preparedness Actions (EPA) for Mayors. Similar
+     LQ PDQDJLQJ ÀRRGV GXH WR /:'V HDFK LWHP VSHFL¿HG RQ WKH    to the L!STO Manual, the Checklist on Early Disaster Preparedness
+     checklist should be accomplished. LWDs could be categorized            Requirements is based on laws, good practices, and experiences
+     as thunderstorm, LPA, ITCZ, monsoon rains (Habagat and                 of local government units (LGUs). Although the list provides the
+     Amihan), thunderstorms, heavy rains, and other localized               minimum requirements, the agencies involved can carry out
+     weather-related heavy rainfall events.                                 actions, conduct trainings, and acquire resources, beyond what
+                                                                            is written on the list, provided these actions are consistent with
+     To ensure that the LAP checklist is supported, timely, and is          prevailing policies and laws, and are also exhaustive. However,
+     performed well, all the items in the EDPR should be integrative        in this manual, the Checklist on Early Disaster Preparedness
+     and inclusive. It should be encompassing to all concerned              Requirements and the implementation of Local Action Plan is
+     agencies mentioned in this manual. This also means that these          given to the Disaster Managers of each Local Government Units.
+     initiatives should be done during ‘“peace time” or when there is       This emphasizes the power of the Local Chief Executive (Mayor,
+     no immediate threat of disaster’ (L!STO v.3, 2018).                    Governor and Barangay Captain) to oversee the implementation
+                                                                            of actions conducted and implemented by their disaster managers
+     The checklist should be supported and validated by providing           (LDRRMO, PDRRMO and BDRRMO).
+     WKH UHTXLUHG RU HVVHQWLDO PDWHULDOV DQG RႈFLDO GRFXPHQWV DV
+     WKH0RGHVRI9HUL¿FDWLRQ 029V $OOXQLWVXVLQJWKLVPDQXDO          The three (3) government units, i.e., the provincial government
+     shall have a repository of the resources that would verify each        RႈFHPXQLFLSDOLW\RUFLW\JRYHUQPHQWVDQGEDUDQJD\VKDYHWKHLU
+     requisite mentioned on the checklist.                                  own EDPR that complements each unit’s roles and functions in the
+                                                                            preparation for LWDs.
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                            CHECKLIST OF EARLY DISASTER PREPAREDNESS                                       15
+
+
+
+ Roles and Functions of the Province                                     communication protocols, evacuation system, and the review
+                                                                         and approval of plans.
+ The provincial government takes crucial role in the success
+ of disaster preparedness that involves management,                      In terms of capacity building and mobilizing resources, the
+ coordination, and monitoring of all municipalities and cities           province caters to units under it by providing the necessary
+ under the jurisdiction of the province.                                 administrative and logistical support, while still having its
+                                                                         own resource mobilization in times of hazards. The province
+ Aside from sending weather advisories and color-coded                   ensures that disaster preparedness is executed by well-trained
+ warnings, the provincial government need to secure the                  SHUVRQQHOZLWKLQLWVRႈFHDQGDPRQJLWVXQLWV
+ structures, systems, policies, and plans. The provincial
+ government also establishes arrangements for Early Warning              Below are the information for the Early Disaster Preparedness
+ System (EWS) among PDRRMCs and LDRRMCs. It outlines                     5HTXLUHPHQWVDQGWKH0RGHVRI9HUL¿FDWLRQ VHH7DEOH 
+
+Table 2. Early Disaster Preparedness Requirements DQGWKH0RGHVRI9HUL¿FDWLRQ
+
+
+ Categories           Early Disaster Preparedness Requirements                                             0RGHVRI9HUL¿FDWLRQ
+
+
+ Create and           1. Institutionalized PDRRM Council                                                   Provincial Resolutions, Joint
+ institutionalize                                                                                          Memo Circular and IRR
+ structures,
+ systems,             2. Institutionalized LDRRM Councils                                                  Provincial Resolutions, Joint
+ policies, and                                                                                             Memo Circular and IRR
+ plans
+                      3. Established coordinating arrangements among PDRRMC Members thru an                Executive Order, Resolutions
+                      executive order designated to establish an Early Warning System (EWS),               and Documents, drawings,
+                      communication protocol, evacuation centers and procedures, and Disaster Operation    evacuation routes, procedures
+                      Center (DOC)                                                                         and protocols
+
+                      (VWDEOLVKHGFRRUGLQDWLQJDUUDQJHPHQWDPRQJWKHGLႇHUHQW/'550&VRIWKH           Executive Order, Resolutions
+                      province thru an executive order designated to establish an Early Warning System     and Documents, drawings,
+                      (EWS), communication protocol, evacuation centers and procedures, and Disaster       evacuation routes, procedures
+                      Operation Center (DOC)                                                               and protocols
+
+
+                      5. Regular conduct of review of the DRRM plan, contingency plan, climate change      Review Report including
+                      action plan of the cities and municipalities                                         recommendations
+
+
+
+                                                                                            DISASTER PREPAREDNESS MANUAL
+16   CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+
+
+
+      Categories                     Early Disaster Preparedness Requirements              0RGHVRI9HUL¿FDWLRQ
+
+      Build Capacities               6. Regular conduct of drill plan, table top and       Program, Drill Plan, Contingency Plan,
+                                     simulation exercises, guidance for the facilitation   Documentation, Pictures
+                                     RIWKHÀRRGKD]DUGPDSV
+
+                                     7. Regular conduct of host educations, trainings Program, Attendance, Pictures, Training Reports
+                                     related to DRRM, resilience, preparedness and
+                                     planning.
+
+
+
+      Mobilize Resources             8. A list of "minimum resources" should also be Inventory of Equipment and Supplies
+                                     PDGHDYDLODEOHE\WKHRႈFHWRVXSSRUWWKH&LWLHV
+                                     and Municipalities
+
+
+                                     9. Prepared administrative and logistical support     Resolution and Documentation
+                                     to the LDRRMCs
+
+
+                                     10. Ensured Early Warning System are function-        List of Schedule and EWS Monthly Assessment
+                                     al/operational                                        or Report
+
+
+
+     Source: (L!STO Manual for City and Municipal LGUs v.3, 2018)
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                           CHECKLIST OF EARLY DISASTER PREPAREDNESS                     17
+
+
+
+
+Figure 7. Flow Chart of the Early Disaster Preparedness Requirements for the Province
+
+
+
+
+                                                            DISASTER PREPAREDNESS MANUAL
+18                                                                               CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+
+       Roles and Functions
+       of the Municipality/City
+       The municipality or city government also sets out a major part           The cities and municipalities are also in charge of setting-up
+       in creating the structures, systems, policies, and plans for the         and clustering of resources, and tapping the participation of
+       locality. The system in making sure of the institutionalization of       YDULRXV RႈFHV DQG XQLWV FRQFHUQHG GXULQJ GLVDVWHUV 3HWW\
+       '550RႈFHLQWKHPXQLFLSDOLW\&LW\DQGDPRQJWKHEDUDQJD\V              cash vouchers and other pre-disaster logistical requirements
+       should be created by this unit. Partnerships with private sectors        are being prepared to help the barangays establish its 24/7
+       and other civic organizations are also done on this level. This          shifting schedule of Barangay Tanods and Rescue Teams. The
+       LGU exercises jurisdiction over the sensors, such as the                 other requirements are listed below. (Refer to Table 3).
+       Automated Rain Gauges (ARGs) and Automatic Water Level
+       Sensors (AWLSs), in its areas of responsibility (AORs).
+
+ Table 3. Early Disaster Preparedness Requirements for the Municipality/City
+
+     Categories                                     Early Disaster Preparedness Requirements               0RGHVRI9HUL¿FDWLRQ
+
+     Create and institutionalize structures,        ,QVWLWXWLRQDOL]HG0'550DQG%'550RႈFHV             SB Resolution/Ordinance
+     systems, policies, and plans
+                                                    2. Formulation of BDRRM plan for all barangays         Barangay Resolution
+
+
+                                                    3. Established partnership with private sectors        MOA or MOU with private sectors and civic
+                                                    and civic organizations for convergence of             organization
+                                                    HႇRUWVLQUHDOL]LQJSULRULW\WDVNVUHODWHGWRHDUO\
+                                                    preparedness.
+
+
+                                                    ,GHQWL¿HGFULWLFDORUÀRRGKD]DUGDUHDZLWK        Documentation, Pictures
+                                                    adequate markers
+                                                    6. Adequate guide markers for strategic location       Documentation, evacuation routes and list of
+                                                    for evacuees and operation teams                       operation team
+                                                    7. Designated Evacuation Centers (Established          Documentation of Evacuation Centers (Plans)
+                                                    DQGLGHQWL¿HGDVWKH0XQLFLSDO&LW\HYDFXDWLRQ
+                                                    center or Barangay evacuation center)
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                       CHECKLIST OF EARLY DISASTER PREPAREDNESS                                             19
+
+
+
+
+Categories           Early Disaster Preparedness Requirements                                  0RGHVRI9HUL¿FDWLRQ
+
+Build Capacities     (QVXUHGWKDWDOOSHUVRQQHOXQGHUWKHGLႇHUHQWFOXVWHUVVKRXOGEH      List of Training and Competencies
+                     competent to deliver designated tasks
+                     9. Seminars and trainings of BDRMMC and all other stakeholders            Program, Attendance Sheet
+
+
+Mobilize Resources   10. Possible no of household for evacuation, pre-position of food pack,   Database of Household
+                     procurement of rescue equipment and supplies
+
+                     11. Response Clusters are formed and established:                         Documentation of announcements
+                                                                                               Documentation of Evacuation Centers
+                     Ɣ6HFXULW\DQG/LIHOLQH&OXVWHU                                           (plans)
+                                                                                               ICS chart and procedures
+                       R313%)3(QJLQHHULQJ6DIHW\2ႈFHU                                   Updated risk assessment and plans
+                                                                                               Standard procedures and guidelines for
+                       o Search, Rescue and Retrieval Teams                                    operations MOA with private sectors and
+                                                                                               civic organizations on early preparedness
+                                                                                               List of personnel with tasks and trainings
+                       o Security Teams
+                                                                                               taken
+                       o Medical Teams                     Mobilize Teams & Enlist             List of Personnel and Volunteers
+                                                           Volunteers
+                       o Clearing and                      Check Functionality of
+                         Operation Teams                   Equipment
+
+                     Ɣ+XPDQLWDULDQ&OXVWHU
+
+                       o MHO and MSWDO
+
+                       o Evacuation Camp                   Prepare Evacuation Center
+                           Management
+
+                       o Mass Feeding and                  Estimate no. of Evacuees
+                           Relief
+                           Distribution
+
+
+
+
+                                                                                      DISASTER PREPAREDNESS MANUAL
+20   CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+
+  Categories                     Early Disaster Preparedness Requirements                                      0RGHVRI9HUL¿FDWLRQ
+
+  Mobilize Resources             Ɣ,QIRUPDWLRQDQG$ZDUHQHVV&OXVWHU                                           Documentation of announcements
+                                                                                                               Documentation of Evacuation Centers
+                                  R,QIRUPDWLRQ2ႈFHU     Warning Alerts      Issue Alert and Warn            (plans)
+                                  or Media Relations       and                 Communities                     ICS chart and procedures
+                                                           Announcements                                       Updated risk assessment and plans
+                                                                                                               Standard procedures and guidelines for
+                                                                                                               operations
+                                                                                                               MOA with private sectors and civic
+                                                                                                               organizations on early preparedness
+                                                                                                               List of personnel with tasks and train-
+                                                                                                               ings taken
+                                                                                                               List of Personnel and Volunteers
+
+                                 12. Established 24/7 shifting schedule of Barangay Tanods and Rescue          List of schedule and personnel
+                                 Teams
+                                 13. Standby cash vouchers or petty cash                                       Vouchers
+
+                                 14. Ensured that required logistics such as resources, supplies, and equip-   Inventory of Supplies
+                                 ment are readily available. Along with resource mobilization
+
+
+ Source: (L!STO Manual for City and Municipal LGUs v.3, 2018)
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                         CHECKLIST OF EARLY DISASTER PREPAREDNESS                   21
+
+
+
+
+Figure 8. Flow Chart of the Early Disaster Preparedness Requirements for the Municipality/City
+
+
+
+
+                                                                          DISASTER PREPAREDNESS MANUAL
+22     CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+
+
+     Roles and Functions of Barangay                                           Through the checklist stipulated in this Manual, the barangays are
+                                                                               empowered and capacitated to better respond and perform during
+     The barangay local government units (BLGUs) are considered                WKH RFFXUUHQFHV RI ÀRRGLQJ 0RUH VR WKH 0DQXDO HQDEOHV WKH
+     DV IURQWOLQHUV DQG WKH ¿UVW DQG QHDUHVW UHVSRQGHUV LQ WLPHV   BLGU to respond in a rapid and timely manner during critical times,
+     RI FDODPLWLHV DQG GLVDVWHUV HVSHFLDOO\ GXULQJ ÀRRGLQJ  ,WV     through the establishment of its own structures, systems, policies,
+     respective position guarantees the proximity of this unit to its          and plans. As such, the Manual entails a substantial number of
+     FRPPXQLWLHV DQG FRQVWLWXHQWV WKH VHFWRUV PRVWO\ DႇHFWHG           Early Preparedness Requirements for the barangay units to comply,
+     during inundation. The BLGU has more access in terms of                   IXO¿OODQGSHUIRUPDVVWDWHGRQWKHFKHFNOLVW
+     communication and coordination to its constituents in times of
+     KD]DUGVHVSHFLDOO\GXULQJÀRRGLQJ                                       To strengthen disaster preparedness in the communities, the
+                                                                               EDUDQJD\V PXVW HQVXUH WKDW HDFK LWHP LQ WKH FKHFNOLVW LV IXO¿OOHG
+                                                                               and implemented. These items are expressed in the table below.
+
+
+
+Table 4. Early Disaster Preparedness Requirements for the Barangay
+
+ Categories                         Early Disaster Preparedness Requirements                               0RGHVRI9HUL¿FDWLRQ
+
+ Create and institutionalize        ,QVWLWXWLRQDOL]HG%'550RႈFHV                                       Barangay Resolution or Ordinance
+ structures, systems,
+ policies, and plans                2. Organized the Barangay Disaster Risk Reduction Management           Barangay Resolution and BDRRM List
+                                    (BDRRM) with structures and personnel, Incident Command System         of Members
+                                    (ICS) and Barangay Emergency Response Teams (BERT)
+
+                                    (VWDEOLVKHGWKH2SHUDWLRQV&HQWHU 2S&HQ DQGLWVRႈFHU           2S&HQOLVWRIRႈFHUVDQG3,2
+                                    GHVLJQDWHGWKH3XEOLF,QIRUPDWLRQ2ႈFH 3,2
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                            CHECKLIST OF EARLY DISASTER PREPAREDNESS                                            23
+
+
+
+
+Categories                    Early Disaster Preparedness Requirements                             0RGHVRI9HUL¿FDWLRQ
+Create and institutionalize   4. Established partnerships and information dissemination system     MOA of partnerships, Announcement,
+structures, systems,                                                                               procedures and documentation
+policies, and plans           ,GHQWL¿HGFULWLFDORUÀRRGKD]DUGDUHDZLWKDGHTXDWHPDUNHUV      Documentation, Markers and pictures
+
+
+                              'HWHUPLQHGSUREDEOHLPSDFWFRPLQJIURPWKHLGHQWL¿HGÀRRG        Contingency Plan, Risk Assessment and Risk
+                              hazard map using local action plan                                   Maps
+
+                              9LVLEOHDQGSRVWHGÀRRGKD]DUGPDSVDQGUHVSRQVHVWRDOHUW       Documentation and Pictures
+                              warnings
+                              'HVLJQDWHG(YDFXDWLRQ&HQWHUV (VWDEOLVKHGDQGLGHQWL¿HGDVWKH Documentation of Evacuation Plan, Centers
+                              Municipal, City evacuation center or Barangay evacuation center)    and Routes
+
+                              (YDFXDWLRQURXWHVLGHQWL¿HGDQGORFDOSHRSOHLQIRUPHG             Documentation and Pictures
+
+                              10. Adequate guide markers for strategic location for evacuees and   Documentation and Evacuation Plan
+                              operation teams
+
+Build Capacities              11. Provided trainings and orientations to community on Community List of Trainings, Attendance Sheet and
+                              BDRRM (CBDRRM), Family Guide on Disaster Preparedness, Early Documentation
+                              Warning System, Evacuation Plan, and Conduct drills
+                              12. Volunteers trained to provide support in case of an emergency    Training Attendance and List of Volunteers
+
+                              13. Regular mock evacuation exercises conducted in the barangay      Drill or Mock Plan Documentation and
+                                                                                                   Pictures
+
+
+
+
+                                                                                                DISASTER PREPAREDNESS MANUAL
+24    CHECKLIST OF EARLY DISASTER PREPAREDNESS
+
+
+
+ Mobilize Resources              14. Established 24/7 shifting schedule of Barangay Tanods and       List of Schedule and Personnel
+                                 Rescue Teams
+
+                                 15. Conducted regular declogging of canals                          Documentation, Schedule of Declogging
+
+                                 16. Possible no of household for evacuation, procured rescue        Database of Household, Rescue Equipment
+                                 equipment and supplies                                              and Supplies
+
+                                 17. Ensured that every household has an emergency balde (e-balde)   List/inventory of Resources, Supplies,
+                                 or kit                                                              and Equipment
+
+                                 18. Standby cash vouchers or petty cash                             Vouchers
+
+                                 19. Standby by emergency equipment such as but not limited to       Inventory of Emergency Equipment
+                                 JHQHUDWRUVHWÀDVKOLJKWVÀRWDWLRQGHYLFHDQGUDLQFRDW
+
+Source: (L!STO Manual for City and Municipal LGUs v.3, 2018)
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                            CHECKLIST OF EARLY DISASTER PREPAREDNESS                    25
+
+
+
+
+Figure 9. Flow Chart of the Early Disaster Preparedness Requirements for the Barangay
+
+
+
+
+                                                            DISASTER PREPAREDNESS MANUAL
+                                      27
+
+
+
+
+    PART III
+LOCAL ACTION PLAN
+
+
+
+
+            DISASTER PREPAREDNESS MANUAL
+28    LOCAL ACTION PLAN
+
+
+
+     The Local Action Plan (LAP) contains the           Sample LAP which indicates the minimum course of action for each
+     minimum progressive actions that the local         government unit could be found in the annex.
+     government needs to carry out during the
+     critical period brought about by local weather
+     disturbances. The government units, from           Quick Guide on How the Local Action Plan
+     the Barangay level up to the Provincial level      is Activated
+     each develops their individual LAP based on
+     the laws and practices that are applicable to      Once a local weather disturbance is detected, DOST-PAGASA and ALeRTO
+     their area. In the development of the LAP,         Early Warning System will relay a set of advisories directed to the Local
+     the government units focus their attention to      Government Units via SMS or ALeRTO Website. The advisories will contain
+     identifying actions in accordance to their roles   the ALERT WARNING or the Yellow, Orange or Red Warning.
+     and function, and based on the RA 10121:
+
+          a. Provincial Government - LAP focused
+             on identifying actions related to
+             monitoring, coordination, resource
+             mobilization,    and      inter-agency
+             coordination
+          b. City/ Municipal Government - LAP
+             focused on planning, coordination,
+             resource mobilization, organizing ICS,
+             and inter-agency coordination
+          c. Barangay Government - LAP focused
+             on actions related to responding,
+                                                                  Figure 10. Quick Guide on How the Local Action Plan is activated
+             massive     information     campaign,
+             community        organizing,       and
+             coordination.
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+                                                                                       LOCAL ACTION PLAN                  29
+
+
+
+
+                                                        Developing Local Action Plan
+
+A Local Weather Disturbance is detected                 The Local Action Plan is composed of six (6) parts, and shall
+                                                        be activated based on the color-code warning integrated in
+                                                        the system:
+DOST PAGASA and ALeRTO Provides
+advisories via SMS or ALeRTO Website. The
+                                                              1. Early Preparedness Requirements (EPR) contains
+information provided includes the color warning               the minimum early preparedness actions of each local
+in accordance to the threshold value of their river           government unit.
+system. It could be YELLOW for 60%, ORANGE
+for 80%, and RED for 100%                                     2. ALERT Level indicates the preparedness level that
+                                                              the government unit will activate.
+7KH /*8 LGHQWL¿HV WKH FULWLFDO DUHDV EDVHG RQ
+WKHLUUHVSHFWLYHÀRRGKD]DUGPDSV                             3. Warning Threshold are the trigger factor, or basis for
+                                                              the activation of the ALERT Level.
+The LGU follows the actions to be executed in
+                                                              4. General Action Area indicates the level of actions
+accordance to their local action plan and based
+                                                              conducted by the local government. The level of actions
+on the color-coded warnings.
+                                                              is divided into three (3): (1) Prepare, (2) Response, and
+                                                              (3) Monitor.
+
+                                                              5. Critical Areas will show the names of the areas in the
+                                                              SURYLQFHRUPXQLFLSDOLW\KLJKO\YXOQHUDEOHWRÀRRGLQJDW
+                                                              a given warning threshold.
+
+                                                              6. Responses to the warning is a list of minimum
+                                                              actions to be conducted by the local government unit
+                                                              during the critical period. The LGUs are encouraged to
+                                                              input their current practices on this part.
+
+
+
+
+                                                                          DISASTER PREPAREDNESS MANUAL
+                                              LOCAL ACTION PLAN 31
+
+
+
+
+  Figure 11. Parts of the Local Action Plan
+DISASTER
+DISASTER PREPAREDNESS
+         PREPAREDNESS MANUAL
+                      MANUAL
+                                                                                                                                                  LOCAL ACTION PLAN 33
+
+
+
+A. EARLY PREPAREDNESS REQUIREMENTS
+
+
+
+
+ )LJXUH(DUO\3UHSDUHGQHVV5HTXLUHPHQWVDQG0RGHRI9HUL¿FDWLRQ
+
+127('LႇHUHQWOHYHOVRIJRYHUQPHQWFDOOVIRUDGLႇHUHQWSUHGLVDVWHUUHTXLUHPHQWDVHDFKOHYHOKDVDGLႇHUHQWVFRSHMXULVGLFWLRQDQGEXGJHWDU\UHTXLUHPHQWV7KHVH
+DUHUHIHUUHGWRDVWKH³3($&(7,0(,1,7,$7,9(6´ZKLFKDUHSUHGLVDVWHUUHTXLUHPHQWVIRUPXODWHGDQGHVWDEOLVKHGEHIRUHWKHRQVODXJKWRIGLVDVWHUVEURXJKWDERXWE\
+/:'V
+
+
+                                                                                                                                           DISASTER
+                                                                                                                                           DISASTER PREPAREDNESS
+                                                                                                                                                    PREPAREDNESS MANUAL
+                                                                                                                                                                 MANUAL
+                                                                                                 LOCAL ACTION PLAN                          35
+
+
+
+B. ALERT LEVEL
+7KHUHDUHWKUHH  GLႇHUHQW$OHUW/HYHOLQWKH/RFDO$FWLRQ3ODQ
+
+      Ɣ <HOORZ$OHUWDFWLYDWHGLIWKHV\VWHPGHWHFWVEDQNIXOOLQWKHDUHDZKHUHWKHVHQVRULVORFDWHG
+      Ɣ 2UDQJH$OHUWDFWLYDWHGLIWKHV\VWHPGHWHFWVEDQNIXOOLQWKHDUHDZKHUHWKHVHQVRULVORFDWHG
+      Ɣ 5HG$OHUWDFWLYDWHGLIWKHV\VWHPGHWHFWVEDQNIXOOLQWKHDUHDZKHUHWKHVHQVRULVORFDWHG
+
+The ALERT Level will direct the course of action to be conducted by the government unit. It is activated based on the early
+warning information provided by the ALeRTO EWS.
+
+
+
+
+                                                                                                                   Figure 13. Alert Level
+                                                                                    DISASTER PREPAREDNESS MANUAL
+                                                                                                                                                       LOCAL ACTION PLAN 37
+
+
+
+C. WARNING THRESHOLD
+
+   7KHZDUQLQJWKUHVKROGGHWHUPLQHVWKHDOHUWOHYHOWKDWWKH/*8VZLOOEHLPSOHPHQWLQJGXULQJWKHFULWLFDOSHULRG7KHFRORUFRGHVSURYLGHWKH/*8VD
+   SLFWXUHRIWKHUDLQIDOODQGZDWHUOHYHOVLWXDWLRQLQWKHLUORFDOLW\7KXVLWIROORZVWKDWWKHJHQHUDODFWLRQVDUHEDVHGRQWKHZDUQLQJWKUHVKROG
+
+
+
+
+                          Figure 14. Warning Threshold
+                                                                  1RWH
+                                                                  7KH ZDWHU OHYHO WKUHVKROG LV WKH PDLQ EDVLV RI WKH DOHUW OHYHO7KH 3$*$6$ 5DLQIDOO ZDUQLQJ
+                                                                  VHUYHVDVDUHIHUHQFHDQGVKRXOGDOVREHFRQVWDQWO\PRQLWRUHG
+
+
+
+
+                                                                                                                                              DISASTER
+                                                                                                                                              DISASTER PREPAREDNESS
+                                                                                                                                                       PREPAREDNESS MANUAL
+                                                                                                                                                                    MANUAL
+                                                                                               LOCAL ACTION PLAN                                         39
+
+
+
+
+D. GENERAL ACTION AREAS
+7KHJHQHUDODFWLRQDUHDVDUHFDWHJRUL]HGLQWRWKUHH  GLႇHUHQWSKDVHVSUHSDUHUHVSRQVHDQGPRQLWRUWKH/*8VZLOOGHFLGH
+on their course of actions in accordance to the general action areas.
+
+
+
+
+                                                                                                                       Figure 15. General Action Areas
+                                                                                   DISASTER PREPAREDNESS MANUAL
+                                                                                                                                                  LOCAL ACTION PLAN 41
+
+
+
+E. CRITICAL AREAS
+
+    7KHFULWLFDODUHDVSHUJRYHUQPHQWXQLWZLOOEHLGHQWL¿HGWKURXJKKLVWRULFDOÀRRGLQJLQIRUPDWLRQRIWKHDUHDXVLQJWKH0*%)ORRG6XVFHSWLELOLW\0DSV7KHFULWLFDO
+    DUHDVVKDOOFRQVLVWRIWKHPXQLFLSDOLWLHVFLWLHVIRUWKHSURYLQFHEDUDQJD\VIRUWKHPXQLFLSDOLW\FLW\DQGSXURNVKLJKO\YXOQHUDEOHWRÀRRGLQJDWDJLYHQZDUQLQJ
+    WKUHVKROG
+
+
+
+
+   Figure 16. Critical Areas
+
+
+
+
+                                                                                                                                          DISASTER
+                                                                                                                                          DISASTER PREPAREDNESS
+                                                                                                                                                   PREPAREDNESS MANUAL
+                                                                                                                                                                MANUAL
+                                                                                                                                                   LOCAL ACTION PLAN 43
+
+
+
+F. RESPONSES TO ALERT WARNING
+
+2QFHWKHFULWLFDODUHDVDUHHQXPHUDWHGWKHFRXUVHVRIDFWLRQZLWKLQHDFKOHYHOZLOOWKHQEHHVWDEOLVKHG7KHVHDFWLRQVZRXOGEHWKHPLQLPXPFULWLFDOUHTXLUHPHQWIRUWKH
+3URYLQFH&LW\0XQLFLSDOLW\DQG%DUDQJD\LQUHVSRQVHWRDQLPSHQGLQJÀRRGLQJGXHWRORFDOZHDWKHUGLVWXUEDQFH$OLVWRIWKHPLQLPXPUHVSRQVHKDVWREHUHSRUWHGEDFNWR
+WKH$/(572:HEVLWHWKURXJKWKHUHVSRQVHPHFKDQLVP
+
+7KHUHVSRQVHVDFWLRQVGRQHE\WKHORFDOJRYHUQPHQWDUHFDWHJRUL]HGLQWRWKUHH  JHQHUDODFWLRQDUHDVVHFWLRQV7KH/*8VPD\LQFOXGHSUHSDUDWLRQUHODWHGDFWLYLWLHVVXFK
+DVGLVVHPLQDWLRQRILQIRUPDWLRQRQWKH3UHSDUHVHFWLRQ7KH/*8VPD\DOVRRUJDQL]HWKHGLႇHUHQWFOXVWHUVIRUWKH5HVSRQVHVHFWLRQDQGLQWKHVDPHPDQQHUWKH\PD\
+FRQWLQXHPRQLWRULQJWKHFXUUHQWZHDWKHUVWDWXVLQWKH0RQLWRUVHFWLRQ7KH/*8VPD\DGGXSWKHLUFRXUVHRIDFWLRQEDVHGRQWKHSUR¿OHDQGFDSDFLW\RIWKHLU/*8+RZHYHU
+WKHLWHPVDOUHDG\LQGLFDWHGLQWKHWHPSODWHDUHFRQVLGHUHGWKHPLQLPXPUHTXLUHPHQWV
+
+
+
+
+       1RWH7KHLGHQWL¿HGFRXUVHRI
+       DFWLRQLVMXVWDPLQLPXP
+
+       7KH ORFDO JRYHUQPHQW FRXOG
+       DGGXSZKDWHYHUDFWLRQVWKH\
+       GHHPHG QHFHVVDU\ WR EH
+       LQFOXGHGLQWKH/$3
+
+
+
+
+             Figure 17. Responses to Alert Warning
+
+
+
+
+                                                                                                                                           DISASTER
+                                                                                                                                           DISASTER PREPAREDNESS
+                                                                                                                                                    PREPAREDNESS MANUAL
+                                                                                                                                                                 MANUAL
+                                                                                                                                        REFERENCES                           45
+
+
+
+
+Department of Science and Technology - Philippine Atmospheric,       Local Government Academy - Department of the Interior and
+ Geophysical and Astronomical Services Administration. (2021,         Local Government. (2019). Operation L!STO: Preparedness
+ September 13). Frequently Asked Questions (FAQ)/Trivia.              Guide for Governors. https://v2v.lga.gov.ph/media/uploads/2/
+ http://bagong.pagasa.dost.gov.ph/learnings/faqs-and-trivias          Knowledge%20Exchange/Operation%20Listo%20Manual/
+                                                                      Preparedness%20Guide%20for%20Governors_Final%20
+Department of Science and Technology - Philippine Atmospheric,        Version%202018.pdf
+ Geophysical and Astronomical Services Administration. (2021,
+ 6HSWHPEHU 7DEOHVRIOHJHQGVRIZHDWKHUUHODWHGGH¿QLWLRQV   Local Government Academy - Department of the Interior and Local
+ http://bagong.pagasa.dost.gov.ph/learnings/legend                    Government. (2018). L!STO si Kap!
+
+Department of Science and Technology - Philippine Atmospheric,       Talaan ng Para sa Paghahanda para sa Kalamidad ng Punong
+ Geophysical and Astronomical Services Administration. (2021,          Barangay. https://studylib.net/doc/25274198/listo-si-kap-pptx
+ September 13). Weather Terminologies.
+ http://bagong.pagasa.dost.gov.ph/information/weather-               Mines and Geosciences Bureau. (2020, October 1).
+ terminologies                                                        National           Geohazard                Assessment                and             Mapping
+                                                                      P r o g r a m . h t t p s : / / m g b . g o v. p h / a t t a c h m e n t s / a r t i c l e / 1 7 0 /
+Geo-SAFER MINDANAO: ZAMBASULTA. (2018). Automated                     3URJUDPV3URMHFWV%HQH¿FLDULHV2FWSGI
+ Water Level and Rainfall Monitoring using Near Real-Time
+ Observation (ALeRTO). Ateneo de Zamboanga University.               Ong, R., Rodriguez, M.S., Aying, J., Epino, E.V. & Lamparas, G.
+                                                                      (2018). Automated Water Level and Rainfall Monitoring using
+Local Government Academy - Department of the Interior and Local       Near Real-Time Observation (ALeRTO). Proceedings on the 28th
+ Government. (2018). L!STO Manual:                                    Asian Conference on Remote Sensing 207. Asian Association on
+                                                                      Remote Sensing. ELSEVIER.
+Local Government Unit Disaster Preparedness Manual for City
+ and Municipal LGUs. https://v2v.lga.gov.ph/media/uploads/2/         Philippine Atmospheric, Geophysical and Astronomical Services
+ Knowledge%20Exchange/Operation%20Listo%20Manual/                     Administration. (2021, September 13).
+ Listo%20Manual%20City%20Municipal%20LGUs_Final%20                    Rainfall Warning. http://www.pagasa.dost.gov.ph/learnings/
+ Version%202018.pdf                                                   legend
+
+
+
+
+                                                                                                 DISASTER PREPAREDNESS MANUAL
+                                47
+
+
+
+
+ANNEXES
+
+
+
+
+      DISASTER PREPAREDNESS MANUAL
+                                                                   ANNEXES 49
+
+
+
+
+Annex I. Local Action Plan (LAP) of the Province
+
+
+
+
+                                                   DISASTER
+                                                   DISASTER PREPAREDNESS
+                                                            PREPAREDNESS MANUAL
+                                                                         MANUAL
+                                                                   ANNEXES 51
+
+
+
+
+Annex I. Local Action Plan (LAP) of the Province
+
+
+
+
+                                                   DISASTER
+                                                   DISASTER PREPAREDNESS
+                                                            PREPAREDNESS MANUAL
+                                                                         MANUAL
+                                                                   ANNEXES 53
+
+
+
+
+Annex I. Local Action Plan (LAP) of the Province
+
+
+
+
+                                                   DISASTER
+                                                   DISASTER PREPAREDNESS
+                                                            PREPAREDNESS MANUAL
+                                                                         MANUAL
+                                                                   ANNEXES 55
+
+
+
+
+Annex I. Local Action Plan (LAP) of the Province
+
+
+
+
+                                                   DISASTER
+                                                   DISASTER PREPAREDNESS
+                                                            PREPAREDNESS MANUAL
+                                                                         MANUAL
+                                                                             ANNEXES 57
+
+
+
+
+Annex II. Local Action Plan (LAP) of the City/Municipality
+
+
+
+
+                                                             DISASTER
+                                                             DISASTER PREPAREDNESS
+                                                                      PREPAREDNESS MANUAL
+                                                                                   MANUAL
+                                                                             ANNEXES 59
+
+
+
+
+Annex II. Local Action Plan (LAP) of the City/Municipality
+
+
+
+
+                                                             DISASTER
+                                                             DISASTER PREPAREDNESS
+                                                                      PREPAREDNESS MANUAL
+                                                                                   MANUAL
+                                                                             ANNEXES 61
+
+
+
+
+Annex II. Local Action Plan (LAP) of the City/Municipality
+
+
+
+
+                                                             DISASTER
+                                                             DISASTER PREPAREDNESS
+                                                                      PREPAREDNESS MANUAL
+                                                                                   MANUAL
+                                                                             ANNEXES 63
+
+
+
+
+Annex II. Local Action Plan (LAP) of the City/Municipality
+
+
+
+
+                                                             DISASTER
+                                                             DISASTER PREPAREDNESS
+                                                                      PREPAREDNESS MANUAL
+                                                                                   MANUAL
+                                                                     ANNEXES 63
+
+
+
+
+Annex III. Local Action Plan (LAP) of the Barangay
+
+
+
+
+                                                     DISASTER
+                                                     DISASTER PREPAREDNESS
+                                                              PREPAREDNESS MANUAL
+                                                                           MANUAL
+                                                                     ANNEXES 67
+
+
+
+
+Annex III. Local Action Plan (LAP) of the Barangay
+
+
+
+
+                                                     DISASTER
+                                                     DISASTER PREPAREDNESS
+                                                              PREPAREDNESS MANUAL
+                                                                           MANUAL
+                                                                     ANNEXES 69
+
+
+
+
+Annex III. Local Action Plan (LAP) of the Barangay
+
+
+
+
+                                                     DISASTER
+                                                     DISASTER PREPAREDNESS
+                                                              PREPAREDNESS MANUAL
+                                                                           MANUAL
+                          71
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+72
+
+
+
+
+DISASTER PREPAREDNESS MANUAL
+

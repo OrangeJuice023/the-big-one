@@ -1,0 +1,2715 @@
+Harmonized
+National
+Contingency Plan
+for the Magnitude
+7.2 Earthquake
+
+
+
+
+                    National Disaster Risk Reduction
+                         and Management Council
+                                  As of March 2019
+                                             TABLE OF CONTENTS
+
+
+Table of Contents ....................................................................................................... i
+List of Tables .............................................................................................................. i
+List of Diagrams ..........................................................................................................ii
+List of Acronyms ........................................................................................................ iii
+List of Appendices...................................................................................................... v
+CHAPTER I. BACKGROUND ................................................................................... 1
+   A. Introduction ........................................................................................................ 1
+   B. Hazard Identification ........................................................................................... 3
+   C. Hazard to Plan for: Earthquake .......................................................................... 4
+   D. Scenario ............................................................................................................. 6
+CHAPTER II: GOALS AND OBJECTIVES .............................................................. 12
+CHAPTER III: ACTIVATION, DEACTIVATION AND NON-ACTIVATION ............... 14
+   A. Activation.......................................................................................................... 14
+   B. De-activation .................................................................................................... 16
+   C. Non-activation .................................................................................................. 17
+CHAPTER IV: COORDINATION, COMMAND AND CONTROL.............................. 18
+   A. Coordination ..................................................................................................... 18
+      Camp Coordination and Camp Management Cluster ........................................ 19
+      Debris Clearing and Civil Works Cluster ............................................................ 20
+      Education Cluster .............................................................................................. 21
+      Emergency Telecommunications Cluster........................................................... 22
+      Food and Non-Food Item Cluster ...................................................................... 23
+      Health Cluster.................................................................................................... 24
+      Law and Order Cluster ...................................................................................... 25
+      Logistics Cluster ................................................................................................ 26
+      Management of the Dead and Missing Cluster .................................................. 27
+      Philippine International Humanitarian Assistance Cluster .................................. 28
+      Protection Cluster .............................................................................................. 29
+      Search, Rescue and Retrieval Cluster ............................................................... 30
+   B. Command and Control ..................................................................................... 31
+      Emergency Operations Center .......................................................................... 31
+      Incident Command System (ICS) ...................................................................... 32
+      Interoperability ................................................................................................... 34
+COORDINATING INSTRUCTIONS ......................................................................... 39
+EFFECTIVITY .......................................................................................................... 40
+REFERENCES ........................................................................................................ 41
+NDRRMC Technical Working Group ........................................................................ 42
+NDRRMC Memorandum No. 29, s 2017: Inventory of Emergency Response Assets
+in Preparation for Contingency Planning for the “Big One” ....................................... 44
+NDRRMC Memorandum No. 43, s 2017: Designation of Assisting RDRRMCs to
+Augment the NDRRMC in Preparation for the 7.2 Magnitude Earthquake in Metro
+Manila ...................................................................................................................... 46
+NDRRMC Memorandum No. 91, s 2017: Constitution of Technical Working Group
+(TWG) to Develop the Harmonized National Contingency Plan for the 7.2 Magnitude
+Earthquake .............................................................................................................. 48
+NDRRMC Memorandum No. 129, s 2017: Completion of Implementation Plans in
+connection with the Harmonized National Contingency Plan for the 7.2 Magnitude
+Earthquake .............................................................................................................. 50
+NDRRMC Memorandum No. 7, s 2018: Dissemination of Harmonized National
+Contingency Plan for the 7.2 Magnitude Earthquake for Comments and
+Recommendations ................................................................................................... 53
+NDRRMC Memorandum No. 8, s 2018: Completion of Implementation Plans in
+connection with the Harmonized National Contingency Plan for the 7.2 Magnitude
+Earthquake .............................................................................................................. 54
+NDRRMC Memorandum No. 68, s 2018: Reiteration of Submission of
+Implementation Plans and Other Relevant Information in connection with
+Harmonized National Contingency Plan for the 7.2 Magnitude Earthquake ............. 57
+NDRRMC Memorandum No. 31, s 2019: Updates on the Harmonized National
+Contingency Plan for the Magnitude 7. Earthquake ................................................. 60
+Photo-Documentation .............................................................................................. 62
+List of Contributors ................................................................................................... 66
+                               List of Tables
+
+Number                             Title                              Page
+
+  1      Population of Highly Urbanized Cities and Municipality in     1
+         Metro Manila
+  2      Population of Provinces and Highly Urbanized Cities in        2
+         Central Luzon
+  3      Population of Provinces and Highly Urbanized City in          3
+         CALABARZON
+  4      List of Common Hazards in Metro Manila, Central Luzon and     4
+         CALABARZON
+  5      Root Causes, Early Warning Signs, Triggering Factors and      5
+         Existing Mitigating Measures for Earthquake
+  6      Indicators of Bad, Worse and Worst Scenarios for the          7
+         Earthquake due to the Movement of the WVF
+  7      Expected Isolation of LGUs in Metro Manila according to       9
+         Sectors
+  8      Estimates on Dead, Missing, Injured and Displaced in Metro    10
+         Manila
+  9      Estimates on Dead, Missing, Injured and Displaced in          10
+         Central Luzon
+  10     Estimates on Dead, Missing, Injured and Displaced in          10
+         CALABARZON
+  11     Summary of Estimates on Dead, Missing, Injured, and           11
+         Displaced in Metro Manila, Central Luzon and
+         CALABARZON
+  12     Areas to be Affected by Earthquake and the Designated         18
+         Assisting RDRRMCs
+  13     Response Clusters and National Lead Agencies                  18
+  14     Existing Primary and Alternate EOCs with Corresponding        31
+         Locations
+  15     On-site EOCs to be established by Assisting RDRRMCs with      31
+         Corresponding Locations
+  16     Summary of Harmonized Response Actions for all DRRMCs         35
+
+
+
+
+                                     i
+                       List of Diagrams
+
+Number                          Title                          Page
+
+  1      Map of the 18 Earthquake Scenarios based on            6
+         MMEIRS
+  2      Map of the Projected Regional Separation of Metro      8
+         Manila based on MMEIRS
+  3      Activation and De-activation of Harmonized National    16
+         Contingency Plan
+  4      Harmonization of Response at all Levels                17
+  5      Relationships of RDRRMC IMTs                           33
+  6      Interoperability of Response Clusters, EOC, and IMT    34
+
+
+
+
+                                                                      ii
+                         List of Acronyms
+
+ACT          Area Command Team
+AFP          Armed Forces of the Philippines
+BAI          Bureau of Animal Industry
+BFP          Bureau of Fire Protection
+BI           Bureau of Immigration
+BJMP         Bureau of Jail Management and Penology
+BOQ          Bureau of Quarantine
+BuCor        Bureau of Corrections
+CAAP         Civil Aviation Authority of the Philippines
+CALABARZON   Cavite, Laguna, Batangas, Rizal, Quezon
+CHED         Commission on Higher Education
+CNDR         Corporate Network for Disaster Response
+CSC          Civil Service Commission
+CSO          Civil Society Organization
+DA           Department of Agriculture
+DENR         Department of Environment and Natural Resources
+DFA          Department of Foreign Affairs
+DepEd        Department of Education
+DICT         Department of Information and Communication Technology
+DILG         Department of the Interior and Local Government
+DND          Department of National Defense
+DOE          Department of Energy
+DOH          Department of Health
+DOJ          Department of Justice
+DOLE         Department of Labor and Employment
+DOST         Department of Science and Technology
+DOT          Department of Tourism
+DOTr         Department of Transportation
+DPWH         Department of Public Works and Highways
+DRRMC        Disaster Risk Reduction and Management Council
+DSWD         Department of Social Welfare and Development
+DTI          Department of Trade and Industry
+EiE          Education in Emergency
+EOC          Emergency Operations Center
+FAO          Food and Agriculture Organization
+Hazmat       Hazardous materials
+HCT          Humanitarian Country Team
+ICS          Incident Command System
+IC           Incident Commander
+IMT          Incident Management Team
+IOM          International Organization for Migration
+JICA         Japan International Cooperation Agency
+LGU          Local Government Unit
+LDRRMC       Local Disaster Risk Reduction and Management Council
+LWUA         Local Water Utilities Administration
+MCIAA        Mactan–Cebu International Airport Authority
+MDM          Management of the Dead and Missing
+MHPSS        Mental Health and Psychosocial Support
+
+                                                                      iii
+MIAA       Manila International Airport Authority
+MMEIRS     Metro Manila Earthquake Impact Reduction Study
+MMDA       Metro Manila Development Authority
+MMDRRMC    Metro Manila Disaster Risk Reduction and Management Council
+MSEE       Minimum Standard in Education Emergency
+NBI        National Bureau of Investigation
+NCR        National Capital Region
+NDRRMC     National Disaster Risk Reduction and Management Council
+NDRP       National Disaster Response Plan
+NICA       National Intelligence Coordinating Agency
+NIE        Nutrition in Emergencies
+NEA        National Electrification Administration
+NFA        National Food Authority
+NGCP       National Grid Corporation of the Philippines
+NNC        National Nutrition Council
+NSC        National Security Council
+NTC        National Telecommunications Commission
+OCD        Office of Civil Defense
+OPAPP      Office of the Presidential Adviser on the Peace Process
+PCG        Philippine Coast Guard
+PEZA       Philippine Economic Zone Authority
+PHIVOLCS   Philippine Institute of Volcanology and Seismology
+PIA        Philippine Information Agency
+PMS        Presidential Management Staff
+PNP        Philippine National Police
+PRC        Philippine Red Cross
+PSA        Philippine Statistics Authority
+RAP        Risk Assessment Project
+RDRRMC     Regional Disaster Risk Reduction and Management Council
+SRR        Search, Rescue and Retrieval
+TWG        Technical Working Group
+UNICEF     United Nations Children's Fund
+WASH       Water, Sanitation and Hygiene
+WFP        World Food Programme
+WVF        West Valley Fault
+
+
+
+
+                                                                     iv
+                      List of Appendices
+
+Number                         Title                          Page
+
+  1      NDRRMC Technical Working Group                        38
+  2      NDRRMC Memorandum No. 29, s 2017: Inventory of        40
+         Emergency Response Assets in Preparation for
+         Contingency Planning for the “Big One”
+  3      NDRRMC Memorandum No. 43, s 2017:                     42
+         Designation of Assisting RDRRMCs to Augment the
+         NDRRMC in Preparation for the 7.2 Magnitude
+         Earthquake in Metro Manila
+  4      NDRRMC Memorandum No. 91, s 2017:                     44
+         Constitution of Technical Working Group (TWG) to
+         Develop the Harmonized National Contingency Plan
+         for the 7.2 Magnitude Earthquake
+  5      NDRRMC Memorandum No. 129, s 2017:                    46
+         Completion of Implementation Plans in connection
+         with the Harmonized National Contingency Plan for
+         the 7.2 Magnitude Earthquake
+  6      NDRRMC Memorandum No. 7, s 2018:                      49
+         Dissemination of Harmonized National Contingency
+         Plan for the 7.2 Magnitude Earthquake for
+         Comments and Recommendations
+  7      NDRRMC Memorandum No. 8, s 2018: Completion           50
+         of Implementation Plans in connection with the
+         Harmonized National Contingency Plan for the 7.2
+         Magnitude Earthquake
+  8      NDRRMC Memorandum No. 68, s 2018: Reiteration         53
+         of Submission of Implementation Plans and Other
+         Relevant Information in connection with Harmonized
+         National Contingency Plan for the 7.2 Magnitude
+         Earthquake
+   9     Photo-Documentation                                   56
+  10     List of Contributors                                  60
+
+
+
+
+                                                                     v
+0
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                         CHAPTER I. BACKGROUND
+A. Introduction
+
+Metro Manila is the National Capital Region (NCR) of the Philippines. Located at the
+south-western portion of Luzon and directly below Central Luzon, its territory extends
+eastward and up the rolling hills of Marikina Valley and stops short at the low-lying
+edges of Rizal Province.
+
+The political and administrative boundaries of Metro Manila have not changed since
+its formation in 1975, under the Presidential Decree No. 824. Under the decree,
+Metro Manila is composed of Quezon City, Caloocan City, Pasig City, Valenzuela
+City, Parañaque city, Taguig City, Muntinlupa City, Las Piñas City, Malabon City,
+Manila, Marikina City, Makati City, Pasay City, Mandaluyong City, Navotas City, San
+Juan City, and the Municipality of Pateros. The region has a total land area of 63,000
+hectares, more than half of which are classified as residential/commercial. Among
+the cities in Metro Manila, Quezon City occupies the largest land area with 17,171
+hectares while San Juan City has the smallest land area that occupies 595 hectares.
+
+According to the Philippine Statistics Authority (PSA), the total population of NCR is
+12,877,253 as of 01 August 2015. Breakdown of population is as follows based on
+the 2015 Census:
+
+Highly Urbanized Cities and Municipality in                       Population (in thousands)
+                Metro Manila
+Manila City                                                                                    1,780
+Mandaluyong City                                                                                 386
+Marikina City                                                                                    451
+Pasig City                                                                                       755
+Quezon City                                                                                    2,936
+San Juan City                                                                                    122
+Caloocan City                                                                                  1,584
+Malabon City                                                                                     366
+Navotas City                                                                                     249
+Valenzuela City                                                                                  620
+Las Piñas City                                                                                   589
+Makati City                                                                                      583
+Muntinlupa City                                                                                  505
+Parañaque City                                                                                   666
+Pasay City                                                                                       417
+Taguig City                                                                                      805
+Pateros Municipality                                                                              64
+             Table 1: Population of Highly Urbanized Cities and Municipality in Metro Manila
+
+
+
+                                                   1
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Based on its geological features, NCR is subdivided into four (4) zones: the Coastal
+Margin, the Guadalupe Plateau, the Marikina Valley, and the Laguna Lowlands.
+According to the Modified Coronas Classification, Metro Manila’s climate is
+categorized as Type I, having two (2) pronounced seasons: dry from November to
+April and wet during the rest of the year. Maximum rain period is from June to
+September.
+
+Central Luzon, or Region III, is composed of seven (7) provinces: Aurora, Bataan,
+Bulacan, Nueva Ecija, Pampanga, Tarlac, and Zambales. Its territory lies between
+the area north of Manila Bay from the tip of Bataan peninsula on the west, and all the
+lands north of Caraballo Mountain. Vast lowlands occupy this region, hence, it is also
+named as Central Plains of Luzon. It is further called the Rice Granary of the
+Philippines because of its production of one third of the country’s total rice
+production.
+
+The population of Central Luzon is approximately 11,218,177 as of 01 August 2015.
+Breakdown is as follows based on the 2015 Census by the PSA:
+
+ Provinces and Highly Urbanized Cities in                        Population (in thousands)
+               Central Luzon
+Aurora                                                                                         214
+Bataan                                                                                         761
+Bulacan                                                                                      3,292
+Nueva Ecija                                                                                  2,151
+Pampanga (excluding Angeles City                                                             2,151
+Angeles City                                                                                   412
+Tarlac                                                                                       1,366
+Zambales (excluding Olongapo City)                                                             591
+Olongapo City                                                                                  233
+             Table 2: Population of Provinces and Highly Urbanized Cities in Central Luzon
+
+
+The region covers a total land area of 2,147,036 hectares; 1,204,649 hectares of
+which are alienable and disposable lands and 942,387 hectares are forest. Central
+Luzon is rich in timber and mineral resources and it accounts for the third largest
+agriculture production in the Philippines.
+
+CALABARZON, or Region IVA, is located in the south-western part of the island of
+Luzon and has a total land area of 16,560 square kilometers. The region is also one
+of the country’s leading regions for economic investment and growth with five (5)
+provinces namely: Cavite, Laguna, Batangas, Rizal, and Quezon.
+
+
+
+
+                                                  2
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+The total population of the CALABARZON is 14,414,774 as of 01 August 2015, the
+largest population in the country surpassing the NCR. Breakdown is as follows
+based on the 2015 Census by the PSA:
+
+  Provinces and Highly Urbanized City in                      Population (in thousands)
+              CALABARZON
+Batangas                                                                                2,694
+Cavite                                                                                  3,678
+Laguna                                                                                  3,035
+Quezon (excluding Lucena City)                                                          1,857
+Lucena City                                                                               266
+Rizal                                                                                   2,884
+             Table 3: Population of Provinces and Highly Urbanized City in CALABARZON
+
+
+The region consists of two (2) of the ten (10) major lakes in the Philippines: Laguna
+de Bay, the largest freshwater lake in the Philippines with an area of 90,000
+hectares, and the Taal Lake in Batangas, with an area of 23,400 hectares. Laguna
+de Bay supports the agriculture industry, recreation, and ecosystem services. The
+Hydroelectric Power Station located in Laguna also produces 600 megawatts of
+electricity.
+
+The region experiences all four (4) types of climate: Type I or two pronounced
+seasons, dry from November to April and wet during the rest of the year; Type II has
+no dry season with very pronounced rainfall from November to April and wet during
+the rest of the year; Type III has seasons that are not very pronounced, relatively dry
+from November to April and wet during the rest of the year; and Type IV where
+rainfall is more or less evenly distributed throughout the year.
+
+B. Hazard Identification
+
+The Philippines, situated along the Pacific Ring of Fire and the Typhoon Belt, is
+prone to natural hazards such as typhoons, earthquake, fire, storm surge, and
+volcanic eruptions. Human-induced hazards such as crimes, terrorism, and bombing
+also threaten the lives of the communities.
+
+Given such disaster risk profile of the country, several major disasters have occurred
+in various parts of the country, including Metro Manila, Central Luzon and
+CALABARZON. The occurrence of disasters can be attributed to some of the
+common hazards frequently existing in the region. The identification of hazards was
+based on consultations and discussions with representatives from the Metro Manila,
+Central Luzon, and CALABARZON:
+
+
+
+
+                                                3
+              HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                       MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+               REGION                                                  COMMON HAZARDS
+              Metro Manila                     Earthquake
+                                               Fire
+                                               Flood
+                                               Typhoon
+                                               Terrorist attacks
+                                               Vehicular accidents
+                                               Industrial accidents
+             Central Luzon                     Earthquake
+                                               Fire
+                                               Flood
+                                               Typhoon
+                                               Volcanic eruption
+                                               Landslide
+                                               Terrorist attacks
+                                               Vehicular accidents
+            CALABARZON                         Earthquake
+                                               Fire
+                                               Flood
+                                               Typhoon
+                                               Volcanic eruption
+                                               Landslides
+                                               Terrorist attacks
+                                               Vehicular accidents
+                                               Industrial accidents
+            Table 4: List of Common Hazards in Metro Manila, Central Luzon and CALABARZON
+
+C. Hazard to Plan for: Earthquake
+
+
+For this contingency plan, the hazard to plan for is earthquake. According to the
+Annual Report by the Philippine Institute of Volcanology and Seismology
+(PHIVOLCS) in 2017, six (6) damaging earthquakes hit the country commencing with
+the magnitude 6.7 earthquake in Surigao del Norte on 10 February. A series of
+earthquakes were recorded in Mabini, Batangas Province from April to August 2017.
+A major event in the earthquake swarms had a magnitude of 5.5 on 04 April. Two (2)
+more strong earthquakes occurred on 08 April, the first with magnitude 5.6,
+succeeded by another with magnitude 6.0. On 12 April, a magnitude 6.0 earthquake
+occurred with epicenter near Wao, Lanao del Sur. On the 29th of the same month, a
+magnitude 7.2 earthquake happened offshore of Saranggani, Davao Occidental. On
+25 May, a magnitude 5.4 earthquake happened near the vicinity of San Marcelino,
+Zambales. Lastly, Ormoc City, Leyte and vicinity were shaken by the magnitude 6.5
+earthquake on 06 July (PHIVOLCS Annual Report, 2017 1). The strong ground
+shaking subsequently caused liquefaction, earthquake-induced landslides, and
+1
+    PHIVOLCS Annual Report 2017 can be accessed at https://drive.google.com/file/d/1-kq1u8jq1cVSW49SfLNk5gQe0SaUONxE/view
+
+
+                                                                4
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+damages to buildings and other infrastructures. Areas transected by the active faults
+that moved and generated the earthquakes were also affected by ground rupture.
+The table below displays the analysis of earthquake as a natural hazard, based on
+consultations and discussions with technical experts from PHIVOLCS and various
+representatives from the member agencies of the National Disaster Risk Reduction
+and Management Council (NDRRMC):
+ROOT CAUSE            EARLY                      EFFECTS                  EXAMPLES OF EXISTING
+                     WARNING                                              MITIGATING MEASURES
+                      SIGNS
+Movement of         NONE                  Ground shaking                 Implementation of building
+earthquake                                Ground rupture                 design standards
+generators                                Liquefaction                   Assessment of structural
+(faults and                               Earthquake-induced             integrity of buildings and
+trenches)                                 landslide                      facilities
+                                          Tsunami                        Conduct of structural
+                                          Collapsed structure            retrofitting
+                                          Fire                           Relocation of communities to
+                                          Hazardous materials            areas safe from earthquake
+                                          (hazmat) incidents             hazards
+                                          Industry-related
+                                          explosion
+    Table 5: Root Causes, Early Warning Signs, Effects and Existing Mitigating Measures for Earthquake
+
+
+
+The Philippines being situated along the Pacific Ring of Fire is at risk to earthquakes
+generally caused by the movement of active faults and trenches. Many earthquake
+generators are distributed all over the country including the Philippine Fault, Manila
+Trench, Philippine Trench, Negros Trench, Cotabato Trench and Sulu Trench.
+Specifically, Metro Manila is located in Luzon Island between Manila Bay which
+extends to the West Philippine Sea, and Laguna de Bay.
+There are no known early warning signs for earthquake. Once a large earthquake
+occurs, it could lead to disaster because of the consequent natural hazards such as
+ground shaking, ground rupture, liquefaction, earthquake-induced landslide, and
+tsunami. The occurrence of earthquake can also trigger other secondary hazards
+such as fires, explosions, hazardous materials incidents, which could lead to
+massive loss of lives, damages to properties, and collapse of structures.
+Presently, mitigating measures are being undertaken by the NDRRMC, local
+government and other stakeholders. These include implementation of building
+design standards, assessment of structural integrity of buildings and facilities,
+conduct of structural retrofitting, and relocation of communities located within high
+risk areas into safe areas.
+
+
+
+                                                    5
+          HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                   MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+D. Scenario
+
+
+The Harmonized National Contingency Plan is intended for the magnitude 7.2
+earthquake scenario resulting from the movement of the West Valley Fault (WVF).
+The scenario may yield a PHIVOLCS Earthquake Intensity Scale (PEIS) of VIII that
+will affect not only Metro Manila, but also the nearby regions of Central Luzon and
+CALABARZON.
+For a brief background, the WVF scenario is derived from the results of the Metro
+Manila Earthquake Impact Reduction Study2 (MMEIRS) conducted by PHIVOLCS,
+Metro Manila Development Authority (MMDA), and the Japan International
+Cooperation Agency (JICA) from August 2002 to March 2004. According to the said
+study, there are 18 earthquake scenarios that may affect Metro Manila and the
+vicinity. The projected impacts of the WVF earthquake were updated and enhanced
+in the Greater Metro Manila Area (GMMA) Risk Analysis Project (RAP) in 2013.
+
+
+
+
+                     Diagram 1: Map of the 18 Earthquake Scenarios based on MMEIRS
+
+
+Specifically, the worst case scenarios identified in the MMEIRS are:
+    1. SCENARIO 8: Generated by the WVF, causing a 7.2 magnitude earthquake
+       and leading to severe damage in Metro Manila
+    2. SCENARIO 13: Generated by the Manila Trench, causing a 7.9 magnitude
+       earthquake and leading to the occurrence of tsunami
+
+For this contingency plan, the focus is on the movement of the WVF. The WVF
+moved four (4) times and generated strong earthquakes within the last 1400 years.
+
+
+2
+ The NDRRMC is currently developing the Greater Metro Manila Earthquake Impact Reduction Study
+(GMMEIRS) to update the risk assessment findings and status of action points indicated in the MMEIRS.
+
+                                                     6
+                   HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                            MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+        The approximate return period of these earthquakes is between 400 to 600 years
+        and no large event along the West Valley Fault is known after 17th century.
+        Below are the scenarios that can possibly occur should there be WVF movement:
+
+ SITUATIONS              BAD SCENARIO                     WORSE SCENARIO                            WORST SCENARIO
+
+                    The WVF moved with a            The WVF moved with a magnitude The WVF moved with a magnitude of more
+Description         magnitude of 5.0 – 5.9 and/or   of 6.0 – 6.9 and/or intensity VII than or equal to 7.0 and/or intensity VIII and
+                    intensity VI                                                      higher
+
+Impacts on          Fatalities: Around 1,000        Fatalities: Around 5,000            Fatalities: Around 52,000
+Human Lives         Injuries: Around 3,000          Injuries: Around 10,000             Injuries: Around 700,000
+
+                                                    Old or poorly-built structures suffer Most buildings are totally damaged. Bridges
+                    Very old or poorly built
+                                                    considerably damage. Some well- and elevated concrete structures are toppled
+                    houses and man-made
+                                                    built structures are slightly         or destroyed. Water sewer pipes are bent,
+                    structures are slightly
+                                                    damaged. Some cracks may              twisted or broken.
+                    damaged though well-built
+                                                    appear on dikes, fish ponds, road
+                    structures are not affected.
+                                                    surface, or concrete hollow block
+                    Wall plaster may crack.
+                                                    walls.
+                    Heavy objects or furniture
+                                                    Heavy objects and furniture
+                    move or may be shifted.
+                                                    overturn or topple.
+
+                    Trees and utility posts are     Trees and utility posts are shaken Numerous trees are utility posts are tilted,
+                    noticeably shaken               strongly.                          toppled or broken.
+
+                                                    Limited liquefaction, lateral       Landslides and liquefaction with lateral
+                    Limited rockfalls and rolling   spreading and landslides are        spreadings and sandboils are widespread.
+Impacts on          boulders occur in hilly to      observed.                           The ground is distorted into undulations.
+Human Lives         mountainous areas and                                               Boulders are commonly thrown out. River
+                    escarpments.                                                        water splashes violently on slops over dikes
+                                                                                        and banks.
+
+                                                    50% of roads and bridges are not 80% of roads and bridges are not passable
+                                                    passable
+                    All roads and bridges remain
+                                                                                     Concrete dikes and foundation of bridges are
+                    passable
+                                                                                     destroyed by ground settling or toppling.
+                                                                                     Railway tracks are bent or broken.
+
+                                                    50% of power, energy and            80% of power, energy and communication
+                    Power and communication
+                                                    communication facilities are no     facilities are no longer operational
+                    facilities remain operational
+                                                    longer operational
+                                                    Outbreaks of fire and hazmat        Outbreaks of fire and hazmat incidents
+                    No outbreak of hazmat           incidents in some areas in Metro    occurred in most areas in Metro Manila,
+                                                    Manila.                             Central Luzon and CALABARZON.
+
+                                                    Around 70% of manpower and           Even the response groups in Metro Manila,
+                    Local capacities are still
+                                                    equipment of Metro Manila,           Central Luzon, and CALABARZON are
+Response            functional in Metro Manila,
+                                                    Central Luzon and CALABARZON victims. They have limited capacity to respond
+Capabilities        Central Luzon, and
+                                                    can still be mobilized for response. within their respective areas for the early days
+                    CALABARZON
+                                                                                         of response operations.
+               Table 6: Indicators of Bad, Worse and Worst Scenarios for the Earthquake due to the WVF Movement
+
+
+
+
+                                                                7
+           HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                    MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+MMEIRS further projects the regional separation within Metro Manila that will result
+due to pile up of debris, collapse of major transportation roads and bridges, and
+widespread fire. The roads crossing or passing through the high vulnerable areas
+are with a high probability of being impassable.
+
+
+
+
+       Diagram 2: Map of the Projected Regional Separation 3 of Metro Manila based on MMEIRS
+
+
+3 The map displayed is the old projection for the regional separation in Metro Manila. The MMDRRMC is currently updating
+
+the Oplan Metro Yakal Plus to revise the projected regional separation from quadrants into sectors.
+
+                                                            8
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Based on the analysis of the passable and impassable roads and bridges, Metro
+Manila will possibly be separated into four (4) regions by the earthquake impact. The
+Western part of Metro Manila will be isolated from others parts of the region by fire
+incidents and collapsed buildings. This part includes Manila City, Malabon City,
+Navotas City, and the western part of Pasay City.
+The Northern and Southern parts will be separated due to damage and collapse of
+bridges crossing Pasig River. The North quadrant includes Caloocan City, Quezon
+City, Valenzuela City, San Juan City, and Mandaluyong City.
+The South part includes Las Piñas City, Makati City, Parañaque City, Taguig City,
+Municipality of Pateros, and the Southern part of Pasay City. The area between
+Mandaluyong and Makati City has a high possibility of building collapse.
+The East part consists of Pasig and Marikina City. These cities will be isolated due to
+damages to buildings and bridges along and across Marikina River. Roads and other
+infrastructures transected by the WVF will be destroyed instantly by ground rupture.
+Additionally, those constructed on soft soils and located near water bodies will be
+affected by liquefaction.
+In the present updating of the Oplan Metro Yakal Plus by the Metro Manila Disaster
+Risk Reduction and Management Council (MMDRRMC), experts further anticipate
+the collapse of MRT station, further sub-dividing the North and South quadrants.
+From “quadrant”, the MMDRRMC agreed to use the term “sector.” Below is the
+projected sectoral assignments for all Metro Manila LGUs:
+
+      Sector                                       Expected Isolation of LGUs
+        East              Pasig, Marikina
+       West               Manila, San Juan, Mandaluyong
+      North 1             Caloocan, Malabon, Navotas, Valenzuela
+      North 2             Quezon City
+      South 1             Las Piñas, Muntinlupa, Paranaque, Pasay
+      South 2             Taguig, Makati, Pateros
+                Table 7: Expected Isolation of LGUs in Metro Manila according to Sectors
+
+
+
+
+                                                   9
+             HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                      MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Relatedly, below is the table of estimated number of dead, missing, injured, and
+displaced population across the LGUs in Metro Manila4:
+REGION         LGUS                              DEAD                  MISSING                  INJURED                  DISPLACED
+NCR East       Pasig                              2,387                 12,420                    34,692                   475,774
+              Marikina                            1,617                  8,280                    24,297                   317,182
+  NCR        Caloocan                             3,114                  6,560                    54,105                   198,478
+  North       Malabon                              874                   3,300                    13,774                    99,240
+              Navotas                              740                   3,280                    12,431                    99,000
+            Valenzuela                            1,169                  6,600                    20,522                   198,000
+            Quezon City                           5,524                 13,160                    96,652                   396,478
+NCR West       Manila                             5449                  13,750                    84,515                   535,246
+             San Juan                              306                   5,500                     4,818                   214,098
+           Mandaluyong                             817                   8,250                     3,664                   321,147
+  NCR        Las Piñas                            1491                  11,640                    25,429                   333,042
+ South      Muntinlupa                            1206                   2,716                    21,450                    77,710
+            Parañaque                             1385                   3,492                    24,508                    99,913
+               Pasay                              1117                   3,104                    17,183                    88,811
+              Taguig                              2366                   3,880                    39,247                   111,014
+               Makati                             1,427                 11,640                    20,737                   333,042
+              Pateros                              239                   2,328                     3,698                    66,608
+         TOTAL                                   31,228                119,900                   501,722                  3,964,783
+                       Table 8: Estimates on Dead, Missing, Injured and Displaced in Metro Manila
+
+Below is the table of estimated number of dead, missing, injured, and displaced
+population for the affected LGUs in Central Luzon 5:
+       LGUS                        DEAD                      MISSING                      INJURED                      DISPLACED
+      Bulacan                       9,000                     12,000                        30,000                       277,650
+     Pampanga                       6,000                      8,000                        20,000                        63,000
+      TOTAL                        15,000                     20,000                        50,000                       340,650
+                       Table 9: Estimates on Dead, Missing, Injured and Displaced in Central Luzon
+
+Further, below is the table of estimated number of dead, missing, injured, and
+displaced population for the affected LGUs in CALABARZON 6:
+
+       LGUS                       DEAD                      MISSING                       INJURED                      DISPLACED
+       Rizal                       500                       2,000                          12,000                       331,360
+      Cavite                      3,000                      3,443                          50,398                       563,840
+      Laguna                      3,145                       100                           65,600                       119,680
+      TOTAL                       6,645                      5,543                         127,998                      1,014,880
+                     Table 10: Estimates on Dead, Missing, Injured and Displaced in CALABARZON
+
+
+
+
+4
+ Reference for Dead and Injured (consolidated for slight, serious and very serious injuries): GMMA RAP 2013
+Reference for Missing: INSARAG ERE, 2018
+Reference for Displaced: INSARAG ERE, 2018
+
+5
+  Reference for Dead, Missing and Injured: RDRRMC III Contingency Plan for Earthquake 2018
+Reference for Displaced: INSARAG ERE 2018
+6
+  Reference for Dead, Missing and Injured (consolidated for slight, serious and very serious injuries) in CALABARZON: CP for Earthquake for
+Rizal, Cavite and Laguna 2018
+Reference for Displaced: INSARAG ERE 2018
+
+
+                                                                      10
+             HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                      MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+In summary, here are the consolidated estimates of dead, missing, injured, and
+displaced population in Metro Manila, Central Luzon, and CALABARZON7:
+      REGION                       DEAD                      MISSING                      INJURED                      DISPLACED
+     Metro Manila                  31,228                    119,900                       501,722                      3,964,783
+    Central Luzon                  15,000                     20,000                        50,000                       340,650
+    CALABARZON                      6,645                      5,543                       127,998                      1,014,880
+       TOTAL                       52,873                    145,443                       679,720                      5,320,313
+    *Table 11: Summary of Estimates on Dead, Missing, Injured, and Displaced in Metro Manila, Central Luzon and
+                                                             CALABARZON
+
+
+It is important to emphasize that the estimates are not to be taken as absolute
+projections. The figures are still working data. Discrepancies are definitely expected
+since LGUs have to reconcile their census or baseline data of population. Moreover,
+the estimates do not reflect and account the level of earthquake risk reduction made
+by current earthquake prevention and preparedness initiatives. Notably, there is
+already an on-going enhancement for the MMEIRS, known as the Greater Metro
+Manila Earthquake Impact Reduction Study (GMMEIRS), to provide more accurate
+risk estimates for earthquake in Metro Manila, Central Luzon and CALABARZON.
+ It is also worth noting that the MMDRRMC has already made substantial progress
+for earthquake preparedness and response through the Oplan Metro Yakal Plus.
+However, it was last published in 2015 and is currently undergoing enhancement by
+the MMDRRMC and the Metro Manila LGUs. Moreover, the Oplan Metro Yakal Plus
+accounts for the response within the affected areas in Metro Manila only. While there
+is considerable achievement on the part of the MMDRRMC for earthquake
+preparedness through the Oplan Metro Yakal Plus, there is a need to integrate the
+response arrangements for the earthquake-affected areas in Central Luzon and
+CALABARZON.
+Adding to the complexity of the response is the possibility for Angat Dam breakage in
+Bulacan, as provided for in the RDRRMC Central Luzon Contingency Plan. Should
+the said dam be compromised, there will be sudden flooding in low-lying
+municipalities in Bulacan. It will also lead to shortage of water supplies in Metro
+Manila and other areas. These combine effects of the earthquake will result to a
+much complex emergency situation.
+In this context, the Harmonized National Contingency Plan has been formulated by
+the NDRRMC. It is intended to address the response requirements resulting from the
+anticipated occurrence of the magnitude 7.2 earthquake due to the movement of the
+WVF that will affect Metro Manila, Central Luzon, and CALABARZON.
+
+7
+ Reference for Dead and Injured (consolidated for slight, serious and very serious injuries) in Metro Manila: GMMA-RAP 2014
+Reference for Missing and Displaced in Metro Manila: INSARAG ERE, 2018
+Reference for Dead, Missing and Injured in Central Luzon: RDRRMC III Contingency Plan for Earthquake 2018
+Reference for Dead, Missing and Injured (consolidated for slight, serious and very serious injuries) in CALABARZON: CP for Earthquake for
+Rizal, Cavite and Laguna 2018
+Reference for Displaced: INSARAG ERE 2018
+
+
+
+
+                                                                     11
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+              CHAPTER II: GOALS AND OBJECTIVES
+
+Assumptions
+Pursuant to the findings of the MMEIRS, the magnitude 7.2 earthquake to be caused
+by the movement of the WFV is anticipated to affect three (3) regions: Metro Manila,
+Central Luzon, and CALABARZON. Using the worst-case scenario as projection, the
+assumption is that the local, regional, and national responders operating within the
+said affected regions will be overwhelmed by the emergency situation.
+
+Pursuant to Section 15 of Republic Act 10121, the response will be at the level of the
+NDRRMC if two (2) or more regions are affected. Should the magnitude 7.2
+earthquake be generated by the WFV, a total of three (3) regions will be affected,
+which means that the NDRRMC has to take actioj. However, the law also states that
+the NDRRMC will always act as support to the LGUs, which have the primary
+responsibility as the first responders. This means that the NDRRMC will only provide
+assistance to affected Regional and Local DRRMCs based on their requests as
+indicated in the results of Rapid Damage Assessment and Needs Analysis (RDANA).
+Leadership and command will still be under the LGUs concerned. However, in case
+the LGUs will be overwhelmed, the management of response can be elevated to the
+MMDRRMC then to the NDRRMC following the proper Transfer of Command
+protocols in Incident Command System (ICS).
+
+However, it should be noted that the NDRRMC is assumed to be overwhelmed as
+well considering that most national government agencies are seated within Metro
+Manila. Hence, the nearby Regional Disaster Risk Reduction and Management
+Councils (RDRRMCs) that are unlikely to be affected by the earthquake will be
+tapped by the NDRRMC to provide assistance to all affected areas.
+
+
+
+Goal
+The goal of the harmonized national contingency plan is to provide effective,
+efficient, timely, and well-coordinated response mechanisms of the affected
+LDRRMCs, RDRRMCs, NDRRMC and the assisting RDRRMCs in Luzon, Visayas
+and Mindanao in the occurrence of magnitude 7.2 earthquake due to the movement
+of the WVF affecting Metro Manila, Central Luzon, and CALABARZON.
+
+
+
+
+                                         12
+       HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Objectives
+The objectives of the Harmonized National Contingency Plan are as follows:
+   1. Provide mechanism to conduct inventory of emergency response resources
+      available among assisting RDRRMCs to augment those of the NDRRMC,
+      MMDRRMC, RDRRMCs of Central Luzon and CALABARZON, and affected
+      LDRRMCs;
+
+   2. Provide the projected immediate and appropriate needs of the affected
+      population in Metro Manila, Central Luzon, and CALABARZON;
+
+   3. Determine the immediate tasks of government, non-government
+      organizations, private sectors, and volunteer groups required for magnitude
+      7.2 earthquake response operations;
+
+   4. Establish proper coordination through efficient communication and linkages
+      among the assisting RDRRMCs and the international humanitarian assistance
+      community to support NDRRMC, MMDRRMC, RDRRMCs of Central Luzon
+      and CALABARZON, and affected LDRRMCs;
+
+   5. Reinforce the standards of reporting system set by the NDRRMC; and
+
+   6. Identify and resolve the gaps and weakness of capabilities of the government
+      to respond to the magnitude 7.2 earthquake scenario.
+
+
+
+
+                                        13
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+   CHAPTER III: ACTIVATION, DEACTIVATION AND NON-
+                      ACTIVATION
+To achieve the goals and objectives of the Harmonized National Contingency Plan,
+the NDRRMC will mobilize the resources, including response teams and major
+equipment, coming from the pre-identified assisting RDRRMCs in Luzon, Visayas,
+and Mindanao, as well as the assistance from international partners.
+
+Consistent with the National Disaster Response Plan (NDRP) for Earthquake and
+Tsunami, each assisting RDRRMC will organize its respective response clusters.
+Every response cluster will have its designated lead and member agencies, with
+their corresponding operational objectives. The activities and decisions of the
+response clusters will be orchestrated by the OCD Regional Office through the
+Regional Director, as the Chairperson of the assisting RDRRMC.
+
+Further, each assisting RDRRMC will mobilize teams who will augment the
+requirements for pre-established Emergency Operations Centers (EOCs) and
+Incident Management Teams (IMTs) in strategic areas across the affected regions.
+
+A. Activation
+
+The trigger for the activation of the Harmonized National Contingency Plan will be
+any of the following:
+   •   Intensity VI and above for DRRMCs in earthquake affected areas
+   •   Magnitude 7.2 earthquake due to movement of WFV to be confirmed by
+       PHIVOLCS reports
+   •   Request from LGUs
+   •   Absence of contact at the EOCs in earthquake affected areas
+
+The above triggers are attributed to the fact that there are practically no early
+warning signs for earthquake.
+Intensity VI and Above
+In the earthquake affected areas, the trigger will be based on felt intensities. This
+means that local responders within earthquake affected areas can proceed to act
+should they feel strong intensities. Based on Chapter I, Intensity VI is the starting
+trigger for WFV movement (bad scenario).
+PHIVOLCS Report
+It is important to note that intensities are relative and can vary from one area to
+another. Hence, an official confirmation from PHIVOLCS is helpful to verify that the
+WFV moved. In case the PHIVOLCS main office at Quezon City will be
+compromised, the mirror sites of PHIVOLCS can be used to disseminate earthquake
+
+                                         14
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+information. This will be particularly especially for the assisting RDRRMCs to make
+assumptions on the situation in the affected areas.
+Request from LGUs
+All affected LGUs are expected to mobilize RDANA teams to know the updates on
+the ground and determine the priority needs for humanitarian assistance and
+disaster response. Should they require additional support, they will course through
+the request to the RDRRMC in charge, then elevated to the NDRRMC. Should more
+resources be needed, the NDRRMC will then proceed to request augmentation from
+the assisting RDRRMCs.
+All requests for augmentation will be coursed through the appropriate EOCs
+following the communication protocols of the NDRRMC.
+Absence of Contact at the EOCs
+Of course, the responders within affected areas as well as the assisting RDRRMCs
+should take proactive measures aside from waiting for PHIVOLCS report or request
+from LGUs. Ideally, EOCs should be activated across different levels of governance.
+Should there be no contact with the existing EOCs from the national to local levels
+(including their alternate EOCs), the assisting RDRRMCs will immediately assume
+that the existing EOCs are already compromised due to the effects of the
+earthquake. This will be their trigger to initiate action.
+Once activated, the assisting RDRRMCs will deploy teams to augment the
+compromised EOCs. They will also organize teams that are categorized into
+Response Clusters. Further, IMTs will be mobilized to ensure command and control
+over the teams. Following the principles of ICS, the response clusters of the
+assisting RDRRMCs will serve as the “force providers” while the IMTs will act as the
+“force employers.”
+When it comes to administrative and logistical concerns, each assisting RDRRMC
+will utilize their own resources for mobility and for response. It is assumed that the
+assets within the affected regions will be rendered unusable due to the effects of the
+earthquake. Hence, the assisting RDRRMCs will have to be self-sufficient.
+In case the EOCs in affected areas remain functioning, or local responders are still
+operating, the assisting RDRRMCs will just provide augmentation as needed.
+However, the EOCs are totally compromised or the local responders are already
+overwhelmed, the assisting RDRRMCs will assist in leading the response. The
+provision of resources will be calibrated according to the degree of effects of the
+earthquake.
+
+
+
+
+                                         15
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+B. De-activation
+
+
+All assisting RDRRMCs will operate until such time that the local, regional, and
+national teams will be able to recover and eventually take charge. Hence, the trigger
+for the de-activation of the harmonized national contingency plan will be the
+recommendation of the incident commander (IC) of the assisting RDRRMC.
+Specifically, the IC will assess if the local resources are already functional. The
+recommendation will then be escalated to the EOC of the assisting RDRRMC for
+further decision.
+
+Upon consultation and assessment together with the Regional Chairpersons of the
+affected RDRRMCs and the Chairperson or Executive Director of the NDRRMC, the
+response assets of the assisting RDRRMCs will gradually be demobilized back to
+their home units. Eventually, the command for the management of response
+operations will be transferred to the NDRRMC and will de-escalate to regional down
+to local levels.
+
+Below is the diagram illustrating the activation and de-activation of the Harmonized
+National Contingency Plan.
+
+
+
+
+ Diagram 3: Activation and De-activation of Harmonized National Contingency Plan
+
+
+                                         16
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+C. Non-activation
+
+In the event of non-activation of the Harmonized National Contingency Plan, the
+response mechanisms and approaches indicated in this plan can still be relevant for
+any earthquake incident as it incorporates the existing plans of the NDRRMC,
+RDRRMCs, and the LDRRMCs.
+
+
+
+
+                Diagram 4: Harmonization of Response at all Levels
+Specifically, as seen in the above diagram, the response for the earthquake will
+always begin at the local levels in accordance with the respective contingency plans
+of the LDRRMCs. In the event of incident escalation, the response will be elevated at
+the regional level in accordance with the regional contingency plan of the RDRRMC.
+For the worst-case scenario, the NDRRMC will come in with the support of the
+assisting RDRRMCs.
+A fundamental component for the harmonization of response is the Rapid Damage
+Assessment and Needs Analysis (RDANA).All LGUs will have their respective
+RDANA operations to know their actual needs. The results of RDANA will determine
+the need to elevate the response to a higher level DRRMC. Should the LGU be able
+to manage the response using their own resources, then there is no need to involve
+the DRRMC at the Regional and National levels, as well as the assisting RDRRMCs.
+However, the higher level DRRMCs will always remain on standby for possible
+augmentation.
+
+
+
+
+                                         17
+            HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                     MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+    CHAPTER IV: COORDINATION, COMMAND AND CONTROL
+
+   A. Coordination
+   To facilitate coordination for earthquake response, the following are the identified
+   RDRRMCs that will assist the NDRRMC and the MMDRRMC:
+ Areas to be Affected by                      Designated Assisting RDRRMCs
+        Earthquake                      st
+                                      1 Wave          2nd Wave           3rd Wave
+       Central Luzon                 RDRRMC I       RDRRMC VII         RDRRMC VIII
+Metro Manila – North Sector          RDRRMC I       RDRRMC VII         RDRRMC VIII
+    (North I and North II)
+Metro Manila – East Sector          RDRRMC II              RDRRMC XI               RDRRMC XII
+Metro Manila – West Sector         RDRRMC CAR              RDRRMC X              RDRRMC CARAGA
+Metro Manila – South Sector         RDRRMC V               RDRRMC VI               RDRRMC IX,
+   (South I and South II)                                                       RDRRMC MIMAROPA
+                                                                                  RDRRMC ARMM
+      CALABARZON                    RDRRMC V               RDRRMC VI               RDRRMC IX,
+                                                                                RDRRMC MIMAROPA
+                                                                                  RDRRMC ARMM
+             Table 12: Areas to be Affected by Earthquake and the Designated Assisting RDRRMCs
+
+   Each assisting RDRRMC will activate and mobilize its respective response clusters.
+   Consistent with the NDRP for Earthquake and Tsunami, the following are response
+   clusters, with the corresponding lead and member offices:
+                 RESPONSE CLUSTERS                                NATIONAL LEAD AGENCIES
+    Camp Coordination and Camp Management                                  DSWD
+    Debris Clearing and Civil Works                                        DPWH
+    Education                                                             DEPED
+    Emergency Telecommunications                                            DICT
+    Food and Non-Food Items                                                DSWD
+    Health                                                                  DOH
+    Law and Order                                                           PNP
+    Logistics                                                               OCD
+    Management of the Dead and Missing                                      DILG
+    Protection                                                             DSWD
+    Philippine International Humanitarian Assistance                        DFA
+    Search, Rescue, and Retrieval                                           AFP
+                          Table 13: Response Clusters and National Lead Agencies
+
+
+
+   The Response Clusters of the RDRRMCs will have their respective operational
+   objectives, responsibilities, inventory of resources, needs projection and timelines of
+   activities based on their respective mandates and response capabilities.
+
+
+
+
+                                                    18
+                                      Camp Coordination and Camp Management Cluster
+
+LEAD                   MEMBERS
+DSWD                   DEPED, DOH, PRC, PNP, DILG, AFP, CSOs, LGUs
+
+OBJECTIVES                                                                                    RESPONSIBILITIES
+  1.   To provide timely and well-coordinated humanitarian assistance and augmentation         1.  Provide gender-sensitive and inclusive facilities (breastfeeding,
+       support in the management of the evacuation centers (ECs).                                  lactating mothers, CFS/WFS, toilets/latrines, bathrooms,
+  2.   To ensure the availability of identified safe, secure and accessible ECs;                   conjugal/couple room)
+  3.   To ensure that temporary refuge to individual and families potentially at risk or in    2. Provide areas designated for pets and livestocks
+       actual danger are immediately provided;                                                 3. Provide medical, public health, WASH, MHPSS, and nutrition
+  4.   To ensure establishment of sex and age disaggregated data of affected families and          services inside ECs
+       internally displaced persons (IDPs) in ECs;                                             4. Ensure interoperability with EOC to coordinate with other
+  5.   To ensure that all IDPs in ECs are provided with basic humanitarian needs compliant         Response Clusters;
+       with SPHERE standards                                                                   5. Provide availability of timely and accurate data/reports to the EOC
+  6.   To ensure availability of Basic Medical and Public health and protection services;          as basis in provision of augmentation of assistance
+  7.   To ensure that energy source and communication facilities are in place;                 6. Monitor the status of all existing ECs opened including its facilities;
+  8.   To ensure that ECs are off limits and have designated areas for pet animals and         7. Ensure that the EC Managers use DAFAX as basis for master-
+       livestock; and                                                                              listing of evacuees;
+  9.   To seek opportunities for recovery, rehabilitation and developmental tasks as post      8. Coordinate with Education Cluster to ensure continuity of
+       response activities are undertaken, in case of prolonged stay in ECs.                       education in ECs
+                                                                                               9. Coordinate with Protection Cluster to address security concerns in
+                                                                                                   ECs
+                                                                                               10. Coordinate with Food and Non-Food Item Cluster for the provision
+                                                                                                   of goods in the ECs
+       TIMELINES                                                                   NEEDS AND ACTIVITIES
+   D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+    D + 10 MINUTES               Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+    D + 30 MINUTES               Organize teams to join the RDANA
+       D + 1 HOUR                Undertake RDANA and report the results to the EOC
+      D + 3 HOURS                Camp managers to establish ECs and other facilities such as WFS/CFS, info boards, etc.
+      D + 5 HOURS                Request for augmentation from other Response Clusters (Protection, Food and Non-Food Items, ETC, Education and Health, etc.)
+     D + 10 HOURS                Camp managers to provide situation report to designated EOCs
+  D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                         19
+                             HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                      MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                              Debris Clearing and Civil Works Cluster
+
+LEAD                   MEMBERS
+DPWH                   AFP Engineering Brigade, MMDA, LGUs, Private Sector (ACEL, ASEP and PICE)
+
+OBJECTIVES                                                                                     RESPONSIBILITIES
+  1.   To ensure that facilities and infrastructures are structurally resilient                  1.   Provide engineering expertise in the assessment of facilities and
+  2.   To ensure that major thoroughfares are free from debris and obstructions                       infrastructures
+  3.   To assist the responders in penetrating the earthquake-affected areas                     2.   Remove debris and obstructions that block the major
+                                                                                                      thoroughfares especially for responders
+                                                                                                 3.   Provide engineers to join the Rapid Damage Assessment and
+                                                                                                      Needs Analysis Teams
+       TIMELINES                                                                  NEEDS AND ACTIVITIES
+   D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+    D + 10 MINUTES               Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+    D + 20 MINUTES               Organize teams to join the RDANA
+    D + 30 MINUTES               Conduct RDANA to earthquake affected areas, with priority to status of roads, bridges and transportation routes
+    D + 45 MINUTES               Conduct inventory of resources for the cluster
+       D + 1 HOUR                Submit report to the EOC
+      D + 3 HOURS                Organize clearing teams in collaboration with other Response Clusters
+     D + 10 HOURS                Commence debris clearing operations
+  D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                         20
+                              HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                       MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                               Education Cluster
+
+LEAD                    MEMBERS
+DEPED                   CHED, TESDA, Save the Children, UNICEF, CSOs, LGUs
+
+OBJECTIVES                                                                     RESPONSIBILITIES
+  1.    To establish unified and effective Education in Emergency (EIE)         1.    Ensure the availability and accessibility of personnel for the Education Cluster
+        response consistent with Minimum Standard in Education                  2.    Ensure proper coordination and partnerships among members of Education
+        Emergency (MSEE) and national standards and policies in affected              Cluster and other Response Clusters to ensure inter-sectoral collaboration and
+        areas within a week;                                                          consistency of approaches
+  2.    To ensure active and sustained collaboration of all education sector    3.    Coordinate implementation of EIE programs and interventions to provide a rapid
+        stakeholders and partners in the implementation of EIE programs               and effective holistic response to education-related needs of children and young
+        and interventions during the response time;                                   people as well as teaching and non-teaching personnel resulting from the
+  3.    To fully utilize existing Management Information Systems to ensure            earthquake
+        timely and accurate dissemination for decision making during the        4.    Coordinate and participate in undertaking joint rapid assessment of the education
+        response time;                                                                needs of learners and teaching and non-teaching personnel in affected areas
+  4.    To generate and mobilize resources for timely, appropriate and          5.    Collect, consolidate, analyze and share information relevant to the Education
+        responsive delivery of EIE programs and interventions; and                    Cluster with the NDRRMC, Humanitarian Country Team and other relevant
+  5.    To monitor and evaluate effectiveness of response interventions for           decision-making bodies
+        accountability and learning.                                            6.    Map and facilitate resource mobilization to affected DepEd, TESDA, CHED and
+                                                                                      all public and private schools comprising of Education Cluster
+                                                                                7.    Coordinate with donor agencies and other funding sources to ensure
+                                                                                      complementation of resources by tracking and monitoring EiE interventions
+                                                                                8.    Monitor progress, document bottlenecks and challenges, and evaluate results of
+                                                                                      response plan for the Education Cluster
+        TIMELINES                                                                    NEEDS AND ACTIVITIES
+    D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+     D + 10 MINUTES               Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+     D + 30 MINUTES               Organize teams to join the RDANA
+        D + 1 HOUR                Undertake RDANA and report the results to the EOC
+       D + 5 HOURS                Deploy EIE teams in evacuation centers or schools with emergency education needs based on RDANA results
+      D + 10 HOURS                Provide reports to the EOC
+   D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                          21
+                                HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                 Emergency Telecommunications Cluster
+
+LEAD                      MEMBERS
+OCD                       DICT, DSWD-IMB, AFP-J6, PCG-CG11, BFP, PNP-CES, LGUs, CSOs, Volunteer Groups, Civilians and Private Organizations
+
+OBJECTIVES                                                                              RESPONSIBILITIES
+ 1.    To strengthen information and communication technology (ICT) capacities             1.   Organize and deploy resources to constitute the Rapid Emergency
+       from the national down to local levels to prepare for, respond to and recover            Telecommunications Team (RETT)
+       from the impacts of the earthquake                                                  2.   Ensure availability and accessibility of ICT services in affected areas
+ 2.    To facilitate communication among Response Clusters for effective                   3.   Maintain database for the upgrading of ICT capabilities
+       collaboration and coordination                                                      4.   Maximize the utilization of ICT capabilities and resources to ensure
+ 3.    To provide frequencies and identify other mode of communications possible                immediate restoration of telecommunication system for disaster
+       to be used by the members of the Response Clusters.                                      operations
+         TIMELINES                                                                     NEEDS AND ACTIVITIES
+       D (Ground Shaking)           Perform duck, cover and hold; ensure personal and family safety
+        D + 10 MINUTES              Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+        D + 20 MINUTES              Check telecommunication status and other government communications infrastructure;
+                                    Alert and organize the RETT and conduct inventory of ICT equipment on hand
+        D + 30 MINUTES              Pre-program all radios to the assigned disaster frequencies and ensure communications interoperability;
+                                    Provide radio nets, call signs and manage the frequencies allocated by NTC;
+                                    Provide a platform directory services containing the contact information of the different ICT key players;
+          D + 1 HOUR                Deploy RETT and establish On-Site Command Operations Coordinating Center (OSOCC) in target areas;
+                                    Provide basic telecommunications coverage around the main operational area for the EOC and other responders
+                                    Program radios or other equipment belonging to individual responders, organizations and other key players for interoperability;
+                                    Install and maintain internal ICT systems between Response Clusters and responders independent from national or local public
+         D + 3 HOURS                services;
+                                    Establish a dedicated GSM/LTE mobile network to be used by the Response Clusters and responders in the operational area in
+                                    partnership with TELCO(s)
+         D + 10 HOURS               Publish and maintain a list of GSM providers and availability of 2G/3G/4G/LTE and data services and its availability and reliability on
+                                    partnership with TELCO(s);
+                                    Update directory services containing the contact information of the different key players in affected areas
+      D + 1 DAY ONWARDS             Dispatch RETT as needed;
+                                    Conduct repair and maintenance activities related to ICT as needed;
+                                    Provide reports to the EOC;
+                                    Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+                                                                             22
+                              HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                       MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                     Food and Non-Food Item Cluster
+
+LEAD                   MEMBERS
+DSWD                   DOH, NSC, DA, NFA, OCD, AFP, PNP, PRC, CSOs, LGUs
+
+OBJECTIVES                                                                          RESPONSIBILITIES
+  1.   To ensure availability of family food packs, ready-to-eat food, and           1.   Activate and deploy Quick Response Team upon the directive of the EOC
+       bottled drinking water and also non-food item such as sleeping gears,              through the cluster lead
+       family clothing packs, dignity kits, kitchen kits, and shelter kits           2.   Activate and deploy pool of volunteers for repacking, escorting, delivery of
+       stockpiled at all levels;                                                          goods, distribution and monitoring
+  2.   To undertake the coordinated provision of food and non-food                   3.   Provide emergency relief (food and non-food items) inside and outside the
+       assistance to the affected families; and                                           evacuation centers
+  3.   To regularly monitor, in coordination with Health Cluster, the nutritional    4.   Determine logistical requirements for the Cluster such warehousing and
+       status (including nutritional content, social and cultural acceptability           transportation needs
+       anywhere in the food/non-food items) of the affected population, identify     5.   Establish and assign designated staff to man the donations desk in
+       gaps in the provision of food assistance, and formulate strategic                  coordination with the EOC
+       interventions to address the gaps.                                            6.   Ensure continuous and sufficient supply of foods and non-food items to serve
+                                                                                          the affected population
+                                                                                     7.   Prepare reports on inventory of food and non-food items
+       TIMELINES                                                                    NEEDS AND ACTIVITIES
+   D (Ground Shaking)             Perform duck, cover and hold; ensure personal and family safety
+    D + 10 MINUTES                Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+    D + 30 MINUTES                Conduct inventory of available resources and identify challenges in service delivery (stockpile, road access, transportation)
+      D + 1 HOUR                  Deliver available food and non-food items to the evacuation centers and other priority areas;
+                                  Request assistance from the logistics cluster for the delivery of goods
+       D + 3 HOURS                Facilitate distribution of food and non-food items
+       D + 5 HOURS                Provide reports to the EOC;
+                                  Request for replenishment
+ D + 10 HOURS ONWARDS             Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                            23
+                                HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                                     Health Cluster
+
+LEAD                      MEMBERS
+DOH                       DSWD, OCD, AFP, DILG, PNP, DEPED, PCG, DFA, PRC, WHO, UNFPA, UNICEF, CSOs, LGUs
+
+OBJECTIVES                                                                      RESPONSIBILITIES
+To provide holistic services for the following areas of health response:          1.    Provide health-related resources and services to all earthquake affected areas
+  1. Medical and Public Health                                                    2.    Provide logistical requirements and facilities to support the operations of the
+  2. Water, Sanitation and Hygiene (WASH)                                               Health Cluster
+  3. Nutrition in Emergencies (NiE)                                               3.    Conduct coordination, reporting, networking, and monitoring with all Response
+  4. Mental Health and Psychosocial Support (MHPSS)                                     Clusters and partners
+         TIMELINES                                                                     NEEDS AND ACTIVITIES
+      D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+       D + 10 MINUTES               Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National);
+                                    Activate ICS in all levels of health care systems;
+                                    Affected hospitals to activate treatment protocols
+       D + 30 MINUTES               Conduct pre-deployment briefings and preparations
+                                    Participate in the conduct of RDANA;
+         D + 1 HOUR                 Activate agreements with private sector partners (such as groceries and drugstores) as well as other NGAs;
+         D + 5 HOURS                Affected areas to communicate resource needs;
+                                    Deploy teams and resources based on RDANA results;
+                                    Provide reports to EOC
+     D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                           24
+                                HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                               Law and Order Cluster
+
+LEAD                      MEMBERS
+PNP                       AFP, NICA, BFP, PCG, BJMP, BUCOR, CSOs, LGUs
+
+OBJECTIVES                                                                             RESPONSIBILITIES
+  1.     To provide security services to all Response Clusters operating in the         1.   Establish security posts in all earthquake affected areas
+         affected areas;                                                                2.   Secure evacuation centers and other critical facilities
+  2.     To provide security services in traffic management that will facilitate the    3.   Assist in intelligence gathering
+         speedy movement off people, goods, equipment, and other resources to           4.   Provide security augmentation for the Response Clusters
+         the affected sites; and                                                        5.   Provide security teams during the clearing operations for roads, airports
+  3.     To enforce law and order in the community through the provision of                  and seaports
+         information on the disaster response operations and maintenance of
+         community policing to reduce or arrest criminality.
+         TIMELINES                                                                     NEEDS AND ACTIVITIES
+       D (Ground Shaking)           Perform duck, cover and hold; ensure personal and family safety
+        D + 10 MINUTES              Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+        D + 30 MINUTES              Establish security posts in earthquake affected areas
+                                    Participate in the conduct of RDANA;
+         D + 1 HOUR                 Provide security to RDANA teams
+         D + 5 HOURS                Deploy security teams based on RDANA results;
+                                    Work with other Response Clusters by providing security augmentation
+         D + 10 HOURS               Provide reports to the EOC
+      D + 1 DAY ONWARDS             Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                              25
+                             HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                      MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                              Logistics Cluster
+
+LEAD                   MEMBERS
+OCD                    DSWD, PNP, AFP, DPWH, PCG, BFP, PPA, DOTR, DOE, NEA, NGCP, LWUA, DICT, NTC, PEZA, CAAP, MIAA, MCIAA, and other airport
+                       authorities, Private groups, Electric Cooperatives/corporations, CSOs, LGUs
+OBJECTIVES                                                                         RESPONSIBILITIES
+  1.   To provide an efficient and effective strategic emergency logistics          1.   Provide list of available warehouses and load capacity for the use of the
+       services for all clusters in terms of mobility, warehousing, and supplies         Logistics Cluster for purposes of prepositioning, stockpiling and
+       and inventory management;                                                         augmentation
+  2.   To provide mobility assets for all Response Cluster operations;              2.   Facilitate provision of logistical support requests communicated through the
+  3.   To provide space for the storage and safekeeping of relief goods,                 EOC
+       supplies, materials, and equipment of different Response Clusters;           3.   Determine the prioritization and identify assets to be used
+  4.   To provide fuel, generators and other emergency resources for Response       4.   Coordinate with Response Cluster members for the availability and
+       Cluster operations;                                                               mobilization of appropriate logistics assets
+  5.   To ensure tracking of deployed items; and                                    5.   Facilitate administrative requirements for the mobilization and transport of
+  6.   To restore and maintain utilities such as power, water and communication          resources
+       towers.                                                                      6.   Provide feedback to requesting agency
+                                                                                    7.   Monitor/track deployed assets and prepare status reports
+       TIMELINES                                                                   NEEDS AND ACTIVITIES
+   D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+    D + 10 MINUTES               Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+    D + 30 MINUTES               Provide logistics support for the conduct of RDANA
+       D + 1 HOUR                Coordinate with all Response Clusters for their logistical needs
+      D + 5 HOURS                Deploy teams for the establishment and/or restoration of critical lifelines and facilities
+     D + 10 HOURS                Provide reports to the EOC
+  D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                         26
+                            HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                     MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                         Management of the Dead and Missing Cluster
+
+LEAD: DILG             MEMBERS: PNP CL, PNP DPCR, NBI, AFP, DOH, PCG, OCD, PRC, DPWH, DFA, DSWD, DEPD, CSOs, LGUs
+
+OBJECTIVE                                                                       RESPONSIBILITIES
+To implement policies, standards, guidelines, systems and procedures for the      1.   Facilitate the conduct of search and retrieval of dead bodies
+Management of he at all levels during emergencies and disasters                   2.   Manage the conduct of disaster victim identification (DVI)
+                                                                                  3.   Undertake disposition/ final arrangement of the dead
+                                                                                  4.   Manage requirements for the missing persons
+                                                                                  5.   Provide servies for the management of the bereaved families
+        TIMELINES                                                              NEEDS AND ACTIVITIES
+     D (Ground Shaking)         Perform duck, cover and hold; ensure personal and family safety
+      D + 10 MINUTES            Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+      D + 30 MINUTES            Convene all MDM Cluster Members and prepare logistical requirements
+      D + 45 MINUTES            Deploy MDM Teams to join with the SRR Teams
+        D + 1 HOUR              Activate DVI Teams and establish DVI facilities
+        D + 5 HOURS             Undertake DVI Operations;
+                                Submit report to the EOC
+       D + 10 HOURS             Establish facilities for operations for missing persons;
+                                Submit report to the EOC
+          D + 1 DAY             Establish facilities for final arrangement of the dead; undertake final disposition following CHAIN OF CUSTODY FORM;
+                                Submit report to the EOC
+                                Establish facilities for operations for management of bereaved families;
+         D + 4 DAYS             Submit report to the EOC
+   D + 4 DAYS ONWARDS           Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                       27
+                                 HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                          MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                      Philippine International Humanitarian Assistance Cluster
+
+LEAD                      MEMBERS
+DFA                       AFP, BOC, BI, DEPED, DOF, DOH, DND, DSWD, DICT, DOTR, OCD, PDEA,, CAAP, CDC, SBMA, CIAC, BAI, BOQ, FDA, PMS, CSOs,
+                          LGUs
+OBJECTIVE                                                                               RESPONSIBILITIES
+To provide timely, efficient, and effective delivery of international humanitarian        1.   Coordinate the entry and exit of international humanitarian assistance
+assistance from various international stakeholders                                        2.   Operate the Philippine International Humanitarian Assistance Center
+                                                                                               (PIHARC)
+                                                                                          3.   Operate the Philippine Humanitarian Assistance Registry (PHAR)
+                                                                                          4.   Coordinate with various Clusters on Requests and Offers of International
+                                                                                               Humanitarian Assistance
+         TIMELINES                                                                     NEEDS AND ACTIVITIES
+       D (Ground Shaking)            Perform duck, cover and hold; ensure personal and family safety
+        D + 10 MINUTES               Coordinate with all existing primary EOCs (LGUs, Region, National) or alternate EOCs for status updates;
+                                     Assemble the PIHARC and PHAR teams
+        D + 20 MINUTES               Inform International Humanitarian Assistance Community to be on standby
+        D + 30 MINUTES               Get instructions from the NDRRMC EOC on Declaration of Call for International Assistance
+        D + 45 MINUTES               Prepare PIHARC sites i.e. Clark, Subic, Cebu, Villamor Air Base,
+          D + 1 HOUR                 Upload requests and offers of International Humanitarian Assistance in PHAR
+                                     Match offers and requests of international humanitarian assistance;
+         D + 3 HOURS                 Advise incoming teams at Foreign Service Posts
+                                     Facilitate the entry of International Humanitarian Assistance Teams at PIHARC;
+         D + 10 HOURS                Facilitate the exit and evacuation of foreign nationals from all earthquake affected areas
+      D + 1 DAY ONWARDS              Undertake continuous monitoring, coordination for the response, reporting, and facilitation of entry and exit of international teams
+
+
+
+
+                                                                                28
+                                HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                                   Protection Cluster
+
+LEAD                     MEMBERS
+DSWD                     DOH, DILG, PNP, NAPC, NBI, PRC, DEPED, CSOs, LGUs
+
+OBJECTIVES                                                                              RESPONSIBILITIES
+  1.    To ensure timely, appropriate, and quality provision of multi-sectoral and       1.   Ensure all established ECs are compliant with SPHERE standards
+        survivor-centered child protection and gender-based violence services in         2.   Setup family reunification desks on the evacuation site
+        accordance with local, national and international guidelines/standards;          3.   Analyze trends and principal risk faced by children and women in the context of
+  2.    To establish and maintain appropriate coordination mechanism among all                the emergency, both in evacuation centers and in affected communities
+        humanitarian actors, including coordination of protection inputs, reports and    4.   Set-up information systems for measuring emergency child protection and gender-
+        humanitarian plan and generation of resources;                                        based violence needs and responses
+  3.    To ensure that the protection response adequately takes into account the         5.   Identify child protection and gender-based violence issues that can be acted upon
+        primary responsibility of the government to ensure protection of affected             by LCAT-VAWCs and LCPC members
+        persons, by among others, establishing adequate response mechanism and           6.   Assist in the coordination and monitoring of LGUs with identified child protection
+        coordination with the national and local authorities;                                 and gender-based violence cases
+  4.    To advocate for the mainstreaming of child protection and gender-based           7.   Monitor and ensure safety, security and protect the affected internally displaced
+        violence response in programs, policies and plans;                                    population (IDPs) to all forms of violence, abuse, neglect, and exploitation
+  5.    To strengthen partnerships for complementation and coordinated child             8.   Participate in IDP protection cluster meetings, assessment, and provision of
+        protection and gender-based violence response through the Regional and                services
+        Local Inter-Agency Committees on Anti-Trafficking and Violence against           9.   Provide security personnel on 24/7 to maintain peace and order with the standard
+        Women and their Childre (IACAT-VAWC) and the Local Council for the                    ratio of 1:500
+        Protection of Children (LCPC); and
+  6.    To establish common information, monitoring and reporting systems on
+        child protection and gender-based violence
+        TIMELINES                                                                       NEEDS AND ACTIVITIES
+       D (Ground Shaking)           Perform duck, cover and hold; ensure personal and family safety
+        D + 10 MINUTES              Obtain status updates from all existing primary or alternate EOCs (LGUs, Region, National)
+        D + 30 MINUTES              Organize teams to join the RDANA
+          D + 1 HOUR                Undertake RDANA and report the results to the EOC
+          D + 3 HOURS               Camp managers to establish ECs and other facilities such as WFS/CFS, info boards, etc.
+         D + 10 HOURS               Deploy security teams at the designated ECs;
+                                    Conduct orientation with the IDPs and organize committees within the evacuation center, especially for security and GAD
+           D + 1 DAY                Conduct initial assessment of the IDPs, their status and health conditions;
+                                    Coordinate with concerned Response Clusters for provision of services for the IDPs
+        D + 2 DAYS                  Establish family reunification system services
+   D + 1 DAY ONWARDS                Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+                                                                               29
+                                  HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                           MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                                                      Search, Rescue and Retrieval Cluster
+
+LEAD                        MEMBERS
+AFP                         BFP, PCG, PNP, CSOs, LGUs
+
+OBJECTIVES                                                                               RESPONSIBILITIES
+      1.    To ensure a rapid, appropriate and effective response to affected areas        1.   Conduct SRR operations
+            using all available resources;                                                 2.   Conduct RDANA operations
+      2.    To provide support for an effective, timely, organized and systematic          3.   Provide initial treatment for injured persons
+            search, rescue and retrieval (SRR) in order to minimize loss of lives and      4.   Conduct Mass Casualty Management (MCM)
+            casualties.                                                                    5.   Provide status reports
+                                                                                           6.   Provide technical assistance on health and safety concerns of SRR
+                                                                                                Teams
+            TIMELINES                                                                   NEEDS AND ACTIVITIES
+       D (Ground Shaking)             Perform duck, cover and hold; ensure personal and family safety
+        D + 10 MINUTES                Evacuate all personnel to designated assembly areas;
+                                      Coordinate with all existing primary EOCs (LGUs, Region, National) or alternate EOCs for status updates
+           D + 30 MINUTES             Conduct meeting and assess the situation
+           D + 45 MINUTES             Organize teams using all available resources and equipment;
+                                      Participate in the conduct of RDANA
+           D + 1 HOUR                 Deploy SRR teams based on RDANA results
+          D + 3 HOURS                 Advice all responders about existing and potential hazardous situations in affected areas
+         D + 10 HOURS                 Submit report to the EOC
+      D + 1 DAY ONWARDS               Undertake continuous monitoring, coordination for the response, and augmentation
+
+
+
+
+                                                                                30
+   B. Command and Control
+
+   Emergency Operations Center
+
+
+   To coordinate the requirements of the Response Clusters and assist the Incident
+   Management Teams in facilitating command and control, emergency operations
+   centers (EOCs) will be established.
+   All existing primary and alternate EOCs will serve as the primary hub for
+   coordination:
+  DRRMC IN CHARGE              COVERAGE                   EOC LOCATION
+LDRRMCs       in Metro Affected areas within the Respective cities and municipality
+Manila                 city/ municipality
+Metro Manila DRRMC     Entire Metro Manila       Primary:
+                       (4 Sectors)               Metro Manila Crisis Monitoring and
+                                                 Management Center, Mandaluyong
+                                                 City
+
+                                                                  Alternate:
+                                                                   1. Joint Task Force NCR,
+                                                                       Quezon City
+                                                                   2. Philippine Navy, Manila
+                                                                   3. Manila Bay area (Floating
+                                                                       EOC c/o PCG)
+LDRRMCs in Central Affected areas within the                      Respective provinces, cities and
+Luzon                province/ city/ municipality                 municipality
+RDRRMC Central Luzon Entire    Central      Luzon                 Diosdado Macapagal Government
+                     Region                                       Center, Maimpis, City of San
+                                                                  Fernando, Pampanga
+LDRRMCs         in Affected areas within the                      Respective provinces, cities and
+CALABARZON         province/ city/ municipality                   municipality
+RDRRMC CALABARZON Entire         CALABARZON                       CPD Building, Barangay Paciano,
+                   Region                                         Rizal, Calamba City, Laguna
+NDRRMC             Affected areas in Metro                        Primary: NDRRMC EOC Building,
+                   Manila, Central Luzon and                      Camp General Emilio Aguinaldo,
+                   CALABARZON                                     Quezon City
+
+                                                                  Alternate: AFP Grandstand, Camp
+                                                                  General Emilio Aguinaldo, Quezon
+                                                                  City
+               Table 14: Existing Primary and Alternate EOCs with Corresponding Locations
+
+
+
+
+                                                  31
+         HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                  MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Should the existing primary and alternate EOCs in all earthquake affected areas be
+compromised, the assisting RDRRMCs will support in terms of re-establishing the
+on-site EOCs. The following are the pre-identified locations of on-site EOCs to be
+set-up by the assisting RDRRMCs:
+
+
+ASSISTING DRRMC IN                        COVERAGE                          EOC LOCATION
+     CHARGE
+    RDRRMC VII                      Affected areas within                   Clark, Pampanga
+                                    Metro Manila, Central
+                                          Luzon and
+                                       CALABARZON
+       RDRRMC I                          Metro Manila                  Any open-space and safe
+                                       (North Sector)                           location
+       RDRRMC II                         Metro Manila                  Any open-space and safe
+                                        (East Sector)                           location
+     RDRRMC CAR                          Metro Manila              Intramuros Golf Course, Manila
+                                        (West Sector)                             City
+       RDRRMC V                          Metro Manila               Villamor Air Base Golf Course,
+                                       (South Sector)                         Pasay City
+       Table 15: On-site EOCs to be established by Assisting RDRRMCs with Corresponding Locations8
+
+As seen in the above table, in case the NDRRMC EOC in Camp General Emilio
+Aguinaldo, Quezon City will be totally compromised, RDRRMC VII will travel to
+Clark, Pampanga to re-establish the alternate EOC. The said EOC will then serve as
+the mirror site of the NDRRMC EOC to coordinate the response requirements in
+Central Luzon, Metro Manila, and CALABARZON.
+
+
+Incident Command System (ICS)
+
+
+To execute tactical response, assisting RDRRMCs will also organize their Incident
+Management Teams (IMTs). Again, it is always acknowledged that the LGUs will
+have their respective IMTs operating in earthquake affected areas. Upon arrival of
+the teams from assisting RDRRMCs, they will check-in to the local IMTs. However,
+in the event that the local IMTs will be overwhelmed and will require augmentation,
+the IMTs from assisting RDRRMCs can provide support. Following the principles of
+ICS, proper transfer of command will take place.
+The assisting RDRRMCs will also contribute to establish Area Command Teams
+(ACT), if needed.
+
+
+
+8
+ The proposed EOC locations are subject to change based on the updates to be made by the MMDRRMC on
+the Oplan Metro Yakal Plus as well as the respective contingency plans of Metro Manila LGUs.
+
+                                                   32
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                            National ACT
+
+
+
+       Central Luzon        Metro Manila         CALABARZON
+        IMT (c/o R1)            ACT               IMT (c/o R5)
+
+
+
+                                North Sector
+                                IMT (c/o R1)
+
+
+
+                                 West Sector
+                                IMT (c/o CAR)
+
+
+
+                               East Sector IMT
+                                  (c/o R2)
+
+
+
+                                South Sector
+                                 IMT(c/o R5)
+
+
+       Diagram 5: Relationships of IMTs by the Assisting RDRRMCs
+
+
+
+
+                                  33
+       HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Interoperability
+
+Below is the diagram depicting the interoperability of the Response Clusters, EOC
+and IMTs for every RDRRMC.
+
+
+
+
+                   Diagram 6: Interoperability of Response Clusters, EOC, and IMT
+
+
+
+As seen in the diagram, the EOC serves as the link between the Response Clusters
+and the IMT. The RDRRMC IMT working at the ground will send resource requests
+to the EOC. From the EOC, the resource requests will then be coordinated with the
+Response Clusters starting from the first wave of RDRRMCs. Assistance from the
+second and third wave of RDRRMCs will come as needed. Following the principles
+of ICS, the Response Clusters will serve as the force providers while the IMTs will
+function as the force employers.
+
+
+
+
+                                                34
+       Below is the table that summarizes the harmonized response actions of all affected LDRRMCs, RDRRMCs, NDRRMC as well as
+       the assisting RDRRMCs from Luzon, Visayas and Mindanao. These response actions are generic assumptions that the DRRMCs
+       may consider in the event of the magnitude 7.2 earthquake due to the WVF movement:
+
+                                   MMDRRMC                                      RDRRMC                                                                               ASSISTING RDRRMC
+                                                                                                    RDRRMC
+              EAST              WEST     NORTH                  SOUTH           CENTRAL
+TIMELINES                                                                                         CALABARZON             NDRRMC
+             SECTOR            SECTOR    SECTOR                 SECTOR           LUZON                                                           1st WAVE              2nd WAVE                  3rd WAVE
+                                                                                                    and LGUs
+              LGUs              LGUs      LGUs                   LGUs           and LGUs
+                                                            Perform duck, cover, and hold                                                              Closely coordinate with NDRRMC EOC for updates
+D (GROUND
+                                                          Ensure personal and family safety                                                          Coordinate with EOCs of all earthquake affected areas
+ SHAKING)
+                                                       Evacuate to designated assembly areas                                                          Check available resources for possible augmentation
+                                                               Anticipate Aftershocks
+                                                                                                                                                       Closely coordinate with NDRRMC EOC for updates
+ D + 10        Conduct communications check. Use backup communication systems, if needed, such as HF, VHF, satellite phones, base
+MINUTES                                    radios, short-range radios, BGAN, and messengers/ riders
+                                                                                                                                             Alert RDRRMC and LDRRMCs to standby for possible augmentation
+            Establish contact with respective EOC for situation updates. If existing EOCs are already compromised, activate alternate EOCs
+                                                                                                                                                  Continue
+                                                                Anticipate Aftershocks                                                        coordination with
+                                                                                                                                             NDRRMC EOC and
+                                  Coordinate with respective DRRMC member agencies/offices for situation updates                               other EOCs of
+                                                                                                                                               affected areas.          Closely coordinate with the 1st wave of
+ D + 20
+                                                      Activate and convene Response Clusters                                                                                     Assisting RDRRMCs
+MINUTES
+                                                                                                                                             If no contact at this
+                                         Organize available RDANA Teams, IMTs and other response teams                                          point, convene        Standby ready for possible augmentation
+                                                                                                                                                RDRRMC and
+                                                    Gather and consolidate available initial reports                                          prepare teams for
+                                                                                                                                                  mobilization.
+                                                                                                                   Anticipate Aftershocks        If PHIVOLCS
+                                                                                                                                                  confirms the
+                                                                                                                    Activate Harmonized         magnitude 7.2
+                                                                                                                    National Contingency      earthquake due to
+                                                                                                                   Plan based on intensity     WVF movement,
+                                                   Anticipate Aftershocks
+                                                                                                                      (VI and above) or       activate response
+                                                                                                                                                                        Closely coordinate with the 1st wave of
+                                                                                                                      based on reports         teams based on
+ D + 30     Activate respective contingency plans based on intensity (VI and above) or based on reports gathered                                                                 Assisting RDRRMCs
+                                                                                                                           gathered               Harmonized
+MINUTES
+                                                                                                                                                    National
+                   Mobilize RDANA Teams, IMTs and other response teams, as available and as needed                                                                    Standby ready for possible augmentation
+                                                                                                                    Establish linkage with    Contingency Plan
+                                                                                                                    Assisting RDRRMCs
+                                                                                                                                              Begin mobilization
+                                                                                                                      Mobilize response       of teams going to
+                                                                                                                     teams, as available     earthquake affected
+                                                                                                                       and as needed                areas
+
+
+                                                                                                       35
+                                           HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                                    MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                        Anticipate Aftershocks
+                                                                                                                                         Continuously           Closely coordinate with the 1st wave of
+                             Continue the mobilization of response teams according to Response Clusters
+                                                                                                                                        coordinate with                  Assisting RDRRMCs
+  D + 45
+                                                                                                                                        NDRRMC EOC
+ MINUTES                            Prioritize safety and security of teams and resources using ICS
+                                                                                                                                        while en-route        Standby ready for possible augmentation
+                          Communicate reports and requests for augmentation to primary and alternate EOCs
+
+
+                                                                                                                                         Continuously
+                                                        Anticipate Aftershocks                                                          coordinate with
+                                                                                                                                        NDRRMC EOC
+                             Continue the mobilization of response teams according to Response Clusters                                 while en-route          Closely coordinate with the 1st wave of
+                                                                                                                                                                         Assisting RDRRMCs
+D + 1 HOUR
+                                    Prioritize safety and security of teams and resources using ICS                                   Coordinate with 2nd
+                                                                                                                                      wave and 3rd wave       Standby ready for possible augmentation
+                          Communicate reports and requests for augmentation to primary and alternate EOCs                                of Assisting
+                                                                                                                                        RDRRMCs for
+                                                                                                                                           updates
+                                                                                                                                        Report to the
+                                                                                                          Activate alternate EOC
+                                                                                                                                       NDRRMC EOC
+                                           Anticipate Aftershocks                                          at Clark, Pampanga
+                                                                                                                                         upon arrival       Closely coordinate     Closely coordinate with
+D + 3 HOURS                                                                                               through RDRRMC VII
+                                                                                                                                                              with NDRRMC            NDRRMC EOC for
+                 Continue the mobilization of response teams according to Response Clusters
+                                                                                                                                        Check-in to the      EOC for updates              updates
+                                                                                                            Establish PIHARC
+                                                                                                                                      designated IMTs of
+                       Prioritize safety and security of teams and resources using ICS                             Sites
+                                                                                                                                      earthquake affected   Begin mobilization       Standby ready for
+                                                                                                                                             areas          of teams going to      possible augmentation
+              Communicate reports and requests for augmentation to primary and alternate EOCs             Facilitate Declaration of
+                                                                                                                                                                earthquake
+                                                                                                             State of National
+                                                                                                                                         Proceed with        affected areas
+                                                                                                                  Calamity
+                                                                                                                                           response
+                                                                                                                                         Allocate and
+                                                                                                                                      provide more teams
+                                                        Anticipate Aftershocks
+                                                                                                                                         coming from                               Closely coordinate with
+                                                                                                                                         RDRRMC, if           Continuously           NDRRMC EOC for
+                             Continue the mobilization of response teams according to Response Clusters
+                                                                                                                                           necessary         coordinate with              updates
+D + 8 HOURS                                                                                                                                                  NDRRMC EOC
+                                    Prioritize safety and security of teams and resources using ICS
+                                                                                                                                      Provide updates to     while en-route          Standby ready for
+                                                                                                                                       NDRRMC EOC                                  possible augmentation
+                          Communicate reports and requests for augmentation to primary and alternate EOCs
+
+
+
+
+                                                                                              36
+                             HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                                      MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                                                                  Continue the
+                                                                                                 mobilization of
+                                                                                               teams according to                          Closely coordinate with
+                                          Anticipate Aftershocks
+                                                                                               Response Clusters                             NDRRMC EOC for
+                                                                                                                       Continuously               updates
+                Continue the mobilization of response teams according to Response Clusters
+                                                                                                  Allocate and        coordinate with
+ D + 12
+                                                                                               provide more teams     NDRRMC EOC             Standby ready for
+ HOURS                Prioritize safety and security of teams and resources using ICS
+                                                                                                  coming from         while en-route       possible augmentation
+                                                                                                  RDRRMC, if
+             Communicate reports and requests for augmentation to primary and alternate EOCs
+                                                                                                    necessary
+
+                                                                                               Provide updates to
+                                                                                                 NDRRMC EOC
+                                                                                                  Continue the
+                                                                                                 mobilization of       Report to the
+                                                                                               teams according to     NDRRMC EOC
+                                          Anticipate Aftershocks
+                                                                                               Response Clusters       upon arrival
+                Continue the mobilization of response teams according to Response Clusters                                                Continuously coordinate
+                                                                                                  Allocate and        Check-in to the
+                                                                                                                                           with NDRRMC EOC
+D + 1 DAY                                                                                      provide more teams   designated IMTs of
+                      Prioritize safety and security of teams and resources using ICS                                                          while en-route
+                                                                                                  coming from           earthquake
+                                                                                                  RDRRMC, if          affected areas
+             Communicate reports and requests for augmentation to primary and alternate EOCs
+                                                                                                    necessary
+                                                                                                                       Proceed with
+                                                                                               Provide updates to       response
+                                                                                                NDRRMC EOC
+                                                                                                                                           Report to the NDRRMC
+                                          Anticipate Aftershocks
+                                                                                                  Continue the mobilization of teams         EOC upon arrival
+                                                                                                   according to Response Clusters
+                Continue the mobilization of response teams according to Response Clusters
+                                                                                                                                              Check-in to the
+D + 2 DAYS                                                                                     Allocate and provide more teams coming       designated IMTs of
+                      Prioritize safety and security of teams and resources using ICS
+                                                                                                     from RDRRMC, if necessary              earthquake affected
+                                                                                                                                                   areas
+             Communicate reports and requests for augmentation to primary and alternate EOCs
+                                                                                                  Provide updates to NDRRMC EOC
+                                                                                                                                           Proceed with response
+                                          Anticipate Aftershocks
+
+                Continue the mobilization of response teams according to Response Clusters      Continue the mobilization of teams according to Response Clusters
+D + 4 DAYS
+                      Prioritize safety and security of teams and resources using ICS          Allocate and provide more teams coming from RDRRMC, if necessary
+
+             Communicate reports and requests for augmentation to primary and alternate EOCs                   Provide updates to NDRRMC EOC
+
+
+                                                                               37
+              HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                       MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                                              Anticipate Aftershocks
+
+                                   Continue the mobilization of response teams according to Response Clusters
+
+                                          Prioritize safety and security of teams and resources using ICS
+D + 14 DAYS
+                                Communicate reports and requests for augmentation to primary and alternate EOCs
+ ONWARDS
+                      Pronounce the deactivation of the response clusters and demobilize resources that are no longer needed.
+
+              Conduct Mental Health and Psychosocial Services (MHPSS) and Critical Incident Stress Debriefing (CISD) for responders.
+
+                                                      Transition to early recovery as needed
+                         Table 16: Summary of Harmonized Response Actions for all DRRMCs
+
+
+
+
+                                                              38
+                   COORDINATING INSTRUCTIONS
+
+All national government agencies of the NDRRMC, MMDRRMC, affected RDRRMCs
+in Central Luzon and CALABARZON, all designated assisting RDRRMCs, including
+the lead and member agencies of the Response Clusters, EOC personnel, and IMT
+members are hereby directed to adhere to the following coordinating instructions:
+   1. All DRRMCs shall formulate their implementation plans as annexes to the
+      Harmonized National Contingency Plan. The said implementation plans shall
+      include the operational details of their Response Clusters, accessibility and
+      functionality of the EOCs, and composition of the IMTs. The OCD through the
+      Capacity Building and Training Service shall consolidate all implementation
+      plans of the assisting RDRRMCs for further review and integration by the
+      NDRRMC Technical Working Group.
+   2. All DRRMCs shall complete their respective inventory of resources that will
+      specifically be committed for augmentation to the LGUs.
+   3. All DRRMCs shall upgrade their response capabilities for earthquake,
+      particularly in Collapsed Structure Search and Rescue as well as Urban
+      Search and Rescue.
+   4. Upon the occurrence of the earthquake, all assisting RDRRMCs shall
+      immediately contact the pre-identified EOCs of the NDRRMC, MMDRRMC
+      and RDRRMCs of Central Luzon and CALABARZON, and LGUs. Should
+      there be absence of contact with the said EOCs, the assisting RDRRMCs
+      shall assume that they are no longer functioning due to the effects of the
+      earthquake. Such will prompt the assisting RDRRMCs to prepare for
+      augmentation.
+   5. During response operations, all assisting RDRRMCs shall be self-sufficient.
+      They shall utilize their own regional response capacities and resources,
+      including their mobility and setting up facilities.
+   6. All response activities shall be organized according to the Cluster Approach.
+      Actions shall be coordinated by the EOCs.
+   7. All tactical resources deployed at the affected sites shall be required to check-
+      in under the command and control of the IMTs in-charge.
+   8. Should the affected LGUs be able to recover, they shall re-assume the
+      management of response. Proper transfer of command shall take place.
+
+
+
+
+                                          39
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+               EFFECTIVITY
+
+
+
+
+                     40
+        HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                 MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                 REFERENCES
+
+Government documents:
+“Greater Metropolitan Manila Area Risk Analysis Project”, 2013
+“Metro Manila Earthquake Impact Reduction Study”, 2004
+“National Disaster Response Plan for Earthquake and Tsunami”, 2017
+“Oplan Metro Yakal Plus”, 2015
+“PHVIOLCS 2017 Annual Report”, 2017
+Government websites:
+Philippine Statistics Authority <https://psa.gov.ph>
+Philippine Institute of Volcanology and Seismology
+<http://www.phivolcs.dost.gov.ph/>
+Department of Environment and Natural Resources
+<http://ncr.denr.gov.ph/index.php/about-us/regional-profile>
+<http://r3.denr.gov.ph/index.php/about-us/regional-profile>
+
+National Nutrition Council
+<http://www.nnc.gov.ph/regional-offices>
+
+Photo-documentation credits:
+https://www.facebook.com/maricris.c.rodriguez
+https://www.facebook.com/sctrorlando.barachina
+https://www.facebook.com/liza.mazo
+https://www.facebook.com/alet.ahumadanogra
+https://www.facebook.com/leoncio.cirunayjr
+https://www.facebook.com/CivilDefenseCordillera
+https://www.facebook.com/ankzblog
+Other references:
+“Earthquakes hit Batangas, felt in other areas in Luzon”, 2017
+<http://cnnphilippines.com/news/>
+“5.5 quake shakes 19 areas in Metro Manila, other parts of Luzon”, 2017
+<http://newsinfo.inquirer.net>
+
+                                           41
+            HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                     MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                                       APPENDICES
+
+                           NDRRMC Technical Working Group
+
+
+    The NDRRMC Technical Working Group (TWG) is the focal body in charge of the
+    refinement, finalization, testing, evaluation, packaging, updating and improvement of
+    the harmonized national contingency plan.
+    Functions:
+       1. Conceptualize the contents of the assigned implementing and supporting
+          plans of the harmonized national contingency plan based on inputs from key
+          stakeholders;
+
+       2. Directly coordinate with the relevant national and regional government
+          agencies, local government units, civil society organizations, private sector
+          representatives, and other stakeholders to gather, consolidated, review, and
+          synthesize inputs for assimiliation in the harmonized national contingency
+          plan, and
+
+       3. Participate in consultation meetings and workshops, and other relevant
+          activities to be organized by the OCD that are relevant to the development of
+          the harmonized national contingency plan.
+
+    Composition:
+              Name                      Office                  Specific Roles
+Dir Susana Juangco                      OCD                     Overall in-charge
+
+Joe-Mar Perez                            OCD                Principal authors/editors
+Alyssa Aimee Batle
+Dir Edgar Allan Tabell                   DILG     Authors/editors and coordinators for the
+Robin Lim                                         development of Management of the Dead
+                                                  and the Missing Cluster Plan
+Dir Gloria Balboa                        DOH      Authors/editors and coordinators for the
+Dr Irvin Miranda                                  development of Health Cluster Plan
+Francis Raize Bautista
+PSUPT JOHNNY CAPALOS                     PNP      Authors/editors and coordinators for the
+PCISNP WILSON LAGAN JR                            development of Law and Order Cluster Plan
+COL ANTONIO NAFARETE GSC PA              AFP      Authors/editors and coordinators for the
+CPT LYNDON DEL ROSARIO PAF                        development of Search, Rescue and
+                                                  Retrieval Cluster Plan
+Dir Edward Yulo                          DFA      Authors/editors and coordinators for the
+Jose Arcel Donato                                 development of International Humanitarian
+                                                  Assistance Cluster Plan
+
+
+                                             42
+           HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                    MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Roderick Guisadio                      DSWD   Authors/editors and coordinators for the
+Aileen Respicio                               development of Camp Coordination and
+Aubrey Bautista                               Camp Management, Protection, and Food
+Arlyn Gerez                                   and Non-Food Items Cluster Plans
+Kessica Bersamin                      DepEd Authors/editors and coordinators for the
+                                              development of Education Cluster Plan
+Noel Fallario                         DPWH Authors/editors and coordinators for the
+Bryan Thelmo                                  development of Debris Clearing and Civil
+Christian Darwin Valencia                     Works Plan
+Rafael Olivar                          DICT;  Authors/editors and coordinators for the
+Kelvin Art Ofrecio                     OCD    development           of         Emergency
+                                              Telecommunications Cluster Plan
+Susana Quiambao                        OCD    Authors/editors and coordinators for the
+Sonny Patron                                  development of Logistics Cluster Plan
+Mike Aldrin Sabado                     OCD I Authors/editors and coordinators for :
+Renzie Ivan Costales                             • Emergency Operations Center in
+                                                    Metro Manila North Quadrant and
+                                                    Central Luzon
+Riza Joy Hernandez                    OCD VII    • Incident Management Teams in
+Tashuana Alemana                                    Metro Manila North Quadrant and
+                                                    Central Luzon
+Ronald Villa                          OCD II Authors/editors and coordinators for :
+Bryan De Vera                                    • Emergency Operations Center in
+                                                    Metro Manila East Quadrant
+Rebecca Lopez                         OCD XI     • Incident Management Team in Metro
+Fe Kalimpo                                          Manila East Quadrant
+Ferdinand A. Tamulto                   OCD    Authors/editors and coordinators for :
+Frankie Cortez                         CAR       • Emergency Operations Center in
+                                                    Metro Manila West Quadrant
+Purito Velez                          OCD X      • Incident Management Team in Metro
+Lia Gaston                                          Manila West Quadrant
+Jessar Adornado                       OCD V Authors/editors and coordinators for :
+Akim Berces                                      • Emergency Operations Center in
+                                                    Metro Manila South Quadrant and
+                                                    CALABARZON
+Engr. Joseph Paul Nogra               OCD VI     • Incident Management Teams in
+Melissa Banias                                      Metro Manila South Quadrant and
+                                                    CALABARZON
+                            Table 14: Composition of NDRRMC TWG
+
+
+
+
+                                            43
+    HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+             MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 29, s 2017: Inventory of Emergency Response
+   Assets in Preparation for Contingency Planning for the “Big One”
+
+
+
+
+                                44
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     45
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 43, s 2017: Designation of Assisting RDRRMCs to
+ Augment the NDRRMC in Preparation for the 7.2 Magnitude Earthquake in
+                           Metro Manila
+
+
+
+
+                                  46
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     47
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+  NDRRMC Memorandum No. 91, s 2017: Constitution of Technical Working
+Group (TWG) to Develop the Harmonized National Contingency Plan for the 7.2
+                          Magnitude Earthquake
+
+
+
+
+                                    48
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     49
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 129, s 2017: Completion of Implementation Plans
+ in connection with the Harmonized National Contingency Plan for the 7.2
+                          Magnitude Earthquake
+
+
+
+
+                                   50
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     51
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     52
+     HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+              MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 7, s 2018: Dissemination of Harmonized National
+  Contingency Plan for the 7.2 Magnitude Earthquake for Comments and
+                           Recommendations
+
+
+
+
+                                 53
+     HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+              MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 8, s 2018: Completion of Implementation Plans in
+  connection with the Harmonized National Contingency Plan for the 7.2
+                         Magnitude Earthquake
+
+
+
+
+                                  54
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     55
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     56
+    HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+             MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+  NDRRMC Memorandum No. 68, s 2018: Reiteration of Submission of
+Implementation Plans and Other Relevant Information in connection with
+Harmonized National Contingency Plan for the 7.2 Magnitude Earthquake
+
+
+
+
+                                  57
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     58
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     59
+     HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+              MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+NDRRMC Memorandum No. 31, s 2019: Updates on the Harmonized National
+         Contingency Plan for the Magnitude 7. Earthquake
+
+
+
+
+                                 60
+HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+         MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+
+                     61
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                          Photo-Documentation
+
+1st Workshop to Develop the Harmonized National Contingency Plan
+Dates: 24 – 25 April 2017
+Venue: El Cielito Hotel, Makati City
+Participants: NDRRMC, RDRRMC I, RDRRMC II, RDRRMC III, RDRRMC
+CALABARZON, RDRRMC MIMAROPA, RDRRMC V, RDRRMC CAR
+
+
+
+
+                                   62
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+2nd Workshop to Develop the Harmonized National Contingency Plan
+Dates: 31 July – 01 August 2017
+Venue: Days Hotel, Iloilo City
+Participants: RDRRMC VI, RDRRMC VII, RDRRMC VIII, RDRRMC IX, RDRRMC
+X, RDRRMC XI, RDRRMC XII, RDRRMC CARAGA, RDRRMC NIR
+
+
+
+
+                                 63
+       HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Contingency Plan Training for NDRRMC (Scenario: 7.2 Magnitude Earthquake)
+Dates: 06 – 09 June 2017
+Venue: Richville Hotel, Mandaluyong City
+Participants: OCD and NDRRMC Member Agencies
+
+
+
+
+                                    64
+       HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Tabletop Exercise for the Harmonized National Contingency Plan for the 7.2
+Magnitude Earthquake
+Dates: 19 – 23 November 2018
+Venue: Makati Palace Hotel, Makati City
+Participants: NDRRMC, RDRRMC and LGUs in Metro Manila, Central Luzon,
+CALABARZON, assisting RDRRMCs from Luzon, Visayas and Mindanao
+
+
+
+
+                                     65
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+                             List of Contributors
+National Disaster Risk Reduction and Management Council
+    1. USEC RICARDO B JALAD                                    OCD
+    2. DIR SUSANA JUANGCO                                      OCD
+    3. DIR BERNARDO RAFAELITO ALEJANDRO IV                     OCD
+    4. DIR EDGAR L. POSADAS, M. D.                             OCD
+    5. DIR BLANCHE GOBENCIONG                                  OCD
+    6. DIR MA. TERESA ESCOLANO                                 OCD
+    7. SUSANA QUIAMBAO                                         OCD
+    8. SONNY PATRON                                            OCD
+    9. MANUEL NIVERA JR                                        OCD
+    10. MA TERESA GALANG                                       OCD
+    11. JOE-MAR PEREZ                                          OCD
+    12. SHEREEN LUCAS-HOMBREBUENO                              OCD
+    13. ROSE ANN TIERRA                                        OCD
+    14. HANNAH GRACE ESCAMILLA                                 OCD
+    15. ALYSSA AIMEE BATLE                                     OCD
+    16. MYRABETH ALICIAS                                       OCD
+    17. ENGR FLORENTINO SISON                                  OCD
+    18. DIR EDGAR ALLAN TABELL                                 DILG
+    19. ROBIN LIM                                              DILG
+    20. MARIA ANGELA MONICA SALUD B. MAMUYAC                   DILG
+    21. SIR JEJOMAR B. BALAW-ING                               DILG
+    22. ELENNETH AVELINO                                      DSWD
+    23. AUBREY A BAUTISTA                                     DSWD
+    24. MA. ARLYN A GEREZ                                     DSWD
+    25. CHARMAINE VILLAMIL                                DOST-PHIVOLCS
+    26. ISHMAEL NARAG                                     DOST-PHIVOLCS
+    27. MARIA LYNN P. MELOSANTOS                          DOST-PHIVOLCS
+    28. ERLINTON OLAVERE                                  DOST-PHIVOLCS
+    29. LYCA MARIE A TUNGCUL                              DOST-PHIVOLCS
+    30. KARL CHRISTIAN D ABALOS                               NEDA
+    31. DR. GLORIA BALBOA                                      DOH
+    32. DR. MARIDITH AFUANG                                    DOH
+    33. DR. ARNEL NIVERA                                       DOH
+    34. DR. IRVIN MIRANDA                                      DOH
+    35. FRANCIS RAIZE BAUTISTA                                 DOH
+    36. DIR EDWARD YULO                                        DFA
+    37. MILA VELA                                              DFA
+    38. KESSICA BERSAMIN                                     DEPED
+    39. EUGENIO C GARCIA                                      CHED
+    40. CHRISTIAN DARWIN VALENCIA                             DPWH
+    41. NOEL FALLARIA                                         DPWH
+    42. MERVIN DC MONTELOYOLA                                 DPWH
+    43. BRYAN T. THELMO                                       DPWH
+    44. ENGR MARCOS D ECHAVEZ                                  DOE
+
+                                   66
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+   45. MICHAEL COGLIGADO                                      DOE
+   46. DANILO V VIVAR                                         DOE
+   47. ARNEL C ANTONIO                                        DOE
+   48. ENRIQUE M NAVARRETE                                    DOE
+   49. JIMWEL B BALUNDAY                                      DOE
+   50. ASEC MARK RICHMUND DE LEON                             DOTR
+   51. BETHA B DORIA                                          DOTR
+   52. RAYMUND MACANAS                                        DOTR
+   53. PEDRITA HELOISA B PRE                                  DOTR
+   54. JOHN RICO ROMAQUIN                                     DOTR
+   55. NEIL ANGELO SANCHEZ                                    DOTR
+   56. CDR ARNOLD E DELA CRUZ PCG                             PCG
+   57. CDRF PEREGRINO E BALESTRAMON PCG                       PCG
+   58. RAFAEL L. OLIVAR                                       DICT
+   59. MICHAEL L DOMINGO                                      DICT
+   60. PCINSP LUISITO RIVERA NEVADO                            PNP
+   61. PCINSP WILSON C LAGAN JR                                PNP
+   62. PSINSIP EDMUNDO GERONIMO                                PNP
+   63. SUPT RACHEL R VERBO                                     BFP
+   64. FO2 MARIAMNIC T GASQUE                                  BFP
+   65. INSP MARLON P LOZADA                                    BFP
+   66. SINSP ROBERTO SAMILLIANO JR.                            BFP
+   67. CPT LYNDON DEL ROSARIO PAF                              AFP
+   68. LCDR ANDREI JASON B SANGLAY PN                     AFPRESCOM
+   69. LTSG NELSON L REYES PN                             AFPRESCOM
+   70. CONRADO E FRANCISCO JR                                OPAPP
+   71. ELPIDIO N DELA CRUZ                                   OPAPP
+   72. AMOR TAN SINGCO                                      ACCORD
+   73. EDWIN SALONGA                                 PRIVATE (FORMER OCD)
+   74. KRISTAL TODCOR                               PRIVATE (FORMER DEPED)
+   75. BEA TRESVALLES                               PRIVATE (FORMER DEPED)
+
+National Security Council
+    1. ADG RAY D. RODEROS                                     NSC
+    2. FIDEL R ANONUEVO                                       NSC
+    3. MA CECILIA PACIS                                       NSC
+
+Metro Manila Disaster Risk Reduction and Management Council
+   1. DIR ROMULO CABANTAC JR                              OCD NCR
+   2. SHELBY RUIZ                                         OCD NCR
+   3. CARL LUCES                                          OCD NCR
+   4. EDNA CONDA                                          OCD NCR
+   5. ALDO MAYOR                                           MMDA
+   6. EMMANUEL L ONAN                                      MMDA
+   7. MODESTO CELESTINO VICENTE F MANANGAN                 MMDA
+
+
+                                   67
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+   8. JOSEPHINE R SY                                      MMDA
+   9. JONAS JAMES AGOT                                  DILG NCR
+   10. INSP JERSON IAN R. MONTELLANA                     BFP NCR
+   11. PSUPT NICOLAS V PINON                           PNP NCRPO
+   12. PCI GARLOS J DITAY                              PNP NCRPO
+   13. PSUPT NOEL BUÑAG                                PNP NCRPO
+   14. EDURADO L KONDO                              DEPED MUNTINLUPA
+   15. LIEZL A MENDOZA                               DEPED CALOOCAN
+   16. DARIOS VALLEJOS                                 PARANAQUE
+
+Regional Disaster Risk Reduction and Management Council CAR
+   1. EDGAR OLLET                                         OCD CAR
+   2. EXCEL BOTIGAN                                       OCD CAR
+   3. MARY ANN J GRIBA                                    DILG CAR
+   4. MARY ANN G BUCLAO                                  DSWD CAR
+   5. CLARK P DIZON                                       DOH CAR
+   6. MAJ JESSIE JAMES G TUGUIC                           AFP CAR
+   7. LEO DANIEL L LARDIZABAL                             BFP CAR
+   8. BYRON B TEGUI-IN                                    PNP CAR
+   9. EVANGELINE MALAG                                   DEPED CAR
+
+Regional Disaster Risk Reduction and Management Council I
+   1. DIR MELCHITO CASTRO                               OCD REGION I
+   2. RENZIE IVAN A COSTALES                            OCD REGION I
+   3. MIKE ALDRIN SABADO                                OCD REGION I
+   4. RHODALYN LICUDINE                                 DILG REGION I
+   5. MARICEL CALEJA                                   DSWD REGION I
+   6. DR ROSARIO P PAMINTUAN                            DOH REGION I
+   7. LCDR JAYSON F CIMATU (PN)                          AFP REGION I
+   8. CINSP SAMUEL G ABENES                              BFP REGION I
+   9. PSUPT FERDINAND Z DE ASIS                         PNP REGION I
+
+Regional Disaster Risk Reduction and Management Council II
+   1. DIR DANTE BALAO                                   OCD REGION II
+   2. BRYAN DE VERA                                     OCD REGION II
+   3. RONALD VILLA                                      OCD REGION II
+
+Regional Disaster Risk Reduction and Management Council III
+   1. DIR MARLOU SALAZAR                               OCD REGION III
+   2. DIANE HENIE DEL ROSARIO                          OCD REGION III
+   3. SHERWIN DIAGO                                    OCD REGION III
+   4. LERRIE HERNANDEZ                                 DILG REGION III
+   5. ERROL ERNEST DYTIANQUIN                          DOH REGION III
+   6. CINSP JOSE RAYMUND MANIMBU                        BFP REGION III
+   7. PSUPT MANNY T CALMA                              PNP REGION III
+   8. ENGR. RODOLFO DAVID                             DPWH REGION III
+
+                                   68
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+   9. PAUL JESSIE CRUZ                              DSWD REGION III
+   10. VILMA SERRANO                                DSWD REGION III
+
+Regional Disaster Risk Reduction and Management Council CALABARZON
+   1. DIR OLIVIA LUCES                               OCD CALABARZON
+   2. ALEX CZAR MASIGLAT                             OCD CALABARZON
+   3. RICHARD BANDONG                                DILG CALABARZON
+   4. ORLANDO BARACHINA                             DEPED CALABARZON
+   5. INSP. MARICRIS RODRIGUEZ                        BFP CALABARZON
+   6. PSI MA. VERGINIA FORMANES                      PNP CALABARZON
+   7. VICENTE TOMAZAR                                SAN MATEO, RIZAL
+
+Regional Disaster Risk Reduction and Management Council MIMAROPA
+   1. DIR RUBEN L CARANDANG                           OCD MIMAROPA
+   2. NIEVES BONIFACIO                                OCD MIMAROPA
+   3. CHARISSE ADRIANO                                DILG MIMAROPA
+   4. PURIFICATION R. ARRIOLA                        DSWD MIMAROPA
+   5. MARK LAWRENCE YGAR                              DOH MIMAROPA
+   6. MA. CATHERINE MADRID                            DOH MIMAROPA
+   7. CPT CHRITOPHER L. CUENCA                         AFP MIMAROPA
+   8. INSP NERISSA EUGENIA P. PANERGALIN               BFP MIMAROPA
+   9. PSUPT ARVIN T. MOLINA                            PNP MIMAROPA
+   10. DIEGO BUSTAMANTE                              DEPED MIMAROPA
+
+Regional Disaster Risk Reduction and Management Council V
+   1. DIR CLAUDIO L. YUCOT                             OCD REGION V
+   2. JESSAR ADORNADO                                  OCD REGION V
+   3. LLOYD S. LARA                                   DSWD REGION V
+   4. BHERNARD A. MONGO                                DOH REGION V
+   5. DEO R. MORENO                                  DEPED REGION V
+   6. LTC OMAR V OROZCO GSC (CAV) PA                    AFP REGION V
+   7. LTC RONALD E GABOY PAF                            AFP REGION V
+   8. CAPT TORIBIO D ADACI JR PN (GSC)                  AFP REGION V
+   9. FINSP PETER PAUL D MENDOZA                        BFP REGION V
+   10. PCINSP ALLAN E MACOY JR                          PNP REGION V
+
+
+
+
+                                  69
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Regional Disaster Risk Reduction and Management Council VI
+  1. DIR JOSE ROBERTO R. NUÑEZ                           OCD REGION VI
+  2. MA. ALETHA A. NOGRA                                 OCD REGION VI
+  3. ALLEN FROILAN CABARON                               OCD REGION VI
+  4. ENGR. JOSEPH PAUL NOGRA                             OCD REGION VI
+  5. MELISSA P. BANIAS                                   OCD REGION VI
+  6. KARL FREDERICK ROJO                                 OCD REGION VI
+  7. SHEILA MAE SECULAR                                  OCD REGION VI
+  8. ROGENE MALAGAD                                      OCD REGION VI
+  9. MAYVEL CORDOVA                                      OCD REGION VI
+  10. ANTHONY IAN ANDALEZA                               DILG REGION VI
+  11. GISELLE GRACE GERIAL                               DILG REGION VI
+  12. LOVELY MAY ROBLES                                  DILG REGION VI
+  13. SHIRLEY P. SULIT                                   DILG REGION VI
+  14. LUNA MOSCOSO                                      DSWD REGION VI
+  15. ZENITH G. DIAZ                                    DSWD REGION VI
+  1. ARNOLD NARAJA MUNEZ                                DEPED REGION VI
+  16. MANUEL JAYFREE JIZMUNDO                            PDRRMO AKLAN
+  17. WENDYL MAE VILLAPRUDENTE                          DEPED REGION VI
+  18. DR. DONNABELLE QUINDIPAN                           DOH REGION VI
+  19. DR. MA. PAZ CORRALES                               DOH REGION VI
+  2. BEN ARNEL V. DELACRUZ                               DOH REGION VI
+  20. PSINSP LOUIE A. BARIENTOS                          PNP REGION VI
+  21. LT EDISON B. DIAZ                                  PCG REGION VI
+  22. PO1 EDUARDO BIADOG                                 PCG REGION VI
+  23. GILBERT PAUL L. VALDERRAMA                         PRC REGION VI
+  24. LUBEN VILLARINO                                    PRC REGION VI
+  25. CLIVE T LEBIN                                        PA REGION VI
+  26. CPT LORD LAURENCE MEDINA                           AFP REGION VI
+  27. ROSARIO CABRERA                               PRIVATE (FORMER OCD)
+
+Regional Disaster Risk Reduction and Management Council VII
+  1. DIR EUGENE CABRERA                                   OCD REGION VII
+  2. ENGR VER NEIL BALABA                                 OCD REGION VII
+  3. DENNIS ATTO                                          OCD REGION VII
+  4. PSSUPT RENATO DUGAN                                  PNP REGION VII
+  5. CAPT. EDGAR B BOADO PCG                              PCG REGION VII
+  6. ARTEMIA C. DEGAMO                                    DILG REGION VII
+  7. DR EXPEDITO A. MEDALLA                               DOH REGION VII
+  8. RANILO L. EDAR                                     DEPED REGION VII
+  9. WILLIE JEAN B. CABANAG                               DILG REGION VII
+  10. WILLIE JEAN CABANAG                                 DILG REGION VII
+  11. LTC WILVIN PARCON                                   AFP REGION VII
+  12. MARVIN SOLIVIO                                     DSWD REGION VII
+  13. HAROLD ALCONTIN                                       CEBU DRRMC
+  14. CONCEPCION ORNOPIA                            PRIVATE (FORMER OCD)
+
+                                 70
+       HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+                MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Regional Disaster Risk Reduction and Management Council VIII
+  1. DIR HENRY ANTHONY M. TORRES                         OCD REGION VIII
+  2. REY M. GOZON                                        OCD REGION VIII
+  3. BHENLIE F. LINDE                                    OCD REGION VIII
+  4. PSUPT. GUILLERMO A MELO II                           PNP REGION VIII
+  5. CDR LAWRENCE A. ROQUE                               PCG REGION VIII
+  6. P/ENS NOLI C. TORRES                                PCG REGION VIII
+  7. CRAIG LAWRENCE M. DIAZ                              DOH REGION VIII
+  8. COL. ALFREDO P. PATARATA PA                          AFP REGION VIII
+  9. ADRIAN THOMAS E. COLASITO                           DILG REGION VIII
+  10. PAULINE LIZA C. NADERA                            DSWD REGION VIII
+  11. HONEYLOU L. MORA                                  DSWD REGION VIII
+  12. BLANCHE GOBENCIONG                              PRIVATE (FORMER OCD)
+
+Regional Disaster Risk Reduction and Management Council IX
+  1. DIR MANUEL LUIS M. OCHOTORENA                  OCD REGION IX
+  2. JOSE ERIC S. CASTILLO                          OCD REGION IX
+  3. ELMER PABILAN                                  OCD REGION IX
+  4. TERESITA CATALBAS                              DILG REGION IX
+  5. NARABELLE BUE                                  DSWD REGION IX
+  6. SHIELA ROSE APIAG                              DEPED REGION IX
+  7. SUZETTE O. GONZALES                            DOH REGION IX
+  8. LTJG BRYAN A. EVANGELISTA                      PCG REGION IX
+  9. PSUPT MADZGANI M. MUKARAM                      PNP REGION IX
+
+Regional Disaster Risk Reduction and Management Council X
+  1. DIR ROSAURO ARNEL Q. GONZALES JR.              OCD REGION X
+  2. CATALINA L. DIGNOS                             OCD REGION X
+  3. HAZEL L. OCCEÑA                                DILG REGION X
+  4. MYRNA B. FELICILDA                             DILG REGION X
+  5. EUSEBIO G. AGUANTA                             DEPED REGION X
+  6. DR. DAVID A. MENDOZA                           DOH REGION X
+  7. CAPT JEROME G WACLIN                           AFP REGION X
+  8. PSI JOVEN T. BAHIL                             PNP REGION X
+
+Regional Disaster Risk Reduction and Management Council XI
+  1. DIR MANUEL LUIS M. OCHOTORENA                  OCD REGION XI
+  2. FRANZ IRAG                                     OCD REGION XI
+  3. NILDA JOYCE UNTAL CIRUNAY                      DILG REGION XI
+  4. A. LUMAAD BONIFACIO JR                         DSWD REGION XI
+  5. ENGR. CHRISTIAN LLOYD A. ROSARIO               DEPED REGION XI
+  6. DR PAULO PANTOJAN                              DOH REGION XI
+  7. CPT JOSELITO S DALIDA (INF) PA                 AFP REGION XI
+  8. PSUPT REY N CUEVAS                             PNP REGION XI
+  9. P/ENS CHRISTIAN ROBERT T NIETO PCG             PCG REGION XI
+
+
+                                    71
+      HARMONIZED NATIONAL CONTINGENCY PLAN FOR THE
+               MAGNITUDE 7.2 EARTHQUAKE
+
+
+
+Regional Disaster Risk Reduction and Management Council XII
+  1. DIR MINDA MORANTE                              OCD REGION XII
+  2. MA. THERESA D. BAUTISTA                        DILG REGION XII
+  3. EDMUND S. CORDER                               DSWD REGION XII
+  4. ISMAEL N. NGITNGIT                             DEPED REGION XII
+  5. MOHAMMAD ZEIN B. KALI, RB                      DOH REGION XII
+  6. MAJ ALVIN V TANGULIG                           AFP REGION XII
+  7. PSUPT ROMULO S. ESTOCAPIO                      PNP REGION XII
+  8. PO1 ANTONIO O PERALTA                          PCG REGION XII
+
+Regional Disaster Risk Reduction and Management Council CARAGA
+  1. DIR LIZA R. MAZO                               OCD CARAGA
+  2. LUTH EDMUND A. APRESTO                         DILG CARAGA
+  3. CAROLINE Q. CATALAN                            DSWD CARAGA
+  4. MANUEL O. CABERTE                              DEPED CARAGA
+  5. DR. DIOHARRA L. APARRI                         DOH CARAGA
+  6. LTCOL RICO O. AMARO                            AFP CARAGA
+  7. PCI MARIFE M. FAROL                            PNP CARAGA
+
+Regional Disaster Risk Reduction and Management Council ARMM
+  1. RAYLINDO S. ANIÑON                             OCD ARMM
+  2. MAURICIO CIVILES                               DILG ARMM
+
+
+
+
+                                  72
+

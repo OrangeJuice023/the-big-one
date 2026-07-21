@@ -1,0 +1,41 @@
+lgu,obl_id,status,lapse_type,evidence,source_url,verified,updated
+Makati,OB1,present,,"Ord. 2012-037 + Ord. 2014-064 (Makati DRRMO created & staffed; 3 divisions)",corpus/Makati/makati_ord_2014-064.txt,yes,2026-07-21
+Makati,OB2,to-collect,unverified,"LDRRMP not yet located; may be non-public",TODO,no,2026-07-21
+Makati,OB3,present,,"Ord. 2012-037 (creation) + 2014-064 (staffing per JMC 2014-01)",corpus/Makati/makati_ord_2014-064.txt,yes,2026-07-21
+Makati,OB4,partial,access,"PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view",PHIVOLCS-GeoServer,partial,2026-07-21
+Makati,OB5,partial,,"Hazard tiles + CDP 2019-25 risk sections",corpus/Makati/,partial,2026-07-21
+Makati,OB6,to-collect,unverified,"Annual Report 2022 (scanned) is activity evidence for drills — not yet OCR'd/obtained",TODO,no,2026-07-21
+Makati,OB7,present,,"5% LDRRMF + 30% QRF (CDP / appropriation)",TODO,yes,2026-07-21
+Makati,OB8,present,,"CDP 2019-25 + Zoning ordinance w/ DRIVE zones (DRR mainstreamed)",TODO,yes,2026-07-21
+Marikina,OB1,present,,"MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023)",corpus/Marikina/,yes,2026-07-21
+Marikina,OB2,to-collect,unverified,"LDRRMP not yet collected",TODO,no,2026-07-21
+Marikina,OB3,partial,unverified,"Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected",corpus/Marikina/ordinance_020_2023.txt,partial,2026-07-21
+Marikina,OB4,to-collect,unverified,"No Marikina hazard-map artifact collected yet",TODO,no,2026-07-21
+Marikina,OB5,partial,,"Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109)",corpus/Marikina/,partial,2026-07-21
+Marikina,OB6,present,,"Ord. 020 s.2023 (enacted 22 Mar 2023; approved by Mayor 12 May 2023) institutionalizes EQ awareness & safety-DRILLS program via MCDRRMO; program part of MCDRRMO annual plan & budget with annual report to Mayor/Council",corpus/Marikina/ordinance_020_2023.txt,yes,2026-07-21
+Marikina,OB7,present,,"Quick Response Fund invoked/authorized (Res. 109 s.2025)",corpus/Marikina/marikina_res_109_2025.txt,yes,2026-07-21
+Marikina,OB8,to-collect,unverified,"CDP/CLUP DRR mainstreaming not verified",TODO,no,2026-07-21
+Pasig,OB1,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB2,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB3,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB4,partial,,"PHIVOLCS Pasig ground-shaking M7.2 hazard tile exists",PHIVOLCS-GeoServer,partial,2026-07-21
+Pasig,OB5,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB6,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB7,to-collect,unverified,,TODO,no,2026-07-21
+Pasig,OB8,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB1,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB2,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB3,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB4,partial,,"PHIVOLCS QC earthquake-induced-landslide hazard tile exists",PHIVOLCS-GeoServer,partial,2026-07-21
+Quezon City,OB5,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB6,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB7,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB8,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB1,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB2,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB3,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB4,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB5,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB6,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB7,to-collect,unverified,,TODO,no,2026-07-21
+Pateros,OB8,to-collect,unverified,,TODO,no,2026-07-21

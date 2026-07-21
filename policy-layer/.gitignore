@@ -1,0 +1,7 @@
+# Large reference rasters — 180MB of atlas map clips; keep local, don't bloat the repo.
+# (We adopted the authoritative GEM trace, so these are reference-only now.)
+atlas_fault_clips/*.png
+
+# Python
+__pycache__/
+*.pyc
