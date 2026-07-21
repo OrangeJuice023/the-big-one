@@ -38,5 +38,12 @@ prediction. All outputs are P10/P50/P90 ranges.
 3. Centroid distances ignore intra-LGU variation; no site amplification
    (Marikina Valley sediments would amplify shaking — future work: Vs30).
 4. No liquefaction, landslide, or fire-following modeling.
-5. Committed fault trace is approximate until replaced with PHIVOLCS data.
+5. Fault trace: authoritative GEM WVF trace (Styron & Pagani 2020,
+   CC-BY-SA) wired in v0.3, replacing the earlier approximate trace. Trace
+   swap shifted the national M7.2 P50 by +2.7% ($44.2B → $45.4B; validation
+   ratio improved to 0.95× the $48B MMEIRS/World Bank anchor). Mean MMI
+   shift across LGUs is ≤±0.1, but per-LGU shifts reach max ~0.45 MMI /
+   ±7.5 km Rrup — most material for corridor LGUs. Residual trace-related
+   approximation is now the LGU-centroid distance (see #3), not the trace
+   itself.
 6. GRDP weights proxy exposure imperfectly (output ≠ building stock value).

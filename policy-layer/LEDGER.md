@@ -113,14 +113,14 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 
 | Obligation | Makati | Marikina | Pasig | Quezon City | Pateros | Taguig |
 |---|---|---|---|---|---|---|
-| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ | · |
+| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | ✓ | ✓ | · | · |
 | **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | · |
-| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · | · |
-| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · | · |
-| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none | · |
-| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | ◐ | ✓ | ◐ !access-none | · |
-| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | · |
+| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · | ◐ !access-foi |
+| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · | ◐ |
+| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none | ✓ |
+| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | ◐ | ✓ | ◐ !access-none | ◐ !access-foi |
+| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | ◐ !access-foi |
 
 ## Progress summary
 
@@ -131,7 +131,7 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 | Pasig | 7 | 1 | 0 | 0 | 0 |
 | Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 1 | 2 | 5 | 0 | 2 |
-| Taguig | 0 | 0 | 8 | 0 | 0 |
+| Taguig | 2 | 4 | 2 | 0 | 3 |
 
 ## Lapse register
 
@@ -146,8 +146,11 @@ _Every logged lapse. Caps public-display obligations at partial. **Access sub-ty
 | Marikina | OB8 | **access-foi** | Marikina CLUP 2018-2027 Vol.1 exists but not on LGU portal; available only on 3rd-party academic repos (Studocu/Scribd) OR by request from City Planning and Development Office (CPDO) / eFOI. Not officially published for public download. | partial |
 | Pateros | OB6 | **access-none** | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). LGU never attempted digital disclosure — all evidence via non-LGU channels (national news, national portals, Facebook). | partial |
 | Pateros | OB7 | **access-none** | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). LGU never attempted digital disclosure of statutory LDRRMF/QRF budget doc. | partial |
+| Taguig | OB4 | **access-foi** | Multi-Hazard IEC Campaign (GMMA READY + BRACE); LIDAR 3D disaster map (AusAID 2011). Programs documented on LGU portal; hazard-map PDFs not hosted. Updated hazard maps requested via eFOI Sept-2025 (Mallillin/DENR-LMB tracking DENRLMB-761820630189). | partial |
+| Taguig | OB7 | **access-foi** | LDRRMF Utilization page exists on portal (bot-blocked; content unverified). QRF confirmed tapped by Sanggunian resolution 09-Aug-2012 (Mayor Cayetano state of calamity, 18/28 barangays flooded, Inquirer). Statutory 5%/30% budget doc not surfaced. | partial |
+| Taguig | OB8 | **access-foi** | Taguig CLUP+Zoning Ord 2000-2020 (Sanggunian Res. 129 s.2003; MMDA Res. 03-21; HLURB Res. R-744 s.2003) — includes 5m PHIVOLCS fault easement (identical rule to Makati Ord. 2012-102 §37 and Pasig 5m no-build buffer) + 10m Pasig River easement. CLUP text 3rd-party-mirror only (Scribd/Studocu); not on taguig.gov.ph. Updated post-2020 CLUP eFOI-gated (Mallillin request DENR-LMB Sept-2025). | partial |
 
-_7 lapses logged._
+_10 lapses logged._
 
 ## Per-LGU detail
 
@@ -220,12 +223,12 @@ _7 lapses logged._
 
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
-| OB1 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB2 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB3 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB4 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB5 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB6 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB7 | · to-collect | unverified | — | TODO | 2026-07-22 |
-| OB8 | · to-collect | unverified | — | TODO | 2026-07-22 |
+| OB1 | ✓ present | — | Taguig CDRRMO functioning: 5-storey Center for Disaster Management (Brgy. Central Signal); named assets MOCCOV (DOST partnership) + Aerial Platform Fire Truck (70m boom); BGCEA+ABMC MOU + MMDA training partnership. Historical OIC Ronald Galicia (2011). RA 10121 §12(a) established. | corpus/Taguig/taguig_drrm_evidence.notes.md | 2026-07-22 |
+| OB2 | · to-collect | unverified | LDRRMP not surfaced via search; likely eFOI-gated (same channel as CLUP via DENR-LMB precedent). | TODO | 2026-07-22 |
+| OB3 | · to-collect | unverified | DRRMO-creating ordinance number NOT located via search. Would need Sanggunian records or manual portal browse. | TODO | 2026-07-22 |
+| OB4 | ◐ partial | access-foi | Multi-Hazard IEC Campaign (GMMA READY + BRACE); LIDAR 3D disaster map (AusAID 2011). Programs documented on LGU portal; hazard-map PDFs not hosted. Updated hazard maps requested via eFOI Sept-2025 (Mallillin/DENR-LMB tracking DENRLMB-761820630189). | https://www.foi.gov.ph/agencies/denrlmb/updated-comprehensive-land-use-plan-clup-of-taguig-city-denrlmb-761820630189/ | 2026-07-22 |
+| OB5 | ◐ partial | — | Taguig CLUP 2000-2020 documents fault-system geology (MVFS/VFS per Punongbayan 1996); 12 barangays reportedly on WVF trace (per Pinagsama drill article; specific barangays not enumerated in snippet); 2012 flood affected 18/28 barangays (Bagumbayan Sta.Ana Fort Bonifacio incl. — even City Hall took 2ft). CLUP text 3rd-party-mirror only. | corpus/Taguig/taguig_drrm_evidence.notes.md | 2026-07-22 |
+| OB6 | ✓ present | — | Mayor Cayetano institutionalized regular EQ drills in city schools + public/private establishments; MMDA training partnership; Mobile Earthquake Simulator; multiple drill events documented on taguig.gov.ph (Pinagsama Phase 2 covered court etc.). | https://taguig.gov.ph/disaster-preparedness-training-at-pinagsama-phase-2-covered-court/ | 2026-07-22 |
+| OB7 | ◐ partial | access-foi | LDRRMF Utilization page exists on portal (bot-blocked; content unverified). QRF confirmed tapped by Sanggunian resolution 09-Aug-2012 (Mayor Cayetano state of calamity, 18/28 barangays flooded, Inquirer). Statutory 5%/30% budget doc not surfaced. | https://taguig.gov.ph/index.php/local-disaster-risk-reduction-and-management-fund-utilization-ldrrmf/ | 2026-07-22 |
+| OB8 | ◐ partial | access-foi | Taguig CLUP+Zoning Ord 2000-2020 (Sanggunian Res. 129 s.2003; MMDA Res. 03-21; HLURB Res. R-744 s.2003) — includes 5m PHIVOLCS fault easement (identical rule to Makati Ord. 2012-102 §37 and Pasig 5m no-build buffer) + 10m Pasig River easement. CLUP text 3rd-party-mirror only (Scribd/Studocu); not on taguig.gov.ph. Updated post-2020 CLUP eFOI-gated (Mallillin request DENR-LMB Sept-2025). | https://dhsud.gov.ph/wp-content/uploads/Laws_Issuances/00_Archive/HLURB/Board_Resolutions/R-744%20s.%202003.pdf | 2026-07-22 |
 

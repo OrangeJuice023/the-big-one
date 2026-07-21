@@ -2,8 +2,20 @@
 
 **Purpose:** consolidate the identified-but-not-publicly-downloadable Marikina
 DRRM instruments, and log the eFOI-gated pattern as a policy finding.
-**Type:** synthesis note; references are Philippine government works (not
-copyrighted, RA 8293 §176). Ingested S7c.
+**Type:** synthesis note; references PRIMARY Philippine government works
+(not copyrighted, RA 8293 §176).
+**Source of THIS NOTE'S content:** user-supplied **compiled research summary**
+identifying Marikina DRRM instruments by title/number, ingested during S7c.
+The specific identification of **Ord. No. 132 s.2011** as the MCDRRMO-creating
+ordinance is attributed by the compiled summary to "academic research and LGU
+institutional studies" — **the specific academic/institutional source is not
+named in the compiled summary.** ⚠️ SECOND-SOURCE VERIFICATION REQUIRED
+before external citation of Ord. 132 s.2011.
+**Attribution posture:** the register's document titles + identifications
+come from the compiled summary. The interpretive framing (eFOI-gap as
+national policy failure) is this project's own analysis, drawing on the
+compiled summary + primary RA 10121/EO 2 s.2016 texts.
+**Ingested:** S7c.
 
 ---
 

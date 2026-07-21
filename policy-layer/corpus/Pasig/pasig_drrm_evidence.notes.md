@@ -1,11 +1,19 @@
 # Pasig — DRRM evidence extract (S7d)
 
-**Type:** PRIMARY — Philippine government works (city ordinances, resolutions,
-planning documents) — not copyrighted, RA 8293 §176.
-**Source:** user-supplied consolidated extract from Pasig City DRRM PDFs found
-during S7d research pass. Primary PDF texts NOT yet in `corpus/Pasig/` — this
-note captures the compiled findings; direct PDF ingest is a follow-up
-provenance TODO.
+**Type:** references PRIMARY Philippine government works (city ordinances,
+resolutions, planning documents) — not copyrighted, RA 8293 §176.
+**Source of THIS NOTE'S content:** user-supplied **compiled research summary**
+of Pasig City DRRM documents, ingested during S7d research pass. The
+underlying facts (ordinance numbers, resolution numbers, dates, plantilla,
+appropriations) originate from primary PH government works and are not
+copyrightable — BUT the compilation itself is somebody's editorial work.
+Primary PDF texts NOT yet in `corpus/Pasig/` — direct-source ingest is a
+follow-up provenance TODO (see `pasig_source_urls.notes.md` for located URLs).
+**Attribution posture:** every specific claim below traces to either (a) a
+primary PH government work (cited by ordinance/resolution number) or (b) the
+user-supplied compiled summary that references those works. Specific
+INTERPRETIVE claims marked with ⚠️ below need second-source verification
+before external citation (paper, deck, abstract).
 **Ingested:** S7d.
 
 ---
@@ -129,10 +137,16 @@ Pasig enforces a **5-meter no-build buffer on both sides of the WVF trace**
 *Cross-link:* **identical rule** to Makati Zoning Ord. 2012-102 §30 (WVF→OPN)
 and §37 (5-m PHIVOLCS-certified fault easement). Same standard, two LGUs.
 
-### Joint PHIVOLCS Marker Project
+### Joint PHIVOLCS Marker Project ⚠️ second-source verification required
 > Pasig was **one of only three Metro Manila LGUs (alongside Quezon City and
 > Makati)** that actively installed **physical ground markers, signs, and
 > paint lines** along public roads and borders marking the exact WVF trace.
+
+⚠️ **Attribution note:** the "only 3 NCR LGUs" specificity is an interpretive
+claim from the user-supplied compiled summary. The Marker Project itself is a
+documented PHIVOLCS program, but the "3 LGUs only" claim needs primary
+PHIVOLCS or DOST-PHIVOLCS documentation before external citation. Log as
+provenance TODO in `manifest.csv`.
 
 This is **literal public display of hazard identification** per RA 10121 IRR
 Rule 6 §7 — arguably stronger than any of the other four LGUs' publication
