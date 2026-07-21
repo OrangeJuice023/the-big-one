@@ -35,7 +35,7 @@ from src.gmpe import clamp_mmi, distance_to_fault_km, load_fault_trace, mmi, mmi
 
 HERE = Path(__file__).resolve().parents[1]
 EXPOSURE = HERE / "data" / "external" / "exposure_ncr.csv"
-FAULT = HERE / "data" / "external" / "wvf_trace_approx.geojson"
+FAULT = HERE / "data" / "external" / "wvf_trace_gem.geojson"
 MODELS = HERE / "models"
 POSTERIOR = MODELS / "fragility_posterior.csv"
 WEB_DATA = HERE.parent / "web" / "public" / "data"
@@ -228,7 +228,7 @@ def main() -> None:
         payload = {
             "magnitude": m,
             "engine": engine,
-            "fault": "West Valley Fault (approximate trace)",
+            "fault": "West Valley Fault (GEM GAF-DB trace)",
             "generated": date.today().isoformat(),
             "weighting": weighting,
             "php_per_usd": PHP_PER_USD,
