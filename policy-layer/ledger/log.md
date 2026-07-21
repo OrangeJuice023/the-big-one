@@ -60,6 +60,20 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
   #5** with bounded impact (≤±0.1 MMI at M7.2; matters more at lower M). Also
   dated Marikina Ord. 020 (enacted 22 Mar 2023, approved 12 May 2023) →
   strengthens OB6. See `FAULT_TRACE_METHODOLOGY_FINDING.md`.
+- **2026-07-21 · S5** — Wired the GEM WVF trace into the loss engine: repointed
+  `model/src/scenarios.py` to `wvf_trace_gem.geojson`, rebuilt the ABC posterior
+  (verified it reproduces the prior live $44.2B under the OLD trace → no
+  calibration drift) and regenerated `m{60..72,75}.json` + `web/.../fault-trace.geojson`.
+  Trace-only effect at M7.2: national P50 $44.2B → **$45.4B (+2.7%)**, validation
+  ratio 0.92x → 0.95x, Bohol out-of-sample still PASS. Measured per-LGU shifts:
+  rrup up to ±7.5 km, MMI up to **+0.35 / −0.46** (mean |ΔMMI| 0.105) — so
+  limitation #5's "≤±0.1 MMI" is the *mean*, not the bound; methodology text
+  still to update. Ingested **ADPC Safer Cities 22 (Iglesias & Yu, 2008)** as a
+  *secondary* Marikina source (facts-only extract, copyright-flagged): corroborates
+  OB5 via Ord. 109 s.2005 (Comprehensive EQ Disaster Reduction program); logged
+  Ord. 264 s.1998 (Rescue 161 office) as pre-RA 10121 OB1/OB3 context only — **no
+  status flips.** Makati Ord. 2014-064 re-uploaded; already ledgered (OB1/OB3), no
+  change. Attributions updated in `CITATIONS.md` (§5 secondary + §6 + BibTeX).
 
 ## Global to-dos
 - [ ] **Capture the Makati access-lapse**: dated Wayback snapshot + screenshot of
@@ -72,8 +86,9 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
       only or empty so far).
 - [ ] OCR Makati Annual Report 2022 → drills evidence (OB6).
 - [ ] Vectorize the WVF trace from `atlas_fault_clips/` (loss-model Part 1 TODO).
-- [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**
-      (`fault-trace_AUTHORITATIVE.geojson`); still to do in repo: swap the file,
-      regenerate `m{60..76}.json`, update methodology limitation #5.
+- [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**; **wired into
+      the engine (S5): `scenarios.py` repointed, `m{60..72,75}.json` +
+      `fault-trace.geojson` regenerated & pushed.** Remaining: update **methodology
+      limitation #5 wording** — "≤±0.1 MMI" is the mean; state max ~0.45 MMI / ±7.5 km.
 - [ ] Sweep each LGU site once with the lapse taxonomy in hand and log every
       access-lapse (dead links / "not available") — these are findings, not noise.

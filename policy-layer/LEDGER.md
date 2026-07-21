@@ -62,6 +62,20 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
   #5** with bounded impact (≤±0.1 MMI at M7.2; matters more at lower M). Also
   dated Marikina Ord. 020 (enacted 22 Mar 2023, approved 12 May 2023) →
   strengthens OB6. See `FAULT_TRACE_METHODOLOGY_FINDING.md`.
+- **2026-07-21 · S5** — Wired the GEM WVF trace into the loss engine: repointed
+  `model/src/scenarios.py` to `wvf_trace_gem.geojson`, rebuilt the ABC posterior
+  (verified it reproduces the prior live $44.2B under the OLD trace → no
+  calibration drift) and regenerated `m{60..72,75}.json` + `web/.../fault-trace.geojson`.
+  Trace-only effect at M7.2: national P50 $44.2B → **$45.4B (+2.7%)**, validation
+  ratio 0.92x → 0.95x, Bohol out-of-sample still PASS. Measured per-LGU shifts:
+  rrup up to ±7.5 km, MMI up to **+0.35 / −0.46** (mean |ΔMMI| 0.105) — so
+  limitation #5's "≤±0.1 MMI" is the *mean*, not the bound; methodology text
+  still to update. Ingested **ADPC Safer Cities 22 (Iglesias & Yu, 2008)** as a
+  *secondary* Marikina source (facts-only extract, copyright-flagged): corroborates
+  OB5 via Ord. 109 s.2005 (Comprehensive EQ Disaster Reduction program); logged
+  Ord. 264 s.1998 (Rescue 161 office) as pre-RA 10121 OB1/OB3 context only — **no
+  status flips.** Makati Ord. 2014-064 re-uploaded; already ledgered (OB1/OB3), no
+  change. Attributions updated in `CITATIONS.md` (§5 secondary + §6 + BibTeX).
 
 ## Global to-dos
 - [ ] **Capture the Makati access-lapse**: dated Wayback snapshot + screenshot of
@@ -74,9 +88,10 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
       only or empty so far).
 - [ ] OCR Makati Annual Report 2022 → drills evidence (OB6).
 - [ ] Vectorize the WVF trace from `atlas_fault_clips/` (loss-model Part 1 TODO).
-- [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**
-      (`fault-trace_AUTHORITATIVE.geojson`); still to do in repo: swap the file,
-      regenerate `m{60..76}.json`, update methodology limitation #5.
+- [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**; **wired into
+      the engine (S5): `scenarios.py` repointed, `m{60..72,75}.json` +
+      `fault-trace.geojson` regenerated & pushed.** Remaining: update **methodology
+      limitation #5 wording** — "≤±0.1 MMI" is the mean; state max ~0.45 MMI / ±7.5 km.
 - [ ] Sweep each LGU site once with the lapse taxonomy in hand and log every
       access-lapse (dead links / "not available") — these are findings, not noise.
 
@@ -136,9 +151,9 @@ _1 lapses logged._
 |---|---|---|---|---|---|
 | OB1 | ✓ present | — | MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023) | corpus/Marikina/ | 2026-07-21 |
 | OB2 | · to-collect | unverified | LDRRMP not yet collected | TODO | 2026-07-21 |
-| OB3 | ◐ partial | unverified | Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
+| OB3 | ◐ partial | unverified | Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected. Context (secondary, ADPC 2008): a pre-RA10121 Disaster Management Office existed via Ord.264 s.1998 (Rescue 161) — historical only, not the current-law instrument | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
 | OB4 | · to-collect | unverified | No Marikina hazard-map artifact collected yet | TODO | 2026-07-21 |
-| OB5 | ◐ partial | — | Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109) | corpus/Marikina/ | 2026-07-21 |
+| OB5 | ◐ partial | — | Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109); SECONDARY corroboration: ADPC Safer Cities 22 (2008) documents Comprehensive EQ Disaster Reduction program (Ord.109 s.2005) + 1992/2004 flood-exposure figures | corpus/Marikina/ | 2026-07-21 |
 | OB6 | ✓ present | — | Ord. 020 s.2023 (enacted 22 Mar 2023; approved by Mayor 12 May 2023) institutionalizes EQ awareness & safety-DRILLS program via MCDRRMO; program part of MCDRRMO annual plan & budget with annual report to Mayor/Council | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
 | OB7 | ✓ present | — | Quick Response Fund invoked/authorized (Res. 109 s.2025) | corpus/Marikina/marikina_res_109_2025.txt | 2026-07-21 |
 | OB8 | · to-collect | unverified | CDP/CLUP DRR mainstreaming not verified | TODO | 2026-07-21 |

@@ -9,9 +9,9 @@ Makati,OB7,present,,"5% LDRRMF + 30% QRF (CDP / appropriation)",TODO,yes,2026-07
 Makati,OB8,present,,"CDP 2019-25 + Zoning ordinance w/ DRIVE zones (DRR mainstreamed)",TODO,yes,2026-07-21
 Marikina,OB1,present,,"MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023)",corpus/Marikina/,yes,2026-07-21
 Marikina,OB2,to-collect,unverified,"LDRRMP not yet collected",TODO,no,2026-07-21
-Marikina,OB3,partial,unverified,"Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected",corpus/Marikina/ordinance_020_2023.txt,partial,2026-07-21
+Marikina,OB3,partial,unverified,"Ord. 020 s.2023 (EQ Preparedness Ordinance) present; DRRMO-*creating* ordinance not yet collected. Context (secondary, ADPC 2008): a pre-RA10121 Disaster Management Office existed via Ord.264 s.1998 (Rescue 161) — historical only, not the current-law instrument",corpus/Marikina/ordinance_020_2023.txt,partial,2026-07-21
 Marikina,OB4,to-collect,unverified,"No Marikina hazard-map artifact collected yet",TODO,no,2026-07-21
-Marikina,OB5,partial,,"Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109)",corpus/Marikina/,partial,2026-07-21
+Marikina,OB5,partial,,"Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109); SECONDARY corroboration: ADPC Safer Cities 22 (2008) documents Comprehensive EQ Disaster Reduction program (Ord.109 s.2005) + 1992/2004 flood-exposure figures",corpus/Marikina/,partial,2026-07-21
 Marikina,OB6,present,,"Ord. 020 s.2023 (enacted 22 Mar 2023; approved by Mayor 12 May 2023) institutionalizes EQ awareness & safety-DRILLS program via MCDRRMO; program part of MCDRRMO annual plan & budget with annual report to Mayor/Council",corpus/Marikina/ordinance_020_2023.txt,yes,2026-07-21
 Marikina,OB7,present,,"Quick Response Fund invoked/authorized (Res. 109 s.2025)",corpus/Marikina/marikina_res_109_2025.txt,yes,2026-07-21
 Marikina,OB8,to-collect,unverified,"CDP/CLUP DRR mainstreaming not verified",TODO,no,2026-07-21

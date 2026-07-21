@@ -93,6 +93,22 @@ databases (EM-DAT, NOAA, GEM) — fill them in when you pull.
   Calamity, Typhoon "Crising"/Habagat (adopted 23 Jul 2025).
 - (Additional LGU documents logged in `policy-layer/manifest.csv` with source URLs.)
 
+### Secondary / supporting LGU sources (cite as secondary; third-party copyright)
+
+- Iglesias, G., & Yu, C. (2008). *Flood Disaster Mitigation and River
+  Rehabilitation by Marikina City, Philippines.* Safer Cities No. 22, Program for
+  Hydro-meteorological Disaster Mitigation in Secondary Cities in Asia (PROMISE).
+  Asian Disaster Preparedness Center (ADPC), with support from USAID/OFDA.
+  https://www.adpc.net/igo/category/ID221/doc/2013-nri7LY-ADPCSafer_Cities_22.pdf
+  — secondary corroboration of Marikina's DRRM history: Ord. 264 s.1998 (Disaster
+  Management Office / "Rescue 161"), **Ord. 109 s.2005 (Comprehensive Earthquake
+  Disaster Reduction program)**, Ord. 54 s.2005 (20% Calamity Fund), and 1992/2004
+  flood-exposure figures. **Pre-RA 10121 (2010)** — historical context, not
+  current-law compliance; used for OB5 corroboration and OB1/OB3 background only.
+  Extract in `policy-layer/corpus/Marikina/marikina_adpc_safercities22_2008.notes.md`.
+  **License: third-party copyright — quotable *with credit* to ADPC + USAID/OFDA;
+  do not paste the full case-study text (see §6).**
+
 ---
 
 ## 6. License compliance — read before publishing/pushing
@@ -111,6 +127,13 @@ databases (EM-DAT, NOAA, GEM) — fill them in when you pull.
   copyrighted per RA 8293 §176, but attribution is still required.)
 - **NOAA / PSA / GADM (non-commercial) / faeldon maps** — attribution as above;
   GADM is free for non-commercial use only.
+- **ADPC Safer Cities No. 22 (Iglesias & Yu, 2008)** is **third-party copyrighted**.
+  ADPC permits quoting *with credit* to ADPC + USAID/OFDA and provides the series
+  "for purposes of dissemination," but this is **not** a license to reproduce the
+  full text. Keep only the attributed facts-only extract
+  (`corpus/Marikina/marikina_adpc_safercities22_2008.notes.md`); in the paper,
+  cite it and quote clauses sparingly. It is a **secondary** source and predates
+  RA 10121 — don't let it read as current-law compliance for Marikina.
 
 ---
 
@@ -158,6 +181,14 @@ databases (EM-DAT, NOAA, GEM) — fill them in when you pull.
   author       = {{PHIVOLCS-DOST}},
   title        = {The Valley Fault System Atlas in the Greater Metro Manila Area},
   year         = {2015}, address = {Quezon City}, note = {GMMA-READY Project}}
+
+@techreport{iglesias2008marikina,
+  author      = {Iglesias, Gabrielle and Yu, Carlyne},
+  title       = {Flood Disaster Mitigation and River Rehabilitation by
+                 {Marikina} City, {Philippines}},
+  institution = {Asian Disaster Preparedness Center (ADPC)},
+  series      = {Safer Cities}, number = {22}, year = {2008},
+  note        = {PROMISE Programme; USAID/OFDA. Secondary; pre-RA 10121}}
 ```
 
 _Verify the AWW12 DOI (10.1007/s10950-012-9278-7) and fill PSA/World Bank/DILG
