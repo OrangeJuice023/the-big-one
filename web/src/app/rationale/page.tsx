@@ -77,6 +77,23 @@ export default function Rationale() {
           , and the full modeling chain is described on the{' '}
           <Link href="/methodology/">methodology page</Link>.
         </p>
+        
+        <h2>Scope</h2>
+        <p>
+          Two layers. The loss model covers 35 LGUs — 17 NCR cities plus 18
+          fault-corridor LGUs. The policy compliance scorecard covers six LGUs
+          on or directly adjacent to the WVF trace: Quezon City, Makati, Pasig,
+          Marikina, Taguig, Pateros. This narrower policy set was chosen because
+          ground rupture is a qualitatively different hazard from shaking, and
+          because the six span the full capacity spectrum from the country's
+          smallest municipality (Pateros, ~1.66 km²) to the most resource-rich
+          commercial hubs (Makati, Taguig, QC). Manila is in the loss layer but
+          not the policy layer — the fault does not run through Manila, so the
+          RA 10121 "publicly displayed hazard maps" comparison would be uneven.
+          The taxonomy of disclosure lapses proposed in this project is intended
+          to generalize, but the specific distribution across LGUs is a finding
+          restricted to the six pilots.
+        </p>
       </article>
     </main>
   );
