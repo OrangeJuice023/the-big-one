@@ -1,0 +1,10 @@
+West Valley Fault trace — wvf_trace_gem.geojson
+------------------------------------------------
+Derived from: GEM Global Active Faults Database (GAF-DB), feature "West Valley Fault".
+Source:  Styron, R., & Pagani, M. (2020). The GEM Global Active Faults Database.
+         Earthquake Spectra, 36(1_suppl), 160-180. https://doi.org/10.1177/8755293020944182
+Repo:    https://github.com/GEMScienceTools/gem-global-active-faults
+License:  CC-BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0/)
+This derivative (the extracted WVF LineString, clipped to the Metro Manila corridor)
+is redistributed under the same CC-BY-SA 4.0 license, with attribution as above.
+Retrieved: 2026-07-21.
