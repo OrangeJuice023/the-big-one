@@ -23,14 +23,14 @@ Pasig,OB5,to-collect,unverified,,TODO,no,2026-07-21
 Pasig,OB6,to-collect,unverified,,TODO,no,2026-07-21
 Pasig,OB7,to-collect,unverified,,TODO,no,2026-07-21
 Pasig,OB8,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB1,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB2,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB3,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB4,partial,,"PHIVOLCS QC earthquake-induced-landslide hazard tile exists",PHIVOLCS-GeoServer,partial,2026-07-21
-Quezon City,OB5,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB6,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB7,to-collect,unverified,,TODO,no,2026-07-21
-Quezon City,OB8,to-collect,unverified,,TODO,no,2026-07-21
+Quezon City,OB1,present,,"QCDRRMC organized (EO 07/23 s.2010; reconstituted EO 07 s.2019) per QCDRRMP 2021-2027 register",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB2,present,,"QCDRRMP 2021-2027 public PDF (4 thematic areas, 76 PPAs; adopted QCDRRMC Res.6 s.2020)",https://quezoncity.gov.ph/wp-content/uploads/2021/10/QCDRRMP-2021-2027_Volume-1-8Sept2021.pdf,yes,2026-07-21
+Quezon City,OB3,present,,"Ord. SP-2290 s.2014 creates QCDRRMO (+SP-2424 s.2015, SP-3170 s.2023 staffing)",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB4,present,,"QC Risk Atlas 2014 publicly downloadable + HVRA hazard mapping — public display satisfied (NO access-lapse, cf. Makati)",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB5,present,,"QC HVRA 2013 (earthquake+flood, UDRI, hotspot barangays); MMEIRS-based M7.2 WVF scenario corroborates loss model",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB6,present,,"Mandatory drills Ord. SP-2674 s.2017 + Res. SP-6111 s.2014; QCDRRMO citywide EQ drills since 2015",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB7,present,,"5% LDRRMF per RA 10121 sec.21; adopted annually by resolution (Res.1 s.2019 LDRRMF+Plan 2020 = PHP 1.18B)",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
+Quezon City,OB8,present,,"DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned",corpus/QuezonCity/quezon_city_drrm_evidence.notes.md,yes,2026-07-21
 Pateros,OB1,to-collect,unverified,,TODO,no,2026-07-21
 Pateros,OB2,to-collect,unverified,,TODO,no,2026-07-21
 Pateros,OB3,to-collect,unverified,,TODO,no,2026-07-21

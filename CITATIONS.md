@@ -91,6 +91,17 @@ databases (EM-DAT, NOAA, GEM) — fill them in when you pull.
   City Earthquake Preparedness Ordinance (enacted 22 Mar 2023; approved 12 May 2023).
 - Sangguniang Panlungsod of Marikina. *Resolution No. 109, s. 2025* — State of
   Calamity, Typhoon "Crising"/Habagat (adopted 23 Jul 2025).
+- Quezon City DRRM Council. *Quezon City Disaster Risk Reduction and Management
+  Plan 2021–2027* (Vol. 1; adopted QCDRRMC Resolution No. 6, s. 2020).
+  https://quezoncity.gov.ph/wp-content/uploads/2021/10/QCDRRMP-2021-2027_Volume-1-8Sept2021.pdf
+  — QC LDRRMP (OB2). Its earthquake scenario is drawn from **MMEIRS (2004)** — see
+  §1 — so it independently corroborates the loss model's WVF M7.2 basis.
+- Sangguniang Panlungsod of Quezon City. *Ordinance No. SP-2290, s. 2014* (creates
+  the QCDRRMO), *No. SP-2424, s. 2015* and *No. SP-3170, s. 2023* (staffing/reorg);
+  *EO No. 23, s. 2010* (QCDRRMC). Full DRRM legal register in
+  `policy-layer/corpus/QuezonCity/quezon_city_drrm_evidence.notes.md`.
+- Quezon City Government. *Quezon City Risk Atlas* (2014). — publicly displayed
+  hazard/risk maps (OB4).
 - (Additional LGU documents logged in `policy-layer/manifest.csv` with source URLs.)
 
 ### Secondary / supporting LGU sources (cite as secondary; third-party copyright)

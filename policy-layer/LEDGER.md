@@ -76,6 +76,18 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
   Ord. 264 s.1998 (Rescue 161 office) as pre-RA 10121 OB1/OB3 context only — **no
   status flips.** Makati Ord. 2014-064 re-uploaded; already ledgered (OB1/OB3), no
   change. Attributions updated in `CITATIONS.md` (§5 secondary + §6 + BibTeX).
+- **2026-07-21 · S6** — **Quezon City ingested → 8/8 present, all public, 0 lapses.**
+  Pulled the QCDRRMO page + read the QCDRRMP 2021–2027 (Vol. 1) text; extracted the
+  full EO/ordinance/resolution register to `corpus/QuezonCity/quezon_city_drrm_evidence.notes.md`.
+  Primary instruments: QCDRRMO created by **Ord. SP-2290 s.2014** (OB1/OB3); LDRRMP
+  is a **public PDF** adopted by Res. 6 s.2020 (OB2); **Risk Atlas 2014** publicly
+  downloadable → OB4 **present, no access-lapse** (contrast Makati); HVRA 2013 (OB5);
+  mandatory drills SP-2674 s.2017 (OB6); **≥5% LDRRMF** adopted annually with peso
+  figures, e.g. PHP 1.18B for 2020 (OB7); DRR/CCA in CLUP + Zoning SP-2502 s.2016 +
+  LCCAP (OB8). Notable: QC's own EQ scenario cites **MMEIRS 2004 M7.2 WVF** — the same
+  basis as our loss model, so it independently corroborates the hazard. This makes QC
+  the top of the transparency gradient (QC public 8/8 > Makati OB4 access-lapse > Pasig
+  FOI-gated > Marikina partial > Pateros nothing surfaced).
 
 ## Global to-dos
 - [ ] **Capture the Makati access-lapse**: dated Wayback snapshot + screenshot of
@@ -84,8 +96,8 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
 - [ ] Backfill `source_url` for every uploaded file (scope treats it as the
       citation link; scorecard can't cite without it).
 - [ ] Collect Marikina **LDRRMP** + DRRMO-creating ordinance (OB2/OB3).
-- [ ] Collect Pasig / Quezon City / Pateros core policy docs (they're hazard-map-
-      only or empty so far).
+- [ ] Collect Pasig / Pateros core policy docs (Pasig plan is FOI-gated; Pateros
+      nothing surfaced — likely the absent/access contrast). ~~Quezon City~~ **done (S6, 8/8)**.
 - [ ] OCR Makati Annual Report 2022 → drills evidence (OB6).
 - [ ] Vectorize the WVF trace from `atlas_fault_clips/` (loss-model Part 1 TODO).
 - [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**; **wired into
@@ -101,14 +113,14 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 
 | Obligation | Makati | Marikina | Pasig | Quezon City | Pateros |
 |---|---|---|---|---|---|
-| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | · | · | · |
-| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | · | · | · | · | · |
-| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ | · | · | · |
-| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access | · | ◐ | ◐ | · |
-| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ◐ | ◐ | · | · | · |
-| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | · | · | · |
-| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | · | · | · |
-| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | · | · | · | · |
+| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | · | ✓ | · |
+| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | · | · | · | ✓ | · |
+| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ | · | ✓ | · |
+| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access | · | ◐ | ✓ | · |
+| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ◐ | ◐ | · | ✓ | · |
+| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | · | ✓ | · |
+| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | · | ✓ | · |
+| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | · | · | ✓ | · |
 
 ## Progress summary
 
@@ -117,7 +129,7 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 | Makati | 4 | 2 | 2 | 0 | 1 |
 | Marikina | 3 | 2 | 3 | 0 | 0 |
 | Pasig | 0 | 1 | 7 | 0 | 0 |
-| Quezon City | 0 | 1 | 7 | 0 | 0 |
+| Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 0 | 0 | 8 | 0 | 0 |
 
 ## Lapse register
@@ -175,14 +187,14 @@ _1 lapses logged._
 
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
-| OB1 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB2 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB3 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB4 | ◐ partial | — | PHIVOLCS QC earthquake-induced-landslide hazard tile exists | PHIVOLCS-GeoServer | 2026-07-21 |
-| OB5 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB6 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB7 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB8 | · to-collect | unverified | — | TODO | 2026-07-21 |
+| OB1 | ✓ present | — | QCDRRMC organized (EO 07/23 s.2010; reconstituted EO 07 s.2019) per QCDRRMP 2021-2027 register | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB2 | ✓ present | — | QCDRRMP 2021-2027 public PDF (4 thematic areas, 76 PPAs; adopted QCDRRMC Res.6 s.2020) | https://quezoncity.gov.ph/wp-content/uploads/2021/10/QCDRRMP-2021-2027_Volume-1-8Sept2021.pdf | 2026-07-21 |
+| OB3 | ✓ present | — | Ord. SP-2290 s.2014 creates QCDRRMO (+SP-2424 s.2015, SP-3170 s.2023 staffing) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB4 | ✓ present | — | QC Risk Atlas 2014 publicly downloadable + HVRA hazard mapping — public display satisfied (NO access-lapse, cf. Makati) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB5 | ✓ present | — | QC HVRA 2013 (earthquake+flood, UDRI, hotspot barangays); MMEIRS-based M7.2 WVF scenario corroborates loss model | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB6 | ✓ present | — | Mandatory drills Ord. SP-2674 s.2017 + Res. SP-6111 s.2014; QCDRRMO citywide EQ drills since 2015 | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB7 | ✓ present | — | 5% LDRRMF per RA 10121 sec.21; adopted annually by resolution (Res.1 s.2019 LDRRMF+Plan 2020 = PHP 1.18B) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB8 | ✓ present | — | DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
 
 ### Pateros
 

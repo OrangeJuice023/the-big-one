@@ -74,6 +74,18 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
   Ord. 264 s.1998 (Rescue 161 office) as pre-RA 10121 OB1/OB3 context only — **no
   status flips.** Makati Ord. 2014-064 re-uploaded; already ledgered (OB1/OB3), no
   change. Attributions updated in `CITATIONS.md` (§5 secondary + §6 + BibTeX).
+- **2026-07-21 · S6** — **Quezon City ingested → 8/8 present, all public, 0 lapses.**
+  Pulled the QCDRRMO page + read the QCDRRMP 2021–2027 (Vol. 1) text; extracted the
+  full EO/ordinance/resolution register to `corpus/QuezonCity/quezon_city_drrm_evidence.notes.md`.
+  Primary instruments: QCDRRMO created by **Ord. SP-2290 s.2014** (OB1/OB3); LDRRMP
+  is a **public PDF** adopted by Res. 6 s.2020 (OB2); **Risk Atlas 2014** publicly
+  downloadable → OB4 **present, no access-lapse** (contrast Makati); HVRA 2013 (OB5);
+  mandatory drills SP-2674 s.2017 (OB6); **≥5% LDRRMF** adopted annually with peso
+  figures, e.g. PHP 1.18B for 2020 (OB7); DRR/CCA in CLUP + Zoning SP-2502 s.2016 +
+  LCCAP (OB8). Notable: QC's own EQ scenario cites **MMEIRS 2004 M7.2 WVF** — the same
+  basis as our loss model, so it independently corroborates the hazard. This makes QC
+  the top of the transparency gradient (QC public 8/8 > Makati OB4 access-lapse > Pasig
+  FOI-gated > Marikina partial > Pateros nothing surfaced).
 
 ## Global to-dos
 - [ ] **Capture the Makati access-lapse**: dated Wayback snapshot + screenshot of
@@ -82,8 +94,8 @@ with a **dated capture** (Wayback snapshot or screenshot) as the evidence.
 - [ ] Backfill `source_url` for every uploaded file (scope treats it as the
       citation link; scorecard can't cite without it).
 - [ ] Collect Marikina **LDRRMP** + DRRMO-creating ordinance (OB2/OB3).
-- [ ] Collect Pasig / Quezon City / Pateros core policy docs (they're hazard-map-
-      only or empty so far).
+- [ ] Collect Pasig / Pateros core policy docs (Pasig plan is FOI-gated; Pateros
+      nothing surfaced — likely the absent/access contrast). ~~Quezon City~~ **done (S6, 8/8)**.
 - [ ] OCR Makati Annual Report 2022 → drills evidence (OB6).
 - [ ] Vectorize the WVF trace from `atlas_fault_clips/` (loss-model Part 1 TODO).
 - [x] ~~Replace placeholder WVF trace~~ → **done via GEM GAF DB**; **wired into
