@@ -163,7 +163,7 @@ _10 lapses logged._
 | OB3 | ✓ present | — | Ord. 2012-037 (creation) + 2014-064 (staffing per JMC 2014-01) | corpus/Makati/makati_ord_2014-064.txt | 2026-07-21 |
 | OB4 | ◐ partial | access-broken | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | PHIVOLCS-GeoServer | 2026-07-22 |
 | OB5 | ✓ present | — | CDP 2019-2025 §1.6 Hazard & Risk Profile: multi-hazard assessment incl. MMEIRS M7.2 WVF Intensity VIII + liquefaction + EQ-induced landslide + 200-yr flood; per-barangay exposure | https://makati.gov.ph/assets/uploads/downloads/2/221/381/pdf/FINAL_Makati%20CDP_Main%20Text_10152020.pdf | 2026-07-21 |
-| OB6 | · to-collect | unverified | Annual Report 2022 (scanned) is activity evidence for drills — not yet OCR'd/obtained | TODO | 2026-07-21 |
+| OB6 | · to-collect | unverified | Annual Report 2022 INSPECTED via user OCR (S7g) — CONTENT-NEGATIVE for drills: no West Valley Fault/EQ/PHIVOLCS/DRRM/drills/evacuation content; report focuses on climate/environmental. AR2022 is textbook access-opaque (scanned PDF no text layer). Next-source candidates: makati.drrm FB page (activity only), Resilient Makati portal, Gawad Kalasag docs (Makati Hall of Fame 2010-2012 + 2022/2023 beyond-compliant), news archives. | corpus/Makati/makati_annual_report_2022_inspection.notes.md | 2026-07-22 |
 | OB7 | ✓ present | — | 5% LDRRMF + 30% QRF (CDP / appropriation) | TODO | 2026-07-21 |
 | OB8 | ✓ present | — | CDP 2019-25 DRRM chapters (§1.11.3 §4.3 §5.4) + Zoning Ord. 2012-102: DRIVE zones + WVF→OPN + 5m PHIVOLCS fault easement (§24 §30 §37) | https://makati.gov.ph/assets/uploads/staticmenu/docs/ordinance.pdf | 2026-07-21 |
 
