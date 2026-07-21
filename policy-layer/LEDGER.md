@@ -113,14 +113,14 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 
 | Obligation | Makati | Marikina | Pasig | Quezon City | Pateros |
 |---|---|---|---|---|---|
-| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | · | ✓ | ✓ |
-| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | · | ✓ | · |
-| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | · | ✓ | · |
-| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ◐ | ✓ | · |
-| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | · | ✓ | · |
-| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | · | ✓ | ◐ !access-none |
-| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | · | ✓ | ◐ !access-none |
-| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | · | ✓ | · |
+| **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | ✓ | ✓ | · |
+| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · |
+| **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · |
+| **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · |
+| **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none |
+| **OB7** LDRRM Fund incl. 30% QRF programmed <br><sub>§21</sub> | ✓ | ✓ | ◐ | ✓ | ◐ !access-none |
+| **OB8** DRR mainstreamed into CDP/CLUP <br><sub>§11(b)(2)</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · |
 
 ## Progress summary
 
@@ -128,7 +128,7 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 |---|---|---|---|---|---|
 | Makati | 5 | 2 | 1 | 0 | 2 |
 | Marikina | 3 | 5 | 0 | 0 | 3 |
-| Pasig | 0 | 1 | 7 | 0 | 0 |
+| Pasig | 7 | 1 | 0 | 0 | 0 |
 | Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 1 | 2 | 5 | 0 | 2 |
 
@@ -180,14 +180,14 @@ _7 lapses logged._
 
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
-| OB1 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB2 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB3 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB4 | ◐ partial | — | PHIVOLCS Pasig ground-shaking M7.2 hazard tile exists | PHIVOLCS-GeoServer | 2026-07-21 |
-| OB5 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB6 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB7 | · to-collect | unverified | — | TODO | 2026-07-21 |
-| OB8 | · to-collect | unverified | — | TODO | 2026-07-21 |
+| OB1 | ✓ present | — | Ord. No. 02 s.2015 (author: Councilor Wilfredo F. Sityar, approved 05-Feb-2015) creates PCDRRMO as distinct dept under Office of Mayor; 26 primary functions; full plantilla SG22/18/15/11; initial appropriation P4370188.44. Current chief Bryant Q. Wong RN EMT MPM (DILG-NCR Local DRRMO Forum panelist 14-Jul-2026). | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB2 | ✓ present | — | LDRRMP 2023-2028 adopted via Sanggunian Res. No. 130-11 s.2023 (authors: Councilors Agustin & Rustia, approved 19-Jun-2023; adopts PCDRRMC Res. No. 1 s.2023); target zero casualties in M7.2 WVF EQ. EQ Contingency Plan 2024-2026 adopted via Res. No. 269-11 s.2023 (adopts PCDRRMC Res. No. 9 s.2023) subject to continuous simulation/periodic testing. Historical spine: Ord. 08-08 s.2016 EQ+Flood Contingency Plan 2016-2021 (MMEIRS-based). | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB3 | ✓ present | — | Ord. No. 02 s.2015 creates PCDRRMO w/ 26 primary functions + full plantilla (LDRRM Officer IV SG22 down to I SG11) + initial appropriation P4370188.44; repeals prior Ord. 18 s.2010. | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB4 | ✓ present | — | Joint PHIVOLCS Marker Project — Pasig is one of only 3 Metro Manila LGUs (w/ QC & Makati) that installed physical ground markers, signs, paint lines on public roads marking the exact WVF trace. LITERAL public display per IRR Rule 6 §7. PHIVOLCS Pasig hazard tiles also available via GeoServer. | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB5 | ✓ present | — | Documented WVF risk assessment: ~100km dextral strike-slip fault, 10-12mm/yr slip, M7.2-7.6 potential. Directly-affected barangays named: Ugong, Bagong Ilog, San Joaquin, Kalawaan, Kapitolyo, Manggahan. Liquefaction PEIS VIII+ high-risk zones: Ugong, Kapitolyo, Manggahan (alluvium/deltaic sands). MMEIRS-based (same as loss model). | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB6 | ✓ present | — | Ord. 08-08 s.2016 mandates regular multi-sectoral EQ drills + evacuation simulations + multi-agency command structures. Res. 269-11 s.2023 EQ Contingency Plan subject to continuous simulation & periodic testing. Citizen's Charter documents PCDRRMO drill-evaluator services for schools/private entities/barangays. | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB7 | ◐ partial | unverified | Ord. 02 s.2015 initial appropriation P4370188.44 confirms fund exists and PCDRRMO is being funded. RA 10121 §21 5% LDRRMF + 30% QRF for current fiscal year requires annual budget resolution — not yet in corpus. | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
+| OB8 | ✓ present | — | LDRRMP 2023-2028 (Res. 130-11 s.2023) explicitly integrates DRR into CLUP + CDP. Green Building Ord. No. 06 s.2016 (BERDE minimum, mandatory retrofit for >10000sqm existing buildings, GBO under OCBO). 5-meter no-build WVF buffer zone (identical to Makati Zoning Ord. 2012-102 §37). PHIVOLCS hazard maps integrated into CLUP/CDP. | corpus/Pasig/pasig_drrm_evidence.notes.md | 2026-07-22 |
 
 ### Quezon City
 
