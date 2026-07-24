@@ -102,7 +102,9 @@ databases (EM-DAT, NOAA, GEM) — fill them in when you pull.
   `policy-layer/corpus/QuezonCity/quezon_city_drrm_evidence.notes.md`.
 - Quezon City Government. *Quezon City Risk Atlas* (2014). — publicly displayed
   hazard/risk maps (OB4).
-- (Additional LGU documents logged in `policy-layer/manifest.csv` with source URLs.)
+- (Additional LGU documents logged in `policy-layer/ledger/manifest.csv` with
+  source URLs, source types, and provenance notes. Physical corpus artifacts
+  and their OCR state are tracked separately in `policy-layer/corpus_manifest.csv`.)
 
 ### Secondary / supporting LGU sources (cite as secondary; third-party copyright)
 

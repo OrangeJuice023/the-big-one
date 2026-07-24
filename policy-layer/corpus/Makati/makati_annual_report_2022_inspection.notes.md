@@ -104,4 +104,4 @@ it doesn't downgrade a status. Method-level finding only.
       figure independently.
 - [ ] Find OB6 drills evidence from an alternative source (Facebook,
       Resilient Makati, Gawad Kalasag docs, news).
-- [ ] Log the AR2022 in manifest.csv as INSPECTED / content-negative for OB6.
+- [ ] Log the AR2022 in `ledger/manifest.csv` as INSPECTED / content-negative for OB6. (DONE S7e)

@@ -4,7 +4,7 @@
 > QCDRRMC Resolution No. 6 s.2020) and the **QCDRRMO official page**. Philippine
 > government works — **not under copyright (RA 8293 §176)**; attribution required.
 > Facts below are paraphrased from those primary documents. Direct URLs in
-> `manifest.csv`. **All primary and publicly downloadable** — this is the
+> `ledger/manifest.csv`. **All primary and publicly downloadable** — this is the
 > "what full public compliance looks like" anchor (contrast the Makati OB4
 > access-lapse and the Pasig FOI-gated plan).
 

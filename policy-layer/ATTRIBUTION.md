@@ -3,10 +3,29 @@
 **Purpose:** consolidate how the policy-layer corpus is sourced, cited, and
 verified. Anyone (Claude, a future collaborator, an external reviewer) should
 be able to check the provenance of any claim in the ledger by tracing:
-`LEDGER.md` → `status.csv` → `evidence` field → corpus note → `manifest.csv`
+`LEDGER.md` → `ledger/status.csv` → `evidence` field → corpus note →
+`ledger/manifest.csv`
 → primary URL.
 
 ---
+
+## The two manifests
+
+`policy-layer/` carries two manifest files by design:
+
+- **`corpus_manifest.csv`** — the *artifact* manifest. What files we physically
+  hold, where they sit on disk (`local_path`), and whether they're usable
+  (`is_scanned`, `needs_ocr`). Answers: *do we have the bytes?*
+- **`ledger/manifest.csv`** — the *provenance* manifest. Where each claim came
+  from (`primary_url`, `alt_url`), what kind of source it is (`source_type`),
+  and whether it's citable yet (`provenance_note`). Answers: *can we cite it?*
+
+A document can appear in one and not the other. Marikina Ord. 132 s.2011 is in
+the provenance manifest (identified, flagged `PENDING`) but not in the artifact
+manifest (we don't have the file). Conversely, the PHIVOLCS hazard KMZ tiles are
+artifacts we hold but carry no independent provenance note.
+
+**For any external citation, `ledger/manifest.csv` is the authority.**
 
 ## Source-type taxonomy
 
@@ -23,7 +42,7 @@ be able to check the provenance of any claim in the ledger by tracing:
 - PH government works: full text OK with attribution.
 - Third-party: quote-with-credit, don't paste full text, facts-only extract.
 - Pre-RA 10121 (2010) docs: context only, do NOT flip a status.
-- Provenance: fill `source_url` in `manifest.csv` at ingest.
+- Provenance: fill `primary_url` + `source_type` in `ledger/manifest.csv` at ingest.
 
 ## Additional rules (added S7e in response to attribution flag)
 
@@ -35,7 +54,7 @@ be able to check the provenance of any claim in the ledger by tracing:
    ordinance to X") that came from a compiled summary must be flagged
    inline as needing second-source verification.
 3. **Manifest is the ground truth for URLs.** Every document referenced in a
-   corpus note or ledger row should have a row in `manifest.csv` with its
+   corpus note or ledger row should have a row in `ledger/manifest.csv` with its
    primary URL (if known), alt URL (if any), source type, and provenance note.
 4. **Migrate off compiled summaries when possible.** Once a primary PDF is
    ingested into corpus, corpus notes that referenced the compiled summary
@@ -78,7 +97,7 @@ be able to check the provenance of any claim in the ledger by tracing:
   ordinance is attributed by the compiled summary to unnamed "academic
   research and LGU institutional studies."
 - **Fix applied S7e:** attribution disclaimer added to top of
-  `marikina_document_register.notes.md`; provenance TODO in `manifest.csv`
+  `marikina_document_register.notes.md`; provenance TODO in `ledger/manifest.csv`
   ("SECOND-SOURCE VERIFICATION PENDING before external citation").
 - **Migration path:** obtain Ord. 132 s.2011 primary text (Sangguniang
   Panlungsod / City Secretary) and cite directly.
@@ -95,7 +114,7 @@ be able to check the provenance of any claim in the ledger by tracing:
 - **Fix applied S7e:** attribution disclaimer added to top of
   `pasig_drrm_evidence.notes.md`; ⚠️ mark on the Marker Project claim;
   `pasig_source_urls.notes.md` locates primary URLs for 3 of the 6 named docs;
-  `manifest.csv` logs source-type and provenance for each.
+  `ledger/manifest.csv` logs source-type and provenance for each.
 - **Migration path:** ingest the primary PDFs (Ord. 02 s.2015, Green
   Building Ord via SC E-Library, Citizen's Charter) into `corpus/Pasig/`
   and update evidence citations off the compiled summary. The three
@@ -113,7 +132,7 @@ Before citing ANY claim in the ledger externally:
 
 1. Check the evidence field in `status.csv` — does it name a specific
    primary doc?
-2. Check `manifest.csv` — does that doc have a primary URL, and what
+2. Check `ledger/manifest.csv` — does that doc have a primary URL, and what
    `source_type` is it?
 3. If `source_type = primary-gov` with URL → cite the primary directly.
 4. If `provenance_note` says "PRIMARY PDF INGEST PENDING" or "SECOND-SOURCE

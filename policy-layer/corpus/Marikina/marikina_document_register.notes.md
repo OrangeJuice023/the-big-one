@@ -21,7 +21,50 @@ compiled summary + primary RA 10121/EO 2 s.2016 texts.
 
 ## Documents identified (by title / reference number)
 
-### 1. Ordinance No. 132, Series of 2011 — DRRMO-creating ordinance
+---
+
+## ⚠️ S7h CORRECTION — "Ordinance No. 132, s. 2011" failed verification
+
+**Second-source verification was attempted S7h and FAILED. Treat the claim
+below as unverified and possibly erroneous.**
+
+What the check found:
+
+1. **The most authoritative available source on this exact question does not
+   support it.** *Designing a Disaster Resilient City: A Study of the
+   Institutionalization Process of the Marikina City Disaster Risk Reduction
+   and Management Office* (IJSBAR, peer-reviewed) traces precisely this
+   institutional history — and states that Rescue 161, established by City
+   Ordinance 264 (1998), was expanded into the MCDRRMO **"by virtue of the
+   Republic Act 10121."** It attributes the transformation to the national
+   statute directly and **names no city ordinance at all.**
+
+2. **A differently-numbered 2011 Marikina ordinance does exist.** The Marikina
+   Citizen's Charter 2012 cites "section 23 of **ordinance no. 32 series of
+   2011**" as the mandate for a first-aid service. Whether this is DRRM-related
+   is unknown. A **132 / 32 digit confusion** in the compiled summary is a
+   plausible explanation but is **not established** — do not assume it.
+
+**Consequence for OB3:** the DRRMO-creating instrument for Marikina is
+**unresolved**, not merely unobtainable. Previously we recorded "identified but
+not downloadable"; the honest position is "claimed identification does not
+survive checking." OB3 remains `partial` on the strength of Ord. 020 s.2023
+(EQ Preparedness, in corpus), with the creating instrument outstanding.
+
+**Do not cite Ord. 132 s.2011 externally.** Resolve by requesting the
+certified DRRMO-creating ordinance from the Marikina Sangguniang Panlungsod /
+City Secretary, or by obtaining Ord. 32 s.2011 to check its subject matter.
+
+**Method note.** This is the attribution discipline working as designed. The
+claim entered the ledger from a user-supplied compiled summary attributing it
+to unnamed "academic research and LGU institutional studies," was flagged
+`PENDING` at ingest rather than treated as established, and did not survive
+the check. Had it been recorded as fact, a specific and wrong ordinance number
+would now be sitting in the paper.
+
+---
+
+### 1. Ordinance No. 132, Series of 2011 — DRRMO-creating ordinance  ⚠️ SEE CORRECTION ABOVE
 - **Function:** officially institutionalized the Marikina City Disaster Risk
   Reduction and Management Office (MCDRRMO) in compliance with RA 10121.
 - **Predecessor context:** updated the city's original emergency service

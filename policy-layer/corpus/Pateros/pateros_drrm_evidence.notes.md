@@ -80,7 +80,7 @@ rule, secondary/activity evidence (news, transparency portals, Facebook) does
 
 ## Provenance TODO (grounded findings need links)
 - [ ] Exact URLs: PIA article (pia.gov.ph), SubayBAYAN project page (code
-      DRRAP-21-13-76-06-000-1), BFP-NCR FB post, Project SHAKE FB post → `manifest.csv`.
+      DRRAP-21-13-76-06-000-1), BFP-NCR FB post, Project SHAKE FB post → `ledger/manifest.csv`.
 - [x] Firm up absent-vs-access: check **pateros.gov.ph** exists at all, and
       **DILG / OCD-NCR** for any Pateros LDRRMP/ordinance, before flipping any
       to-collect → `absent`. **DONE, S7b — see below.**

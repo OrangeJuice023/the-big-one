@@ -115,7 +115,7 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 |---|---|---|---|---|---|---|
 | **OB1** LDRRMO established <br><sub>RA10121 §12(a)</sub> | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **OB2** LDRRMP formulated, tested & updated <br><sub>§11(b)(1); §12(c)(6)</sub> | ◐ !access-broken | ◐ !access-foi | ✓ | ✓ | · | · |
-| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | · |
+| **OB3** Ordinance creating DRRMO (staff+budget) <br><sub>IRR Rule 6 §6</sub> | ✓ | ◐ !access-foi | ✓ | ✓ | · | ◐ !access-opaque |
 | **OB4** Hazard maps & plans PUBLICLY displayed <br><sub>IRR Rule 6 §7; §12(c)(10)</sub> | ◐ !access-broken | ◐ | ✓ | ✓ | · | ◐ !access-foi |
 | **OB5** Local risk assessment / hazard ID <br><sub>§12(c)(2,3,9)</sub> | ✓ | ◐ | ✓ | ✓ | · | ◐ |
 | **OB6** Regular drills conducted <br><sub>IRR Rule 6 §7; §12(c)(4)</sub> | · | ✓ | ✓ | ✓ | ◐ !access-none | ✓ |
@@ -131,7 +131,7 @@ Legend: ✓ present · ◐ partial · · to-collect · ✗ absent · `!lapse` = 
 | Pasig | 7 | 1 | 0 | 0 | 0 |
 | Quezon City | 8 | 0 | 0 | 0 | 0 |
 | Pateros | 1 | 2 | 5 | 0 | 2 |
-| Taguig | 2 | 4 | 2 | 0 | 3 |
+| Taguig | 2 | 5 | 1 | 0 | 4 |
 
 ## Lapse register
 
@@ -142,15 +142,16 @@ _Every logged lapse. Caps public-display obligations at partial. **Access sub-ty
 | Makati | OB2 | **access-broken** | Enhanced Makati DRRM Plan 2019-2030 exists (CDP §1.11.3 + Resilient Makati portal description: Sendai/Paris-aligned ST/MT/LT horizons 10 resilience goals) BUT plan document file-not-found on portal | partial |
 | Makati | OB4 | **access-broken** | PHIVOLCS Makati GR/EIL hazard tiles exist; but city public portal shows 'not currently available' for some hazard/plan layers — public cannot view | partial |
 | Marikina | OB2 | **access-foi** | LDRRMP exists and is actively shared on eFOI request (granted via Google Drive links or physical copies per eFOI transaction logs); not hosted for public download on marikina.gov.ph. RA 10121 §11(b)(1) 'publicly displayed' obligation not satisfied by on-request-only channel. | partial |
-| Marikina | OB3 | **access-foi** | DRRMO-creating ordinance identified: **Ordinance No. 132, s. 2011** (institutionalized MCDRRMO per RA 10121; updated Ord. 264 s. 1998 Rescue 161 framework). Full text NOT downloadable on marikina.gov.ph or open legislative portal; request certified copy from Sangguniang Panlungsod / City Secretary. Also present: Ord. 020 s.2023 (EQ Preparedness). | partial |
+| Marikina | OB3 | **access-foi** | DRRMO-creating instrument UNRESOLVED. Compiled-summary claim of 'Ord. No. 132 s.2011' FAILED second-source verification (S7h): peer-reviewed IJSBAR study on the MCDRRMO institutionalization attributes the Rescue 161 -> MCDRRMO transformation to RA 10121 directly, naming no city ordinance; separately a Marikina Ord. No. 32 s.2011 exists (Citizens Charter 2012 cites its sec.23). Possible 132/32 digit confusion. Ord. 020 s.2023 (EQ Preparedness) remains in hand. Request certified copy from Sanggunian/City Secretary. | no |
 | Marikina | OB8 | **access-foi** | Marikina CLUP 2018-2027 Vol.1 exists but not on LGU portal; available only on 3rd-party academic repos (Studocu/Scribd) OR by request from City Planning and Development Office (CPDO) / eFOI. Not officially published for public download. | partial |
 | Pateros | OB6 | **access-none** | Response/activity: evacuation prepositioning Typhoon Pepito (PIA Nov-2024); MDRRMC mtg 2026; DRRM equipment COMPLETED & Functional (SubayBAYAN LFP 2021). LGU never attempted digital disclosure — all evidence via non-LGU channels (national news, national portals, Facebook). | partial |
 | Pateros | OB7 | **access-none** | LGU DRRM appropriation: SubayBAYAN LFP 2021 LGU counterpart P506728 + national P484952 = P991680 COMPLETED. Calamity fund tapped by council resolution Aug-2013 (Inquirer: Mayor Medina, state of calamity all 10 barangays). LGU never attempted digital disclosure of statutory LDRRMF/QRF budget doc. | partial |
+| Taguig | OB3 | **access-opaque** | Ord. No. 91 s.2023 'Creating Positions Under the City Disaster Risk Reduction and Management Office (CDRRMO) and Appropriating Fund Therefor' — satisfies staffing+budget limb of IRR Rule 6 §6. Original DRRMO-CREATING ordinance still not located (city ordinance index covers only 2022-2024). Index is TITLES-ONLY on a third-party Google Sites domain (sites.google.com/view/taguigcity), not taguig.gov.ph; no full text or PDFs for any ordinance. | partial |
 | Taguig | OB4 | **access-foi** | Multi-Hazard IEC Campaign (GMMA READY + BRACE); LIDAR 3D disaster map (AusAID 2011). Programs documented on LGU portal; hazard-map PDFs not hosted. Updated hazard maps requested via eFOI Sept-2025 (Mallillin/DENR-LMB tracking DENRLMB-761820630189). | partial |
 | Taguig | OB7 | **access-foi** | LDRRMF Utilization page exists on portal (bot-blocked; content unverified). QRF confirmed tapped by Sanggunian resolution 09-Aug-2012 (Mayor Cayetano state of calamity, 18/28 barangays flooded, Inquirer). Statutory 5%/30% budget doc not surfaced. | partial |
 | Taguig | OB8 | **access-foi** | Taguig CLUP+Zoning Ord 2000-2020 (Sanggunian Res. 129 s.2003; MMDA Res. 03-21; HLURB Res. R-744 s.2003) — includes 5m PHIVOLCS fault easement (identical rule to Makati Ord. 2012-102 §37 and Pasig 5m no-build buffer) + 10m Pasig River easement. CLUP text 3rd-party-mirror only (Scribd/Studocu); not on taguig.gov.ph. Updated post-2020 CLUP eFOI-gated (Mallillin request DENR-LMB Sept-2025). | partial |
 
-_10 lapses logged._
+_11 lapses logged._
 
 ## Per-LGU detail
 
@@ -173,7 +174,7 @@ _10 lapses logged._
 |---|---|---|---|---|---|
 | OB1 | ✓ present | — | MCDRRMC/MCDRRMO active & named (Res. 109 s.2025; Ord. 020 s.2023) | corpus/Marikina/ | 2026-07-21 |
 | OB2 | ◐ partial | access-foi | LDRRMP exists and is actively shared on eFOI request (granted via Google Drive links or physical copies per eFOI transaction logs); not hosted for public download on marikina.gov.ph. RA 10121 §11(b)(1) 'publicly displayed' obligation not satisfied by on-request-only channel. | corpus/Marikina/marikina_document_register.notes.md | 2026-07-22 |
-| OB3 | ◐ partial | access-foi | DRRMO-creating ordinance identified: **Ordinance No. 132, s. 2011** (institutionalized MCDRRMO per RA 10121; updated Ord. 264 s. 1998 Rescue 161 framework). Full text NOT downloadable on marikina.gov.ph or open legislative portal; request certified copy from Sangguniang Panlungsod / City Secretary. Also present: Ord. 020 s.2023 (EQ Preparedness). | corpus/Marikina/marikina_document_register.notes.md | 2026-07-22 |
+| OB3 | ◐ partial | access-foi | DRRMO-creating instrument UNRESOLVED. Compiled-summary claim of 'Ord. No. 132 s.2011' FAILED second-source verification (S7h): peer-reviewed IJSBAR study on the MCDRRMO institutionalization attributes the Rescue 161 -> MCDRRMO transformation to RA 10121 directly, naming no city ordinance; separately a Marikina Ord. No. 32 s.2011 exists (Citizens Charter 2012 cites its sec.23). Possible 132/32 digit confusion. Ord. 020 s.2023 (EQ Preparedness) remains in hand. Request certified copy from Sanggunian/City Secretary. | corpus/Marikina/marikina_document_register.notes.md | 2026-07-23 |
 | OB4 | ◐ partial | — | Marikina-specific hazard maps accessible via national platforms — HazardHunterPH (hazardhunter.georisk.gov.ph) + PHIVOLCS FaultFinder / Valley Fault System Atlas — but not hosted on marikina.gov.ph. LGU passively benefits from national display; §12(c)(10) LGU-own-duty not directly discharged. | HazardHunterPH+PHIVOLCS-FaultFinder | 2026-07-22 |
 | OB5 | ◐ partial | — | Ord. 020 cites WVF/PHIVOLCS 129.47km trace; MCDRRMC assessments (Res.109); SECONDARY corroboration: ADPC Safer Cities 22 (2008) documents Comprehensive EQ Disaster Reduction program (Ord.109 s.2005) + 1992/2004 flood-exposure figures | corpus/Marikina/ | 2026-07-21 |
 | OB6 | ✓ present | — | Ord. 020 s.2023 (enacted 22 Mar 2023; approved by Mayor 12 May 2023) institutionalizes EQ awareness & safety-DRILLS program via MCDRRMO; program part of MCDRRMO annual plan & budget with annual report to Mayor/Council | corpus/Marikina/ordinance_020_2023.txt | 2026-07-21 |
@@ -225,7 +226,7 @@ _10 lapses logged._
 |---|---|---|---|---|---|
 | OB1 | ✓ present | — | Taguig CDRRMO functioning: 5-storey Center for Disaster Management (Brgy. Central Signal); named assets MOCCOV (DOST partnership) + Aerial Platform Fire Truck (70m boom); BGCEA+ABMC MOU + MMDA training partnership. Historical OIC Ronald Galicia (2011). RA 10121 §12(a) established. | corpus/Taguig/taguig_drrm_evidence.notes.md | 2026-07-22 |
 | OB2 | · to-collect | unverified | LDRRMP not surfaced via search; likely eFOI-gated (same channel as CLUP via DENR-LMB precedent). | TODO | 2026-07-22 |
-| OB3 | · to-collect | unverified | DRRMO-creating ordinance number NOT located via search. Would need Sanggunian records or manual portal browse. | TODO | 2026-07-22 |
+| OB3 | ◐ partial | access-opaque | Ord. No. 91 s.2023 'Creating Positions Under the City Disaster Risk Reduction and Management Office (CDRRMO) and Appropriating Fund Therefor' — satisfies staffing+budget limb of IRR Rule 6 §6. Original DRRMO-CREATING ordinance still not located (city ordinance index covers only 2022-2024). Index is TITLES-ONLY on a third-party Google Sites domain (sites.google.com/view/taguigcity), not taguig.gov.ph; no full text or PDFs for any ordinance. | https://sites.google.com/view/taguigcity/our-city/city-ordinances | 2026-07-23 |
 | OB4 | ◐ partial | access-foi | Multi-Hazard IEC Campaign (GMMA READY + BRACE); LIDAR 3D disaster map (AusAID 2011). Programs documented on LGU portal; hazard-map PDFs not hosted. Updated hazard maps requested via eFOI Sept-2025 (Mallillin/DENR-LMB tracking DENRLMB-761820630189). | https://www.foi.gov.ph/agencies/denrlmb/updated-comprehensive-land-use-plan-clup-of-taguig-city-denrlmb-761820630189/ | 2026-07-22 |
 | OB5 | ◐ partial | — | Taguig CLUP 2000-2020 documents fault-system geology (MVFS/VFS per Punongbayan 1996); 12 barangays reportedly on WVF trace (per Pinagsama drill article; specific barangays not enumerated in snippet); 2012 flood affected 18/28 barangays (Bagumbayan Sta.Ana Fort Bonifacio incl. — even City Hall took 2ft). CLUP text 3rd-party-mirror only. | corpus/Taguig/taguig_drrm_evidence.notes.md | 2026-07-22 |
 | OB6 | ✓ present | — | Mayor Cayetano institutionalized regular EQ drills in city schools + public/private establishments; MMDA training partnership; Mobile Earthquake Simulator; multiple drill events documented on taguig.gov.ph (Pinagsama Phase 2 covered court etc.). | https://taguig.gov.ph/disaster-preparedness-training-at-pinagsama-phase-2-covered-court/ | 2026-07-22 |

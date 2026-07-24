@@ -60,7 +60,7 @@ Operation L!STO, ALeRTO-LGA manual.
 ---
 
 ### Reminder that keeps the scorecard honest
-Fill **`source_url` in `manifest.csv` at upload time** — it's the citation link;
+Fill **`primary_url` + `source_type` in `ledger/manifest.csv` at upload time** — it's the citation link;
 a grounded answer can't cite a document that has no provenance. And a document
 that exists but the public can't reach it is an **access-lapse (OB4 caps at
 partial)**, not a pass — capture it, don't quietly mark it present.

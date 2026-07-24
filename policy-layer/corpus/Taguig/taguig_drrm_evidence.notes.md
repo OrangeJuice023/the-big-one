@@ -6,7 +6,7 @@ RA 8293 §176.
 against taguig.gov.ph, dhsud.gov.ph, foi.gov.ph, and cited news outlets.
 No user-supplied compiled summary in this ingest — every claim below traces
 to a specific URL logged in `pasig_source_urls.notes.md`-style register at
-the bottom of this file OR in `manifest.csv`. Attribution risk lower than
+the bottom of this file OR in `ledger/manifest.csv`. Attribution risk lower than
 S7c/S7d.
 **Ingested:** S7f.
 
@@ -43,8 +43,47 @@ updated CLUP) is not. This puts Taguig in the same lapse cluster as Marikina
 - **Facebook page:** facebook.com/TaguigCityDRRMO/ — currently
   restricted/private view (activity evidence only if content accessible).
 
-⚠️ **DRRMO-creating ordinance (OB3) NOT LOCATED via search.** Would require
-manual browse of taguig.gov.ph or Sanggunian records.
+### S7h firming — OB3 partially resolved
+
+**Located: Ordinance No. 91, Series of 2023** — *"An Ordinance Creating
+Positions Under the City Disaster Risk Reduction and Management Office
+(CDRRMO) and Appropriating Fund Therefor."* This satisfies the **staffing and
+budget limb** of IRR Rule 6 §6.
+
+Also located: **Ordinance No. 40, Series of 2023** — establishes the Taguig
+Health Emergency Management Services (Taguig HEMS) as the unit in charge of
+DRRM for Health. Supplementary, not the CDRRMO creating instrument.
+
+**Still missing: the original DRRMO-creating ordinance.** The city's ordinance
+index covers only 2022–2024, and the creating ordinance necessarily predates
+it (the CDRRMO was operating well before 2022).
+
+### ⚠️ NEW ACCESS PATTERN — the Taguig ordinance index
+
+The official Taguig ordinance index is published at
+`sites.google.com/view/taguigcity/our-city/city-ordinances`. Three
+characteristics make it an **`access-opaque`** exemplar of a kind not yet seen
+in this corpus:
+
+1. **Third-party free platform, not the LGU domain.** The index lives on a
+   Google Sites subdomain, not `taguig.gov.ph`. The city's own domain hosts
+   operational/news content; the legislative register is elsewhere.
+2. **Titles only — no text, no PDFs, no links.** Every entry is a single line
+   giving ordinance number, series, and title. There is no full text for any
+   ordinance, and nothing to download.
+3. **Coverage limited to 2022–2024.** Roughly 100 entries, all recent. Older
+   legislation — including whatever created the CDRRMO — is simply absent.
+
+The effect: **the existence of legislation is disclosed; its content is not.**
+A citizen can learn that Ord. 91 s.2023 exists and what it is called, and can
+learn nothing further. For RA 10121's "publicly displayed" purpose, a title is
+not the document.
+
+This is a distinct manifestation of `access-opaque` from the two already
+recorded — Pasig's opaque-hash URLs (content published, unfindable) and
+Makati's scan-only Annual Report (content published, unsearchable). Taguig's
+is **metadata-without-content**: findable, readable, and empty of the thing
+that matters. Three manifestations, one failure mode.
 
 ## 2. LDRRMP (OB2) — not surfaced
 

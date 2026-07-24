@@ -137,16 +137,28 @@ Pasig enforces a **5-meter no-build buffer on both sides of the WVF trace**
 *Cross-link:* **identical rule** to Makati Zoning Ord. 2012-102 §30 (WVF→OPN)
 and §37 (5-m PHIVOLCS-certified fault easement). Same standard, two LGUs.
 
-### Joint PHIVOLCS Marker Project ⚠️ second-source verification required
+### Joint PHIVOLCS Marker Project ✅ VERIFIED S7h
 > Pasig was **one of only three Metro Manila LGUs (alongside Quezon City and
 > Makati)** that actively installed **physical ground markers, signs, and
 > paint lines** along public roads and borders marking the exact WVF trace.
 
-⚠️ **Attribution note:** the "only 3 NCR LGUs" specificity is an interpretive
-claim from the user-supplied compiled summary. The Marker Project itself is a
-documented PHIVOLCS program, but the "3 LGUs only" claim needs primary
-PHIVOLCS or DOST-PHIVOLCS documentation before external citation. Log as
-provenance TODO in `manifest.csv`.
+✅ **Verification (S7h): CONFIRMED by independent source.** The Philippine
+Daily Inquirer (19 May 2015), reporting the launch of the PHIVOLCS Valley
+Fault System Atlas, quotes then-PHIVOLCS head **Renato Solidum** stating that
+of the **19 concerned LGUs**, only **Quezon City, Pasig City and Makati City**
+had coordinated with PHIVOLCS to install markers or signs along the fault
+line. Solidum adds that PHIVOLCS encourages LGUs to install them but that
+doing so is not PHIVOLCS's own responsibility.
+
+This is direct attribution to the agency head, independent of the compiled
+summary that first surfaced the claim. **The claim may now be cited**, with
+the Inquirer as the source and the date (2015) stated — later LGUs may have
+since installed markers.
+
+Corroborating detail: Makati's own marker programme is separately documented
+(Manila Bulletin, 4 Mar 2017) — 152 markers and *mohons* across Brgys. East
+Rembo, Comembo, Pembo and Rizal, under a **Revised Makati Earthquake
+Contingency Plan** built on the **MMEIRS 2004 Model 8** scenario.
 
 This is **literal public display of hazard identification** per RA 10121 IRR
 Rule 6 §7 — arguably stronger than any of the other four LGUs' publication
@@ -292,6 +304,6 @@ FOI-gated framing is:
 - [ ] Second-source verify the Joint PHIVOLCS Marker Project claim (Pasig +
       QC + Makati as the three implementing LGUs) — this is a strong claim
       worth firming before it hits any external write-up.
-- [ ] Log source URLs for the PDFs into `manifest.csv`.
+- [ ] Log source URLs for the PDFs into `ledger/manifest.csv`.
 - [ ] User decision on `access-opaque` sub-type: formalize in
       `render_ledger.py` REAL_LAPSES, or keep as methodology-only finding.
