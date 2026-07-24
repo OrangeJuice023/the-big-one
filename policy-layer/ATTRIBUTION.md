@@ -143,6 +143,30 @@ Before citing ANY claim in the ledger externally:
 5. If `source_type = secondary-*` → cite the secondary source explicitly
    (author, outlet, date, URL) rather than presenting the claim as your own.
 
+## Compiled-summary track record (updated S7i)
+
+Two claims sourced from user-supplied compiled summaries have now been put to
+primary verification. **Both failed.** A third batch verified cleanly.
+
+| Claim | Source | Outcome |
+|---|---|---|
+| Marikina "Ord. No. 132 s.2011" creates MCDRRMO | compiled summary, attributed to unnamed "academic research and LGU institutional studies" | ❌ **FAILED S7h.** Peer-reviewed IJSBAR study on this exact question attributes the transformation to RA 10121 directly, naming no ordinance. A Marikina Ord. 32 s.2011 separately exists. |
+| Pasig "Ord. No. 08-08 s.2016" adopts EQ+Flood Contingency Plan 2016-2021 | compiled summary | ❌ **FAILED S7i.** Document retrieved under that identifier is Ordinance No. 08 s.2016 on employee incentive awards. Identifier may be wrong rather than the underlying claim (Pasig uses two-part numbering). |
+| Pasig Res. 130-11 s.2023 and Res. 269-11 s.2023 (authors, dates, adopted plans) | compiled summary | ✅ **VERIFIED S7i** — every checkable claim confirmed exactly against primary text. |
+| PHIVOLCS marker project: only QC, Pasig, Makati of 19 LGUs | compiled summary | ✅ **VERIFIED S7h** — Inquirer 19-May-2015 quoting PHIVOLCS head Renato Solidum. |
+
+**Reading.** Compiled summaries are reliable on *substance* and unreliable on
+*identifiers*. Where a claim could be checked against primary text, the
+narrative content held up; the two failures were both **document reference
+numbers**. Practical rule: treat compiled-summary *facts* as leads worth
+pursuing, and compiled-summary *citations* as unverified until the document
+is in hand. Never let an ordinance or resolution number reach an external
+write-up on compiled-summary authority alone.
+
+Both failures were caught because the claims were flagged `PENDING` at ingest
+rather than recorded as established. Had they not been, two wrong statutory
+citations would now be in the paper.
+
 ## Standing provenance TODOs
 
 - [ ] Ingest primary Pasig PDFs → migrate S7d note off compiled summary.
