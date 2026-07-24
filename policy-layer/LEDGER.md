@@ -199,14 +199,14 @@ _12 lapses logged._
 
 | Obl | Status | Lapse | Evidence | Source | Updated |
 |---|---|---|---|---|---|
-| OB1 | ✓ present | — | QCDRRMC organized (EO 07/23 s.2010; reconstituted EO 07 s.2019) per QCDRRMP 2021-2027 register | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB1 | ✓ present | — | QCDRRMC organized by EO 23 s.2010 (same year RA 10121 enacted), reconstituted EO 07 s.2019; QCDRRMO created 2014 by Ord. SP-2290. ADDED S7m: Office Order No. 72 constituting the WEST VALLEY FAULT TASK GROUP, redefining its functions and composition - a standing body dedicated specifically to the WVF, with no equivalent surfaced in any other LGU in the corpus. | corpus/QuezonCity/quezon_city_verification_S7m.notes.md | 2026-07-24 |
 | OB2 | ✓ present | — | QCDRRMP 2021-2027 public PDF (4 thematic areas, 76 PPAs; adopted QCDRRMC Res.6 s.2020) | https://quezoncity.gov.ph/wp-content/uploads/2021/10/QCDRRMP-2021-2027_Volume-1-8Sept2021.pdf | 2026-07-21 |
-| OB3 | ✓ present | — | Ord. SP-2290 s.2014 creates QCDRRMO (+SP-2424 s.2015, SP-3170 s.2023 staffing) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB3 | ✓ present | — | Ord. SP-2290 s.2014 creates QCDRRMO - CORROBORATED FIVE WAYS (S7m): QCDRRMP 2021-2027; QCDRRMO department page; Citizens Charter 2020; Citizens Charter 2023; League of Cities of the Philippines presentation (external to QC). Consistent title throughout. Amendment chain: SP-2424 s.2015 (position titles/salary grades per JMC 2014-1); further ordinance amending SP-2424 sec.1 (reorganisation, +51 plantilla positions, absorbs 4 from DCD/DPOS). QC operates a full legislative portal (qccouncil.quezoncity.gov.ph) indexing ordinances 1st-23rd City Council with full-text PDFs at human-readable paths. SP-2290 full text not yet in corpus - retrieval task, location known. | corpus/QuezonCity/quezon_city_verification_S7m.notes.md | 2026-07-24 |
 | OB4 | ✓ present | — | QC Risk Atlas 2014 publicly downloadable + HVRA hazard mapping — public display satisfied (NO access-lapse, cf. Makati) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
 | OB5 | ✓ present | — | QC HVRA 2013 (earthquake+flood, UDRI, hotspot barangays); MMEIRS-based M7.2 WVF scenario corroborates loss model | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
 | OB6 | ✓ present | — | Mandatory drills Ord. SP-2674 s.2017 + Res. SP-6111 s.2014; QCDRRMO citywide EQ drills since 2015 | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
 | OB7 | ✓ present | — | 5% LDRRMF per RA 10121 sec.21; adopted annually by resolution (Res.1 s.2019 LDRRMF+Plan 2020 = PHP 1.18B) | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
-| OB8 | ✓ present | — | DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned | corpus/QuezonCity/quezon_city_drrm_evidence.notes.md | 2026-07-21 |
+| OB8 | ✓ present | — | DRR/CCA mainstreamed into CLUP via HLURB CDRA; Zoning Ord. SP-2502 s.2016; LCCAP SP-7086 s.2017; NDRRMF-aligned. ADDED S7m: Ord. SP-2549 s.2016 establishing a MANDATORY SEISMIC RETROFITTING PROGRAM for QC-owned and barangay-owned buildings, particularly those built before the 1990 Earthquake - targets the same pre-1990 building stock the loss model fragility curves address. Comparable to Pasig Green Building Ord. 06 s.2016. | corpus/QuezonCity/quezon_city_verification_S7m.notes.md | 2026-07-24 |
 
 ### Pateros
 
