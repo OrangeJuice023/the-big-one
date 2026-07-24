@@ -131,14 +131,78 @@ displayed." This one is measured against the LGU's **own** recorded
 instruction. It is not an outside critic saying the plan should be online; it
 is the city council saying so, in the same document that adopted the plan.
 
-⚠️ **PENDING — do not treat as established.** Absence from search is not
-proof of absence from the website. Required before this is cited or before
-any status changes: a **direct check of pasigcity.gov.ph** (browser, since
-the site is bot-blocked) for the LDRRMP 2023–2028 full text, and a **Wayback
-capture** of the result. See TODO below. If confirmed absent, **OB4 should
-move from `present` to `partial`** — its obligation text is "hazard maps
-**& plans** PUBLICLY displayed," and Pasig would then satisfy the maps limb
-(physical WVF markers, verified S7h) but not the plans limb.
+✅ **RESOLVED S7k — browser audit completed.** The finding stands, and is
+sharper than first recorded.
+
+**Confirmed:** the LDRRMP 2023–2028 (~300 pp) is **not published as a
+standalone download** on `pasigcity.gov.ph`. The adopting resolution is
+online — `assets.pasigcity.gov.ph/storage/city_resolution/2023/09/11/64feaae064e9e1694411488130-11.pdf`
+— the plan it adopts is not.
+
+**Note on that URL:** the path segment reads `2023/09/11`, but the resolution
+was **approved 19 June 2023** on its own face. The path date is the *upload*
+date, roughly three months after adoption. Cite the approval date, not the
+path.
+
+**The actual channel — already in our corpus, previously mis-filed.** The
+PCDRRMO Citizen's Charter (ingested S7d, but recorded under OB6 as a drills
+service rather than as a disclosure channel) documents a standing
+document-request service through the **Research & Planning Division**:
+
+> Document & Map Requests: copies of official DRRM plans, hazard assessment
+> maps, and technical risk documents. **Fee: Free.** Requirements: formal
+> request letter addressed to the Mayor or PCDRRMO Chief, valid government
+> ID, and **a personal USB drive (min. 5GB capacity)**.
+
+So the plan is genuinely obtainable, at no cost. But the requirements are a
+letter, an ID, and **physical attendance carrying storage media**.
+
+**Why this matters more than "not published."** Set the two records side by
+side:
+
+| Directed (Committee on Disaster Resilience, 7 Jun 2023) | Implemented |
+|---|---|
+| "copies be also available to them and **down loadable thru Pasig City website/platform**" — expressly for barangays and constituents | Formal letter + government ID + personal USB drive, in person at the Research & Planning Division |
+
+This is not an LGU that neglected to publish. It is an LGU whose council
+directed web publication for barangay-level dissemination, and which
+implemented a counter-service instead. The gap is between the city's own
+recorded instruction and its own recorded procedure — both documented, both
+primary, and pointing in different directions.
+
+The burden is also **higher than eFOI**, not lower: Marikina's LDRRMP is
+granted remotely via foi.gov.ph; Pasig's requires showing up. Same taxonomic
+category (`access-foi` — deliberate on-request-only channel), heavier
+practical barrier.
+
+### Consequence: OB4 moved `present` → `partial` (`access-foi`)
+
+IRR Rule 6 §7 requires hazard maps **and plans** to be publicly displayed.
+Pasig splits:
+
+- **Maps limb — satisfied, and strongly.** Physical WVF ground markers on
+  public roads; one of only three NCR LGUs to have done this (verified S7h,
+  PHIVOLCS head Solidum via Inquirer 2015). This is the strongest OB4
+  evidence in the corpus — it does not even require a citizen to visit a
+  portal.
+- **Plans limb — not satisfied.** On-request only, as above.
+
+**Consistency note.** This change corrects an inconsistency in our own
+scoring. Marikina's LDRRMP being eFOI-gated caps Marikina at partial; Pasig's
+LDRRMP being counter-gated was capping nothing. Same underlying situation,
+different score. It is now scored the same way.
+
+**OB2 stays `present`** — and correctly so. OB2's obligation text is "LDRRMP
+formulated, tested & updated" (§11(b)(1); §12(c)(6)), which Res. 130-11
+proves directly, including the update from the 2017–2022 predecessor plan.
+Formulation and public display are different obligations, and Pasig satisfies
+the first while failing the second.
+
+**Scorecard: Pasig 7/1/0/0 → 6/2/0, 1 lapse.**
+
+---
+
+## Superseded: original PENDING flag (retained for audit trail)
 
 ---
 
