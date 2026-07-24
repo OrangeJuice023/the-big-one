@@ -7,6 +7,7 @@ const NAV = [
   { href: '/rationale/', label: 'Rationale' },
   { href: '/methodology/', label: 'Methodology' },
   { href: '/policy/', label: 'Policy readiness' },
+  { href: '/ask/', label: 'Ask' },
 ];
 
 /** Seismogram brand mark (inline SVG, no icon fonts). */
