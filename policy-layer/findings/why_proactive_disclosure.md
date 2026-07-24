@@ -197,3 +197,27 @@ A reader who rejects the recommendation entirely should still be able to
 accept the finding: that six LGUs exposed to the same modelled hazard diverge
 sharply in disclosure posture, in four documented modes, and that the
 divergence is not explained by whether DRRM activity is occurring.
+
+---
+
+## A methodological consequence of this argument: we do not use eFOI ourselves
+
+If the argument above is right — that safety records need proactive
+disclosure and that on-request channels systematically exclude the
+populations the records are meant to protect — it would be inconsistent for
+this project to complete its own corpus by filing eFOI requests wherever a
+document is missing.
+
+Doing so would demonstrate only that a research team with institutional
+standing, time, and knowledge of the correct channel can obtain the document.
+That was never in question. It is the least surprising possible finding and
+it is not this project's finding. The claim under test is whether the
+document is available to the people the plan is meant to serve *without*
+those advantages.
+
+So: where a gap in this corpus is of the `access-foi` type, it is left open
+and labelled rather than closed by request. See `SYNTHESIS.md` §8 for the
+specific items affected. This is a limitation stated as a decision, not
+disclosed as an oversight, and it is symmetrical with the project's own
+recommendation — a study arguing for proactive disclosure should not quietly
+rely on the request-based channel it is critiquing to finish its own dataset.

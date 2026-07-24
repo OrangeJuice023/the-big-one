@@ -258,22 +258,66 @@ State these plainly.
 
 ---
 
-## 8. What remains open
+## 8. What remains open — and a deliberate limit
 
-Retrieval tasks. None of these would change a finding; all improve the audit
-trail.
+A short list of retrieval tasks remains (below). None would change a finding;
+each would only add another primary document to an already-established
+pattern.
+
+**We are not filing eFOI requests to close these gaps, by decision.**
+
+The reasoning is not laziness — it is methodological. This project's claim is
+that these documents are not publicly, proactively accessible. If we, as
+researchers, file formal requests, present institutional credentials, wait
+out statutory processing windows, and obtain the documents that way, **we
+would be demonstrating exactly the thing the finding describes**: that access
+exists for a requester with the standing, literacy, and patience to pursue
+it, and not otherwise. Closing our own gaps through eFOI would not resolve
+the finding; it would re-enact it.
+
+There is also a sharper reason tied to what this project is *for*. If the
+implicit standard is that ML-informed disaster-readiness information should
+itself be openly, publicly available — which is the position §5 and
+`findings/why_proactive_disclosure.md` argue for on the LGU side — then a
+research project that quietly files FOI requests to complete its own dataset
+is not practicing what it is recommending. The gaps are left **open and
+labelled**, not routed around.
+
+This means the corpus is, and will likely remain, incomplete by design at
+several cells. That incompleteness is not a flaw to be corrected in a future
+session. It is itself a data point: for a subset of these obligations, the
+only path to primary text runs through the same request-based channel that
+is under critique. We record that path exists (§2.1, `access-foi` lapses)
+without walking it ourselves.
+
+Any future collaborator with legitimate independent cause to file such a
+request — a journalist, an LGU auditor, a resident — should feel free to. The
+project's own dataset should not depend on it.
+
+### Remaining retrieval tasks, left open
+
+These are genuinely retrievable through channels this project *has* used
+(direct portal browsing, primary text already public but not yet located):
 
 - QC **SP-2290 s.2014** full text — location known (council portal, 18th
   Council). Closes the last primary-source gap at the top of the gradient.
+  Retrievable by direct portal browsing; no request required.
 - QC **SP-2549 s.2016** (seismic retrofitting, pre-1990 building stock) and
-  **Office Order No. 72** (WVF Task Group).
-- Marikina **DRRMO-creating ordinance** via Sanggunian or eFOI — resolves OB3
-  and the failed Ord. 132 claim in one step.
-- Taguig **LDRRMP** (OB2) and the pre-2022 DRRMO-creating ordinance (OB3).
-- Pasig **PCDRRMC Res. No. 1 and No. 9, s.2023**; the actual 2016 contingency
-  plan ordinance, or confirmation that "08-08" is erroneous.
-- Pateros — five obligations to-collect. Lowest expected yield; the pattern
-  is already established.
+  **Office Order No. 72** (WVF Task Group) — same channel, same reasoning.
+- Pasig **PCDRRMC Res. No. 1 and No. 9, s.2023** — Res. 130-11 states the
+  former "shall form an integral part of this Resolution," suggesting it may
+  be attached to the same public record already retrieved.
+
+**Left open, by decision, not pursued via eFOI:**
+- Marikina DRRMO-creating ordinance (OB3) — the failed "Ord. 132 s.2011"
+  claim remains unresolved. Requestable via Sanggunian or eFOI; not filed.
+- Taguig LDRRMP (OB2) and pre-2022 DRRMO-creating ordinance (OB3) —
+  requestable; not filed.
+- The actual 2016 Pasig contingency-plan ordinance (misidentified as
+  "08-08") — requestable; not filed.
+- Pateros — five obligations to-collect, most plausibly resolvable only via
+  request. Left as the clearest illustration of the pattern rather than
+  chased to closure.
 
 Deferred by decision, not oversight: the evacuation-accessibility layer
 (`findings/PROPOSED_evacuation_accessibility_layer.md`), scoped to pre-event

@@ -132,9 +132,18 @@ warrants a request, since it is both load-bearing for OB3 and — per the
 vintage cliff above — structurally absent from the portal.
 
 ## TODO
-- [ ] eFOI or Sanggunian request: Marikina DRRMO-creating ordinance (resolves
-      OB3 and the failed Ord. 132 claim in one step).
+
+**Not pursued, by project decision** (see `findings/SYNTHESIS.md` §8): filing
+an eFOI or Sanggunian request for the DRRMO-creating ordinance would confirm
+the `access-foi` finding at first hand but would not change it, and this
+project does not complete its own dataset through the channel it is
+examining. The gap is recorded as open rather than closed by request.
+
+- [x] ~~eFOI or Sanggunian request: Marikina DRRMO-creating ordinance~~ —
+      decided against; see rationale above.
 - [ ] Obtain Ord. 32 s.2011 to establish its subject matter, or drop it from
-      the register as an unresolvable lead.
+      the register as an unresolvable lead — this is a lower-stakes retrieval
+      (a single existing ordinance's content, not a formal request) and
+      remains open if a copy surfaces through ordinary search in future.
 - [ ] If archive depth is to be reported, define the measure and apply it to
       all six LGUs consistently.
