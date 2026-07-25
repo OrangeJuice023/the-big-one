@@ -294,6 +294,14 @@ Any future collaborator with legitimate independent cause to file such a
 request — a journalist, an LGU auditor, a resident — should feel free to. The
 project's own dataset should not depend on it.
 
+**What the project does use instead** is open retrieval: fetching public URLs,
+browsing indexes, downloading linked files, and reading national portals. That
+is reading, faster — it requires no standing and confers no advantage, so it
+carries none of the inconsistency that filing requests would. Its failures are
+themselves findings. One caution applies: a successful fetch proves
+retrievability-given-the-URL, never findability, and never by itself moves a
+status to `present`. See `findings/retrieval_methods.md`.
+
 ### Remaining retrieval tasks, left open
 
 These are genuinely retrievable through channels this project *has* used
