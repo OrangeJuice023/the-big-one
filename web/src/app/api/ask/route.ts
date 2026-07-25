@@ -153,7 +153,7 @@ function buildIndex(): Index {
     const counts = new Map<string, number>();
     for (const t of tokens) counts.set(t, (counts.get(t) ?? 0) + 1);
     tf.push(counts);
-    for (const term of counts.keys()) df.set(term, (df.get(term) ?? 0) + 1);
+    for (const term of Array.from(counts.keys())) df.set(term, (df.get(term) ?? 0) + 1);
   }
 
   indexCache = { chunks, docLen, avgDocLen, df, tf, N };
