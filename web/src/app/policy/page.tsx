@@ -99,6 +99,46 @@ export default function PolicyReadiness() {
           </p>
         </Plain>
 
+        <h2>Why these six</h2>
+        <p>
+          Two filters, applied together. <strong>Fault exposure:</strong> the six
+          sit on or immediately beside the West Valley Fault trace, where ground
+          rupture &mdash; not just shaking &mdash; is a live hazard. That is what
+          triggers the public-display duty for hazard maps and the no-build
+          easement rules that appear in Makati, Pasig and Taguig zoning
+          ordinances. <strong>Capacity spread:</strong> the six span the full
+          range of local government resourcing in Metro Manila, from Pateros
+          &mdash; the country&rsquo;s smallest municipality at 1.66 km&sup2; and
+          about 67,000 people &mdash; to Quezon City.
+        </p>
+        <p>
+          The second filter is what makes the comparison mean anything. If every
+          LGU in the sample were similarly resourced, a finding that they differ
+          in disclosure would say little. Spanning the capacity range lets us ask
+          whether disclosure tracks resources &mdash; and it does not, which is
+          the result.
+        </p>
+        <p>
+          <strong>Manila is deliberately excluded.</strong> It appears in the
+          35-LGU loss model but not here: the fault does not run through it, so
+          it faces shaking without rupture and the hazard-map obligation applies
+          differently. Including it would make the comparison uneven. Muntinlupa
+          and San Juan touch the corridor at its ends and would be defensible
+          additions; they are held for later work rather than excluded on
+          principle. See <Link href="/rationale">rationale</Link> for the full
+          scope statement.
+        </p>
+        <Plain label="Shorter version">
+          <p style={{ margin: 0 }}>
+            These are the six places the fault actually runs through or beside,
+            picked so that the biggest and the smallest local governments in
+            Metro Manila are both in the set. That way, if they turn out to
+            differ in how much they publish, we can tell whether it is about
+            money and staffing &mdash; and it is not. Manila is left out because
+            the fault misses it.
+          </p>
+        </Plain>
+
         <h2>Compliance matrix</h2>
         <p style={{ fontSize: '0.875rem', opacity: 0.75 }}>
           ✓ present · ◐ partial · · to-collect · lapse flag beneath the glyph
