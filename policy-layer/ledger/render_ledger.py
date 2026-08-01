@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """Render LEDGER.md from log.md (narrative) + status.csv (data).
-Run after editing either file:  python3 render_ledger.py"""
-import csv, os
+Run after editing either file:  python3 render_ledger.py
+
+Also emits web/src/lib/scorecard.json, which the /policy page imports at build
+time. That page used to carry a hand-copied duplicate of this data, and it fell
+out of sync twice — Pasig OB4 and Taguig OB3 were both stale on the live site
+after the ledger changed. status.csv is the single source of truth; anything
+displaying it should be generated, not transcribed.
+"""
+import csv, json, os
 from collections import defaultdict, OrderedDict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATUS = os.path.join(HERE, "status.csv")
 LOG = os.path.join(HERE, "log.md")
 OUT = os.path.join(os.path.dirname(HERE), "LEDGER.md")
+REPO = os.path.dirname(os.path.dirname(HERE))
+JSON_OUT = os.path.join(REPO, "web", "src", "lib", "scorecard.json")
 
 # 8 RA 10121 obligations (id -> short label, citation)
 OBLIG = OrderedDict([
@@ -112,5 +121,59 @@ doc = "\n\n".join([
     log, matrix(), progress(), lapse_register(), per_lgu(),
 ])
 open(OUT, "w").write(doc + "\n")
-print(f"Wrote {OUT}\n")
+print(f"Wrote {OUT}")
+
+
+# ---- machine-readable copy for the web app ----------------------------------
+def scorecard_json():
+    """Everything /policy needs, derived from the same rows as LEDGER.md."""
+    obligations = [
+        {"id": oid, "label": label, "cite": cite}
+        for oid, (label, cite) in OBLIG.items()
+    ]
+    lgus = []
+    for lgu in LGUS:
+        cells = {}
+        present = partial = tocollect = lapses = 0
+        for oid in OBLIG:
+            r = cell.get(lgu, {}).get(oid)
+            status = r["status"] if r else "to-collect"
+            lapse = r["lapse_type"] if r else ""
+            lapse = lapse if lapse in REAL_LAPSES else None
+            cells[oid] = {"status": status, "lapse": lapse}
+            if status == "present":
+                present += 1
+            elif status == "partial":
+                partial += 1
+            else:
+                tocollect += 1
+            if lapse:
+                lapses += 1
+        lgus.append({
+            "name": lgu,
+            "slug": lgu.lower().replace(" ", "-"),
+            "cells": cells,
+            "totals": {
+                "present": present,
+                "partial": partial,
+                "toCollect": tocollect,
+                "lapses": lapses,
+            },
+        })
+    return {
+        "_generated": "by policy-layer/ledger/render_ledger.py — do not edit by hand",
+        "obligations": obligations,
+        "lgus": lgus,
+    }
+
+
+if os.path.isdir(os.path.dirname(JSON_OUT)):
+    with open(JSON_OUT, "w", encoding="utf-8") as fh:
+        json.dump(scorecard_json(), fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    print(f"Wrote {JSON_OUT}")
+else:
+    print(f"(skipped {JSON_OUT} — web/src/lib not found)")
+
+print()
 print(matrix()); print(); print(progress())

@@ -1,117 +1,55 @@
 import Link from 'next/link';
 import Plain from '@/components/Plain';
+import scorecard from '@/lib/scorecard.json';
 
 export const metadata = { title: 'Policy readiness — The Big One' };
 
-type Status = 'present' | 'partial' | 'to-collect';
+/**
+ * The matrix is GENERATED, not transcribed.
+ *
+ * scorecard.json is emitted by policy-layer/ledger/render_ledger.py from
+ * status.csv, the single source of truth. An earlier version of this page kept
+ * a hand-copied duplicate and it went stale twice — Pasig OB4 and Taguig OB3
+ * were both wrong on the live site after the ledger changed, including the one
+ * cell carrying the project's sharpest finding. Regenerate with:
+ *
+ *     cd policy-layer/ledger && python3 render_ledger.py
+ *
+ * Only the prose notes below are authored here. Every status, lapse flag and
+ * total comes from the ledger.
+ */
+
+type Status = 'present' | 'partial' | 'to-collect' | 'absent';
 type Lapse = 'access-broken' | 'access-foi' | 'access-none' | 'access-opaque' | null;
-
 type Cell = { status: Status; lapse: Lapse };
-type LGU = { name: string; slug: string; cells: Record<string, Cell>; note?: string };
 
-const OBLIGATIONS: { id: string; label: string; cite: string }[] = [
-  { id: 'OB1', label: 'LDRRMO established', cite: 'RA 10121 §12(a)' },
-  { id: 'OB2', label: 'LDRRMP formulated, tested & updated', cite: '§11(b)(1); §12(c)(6)' },
-  { id: 'OB3', label: 'Ordinance creating DRRMO (staff+budget)', cite: 'IRR Rule 6 §6' },
-  { id: 'OB4', label: 'Hazard maps & plans PUBLICLY displayed', cite: 'IRR Rule 6 §7; §12(c)(10)' },
-  { id: 'OB5', label: 'Local risk assessment / hazard ID', cite: '§12(c)(2,3,9)' },
-  { id: 'OB6', label: 'Regular drills conducted', cite: 'IRR Rule 6 §7; §12(c)(4)' },
-  { id: 'OB7', label: 'LDRRM Fund incl. 30% QRF programmed', cite: '§21' },
-  { id: 'OB8', label: 'DRR mainstreamed into CDP/CLUP', cite: '§11(b)(2)' },
-];
+const OBLIGATIONS = scorecard.obligations as { id: string; label: string; cite: string }[];
 
-const LGUS: LGU[] = [
-  {
-    name: 'Quezon City',
-    slug: 'qc',
-    note: 'Proactive digital disclosure. All eight obligations satisfied with primary documents publicly hosted on quezoncity.gov.ph.',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'present', lapse: null },
-      OB3: { status: 'present', lapse: null },
-      OB4: { status: 'present', lapse: null },
-      OB5: { status: 'present', lapse: null },
-      OB6: { status: 'present', lapse: null },
-      OB7: { status: 'present', lapse: null },
-      OB8: { status: 'present', lapse: null },
-    },
-  },
-  {
-    name: 'Pasig',
-    slug: 'pasig',
-    note: 'Published-but-discoverability-lapse. Statutory documents are on pasigcity.gov.ph but hosted at opaque-hash URLs; some are scanned-only. Ord. No. 02 s.2015 creates the PCDRRMO with a full plantilla; LDRRMP 2023–2028 targets zero casualties at M7.2. Pasig is one of three NCR LGUs (with QC and Makati) that installed physical WVF ground markers \u2014 the strongest hazard-display evidence in the corpus. But the plans limb of the same obligation fails: the council\u2019s own Committee on Disaster Resilience directed on 7 June 2023 that the LDRRMP be \u201cdown loadable thru Pasig City website/platform\u201d, and it is not. It is obtainable only in person, on a formal letter, a government ID and a USB drive.',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'present', lapse: null },
-      OB3: { status: 'present', lapse: null },
-      OB4: { status: 'partial', lapse: 'access-foi' },
-      OB5: { status: 'present', lapse: null },
-      OB6: { status: 'present', lapse: null },
-      OB7: { status: 'partial', lapse: null },
-      OB8: { status: 'present', lapse: null },
-    },
-  },
-  {
-    name: 'Makati',
-    slug: 'makati',
-    note: 'Attempted digital disclosure, links broken. The Enhanced Makati DRRM Plan 2019–2030 is described on the Resilient Makati portal but the plan PDF returns file-not-found; the city hazard-map portal shows "not currently available" for several layers. CDP 2019–2025 and Zoning Ord. 2012-102 (with 5m WVF easement) are publicly hosted.',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'partial', lapse: 'access-broken' },
-      OB3: { status: 'present', lapse: null },
-      OB4: { status: 'partial', lapse: 'access-broken' },
-      OB5: { status: 'present', lapse: null },
-      OB6: { status: 'to-collect', lapse: null },
-      OB7: { status: 'present', lapse: null },
-      OB8: { status: 'present', lapse: null },
-    },
-  },
-  {
-    name: 'Taguig',
-    slug: 'taguig',
-    note: 'Portal publishes operational activity (drills, Center for Disaster Management, MOCCOV, Aerial Platform Fire Truck), but statutory documents are eFOI-gated. CLUP 2000–2020 available only on 3rd-party academic mirrors. Updated CLUP eFOI request Sept 2025 routed through DENR-LMB. Ord. No. 91 s.2023 creates CDRRMO positions and appropriates funds, but the city\u2019s ordinance index is titles-only, on a free third-party platform, covering 2022\u20132024 only \u2014 so the original office-creating ordinance is not reachable from it.',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'to-collect', lapse: null },
-      OB3: { status: 'partial', lapse: 'access-opaque' },
-      OB4: { status: 'partial', lapse: 'access-foi' },
-      OB5: { status: 'partial', lapse: null },
-      OB6: { status: 'present', lapse: null },
-      OB7: { status: 'partial', lapse: 'access-foi' },
-      OB8: { status: 'partial', lapse: 'access-foi' },
-    },
-  },
-  {
-    name: 'Marikina',
-    slug: 'marikina',
-    note: 'Deliberate eFOI-only channel. DRRMO-creating Ord. No. 132 s.2011 identified but not publicly downloadable; LDRRMP shared via foi.gov.ph on request; CLUP 2018–2027 only on 3rd-party academic repos or by request from CPDO/eFOI. Documents exist and are active — they are not proactively disclosed.',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'partial', lapse: 'access-foi' },
-      OB3: { status: 'partial', lapse: 'access-foi' },
-      OB4: { status: 'partial', lapse: null },
-      OB5: { status: 'partial', lapse: null },
-      OB6: { status: 'present', lapse: null },
-      OB7: { status: 'present', lapse: null },
-      OB8: { status: 'partial', lapse: 'access-foi' },
-    },
-  },
-  {
-    name: 'Pateros',
-    slug: 'pateros',
-    note: 'Portal exists but never attempted digital disclosure of DRRM documents. LDRRMO regulator-attested via DILG-NCR Local DRRMO Forum (14 July 2026) and PIA/OCD-NCR Magna Carta forum (July 2025). Response activity documented via non-LGU channels (PIA, BFP-NCR Facebook, SubayBAYAN LFP). Calamity fund tapped by council resolution (Aug 2013).',
-    cells: {
-      OB1: { status: 'present', lapse: null },
-      OB2: { status: 'to-collect', lapse: null },
-      OB3: { status: 'to-collect', lapse: null },
-      OB4: { status: 'to-collect', lapse: null },
-      OB5: { status: 'to-collect', lapse: null },
-      OB6: { status: 'partial', lapse: 'access-none' },
-      OB7: { status: 'partial', lapse: 'access-none' },
-      OB8: { status: 'to-collect', lapse: null },
-    },
-  },
-];
+const NOTES: Record<string, string> = {
+  'Quezon City':
+    'Proactive digital disclosure. All eight obligations satisfied with primary documents publicly hosted on quezoncity.gov.ph.',
+  'Pasig':
+    'Published-but-discoverability-lapse. Statutory documents are on pasigcity.gov.ph but hosted at opaque-hash URLs; some are scanned-only. Ord. No. 02 s.2015 creates the PCDRRMO with a full plantilla; LDRRMP 2023–2028 targets zero casualties at M7.2. Pasig is one of three NCR LGUs (with QC and Makati) that installed physical WVF ground markers — the strongest hazard-display evidence in the corpus. But the plans limb of the same obligation fails: the council’s own Committee on Disaster Resilience directed on 7 June 2023 that the LDRRMP be “down loadable thru Pasig City website/platform”, and it is not. It is obtainable only in person, on a formal letter, a government ID and a USB drive.',
+  'Makati':
+    'Attempted digital disclosure, links broken. The Enhanced Makati DRRM Plan 2019–2030 is described on the Resilient Makati portal but the plan PDF returns file-not-found; the city hazard-map portal shows "not currently available" for several layers. CDP 2019–2025 and Zoning Ord. 2012-102 (with 5m WVF easement) are publicly hosted.',
+  'Taguig':
+    'Portal publishes operational activity (drills, Center for Disaster Management, MOCCOV, Aerial Platform Fire Truck), but statutory documents are eFOI-gated. CLUP 2000–2020 available only on 3rd-party academic mirrors. Updated CLUP eFOI request Sept 2025 routed through DENR-LMB. Ord. No. 91 s.2023 creates CDRRMO positions and appropriates funds, but the city’s ordinance index is titles-only, on a free third-party platform, covering 2022–2024 only — so the original office-creating ordinance is not reachable from it.',
+  'Marikina':
+    'Deliberate eFOI-only channel. DRRMO-creating Ord. No. 132 s.2011 identified but not publicly downloadable; LDRRMP shared via foi.gov.ph on request; CLUP 2018–2027 only on 3rd-party academic repos or by request from CPDO/eFOI. Documents exist and are active — they are not proactively disclosed.',
+  'Pateros':
+    'Portal exists but never attempted digital disclosure of DRRM documents. LDRRMO regulator-attested via DILG-NCR Local DRRMO Forum (14 July 2026) and PIA/OCD-NCR Magna Carta forum (July 2025). Response activity documented via non-LGU channels (PIA, BFP-NCR Facebook, SubayBAYAN LFP). Calamity fund tapped by council resolution (Aug 2013).',
+};
+
+const LGUS = (scorecard.lgus as {
+  name: string;
+  slug: string;
+  cells: Record<string, { status: string; lapse: string | null }>;
+  totals: { present: number; partial: number; toCollect: number; lapses: number };
+}[]).map((l) => ({
+  ...l,
+  cells: l.cells as unknown as Record<string, Cell>,
+  note: NOTES[l.name] ?? '',
+}));
 
 const LAPSE_LABEL: Record<string, string> = {
   'access-broken': 'attempted publish, link fails',
@@ -126,16 +64,9 @@ function glyph(cell: Cell) {
   return '·';
 }
 
-function countRow(lgu: LGU) {
-  let present = 0, partial = 0, tocollect = 0, lapses = 0;
-  for (const oid of OBLIGATIONS.map(o => o.id)) {
-    const c = lgu.cells[oid];
-    if (c.status === 'present') present++;
-    else if (c.status === 'partial') partial++;
-    else tocollect++;
-    if (c.lapse) lapses++;
-  }
-  return { present, partial, tocollect, lapses };
+function countRow(lgu: (typeof LGUS)[number]) {
+  const t = lgu.totals;
+  return { present: t.present, partial: t.partial, tocollect: t.toCollect, lapses: t.lapses };
 }
 
 export default function PolicyReadiness() {

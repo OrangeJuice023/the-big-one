@@ -1,0 +1,311 @@
+{
+ "_generated": "by policy-layer/ledger/render_ledger.py — do not edit by hand",
+ "obligations": [
+  {
+   "id": "OB1",
+   "label": "LDRRMO established",
+   "cite": "RA10121 §12(a)"
+  },
+  {
+   "id": "OB2",
+   "label": "LDRRMP formulated, tested & updated",
+   "cite": "§11(b)(1); §12(c)(6)"
+  },
+  {
+   "id": "OB3",
+   "label": "Ordinance creating DRRMO (staff+budget)",
+   "cite": "IRR Rule 6 §6"
+  },
+  {
+   "id": "OB4",
+   "label": "Hazard maps & plans PUBLICLY displayed",
+   "cite": "IRR Rule 6 §7; §12(c)(10)"
+  },
+  {
+   "id": "OB5",
+   "label": "Local risk assessment / hazard ID",
+   "cite": "§12(c)(2,3,9)"
+  },
+  {
+   "id": "OB6",
+   "label": "Regular drills conducted",
+   "cite": "IRR Rule 6 §7; §12(c)(4)"
+  },
+  {
+   "id": "OB7",
+   "label": "LDRRM Fund incl. 30% QRF programmed",
+   "cite": "§21"
+  },
+  {
+   "id": "OB8",
+   "label": "DRR mainstreamed into CDP/CLUP",
+   "cite": "§11(b)(2)"
+  }
+ ],
+ "lgus": [
+  {
+   "name": "Makati",
+   "slug": "makati",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "partial",
+     "lapse": "access-broken"
+    },
+    "OB3": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB4": {
+     "status": "partial",
+     "lapse": "access-broken"
+    },
+    "OB5": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB7": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB8": {
+     "status": "present",
+     "lapse": null
+    }
+   },
+   "totals": {
+    "present": 5,
+    "partial": 2,
+    "toCollect": 1,
+    "lapses": 2
+   }
+  },
+  {
+   "name": "Marikina",
+   "slug": "marikina",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "partial",
+     "lapse": "access-foi"
+    },
+    "OB3": {
+     "status": "partial",
+     "lapse": "access-foi"
+    },
+    "OB4": {
+     "status": "partial",
+     "lapse": null
+    },
+    "OB5": {
+     "status": "partial",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB7": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB8": {
+     "status": "partial",
+     "lapse": "access-foi"
+    }
+   },
+   "totals": {
+    "present": 3,
+    "partial": 5,
+    "toCollect": 0,
+    "lapses": 3
+   }
+  },
+  {
+   "name": "Pasig",
+   "slug": "pasig",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB3": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB4": {
+     "status": "partial",
+     "lapse": "access-foi"
+    },
+    "OB5": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB7": {
+     "status": "partial",
+     "lapse": null
+    },
+    "OB8": {
+     "status": "present",
+     "lapse": null
+    }
+   },
+   "totals": {
+    "present": 6,
+    "partial": 2,
+    "toCollect": 0,
+    "lapses": 1
+   }
+  },
+  {
+   "name": "Quezon City",
+   "slug": "quezon-city",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB3": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB4": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB5": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB7": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB8": {
+     "status": "present",
+     "lapse": null
+    }
+   },
+   "totals": {
+    "present": 8,
+    "partial": 0,
+    "toCollect": 0,
+    "lapses": 0
+   }
+  },
+  {
+   "name": "Pateros",
+   "slug": "pateros",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB3": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB4": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB5": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "partial",
+     "lapse": "access-none"
+    },
+    "OB7": {
+     "status": "partial",
+     "lapse": "access-none"
+    },
+    "OB8": {
+     "status": "to-collect",
+     "lapse": null
+    }
+   },
+   "totals": {
+    "present": 1,
+    "partial": 2,
+    "toCollect": 5,
+    "lapses": 2
+   }
+  },
+  {
+   "name": "Taguig",
+   "slug": "taguig",
+   "cells": {
+    "OB1": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB2": {
+     "status": "to-collect",
+     "lapse": null
+    },
+    "OB3": {
+     "status": "partial",
+     "lapse": "access-opaque"
+    },
+    "OB4": {
+     "status": "partial",
+     "lapse": "access-foi"
+    },
+    "OB5": {
+     "status": "partial",
+     "lapse": null
+    },
+    "OB6": {
+     "status": "present",
+     "lapse": null
+    },
+    "OB7": {
+     "status": "partial",
+     "lapse": "access-foi"
+    },
+    "OB8": {
+     "status": "partial",
+     "lapse": "access-foi"
+    }
+   },
+   "totals": {
+    "present": 2,
+    "partial": 5,
+    "toCollect": 1,
+    "lapses": 4
+   }
+  }
+ ]
+}
