@@ -148,6 +148,22 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
             const ft = await (await fetch('data/fault-trace.geojson')).json();
             traceRef.current = ft.features[0].geometry.coordinates;
           }
+          // The GEM trace covers the whole West Valley Fault, which runs about
+          // 17 km further north than the northernmost modelled LGU boundary
+          // (San Jose del Monte, lat 14.8686). Norzagaray and Dona Remedios
+          // Trinidad in Bulacan are crossed by the fault but are NOT in the 35
+          // modelled LGUs. Rendering the trace uniformly implies those areas
+          // were assessed and found to have no loss, which is false — they were
+          // never assessed. So the segment beyond the study area is drawn
+          // faded, and the map footnote says why.
+          const STUDY_AREA_MAX_LAT = 14.8686;
+          const traceCoords = traceRef.current as [number, number][];
+          const inStudy = traceCoords.filter((c) => c[1] <= STUDY_AREA_MAX_LAT);
+          const beyond = traceCoords.filter((c) => c[1] > STUDY_AREA_MAX_LAT);
+          // Repeat the boundary vertex so the two segments visually join.
+          const beyondJoined =
+            inStudy.length && beyond.length ? [inStudy[inStudy.length - 1], ...beyond] : beyond;
+
           map.addSource('fault', {
             type: 'geojson',
             data: {
@@ -155,7 +171,7 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
               features: [{
                 type: 'Feature',
                 properties: {},
-                geometry: { type: 'LineString', coordinates: traceRef.current },
+                geometry: { type: 'LineString', coordinates: inStudy },
               }],
             },
           });
@@ -165,6 +181,31 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
             source: 'fault',
             paint: { 'line-color': '#7a0000', 'line-width': 2.5, 'line-dasharray': [2, 1.5] },
           });
+
+          if (beyondJoined.length > 1) {
+            map.addSource('fault-beyond', {
+              type: 'geojson',
+              data: {
+                type: 'FeatureCollection',
+                features: [{
+                  type: 'Feature',
+                  properties: {},
+                  geometry: { type: 'LineString', coordinates: beyondJoined },
+                }],
+              },
+            });
+            map.addLayer({
+              id: 'fault-line-beyond',
+              type: 'line',
+              source: 'fault-beyond',
+              paint: {
+                'line-color': '#7a0000',
+                'line-width': 1.6,
+                'line-dasharray': [1, 2.5],
+                'line-opacity': 0.4,
+              },
+            });
+          }
           // Bright overlay line that "grows" during the rupture simulation.
           map.addSource('rupture', {
             type: 'geojson',

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Plain from '@/components/Plain';
 
 export const metadata = { title: 'Policy readiness — The Big One' };
 
@@ -152,12 +153,39 @@ export default function PolicyReadiness() {
           they fail RA 10121&rsquo;s &ldquo;publicly displayed&rdquo; requirement in four
           distinct ways.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            RA 10121 is the 2010 law that requires every city and municipality to
+            set up a disaster office, write a disaster plan, and put its hazard
+            maps and plans where the public can see them.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            We checked six cities near the West Valley Fault against eight things
+            that law requires. All six are doing disaster work. What differs is
+            whether an ordinary resident can actually read the documents proving
+            it. Mostly they cannot &mdash; and the reasons differ from city to
+            city, which is what the four categories below describe.
+          </p>
+        </Plain>
 
         <h2>Compliance matrix</h2>
         <p style={{ fontSize: '0.875rem', opacity: 0.75 }}>
           ✓ present · ◐ partial · · to-collect · lapse flag beneath the glyph
           when applicable (see register below).
         </p>
+        <Plain label="How do I read this table?">
+          <p style={{ marginTop: 0 }}>
+            Each row is one legal duty. Each column is one city. A check mark
+            means we found the document and it is public. A half-circle means it
+            only partly holds &mdash; usually the thing exists but the public
+            cannot get at it. A dot means we have not found it, which is not the
+            same as saying it does not exist.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            The small tag under some symbols names <em>why</em> the public cannot
+            get the document. The bottom row counts each column up.
+          </p>
+        </Plain>
 
         <div style={{ overflowX: 'auto', margin: '1.5rem 0' }}>
           <table style={{ borderCollapse: 'collapse', fontSize: '0.875rem', width: '100%' }}>
@@ -219,6 +247,26 @@ export default function PolicyReadiness() {
             </li>
           ))}
         </ul>
+        <Plain label="In plain terms">
+          <p style={{ marginTop: 0 }}>
+            Four ways a document can be legally &ldquo;published&rdquo; and still be
+            impossible to read:
+          </p>
+          <ul style={{ margin: '0.4rem 0', paddingLeft: '1.2rem' }}>
+            <li>The city put it online, but the link is dead.</li>
+            <li>You have to file a formal request to get a copy.</li>
+            <li>The city never put it online at all.</li>
+            <li>
+              It is online, but you would never find it &mdash; the file is named
+              something meaningless, or it is a photograph of paper you cannot
+              search, or the page lists only a title with no document attached.
+            </li>
+          </ul>
+          <p style={{ marginBottom: 0 }}>
+            The last is the sneakiest, because the city can honestly say the
+            document is on its website.
+          </p>
+        </Plain>
         <p>
           The compliance gap this project surfaces is a <em>national policy gap</em>, not
           a local resource gap. RA 10121 requires plans and hazard maps to be
@@ -229,6 +277,19 @@ export default function PolicyReadiness() {
           the law by keeping hard copies at city hall and granting eFOI on
           request — without ever putting the PDF on their website.
         </p>
+        <Plain label="Why is that the law's fault and not the city's?">
+          <p style={{ margin: 0 }}>
+            The 2010 disaster law says plans and hazard maps must be
+            &ldquo;publicly displayed.&rdquo; It never says <em>how</em> &mdash; nothing
+            about websites, downloads, or keeping a copy up permanently. A
+            separate 2016 rule then says anything a government office has not
+            already published, you can request. Put together, a city can satisfy
+            the disaster law by keeping one printed copy at city hall and handing
+            out copies to whoever asks. That is lawful. It is also not much use
+            to someone in a barangay trying to find out where to go during an
+            earthquake.
+          </p>
+        </Plain>
 
         <h2>Per-LGU notes</h2>
         {LGUS.map(l => (

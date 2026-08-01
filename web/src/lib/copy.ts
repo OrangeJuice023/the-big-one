@@ -16,7 +16,7 @@ export const COPY = {
     thRange: 'P10–P90',
     tableLabel: 'Per-city estimates',
     footer:
-      'Scenario-based estimates with P10–P90 uncertainty ranges, not predictions. Ground shaking via the Allen–Wald–Worden (2012) intensity prediction equation; losses from an exposure × fragility Monte Carlo validated against the 2013 Bohol earthquake. Spike height encodes the square root of median (P50) loss.',
+      'Scenario-based estimates with P10–P90 uncertainty ranges, not predictions. Ground shaking via the Allen–Wald–Worden (2012) intensity prediction equation; losses from an exposure × fragility Monte Carlo validated against the 2013 Bohol earthquake. Spike height encodes the square root of median (P50) loss. The faded northern segment of the fault trace lies outside the 35-LGU study area: the West Valley Fault continues into Norzagaray and Doña Remedios Trinidad, Bulacan, which were not assessed here. Blank does not mean zero loss.',
   },
   basic: {
     nationalLoss: 'Estimated damage (most likely)',
@@ -33,6 +33,6 @@ export const COPY = {
     thRange: 'Low–High',
     tableLabel: 'What each city might lose',
     footer:
-      'These are "what-if" estimates with honest low-to-high ranges — nobody can predict when the Big One will strike or exactly what it will cost. We tested this tool against the real 2013 Bohol earthquake before pointing it at Metro Manila. Taller pillars = bigger likely losses.',
+      'These are "what-if" estimates with honest low-to-high ranges — nobody can predict when the Big One will strike or exactly what it will cost. We tested this tool against the real 2013 Bohol earthquake before pointing it at Metro Manila. Taller pillars = bigger likely losses. Where the fault line fades out at the top, it means the fault keeps going but we did not study those towns — not that they are safe.',
   },
 } as const;

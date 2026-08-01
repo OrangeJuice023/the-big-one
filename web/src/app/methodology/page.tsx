@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Plain from '@/components/Plain';
 
 export const metadata = { title: 'Methodology — The Big One Loss Estimator' };
 
@@ -43,6 +44,16 @@ export default function Methodology() {
           surface trace. The equation&apos;s published, distance-dependent
           sigma is carried forward into the Monte Carlo rather than discarded.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            An equation that answers: if an earthquake of this size happens on
+            this fault, how hard will the ground shake in each city? Two things
+            drive it &mdash; bigger earthquake, more shaking; further away, less
+            shaking. It is not our equation; it was fitted on earthquakes
+            worldwide and published in 2012, and we checked our code against a
+            reference implementation.
+          </p>
+        </Plain>
 
         <h2>Exposure</h2>
         <p>
@@ -56,6 +67,15 @@ export default function Methodology() {
           the remaining LGUs use population times regional per-capita output.
           Every scenario file flags this mixed weighting.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            How much there is to lose in each city. We do not have a list of
+            every building, so we estimate the value of everything standing by
+            scaling up what the city produces in a year. A city with more
+            economic activity has, on average, more built up behind it. This is
+            an approximation and one of the weaker links in the chain.
+          </p>
+        </Plain>
 
         <h2>Loss model</h2>
         <p>
@@ -69,6 +89,15 @@ export default function Methodology() {
           logistic mean-damage-ratio curve in intensity; common random numbers
           across magnitudes keep the loss–magnitude curve monotone.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            The step that turns shaking into money. A curve says what fraction of
+            the built environment breaks at a given level of shaking &mdash;
+            almost nothing below intensity 7, climbing steeply from there.
+            Multiply that fraction by the value of what is standing, and you have
+            a peso figure.
+          </p>
+        </Plain>
 
         <h2>The learned component (where the machine learning lives)</h2>
         <p>
@@ -87,6 +116,17 @@ export default function Methodology() {
           underestimate the Metro Manila scenario by roughly two orders of
           magnitude — the empirical demonstration of why the hybrid is needed.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            Earlier versions guessed at the damage curve. Now those numbers are
+            learned from a real Philippine earthquake instead. We generate
+            200,000 candidate versions of the curve, run each one against the
+            1990 Luzon earthquake, and keep only the ones that would have
+            predicted roughly the damage that actually happened. What survives is
+            our answer &mdash; and about 38 percent survived, which means the
+            starting guesses were already reasonable.
+          </p>
+        </Plain>
 
         <h2>Validation: calibrate on 1990, hold out 2013</h2>
         <p>
@@ -106,6 +146,16 @@ export default function Methodology() {
           0.92× of the anchor purely through data and calibration improvements,
           never through tuning.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            The honesty check. We tuned the model using the 1990 earthquake and
+            then, without touching anything, pointed it at the 2013 Bohol
+            earthquake &mdash; which it had never seen. It got the shaking right
+            to within one intensity step, and its damage range contained the real
+            reported figure. A model that only fits the data it was tuned on is
+            not worth much; this one was tested on data it had not seen.
+          </p>
+        </Plain>
 
         <h2>Uncertainty decomposition</h2>
         <p>
@@ -115,6 +165,16 @@ export default function Methodology() {
           fragility and capital-ratio posterior) at M7.2 — reported live on
           the map for every scenario.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            We separate two different reasons the answer is uncertain. Some of it
+            is the earthquake itself being unpredictable &mdash; no amount of
+            research fixes that. The rest is us not knowing enough about how
+            buildings fail, which better data could fix. Roughly two-thirds is
+            the first kind and one-third the second, so most of the range is
+            genuinely irreducible.
+          </p>
+        </Plain>
 
         <h2>Sensitivity: which assumptions do the work?</h2>
         <p>
@@ -177,6 +237,15 @@ export default function Methodology() {
           output scaled by a capital ratio remains an imperfect proxy for
           building stock value.
         </p>
+        <Plain>
+          <p style={{ marginTop: 0 }}>
+            The things this model does not do. It ignores ground turning to
+            liquid, soft soil amplifying shaking, and fires after the quake. It
+            counts damaged buildings but not the money lost while businesses stay
+            shut, and it does not estimate deaths or injuries at all. Every one
+            of these omissions would push the estimate <em>up</em>, not down.
+          </p>
+        </Plain>
       </article>
     </main>
   );
