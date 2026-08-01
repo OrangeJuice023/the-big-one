@@ -39,12 +39,12 @@ const LGUS: LGU[] = [
   {
     name: 'Pasig',
     slug: 'pasig',
-    note: 'Published-but-discoverability-lapse. Statutory documents are on pasigcity.gov.ph but hosted at opaque-hash URLs; some are scanned-only. Ord. No. 02 s.2015 creates the PCDRRMO with a full plantilla; LDRRMP 2023–2028 targets zero casualties at M7.2. Pasig is one of three NCR LGUs (with QC and Makati) that installed physical WVF ground markers.',
+    note: 'Published-but-discoverability-lapse. Statutory documents are on pasigcity.gov.ph but hosted at opaque-hash URLs; some are scanned-only. Ord. No. 02 s.2015 creates the PCDRRMO with a full plantilla; LDRRMP 2023–2028 targets zero casualties at M7.2. Pasig is one of three NCR LGUs (with QC and Makati) that installed physical WVF ground markers \u2014 the strongest hazard-display evidence in the corpus. But the plans limb of the same obligation fails: the council\u2019s own Committee on Disaster Resilience directed on 7 June 2023 that the LDRRMP be \u201cdown loadable thru Pasig City website/platform\u201d, and it is not. It is obtainable only in person, on a formal letter, a government ID and a USB drive.',
     cells: {
       OB1: { status: 'present', lapse: null },
       OB2: { status: 'present', lapse: null },
       OB3: { status: 'present', lapse: null },
-      OB4: { status: 'present', lapse: null },
+      OB4: { status: 'partial', lapse: 'access-foi' },
       OB5: { status: 'present', lapse: null },
       OB6: { status: 'present', lapse: null },
       OB7: { status: 'partial', lapse: null },
@@ -69,11 +69,11 @@ const LGUS: LGU[] = [
   {
     name: 'Taguig',
     slug: 'taguig',
-    note: 'Portal publishes operational activity (drills, Center for Disaster Management, MOCCOV, Aerial Platform Fire Truck), but statutory documents are eFOI-gated. CLUP 2000–2020 available only on 3rd-party academic mirrors. Updated CLUP eFOI request Sept 2025 routed through DENR-LMB.',
+    note: 'Portal publishes operational activity (drills, Center for Disaster Management, MOCCOV, Aerial Platform Fire Truck), but statutory documents are eFOI-gated. CLUP 2000–2020 available only on 3rd-party academic mirrors. Updated CLUP eFOI request Sept 2025 routed through DENR-LMB. Ord. No. 91 s.2023 creates CDRRMO positions and appropriates funds, but the city\u2019s ordinance index is titles-only, on a free third-party platform, covering 2022\u20132024 only \u2014 so the original office-creating ordinance is not reachable from it.',
     cells: {
       OB1: { status: 'present', lapse: null },
       OB2: { status: 'to-collect', lapse: null },
-      OB3: { status: 'to-collect', lapse: null },
+      OB3: { status: 'partial', lapse: 'access-opaque' },
       OB4: { status: 'partial', lapse: 'access-foi' },
       OB5: { status: 'partial', lapse: null },
       OB6: { status: 'present', lapse: null },
