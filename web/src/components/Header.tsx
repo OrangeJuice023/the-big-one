@@ -32,7 +32,7 @@ export default function Header() {
   const pathname = usePathname();
   return (
     <header className="topbar">
-      <Link href="/" className="brand" aria-label="The Big One — home">
+      <Link href="/" className="brand" aria-label="The Big One, home">
         <Mark />
         <span className="brand-text">
           <span className="brand-name">The Big One</span>

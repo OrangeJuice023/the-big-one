@@ -11,10 +11,10 @@ export default function MagnitudeSlider({ magnitude, onChange }: Props) {
       <label htmlFor="mag">
         Scenario magnitude: <strong>M{magnitude.toFixed(1)}</strong>
         {magnitude === PHIVOLCS_MAX_CREDIBLE && (
-          <span className="mag-badge anchor">PHIVOLCS max credible — “The Big One”</span>
+          <span className="mag-badge anchor">PHIVOLCS max credible: “The Big One”</span>
         )}
         {magnitude === STRESS_TEST_MAGNITUDE && (
-          <span className="mag-badge stress">stress test — paleoseismic upper bound</span>
+          <span className="mag-badge stress">stress test: paleoseismic upper bound</span>
         )}
       </label>
       <input

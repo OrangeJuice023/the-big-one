@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export const metadata = { title: 'Rationale — The Big One Loss Estimator' };
+export const metadata = { title: 'Rationale | The Big One Loss Estimator' };
 
 export default function Rationale() {
   return (
@@ -16,8 +16,7 @@ export default function Rationale() {
           corridor of the capital, capable of a magnitude 7.2 earthquake, with
           PHIVOLCS placing its recurrence interval at 400 to 600 years and the
           last major rupture in 1658. The question that matters for policy is
-          not whether to take it seriously, but <em>how much</em> to prepare —
-          and preparation decisions need numbers.
+          not whether to take it seriously, but <em>how much</em> to prepare, and preparation decisions need numbers.
         </p>
         <p>
           The numbers usually offered are single points: 2.4 trillion pesos in
@@ -32,12 +31,10 @@ export default function Rationale() {
           Three real earthquakes of nearly identical magnitude illustrate it.
           The 2013 Bohol earthquake (M7.2) caused about 52 million US dollars
           in monetized infrastructure damage. The 2010 Haiti earthquake (M7.0)
-          caused 7.8 billion — more than Haiti&apos;s entire annual GDP. The 1995
+          caused 7.8 billion, more than Haiti&apos;s entire annual GDP. The 1995
           Kobe earthquake (M6.9) caused on the order of 130 billion. Same
           energy release, losses spanning five orders of magnitude, because
-          what an earthquake costs is dominated by what it hits and how well
-          that was built — exposure and vulnerability — not by magnitude
-          alone.
+          what an earthquake costs is dominated by what it hits and how well that was built. Exposure and vulnerability, not magnitude alone.
         </p>
         <p>
           Any tool that gives Metro Manila one number is therefore making a
@@ -62,8 +59,7 @@ export default function Rationale() {
         <h2>What this is not</h2>
         <p>
           This is not a prediction of when the Big One will occur, and it is
-          not an official hazard product — PHIVOLCS and NDRRMC remain the
-          authorities. It is a transparent, open-source research instrument for
+          not an official hazard product; PHIVOLCS and NDRRMC remain the authorities. It is a transparent, open-source research instrument for
           reasoning about the <em>range</em> of plausible economic consequences
           under explicit, documented assumptions. Its remaining methodological
           gaps are documented as open research questions in the{' '}
@@ -80,15 +76,13 @@ export default function Rationale() {
         
         <h2>Scope</h2>
         <p>
-          Two layers. The loss model covers 35 LGUs — 17 NCR cities plus 18
-          fault-corridor LGUs. The policy compliance scorecard covers six LGUs
+          Two layers. The loss model covers 35 LGUs: 17 NCR cities plus 18 fault-corridor LGUs. The policy compliance scorecard covers six LGUs
           on or directly adjacent to the WVF trace: Quezon City, Makati, Pasig,
           Marikina, Taguig, Pateros. This narrower policy set was chosen because
           ground rupture is a qualitatively different hazard from shaking, and
           because the six span the full capacity spectrum from the country's
           smallest municipality (Pateros, ~1.66 km²) to the most resource-rich
-          commercial hubs (Makati, Taguig, QC). Manila is in the loss layer but
-          not the policy layer — the fault does not run through Manila, so the
+          commercial hubs (Makati, Taguig, QC). Manila is in the loss layer but not the policy layer, because the fault does not run through Manila, so the
           RA 10121 "publicly displayed hazard maps" comparison would be uneven.
           The taxonomy of disclosure lapses proposed in this project is intended
           to generalize, but the specific distribution across LGUs is a finding

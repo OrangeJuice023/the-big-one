@@ -3,7 +3,7 @@ import type { CSSProperties } from 'react';
 import TeX from '@/components/TeX';
 
 export const metadata = {
-  title: 'The arithmetic — The Big One',
+  title: 'The arithmetic | The Big One',
   description:
     'Every number in the West Valley Fault loss estimate, and the step that produced it.',
 };
@@ -218,7 +218,7 @@ function PosteriorChart() {
       <path d={`M${P.l + iw * 0.78},${P.t + 46} L${P.l + iw * 0.84},${P.t + ih - 26}`}
         stroke={ACCENT} strokeWidth="1" opacity="0.6" />
       <text x={P.l + iw / 2} y={H - 6} textAnchor="middle" fontSize="11.5" fill="currentColor" opacity="0.75">
-        fragility midpoint M0 — the intensity at which half of maximum damage occurs
+        fragility midpoint M0: the intensity at which half of maximum damage occurs
       </text>
     </svg>
   );
@@ -397,7 +397,7 @@ export default function ArithmeticPage() {
           </p>
         </div>
 
-        <h2>1 — How hard the ground shakes</h2>
+        <h2>1. How hard the ground shakes</h2>
         <p>
           The Allen, Wald &amp; Worden (2012) intensity prediction equation for
           active crustal regions. Coefficients published, and cross-checked
@@ -424,29 +424,29 @@ export default function ArithmeticPage() {
           8.0&ndash;8.2 inside 5 km on its own. Nothing was adjusted to land there.
         </p>
 
-        <h2>2 — How much breaks at that intensity</h2>
+        <h2>2. How much breaks at that intensity</h2>
         <p>
           A logistic fragility curve. Its slope is fixed at 1.4; the other two
           parameters are learned.
         </p>
         <TeX
           tex={String.raw`d(\mathrm{MMI}) \;=\; \frac{\mathrm{MDR_{max}}}{1 + e^{-s\,(\mathrm{MMI} - M_0)}}`}
-          plain="An S-curve. Below about intensity 7 almost nothing breaks, above about intensity 10 you approach the worst case, and in between damage climbs steeply. MDR_max sets the ceiling — the most that is ever lost. M₀ sets where the curve is centred, meaning the intensity at which you reach half of that ceiling. The s controls how sharp the turn is."
+          plain="An S-curve. Below about intensity 7 almost nothing breaks, above about intensity 10 you approach the worst case, and in between damage climbs steeply. MDR_max sets the ceiling, the most that is ever lost. M₀ sets where the curve is centred, meaning the intensity at which you reach half of that ceiling. The s controls how sharp the turn is."
         />
         <TeX
           tex={String.raw`s = 1.4 \;(\text{fixed}) \qquad \mathrm{MDR_{max}} = 0.361 \qquad M_0 = 8.881`}
           plain="The steepness is held fixed because the data cannot pin down all three at once. The ceiling and the centre point are what the calibration learns, and those are the two that matter most for the final number."
-          note="MDR_max and M₀ are learned from data — see step 5"
+          note="MDR_max and M₀ are learned from data; see step 5"
         />
         <FragilityChart />
         <p>
-          Damage rises roughly <strong>eightfold between MMI 7 and MMI 9</strong>
-          &nbsp;— from 2.41% of capital stock to 19.52%. The steepness is why the
+          Damage rises roughly <strong>eightfold between MMI 7 and MMI 9</strong>, from 2.41% of
+          capital stock to 19.52%. The steepness is why the
           distance term above matters so much: a small difference in shaking
           becomes a large difference in loss.
         </p>
 
-        <h2>3 — Turning a fraction into pesos</h2>
+        <h2>3. Turning a fraction into pesos</h2>
         <TeX
           tex={String.raw`\text{loss}_i \;=\; \underbrace{K \cdot Y_i}_{\text{capital stock}} \;\times\; d(\mathrm{MMI}_i)`}
           plain="The fragility curve gives a fraction, not pesos. To get pesos you need to know how much there is to lose. We do not have a building-by-building inventory, so we approximate the value of everything standing in an LGU as a multiple K of what that LGU produces in a year. A place producing more each year has, on average, more built up behind it."
@@ -463,7 +463,7 @@ K \cdot Y \;=\; 2.829 \times \text{PHP }500\text{B} \;&=\; \text{PHP }1.41\text{
 d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
 \text{loss} \;=\; \text{PHP }1.41\text{T} \times 0.0948 \;&=\; \text{PHP }134.1\text{B} \;=\; \$2.29\text{B}
 \end{aligned}`}
-          plain="One LGU, all four steps, actual numbers. Two kilometres from the fault gives intensity 8.14. Its yearly output of PHP 500 billion implies about PHP 1.41 trillion of buildings and infrastructure. At that intensity roughly 9.5 percent of it is lost. Multiply and you get PHP 134 billion, about 2.3 billion dollars — for one LGU."
+          plain="One LGU, all four steps, actual numbers. Two kilometres from the fault gives intensity 8.14. Its yearly output of PHP 500 billion implies about PHP 1.41 trillion of buildings and infrastructure. At that intensity roughly 9.5 percent of it is lost. Multiply and you get PHP 134 billion, about 2.3 billion dollars, for one LGU."
         />
         <p>
           Across all 35 LGUs the exposure base is{' '}
@@ -473,17 +473,17 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           the output rather than smoothed over.
         </p>
 
-        <h2>4 — Why a single number would be dishonest</h2>
+        <h2>4. Why a single number would be dishonest</h2>
         <p>
           Two kinds of uncertainty, kept apart by a nested Monte Carlo.{' '}
-          <em>Aleatoric</em> is the earthquake&rsquo;s own randomness &mdash; the
+          <em>Aleatoric</em> is the earthquake&rsquo;s own randomness: the
           equation&rsquo;s &sigma; of about 0.95 intensity units, which no amount of
           research removes. <em>Epistemic</em> is our ignorance about the
           parameters, which better data does reduce.
         </p>
         <TeX
           tex={String.raw`L^{(j,k)} \;=\; \sum_{i=1}^{35} K^{(j)} \cdot Y_i \cdot d\!\left(\mathrm{MMI}_i + \varepsilon_i^{(k)} \;;\; \mathrm{MDR_{max}}^{(j)},\, M_0^{(j)}\right)`}
-          plain="Two nested loops, run many times. The outer loop picks one plausible set of fragility parameters — that is the j, and it represents what we do not know. The inner loop adds random shaking noise to each LGU — that is the k, and it represents what nobody can know. Add up all 35 LGUs for each combination, and the spread of the results tells you both how uncertain the world is and how uncertain we are, separately."
+          plain="Two nested loops, run many times. The outer loop picks one plausible set of fragility parameters. That is the j, standing for what we do not know. The inner loop adds random shaking noise to each LGU. That is the k, standing for what nobody can know. Add up all 35 LGUs for each combination, and the spread of the results tells you both how uncertain the world is and how uncertain we are, separately."
           note="outer draw j = parameters (epistemic) · inner draw k = ground-motion noise (aleatoric) · εᵢ ~ N(0, σ²) with σ from the IPE"
         />
         <p>
@@ -504,11 +504,11 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           That spread is the case for reporting an interval rather than a point.
         </p>
 
-        <h2>5 — The part that is machine learning</h2>
+        <h2>5. The part that is machine learning</h2>
         <p>
           The fragility parameters were expert guesses in an earlier version, and
           a sensitivity analysis showed the fragility midpoint was the single
-          dominant assumption &mdash; swinging the median by &minus;33%/+43%. So
+          dominant assumption, swinging the median by &minus;33%/+43%. So
           they were replaced with values <strong>learned from a real Philippine
           earthquake</strong>.
         </p>
@@ -522,8 +522,8 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           <li>Draw 200,000 parameter sets from the priors.</li>
           <li>
             Run each through the forward model against the{' '}
-            <strong>1990 Luzon earthquake</strong> &mdash; Mw 7.7, reported
-            US$369.6M damage, PHP 24.3/USD.
+            <strong>1990 Luzon earthquake</strong> (Mw 7.7, reported
+            US$369.6M damage, PHP 24.3/USD).
           </li>
           <li>
             Keep a draw if its predicted loss lands within{' '}
@@ -532,12 +532,12 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           <li>The kept draws are the posterior.</li>
         </ol>
         <p>
-          <strong>76,593 of 200,000 draws survived &mdash; 38.3%.</strong>
+          <strong>76,593 of 200,000 draws survived. That is 38.3%.</strong>
         </p>
         <AbcChart />
         <p>
           This is the inference itself. Grey is what the priors predicted before
-          seeing any data &mdash; a spread from about US$10M to nearly US$3B, which
+          seeing any data: a spread from about US$10M to nearly US$3B, which
           is how little the literature alone pins down. The vertical line is what
           actually happened. Coloured bars are the draws that landed close enough
           to be kept.
@@ -545,7 +545,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         <p>
           The acceptance window is wide and asymmetric on purpose. Official damage
           totals undercount housing, so the observation is treated as{' '}
-          <strong>interval-censored</strong> rather than exact &mdash; a stated
+          <strong>interval-censored</strong> rather than exact. That is a stated
           assumption, not a hidden one.
         </p>
 
@@ -559,9 +559,9 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           </thead>
           <tbody>
             {[
-              ['K — capital-output ratio', '2.800 ± 0.400', '2.829 ± 0.397'],
-              ['MDR_MAX — max damage ratio', '0.350 ± 0.080', '0.361 ± 0.077'],
-              ['M0 — fragility midpoint', '9.000 ± 0.400', '8.881 ± 0.366'],
+              ['K (capital-output ratio)', '2.800 ± 0.400', '2.829 ± 0.397'],
+              ['MDR_MAX (max damage ratio)', '0.350 ± 0.080', '0.361 ± 0.077'],
+              ['M0 (fragility midpoint)', '9.000 ± 0.400', '8.881 ± 0.366'],
             ].map(([a, b, c]) => (
               <tr key={a}>
                 <td style={{ padding: '0.4rem 0.5rem', borderBottom: '1px solid rgba(128,128,128,0.25)' }}>{a}</td>
@@ -573,8 +573,8 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         </table>
 
         <p>
-          <strong>The means barely moved &mdash; and the means are the wrong thing
-          to look at.</strong>
+          <strong>The means barely moved. They are also the wrong thing to look
+          at.</strong>
         </p>
         <PosteriorChart />
         <p>
@@ -591,15 +591,13 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           an uninformative window.
         </p>
 
-        <h2>5b &mdash; Why the physics is needed at all</h2>
+        <h2>5b. Why the physics is needed at all</h2>
         <p>
           A fair question: if 514 historical earthquakes are available, why not
           just train a model on them and skip the physics? That was tested.
         </p>
         <p>
-          A gradient-boosted quantile model was trained on the full catalogue
-          &mdash; 375 events before 2010 for training, 139 after for testing
-          &mdash; using the features such a model can actually observe:{' '}
+          A gradient-boosted quantile model was trained on the full catalogue (375 events before 2010 for training, 139 after for testing) using the features such a model can actually observe:{' '}
           <strong>magnitude, depth, maximum reported intensity, and year</strong>.
           No exposure, because global catalogues do not carry it.
         </p>
@@ -625,8 +623,8 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           </tbody>
         </table>
         <p>
-          <strong>Gradient boosting barely beats using magnitude alone</strong>
-          &nbsp;&mdash; 0.845 against 0.882. Both are wrong by about a factor of
+          <strong>Gradient boosting barely beats using magnitude alone</strong>:
+          0.845 against 0.882. Both are wrong by about a factor of
           seven on a typical event. Its stated 80% interval covers{' '}
           <strong>77.7%</strong> of held-out events, so it is also slightly
           overconfident.
@@ -637,7 +635,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         <BaselineChart />
         <p>
           The exposure-blind model predicts <strong>US$401 million</strong> where
-          the hybrid predicts <strong>US$45.4 billion</strong> &mdash;{' '}
+          the hybrid predicts <strong>US$45.4 billion</strong>. That is{' '}
           <strong>113 times smaller, 2.05 orders of magnitude.</strong> Even its
           90th percentile, US$8.4B, sits well below the hybrid&rsquo;s 10th.
         </p>
@@ -645,8 +643,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           The reason is visible in the training data: the median event in the
           catalogue caused about <strong>US$137 million</strong> in damage. A
           model that has learned the historical distribution of earthquakes
-          learns that most earthquakes are not very expensive &mdash; which is
-          true, and useless here. Metro Manila is not a typical earthquake
+          learns that most earthquakes are not very expensive. True, and useless here. Metro Manila is not a typical earthquake
           location. What makes it costly is thirteen million people and PHP 12.4
           trillion of annual output sitting on a fault, and{' '}
           <strong>magnitude, depth, intensity and year cannot express that.</strong>
@@ -658,7 +655,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           half works alone.
         </p>
 
-        <h2>6 — The out-of-sample test</h2>
+        <h2>6. The out-of-sample test</h2>
         <p>
           The <strong>2013 Bohol earthquake was held out entirely</strong> and
           never used in calibration. Same magnitude as the scenario (M7.2),
@@ -691,7 +688,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
             ))}
             <tr>
               <td style={{ ...td, fontWeight: 600 }} colSpan={3}>
-                Every band within one intensity unit &mdash; inside the equation&rsquo;s
+                Every band within one intensity unit, inside the equation&rsquo;s
                 published &sigma;. <span style={{ color: ACCENT }}>PASS</span>
               </td>
             </tr>
@@ -712,7 +709,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
             <tr>
               <td style={td}>observed</td>
               <td style={{ ...td, fontFamily: 'ui-monospace, monospace' }}>
-                US$52M &nbsp;<span style={{ opacity: 0.7 }}>(NDRRMC SitRep 35 &mdash; infrastructure only)</span>
+                US$52M &nbsp;<span style={{ opacity: 0.7 }}>(NDRRMC SitRep 35, infrastructure only)</span>
               </td>
             </tr>
             <tr>
@@ -724,14 +721,13 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         </table>
         <p>
           The observed figure sits just above P10, which is where it belongs. The
-          NDRRMC total covers <strong>public infrastructure only</strong> &mdash;
-          the 73,002 damaged houses were counted in units, never in pesos. So
+          NDRRMC total covers <strong>public infrastructure only</strong>. The 73,002 damaged houses were counted in units, never in pesos. So
           US$52M is a <em>floor</em>, not a total, and an interval whose lower
           tail contains that floor with room above it for the uncounted housing is
           the expected result.
         </p>
 
-        <h2>7 — Against the benchmark</h2>
+        <h2>7. Against the benchmark</h2>
         <table style={tbl}>
           <tbody>
             <tr>
@@ -752,10 +748,10 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           explain.</em>
         </p>
 
-        <h2>8 — What it would take for the number to be small</h2>
+        <h2>8. What it would take for the number to be small</h2>
         <p>
           The adversarial test. Push every learned parameter to the value most
-          favourable to a low estimate &mdash; 5th percentile capital ratio, 5th
+          favourable to a low estimate: 5th percentile capital ratio, 5th
           percentile maximum damage, 95th percentile midpoint so damage starts
           later:
         </p>
@@ -778,7 +774,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         <h2>Human scale</h2>
         <p>
           US$45.4 billion, for a metro of roughly 13 million people, is about{' '}
-          <strong>US$3,500 per resident</strong> &mdash; around PHP 2.66 trillion.
+          <strong>US$3,500 per resident</strong>, around PHP 2.66 trillion.
           For comparison, a 2013 PHIVOLCS&ndash;Australia study put{' '}
           <em>building damage alone</em> at PHP 2.4 trillion, so an all-sector
           figure sitting just above their buildings-only figure is the expected
@@ -796,7 +792,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
           <tbody>
             {[
               ['Fixed physics', 'AWW12 coefficients (published, cross-checked against OpenQuake); logistic functional form; fragility slope 1.4'],
-              ['Learned from data', 'K, MDR_MAX, M0 — by ABC on the 1990 Luzon earthquake'],
+              ['Learned from data', 'K, MDR_MAX, M0, learned by ABC on the 1990 Luzon earthquake'],
               ['Assumed, documented', 'the [0.7×, 3.0×] censoring window; LGU-centroid distance as a proxy for rupture distance; capital-output ratio as a proxy for building stock'],
               ['Deliberately excluded', 'liquefaction, site amplification, fire-following, business interruption, casualties'],
             ].map(([a, b]) => (

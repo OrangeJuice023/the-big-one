@@ -45,7 +45,7 @@ export default function ComparablesPanel() {
         </div>
       ))}
       <p className="footer-note" style={{ marginTop: 6 }}>
-        Same magnitude class, losses five orders of magnitude apart — exposure
+        Same magnitude class, losses five orders of magnitude apart. Exposure
         and vulnerability dominate, not magnitude. This spread is why estimates
         here carry wide P10–P90 ranges. Hover a row for sources; full citations
         in the repo&apos;s benchmarks file.

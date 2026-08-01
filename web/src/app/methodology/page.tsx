@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Plain from '@/components/Plain';
 
-export const metadata = { title: 'Methodology — The Big One Loss Estimator' };
+export const metadata = { title: 'Methodology | The Big One Loss Estimator' };
 
 export default function Methodology() {
   return (
@@ -19,8 +19,7 @@ export default function Methodology() {
 
         <h2>What this is (and is not)</h2>
         <p>
-          Scenario-based loss estimation with quantified uncertainty — the same
-          framing used by USGS PAGER and GEM OpenQuake — not a prediction of
+          Scenario-based loss estimation with quantified uncertainty, the same framing used by USGS PAGER and GEM OpenQuake. It is not a prediction of
           when an earthquake will occur or a precise forecast of damages. Every
           figure is a P10/P50/P90 range, and the model is never tuned to match
           any published benchmark.
@@ -30,8 +29,7 @@ export default function Methodology() {
         <p>
           Scenarios span M6.0–M7.2, anchored on the PHIVOLCS maximum-credible
           magnitude of 7.2 for the ~100-km West Valley Fault, plus an M7.5
-          stress test reflecting paleoseismic upper-bound estimates — treating
-          maximum magnitude itself as an epistemically uncertain parameter.
+          stress test reflecting paleoseismic upper-bound estimates, treating maximum magnitude itself as an epistemically uncertain parameter.
         </p>
 
         <h2>Ground shaking</h2>
@@ -47,9 +45,7 @@ export default function Methodology() {
         <Plain>
           <p style={{ marginTop: 0 }}>
             An equation that answers: if an earthquake of this size happens on
-            this fault, how hard will the ground shake in each city? Two things
-            drive it &mdash; bigger earthquake, more shaking; further away, less
-            shaking. It is not our equation; it was fitted on earthquakes
+            this fault, how hard will the ground shake in each city? Two things drive it: bigger earthquake, more shaking; further away, less shaking. It is not our equation; it was fitted on earthquakes
             worldwide and published in 2012, and we checked our code against a
             reference implementation.
           </p>
@@ -84,7 +80,7 @@ export default function Methodology() {
           Aleatoric uncertainty samples the intensity-prediction sigma with
           partial spatial correlation across LGUs (a common event-wide term,
           ρ = 0.5). Epistemic uncertainty samples the fragility curve and
-          capital-output ratio — and as of v0.3 those parameters are
+          capital-output ratio, and as of v0.3 those parameters are
           <em> learned, not elicited</em> (next section). Losses use a
           logistic mean-damage-ratio curve in intensity; common random numbers
           across magnitudes keep the loss–magnitude curve monotone.
@@ -92,8 +88,7 @@ export default function Methodology() {
         <Plain>
           <p style={{ marginTop: 0 }}>
             The step that turns shaking into money. A curve says what fraction of
-            the built environment breaks at a given level of shaking &mdash;
-            almost nothing below intensity 7, climbing steeply from there.
+            the built environment breaks at a given level of shaking: almost nothing below intensity 7, climbing steeply from there.
             Multiply that fraction by the value of what is standing, and you have
             a peso figure.
           </p>
@@ -113,8 +108,7 @@ export default function Methodology() {
           Separately, gradient-boosted quantile models trained on ~514 global
           historical events (NOAA NCEI, EM-DAT) are retained as an event-level
           cross-check in every scenario file: being exposure-blind, they
-          underestimate the Metro Manila scenario by roughly two orders of
-          magnitude — the empirical demonstration of why the hybrid is needed.
+          underestimate the Metro Manila scenario by roughly two orders of magnitude. That is the empirical demonstration of why the hybrid is needed.
         </p>
         <Plain>
           <p style={{ marginTop: 0 }}>
@@ -122,8 +116,7 @@ export default function Methodology() {
             learned from a real Philippine earthquake instead. We generate
             200,000 candidate versions of the curve, run each one against the
             1990 Luzon earthquake, and keep only the ones that would have
-            predicted roughly the damage that actually happened. What survives is
-            our answer &mdash; and about 38 percent survived, which means the
+            predicted roughly the damage that actually happened. What survives is our answer, and about 38 percent survived, which means the
             starting guesses were already reasonable.
           </p>
         </Plain>
@@ -137,8 +130,7 @@ export default function Methodology() {
           hazard component reproduces Bohol&apos;s observed PEIS VIII
           epicentral / PEIS VII regional pattern within published sigma, and
           the calibrated loss chain predicts a P10–P90 of roughly US$45M–600M
-          against the ₱2.257B (~US$52M) infrastructure-only monetized floor
-          (NDRRMC) — consistent, given that 73,002 damaged houses were counted
+          against the ₱2.257B (~US$52M) infrastructure-only monetized floor (NDRRMC), consistent given that 73,002 damaged houses were counted
           in units rather than pesos. As sanity anchors, the M7.2 national P50
           (~US$44B) sits at roughly 0.9× the World Bank&apos;s ~US$48B
           estimate and within the same order as the PHIVOLCS 2013 ₱2.4T
@@ -149,8 +141,7 @@ export default function Methodology() {
         <Plain>
           <p style={{ marginTop: 0 }}>
             The honesty check. We tuned the model using the 1990 earthquake and
-            then, without touching anything, pointed it at the 2013 Bohol
-            earthquake &mdash; which it had never seen. It got the shaking right
+            then, without touching anything, pointed it at the 2013 Bohol earthquake, which it had never seen. It got the shaking right
             to within one intensity step, and its damage range contained the real
             reported figure. A model that only fits the data it was tuned on is
             not worth much; this one was tested on data it had not seen.
@@ -162,14 +153,12 @@ export default function Methodology() {
           The law of total variance over the nested Monte Carlo splits
           national-loss uncertainty into roughly two-thirds aleatoric
           (ground-motion randomness) and one-third epistemic (calibrated
-          fragility and capital-ratio posterior) at M7.2 — reported live on
-          the map for every scenario.
+          fragility and capital-ratio posterior) at M7.2, reported live on the map for every scenario.
         </p>
         <Plain>
           <p style={{ marginTop: 0 }}>
             We separate two different reasons the answer is uncertain. Some of it
-            is the earthquake itself being unpredictable &mdash; no amount of
-            research fixes that. The rest is us not knowing enough about how
+            is the earthquake itself being unpredictable, and no amount of research fixes that. The rest is us not knowing enough about how
             buildings fail, which better data could fix. Roughly two-thirds is
             the first kind and one-third the second, so most of the range is
             genuinely irreducible.
@@ -182,24 +171,21 @@ export default function Methodology() {
           midpoint dominating (P50 −33% to +43% per prior standard deviation),
           followed by the maximum damage ratio and capital-output ratio, with
           exposure passing through linearly and spatial correlation moving
-          interval width far more than the median — consistent with theory.
+          interval width far more than the median, consistent with theory.
           That finding is what motivated the v0.3 calibration: the dominant
           assumption is now data-informed rather than elicited.
         </p>
 
         <h2>Open research questions (statuses)</h2>
         <p>
-          (1)&nbsp;Aleatoric/epistemic separation — addressed in v0.3 via the
+          (1)&nbsp;Aleatoric/epistemic separation: addressed in v0.3 via the
           calibrated posterior, with caveats: one calibration event, and the
           interval-censoring window is itself an assumption.
-          (2)&nbsp;Validation under covariate shift — one held-out Philippine
-          event (Bohol) passes; further candidates (2022 Abra, 2019 Mindanao)
-          would strengthen the claim. (3)&nbsp;Ground truth is interval-censored
-          — official totals undercount housing; handled explicitly but crudely.
-          (4)&nbsp;Physics–data spectrum — addressed: mechanistic form with
-          learned parameters. (5)&nbsp;Maximum magnitude — still scenarios plus
-          a stress test rather than a distribution over Mmax.
-          (6)&nbsp;Spatial resolution — held at LGU level; finer output without
+          (2)&nbsp;Validation under covariate shift: one held-out Philippine event (Bohol) passes; further candidates (2022 Abra, 2019 Mindanao)
+          would strengthen the claim. (3)&nbsp;Ground truth is interval-censored: official totals undercount housing; handled explicitly but crudely.
+          (4)&nbsp;Physics&ndash;data spectrum: addressed, mechanistic form with
+          learned parameters. (5)&nbsp;Maximum magnitude: still scenarios plus a stress test rather than a distribution over Mmax.
+          (6)&nbsp;Spatial resolution: held at LGU level; finer output without
           finer exposure would be false precision. Full write-ups in
           OPEN_QUESTIONS.md in the repository.
         </p>
@@ -229,8 +215,7 @@ export default function Methodology() {
           distances ignore intra-city variation (most material for large
           corridor municipalities like Antipolo and Rodriguez); no
           liquefaction, site amplification, or fire-following modeling; the
-          fault trace is the authoritative GEM WVF trace (Styron &amp; Pagani
-          2020, CC-BY-SA) &mdash; wiring it in v0.3 lifted the national M7.2
+          fault trace is the authoritative GEM WVF trace (Styron &amp; Pagani 2020, CC-BY-SA). Wiring it in for v0.3 lifted the national M7.2
           P50 by +2.7% ($44.2B &rarr; $45.4B, ratio 0.95&times; the $48B
           MMEIRS/World Bank anchor), with mean per-LGU MMI shifts &le;&plusmn;0.1
           but per-LGU maxima of ~0.45 MMI / &plusmn;7.5 km Rrup; and annual

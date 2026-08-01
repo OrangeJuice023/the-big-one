@@ -31,7 +31,7 @@ const EXAMPLES = [
 
 /**
  * Minimal inline markdown: **bold**, *italic*, `code`, and a horizontal rule.
- * Deliberately not a full markdown library — the model is instructed to answer
+ * Deliberately not a full markdown library; the model is instructed to answer
  * in plain prose with occasional emphasis and bullets, which is all this needs.
  */
 function renderInline(text: string, keyPrefix: string) {
@@ -283,7 +283,7 @@ export default function AskPage() {
                   fontSize: '0.85rem',
                 }}
               >
-                <strong>Unverified identifier detected</strong> &mdash; the answer
+                <strong>Unverified identifier detected.</strong> The answer
                 referenced {blocked.join(', ')}, which failed primary
                 verification in this project. A correction is appended below.
               </div>
@@ -331,7 +331,7 @@ export default function AskPage() {
                   )}
                   {s.lgu_has_failed_verification && (
                     <span style={{ fontSize: '0.72rem', padding: '0.1rem 0.4rem', borderRadius: 3, border: '1px solid rgba(200,60,60,0.5)' }}>
-                      LGU has a failed verification — treat IDs cautiously
+                      LGU has a failed verification, treat IDs cautiously
                     </span>
                   )}
                   {s.lgu_has_pending_provenance && (
@@ -366,8 +366,7 @@ export default function AskPage() {
         </p>
         <p>
           It can be wrong. It reads a research corpus, not the live records of
-          any city. Where an answer matters, go to the cited document — and for
-          anything authoritative, contact the LGU&rsquo;s DRRMO directly. See{' '}
+          any city. Where an answer matters, go to the cited document, and for anything authoritative, contact the LGU&rsquo;s DRRMO directly. See{' '}
           <Link href="/policy">Policy readiness</Link> for the underlying
           scorecard.
         </p>
