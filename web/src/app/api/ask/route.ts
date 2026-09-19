@@ -22,7 +22,10 @@
  * The embedding pipeline (scripts/rag/embed.mjs) remains for local
  * experimentation; it is simply not what production retrieval uses.
  *
- * Requires environment variable GROQ_API_KEY.
+ * PROVIDER CONFIG IS ENV-DRIVEN (see the provider config block below):
+ *   LLM_API_KEY   (falls back to GROQ_API_KEY)
+ *   LLM_MODEL     default openai/gpt-oss-120b
+ *   LLM_BASE_URL  default https://api.groq.com/openai/v1
  */
 import { NextRequest, NextResponse } from "next/server";
 import chunksData from "../../../../scripts/rag/chunks.json";
@@ -45,10 +48,41 @@ type RetrievedChunk = Chunk & { score: number; matchedTerms: string[] };
 
 // ---------- config ----------
 
-const TOP_K = 8;
+// Retrieval breadth. Dropped 8 -> 4 to halve the excerpt tokens per request:
+// the LGU boost already concentrates relevance in the top few chunks, and the
+// free-tier tokens-per-minute ceiling is the binding constraint on this
+// endpoint. Raise it back if multi-obligation questions start losing context.
+const TOP_K = Number(process.env.LLM_TOP_K ?? 4);
 const MIN_SCORE = 1.0; // BM25 scores are unbounded; below this, treat as noise
-const GROQ_MODEL = "llama-3.3-70b-versatile";
 const PILOT_LGUS = ["Makati", "Marikina", "Pasig", "Quezon City", "Pateros", "Taguig"];
+
+// ---------- provider config (env-driven) ----------
+//
+// WHY ENV RATHER THAN A CONSTANT: the previous hardcoded model
+// ("llama-3.3-70b-versatile") was decommissioned by Groq on 2026-08-16, which
+// took this endpoint down silently — every request returned 404
+// model_not_found, and the old error handling surfaced the raw provider body
+// to visitors. A model string is operational config, not source code.
+//
+// The API is OpenAI-compatible, so switching provider is a base-URL + key
+// change (Groq: https://api.groq.com/openai/v1, Cerebras:
+// https://api.cerebras.ai/v1). Nothing below is Groq-specific.
+const LLM_BASE_URL = process.env.LLM_BASE_URL ?? "https://api.groq.com/openai/v1";
+const LLM_MODEL = process.env.LLM_MODEL ?? "openai/gpt-oss-120b";
+const LLM_API_KEY = process.env.LLM_API_KEY ?? process.env.GROQ_API_KEY;
+
+// gpt-oss-120b is a REASONING model: it emits hidden chain-of-thought tokens
+// before the answer, and those count against the output budget. Left unset,
+// reasoning can consume the whole allowance and return a truncated or empty
+// answer. "low" is the right setting here — this task is grounded extraction
+// from supplied excerpts, not multi-step problem solving.
+//
+// Note: reasoning_format is NOT supported on gpt-oss; include_reasoning is the
+// parameter that keeps the chain-of-thought out of the response. Both are
+// ignored by non-reasoning models, so this stays safe across providers.
+const LLM_REASONING_EFFORT = process.env.LLM_REASONING_EFFORT ?? "low";
+const LLM_MAX_OUTPUT_TOKENS = Number(process.env.LLM_MAX_OUTPUT_TOKENS ?? 1200);
+const LLM_TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS ?? 25_000);
 
 // BM25 parameters — standard defaults
 const K1 = 1.5;
@@ -333,38 +367,92 @@ function buildUserPrompt(question: string, chunks: RetrievedChunk[]): string {
   return `Question: ${question}\n\nRetrieved excerpts (ranked by relevance):\n\n${excerptBlocks}`;
 }
 
-// ---------- Groq call ----------
+// ---------- LLM call ----------
 
-async function callGroq(systemPrompt: string, userPrompt: string): Promise<string> {
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) {
-    throw new Error("GROQ_API_KEY is not set in the environment.");
+/**
+ * Provider errors, classified so the route can answer the visitor sensibly
+ * without ever echoing the upstream response body. The detail field is for
+ * server logs only and must not be serialised into a response.
+ */
+class LLMError extends Error {
+  constructor(
+    readonly kind: "unconfigured" | "rate_limited" | "upstream" | "timeout" | "empty",
+    readonly detail: string,
+    readonly retryAfterSeconds?: number
+  ) {
+    super(kind);
+  }
+}
+
+async function callLLM(systemPrompt: string, userPrompt: string): Promise<string> {
+  if (!LLM_API_KEY) {
+    throw new LLMError("unconfigured", "LLM_API_KEY / GROQ_API_KEY is not set.");
   }
 
-  const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: GROQ_MODEL,
-      messages: [
-        { role: "system", content: systemPrompt },
-        { role: "user", content: userPrompt },
-      ],
-      temperature: 0.1,
-      max_tokens: 900,
-    }),
-  });
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), LLM_TIMEOUT_MS);
+
+  let res: Response;
+  try {
+    res = await fetch(`${LLM_BASE_URL}/chat/completions`, {
+      method: "POST",
+      signal: controller.signal,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${LLM_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: LLM_MODEL,
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userPrompt },
+        ],
+        temperature: 0.1,
+        // max_completion_tokens is the current parameter name; max_tokens is
+        // its deprecated alias. Reasoning tokens are drawn from this budget,
+        // which is why it is higher than the old 900.
+        max_completion_tokens: LLM_MAX_OUTPUT_TOKENS,
+        reasoning_effort: LLM_REASONING_EFFORT,
+        include_reasoning: false,
+      }),
+    });
+  } catch (e: any) {
+    throw new LLMError(
+      e?.name === "AbortError" ? "timeout" : "upstream",
+      e?.message ?? "fetch failed"
+    );
+  } finally {
+    clearTimeout(timer);
+  }
 
   if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Groq API error ${res.status}: ${body}`);
+    // Read the body for the SERVER LOG only. It is deliberately not attached
+    // to anything the visitor sees: provider error bodies echo request
+    // details and occasionally account metadata.
+    const body = await res.text().catch(() => "<unreadable>");
+    if (res.status === 429) {
+      const retryAfter = Number(res.headers.get("retry-after") ?? "") || undefined;
+      throw new LLMError("rate_limited", `${res.status}: ${body}`, retryAfter);
+    }
+    throw new LLMError("upstream", `${res.status}: ${body}`);
   }
 
   const data = await res.json();
-  return data.choices?.[0]?.message?.content ?? "";
+  const content: string = data.choices?.[0]?.message?.content ?? "";
+
+  // A reasoning model that spends its whole budget thinking returns an empty
+  // or truncated string rather than an error. Treat that as a failure instead
+  // of rendering a blank answer box.
+  if (content.trim().length === 0) {
+    const reason = data.choices?.[0]?.finish_reason ?? "unknown";
+    throw new LLMError(
+      "empty",
+      `empty content, finish_reason=${reason}, model=${LLM_MODEL}, ` +
+        `effort=${LLM_REASONING_EFFORT}, max_completion_tokens=${LLM_MAX_OUTPUT_TOKENS}`
+    );
+  }
+
+  return content;
 }
 
 // ---------- route handler ----------
@@ -419,7 +507,7 @@ export async function POST(req: NextRequest) {
     );
 
     const retrieved = retrieve(question, TOP_K);
-    let answer = await callGroq(buildSystemPrompt(), buildUserPrompt(question, retrieved));
+    let answer = await callLLM(buildSystemPrompt(), buildUserPrompt(question, retrieved));
 
     // Post-generation safety net. The prompt prohibition above is not
     // reliable on its own, because the corpus notes repeat the failed
@@ -453,9 +541,44 @@ export async function POST(req: NextRequest) {
         : "This corpus only covers Makati, Marikina, Pasig, Quezon City, Pateros, and Taguig.",
     });
   } catch (err: any) {
-    console.error("/api/ask error:", err);
+    // Log the full detail server-side; return a generic, visitor-safe message.
+    // The previous version returned err?.message, which for provider failures
+    // was the upstream status plus the entire response body.
+    console.error("/api/ask error:", err instanceof LLMError ? err.detail : err);
+
+    if (err instanceof LLMError) {
+      switch (err.kind) {
+        case "rate_limited":
+          return NextResponse.json(
+            {
+              error:
+                "This research tool has hit its daily query limit. It runs on a " +
+                "free inference tier. Please try again later.",
+            },
+            {
+              status: 503,
+              headers: err.retryAfterSeconds
+                ? { "Retry-After": String(err.retryAfterSeconds) }
+                : undefined,
+            }
+          );
+        case "timeout":
+          return NextResponse.json(
+            { error: "The query took too long to answer. Please try again." },
+            { status: 504 }
+          );
+        case "unconfigured":
+        case "upstream":
+        case "empty":
+          return NextResponse.json(
+            { error: "The query service is temporarily unavailable." },
+            { status: 503 }
+          );
+      }
+    }
+
     return NextResponse.json(
-      { error: err?.message ?? "Internal error processing the question." },
+      { error: "Internal error processing the question." },
       { status: 500 }
     );
   }
