@@ -549,11 +549,19 @@ export async function POST(req: NextRequest) {
     if (err instanceof LLMError) {
       switch (err.kind) {
         case "rate_limited":
+          // The free tier's binding constraint is tokens-per-MINUTE, not a
+          // daily quota: production testing showed two ~3-4K-token requests
+          // exhausting the per-minute allowance, with the next request
+          // succeeding about a minute later. Telling a visitor they have hit
+          // a "daily" limit sends them away for a day when the real wait is
+          // under a minute. Retry-After carries the provider's own figure
+          // when it supplies one.
           return NextResponse.json(
             {
               error:
-                "This research tool has hit its daily query limit. It runs on a " +
-                "free inference tier. Please try again later.",
+                "This research tool is briefly over its query limit — it runs " +
+                "on a free inference tier. Please wait a moment and try again.",
+              retry_after_seconds: err.retryAfterSeconds,
             },
             {
               status: 503,

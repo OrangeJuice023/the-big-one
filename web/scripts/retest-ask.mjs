@@ -13,14 +13,21 @@
  *
  * Exit code 0 = all checks passed, 1 = at least one failed.
  *
- * NOTE ON THE FREE TIER: this fires 8 requests with a delay between them. At
- * ~2-4K tokens each that is a real bite out of a daily token budget. Do not
- * loop it.
+ * NOTE ON THE FREE TIER: this fires 8 requests, 5 of which reach the LLM, at
+ * ~3-4K tokens each. The per-minute token ceiling is what bites first, so the
+ * requests are spaced 30s apart and the full run takes about 4 minutes. Do not
+ * loop it, and do not lower RETEST_DELAY_MS to speed it up — you will get 503s
+ * that look like guardrail failures but are only rate limiting.
  */
 
 const BASE = (process.argv[2] ?? "http://localhost:3000").replace(/\/$/, "");
 const ENDPOINT = `${BASE}/api/ask`;
-const DELAY_MS = Number(process.env.RETEST_DELAY_MS ?? 3000);
+// Spacing between requests. 30s, not 3s: the free tier's binding constraint is
+// tokens-per-minute (~8K), and each of these requests costs ~3-4K tokens. At 3s
+// the run exhausted the allowance after two LLM-backed cases and reported three
+// spurious failures. This makes the whole run take ~4 minutes. That is the
+// correct trade — a fast run that fails for the wrong reason tells you nothing.
+const DELAY_MS = Number(process.env.RETEST_DELAY_MS ?? 30_000);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -120,8 +127,10 @@ const CASES = [
 ];
 
 async function run() {
-  console.log(`Retesting ${ENDPOINT}\n`);
+  console.log(`Retesting ${ENDPOINT}`);
+  console.log(`(${DELAY_MS / 1000}s between requests — expect ~${Math.round((CASES.length * DELAY_MS) / 60000)} min)\n`);
   let failed = 0;
+  let rateLimited = 0;
 
   for (const [i, c] of CASES.entries()) {
     process.stdout.write(`[${i + 1}/${CASES.length}] ${c.name}\n`);
@@ -142,10 +151,19 @@ async function run() {
     if (!res.ok) {
       console.log(`    FAIL  HTTP ${res.status} — ${body?.error ?? "(no error field)"}`);
       if (res.status === 503 || res.status === 504) {
-        console.log("          (503/504 here is the NEW safe error path, not a raw provider body)");
+        console.log(
+          "          NOTE: this is the safe error path working, not a raw provider body."
+        );
+        console.log(
+          "          A 503 here means RATE LIMITING, not a guardrail failure — the"
+        );
+        console.log(
+          "          case was never evaluated. Re-run to test it properly."
+        );
       }
       console.log();
       failed++;
+      if (res.status === 503 || res.status === 504) rateLimited++;
       continue;
     }
 
@@ -162,7 +180,13 @@ async function run() {
   }
 
   console.log(`\n${CASES.length - failed}/${CASES.length} passed.`);
-  if (failed > 0) {
+  if (rateLimited > 0) {
+    console.log(
+      `${rateLimited} case(s) were RATE LIMITED, not failed — they never reached\n` +
+      "the model, so they are still untested. Wait a minute and re-run."
+    );
+  }
+  if (failed - rateLimited > 0) {
     console.log(
       "\nA failure here is a REVIEW PROMPT, not a verdict: read the actual answer\n" +
       "above before changing anything. These checks match on patterns, so a\n" +
