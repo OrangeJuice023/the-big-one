@@ -17,6 +17,22 @@ jobs:
       - run: python -m pytest tests/ -v
         working-directory: model
 
+  claim-verification:
+    # Checks the documented claims against the data in the repo (LGU counts,
+    # magnitude range, GRDP coverage, pilot selection, scorecard completeness).
+    # Non-blocking for now: one check fails legitimately because five of
+    # Pateros's eight obligations are still unassessed. Flip continue-on-error
+    # to false once that row is filled, so drift becomes a build failure.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/verify_claims.py
+        working-directory: model
+
   web-build:
     runs-on: ubuntu-latest
     steps:

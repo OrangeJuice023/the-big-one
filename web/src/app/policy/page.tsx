@@ -100,8 +100,15 @@ export default function PolicyReadiness() {
 
         <h2>Why these six</h2>
         <p>
-          Two filters, applied together. <strong>Fault exposure:</strong> the six
-          sit on or immediately beside the West Valley Fault trace, where ground rupture, not just shaking, is a live hazard. That is what
+          Two filters, applied together, and the second does the selecting.
+          <strong>Fault exposure</strong> is a threshold, not a ranking: all six
+          fall inside the M7.2 shaking zone at intensity VIII, and four of them
+          (Taguig, Pateros, Marikina, Pasig) sit within two kilometres of the
+          trace, where ground rupture rather than shaking alone is a live
+          hazard. Makati and Quezon City are further out &mdash; roughly four and
+          five and a half kilometres &mdash; and ten LGUs in the 35-LGU loss model
+          are nearer to the trace than Quezon City. The sample is purposive, not
+          distance-ranked. That is what
           triggers the public-display duty for hazard maps and the no-build
           easement rules that appear in Makati, Pasig and Taguig zoning
           ordinances. <strong>Capacity spread:</strong> the six span the full
@@ -112,8 +119,20 @@ export default function PolicyReadiness() {
         <p>
           The second filter is what makes the comparison mean anything. If every
           LGU in the sample were similarly resourced, a finding that they differ
-          in disclosure would say little. Spanning the capacity range lets us ask
-          whether disclosure tracks resources. It does not, and that is the result.
+          in disclosure would say little. Spanning the capacity range means the
+          differences we do find cannot be explained by resourcing alone.
+        </p>
+        <p>
+          What this sample can and cannot establish is worth stating plainly.
+          Six LGUs cannot support a claim that disclosure does or does not
+          <em>correlate</em> with capacity: at n = 6, a rank correlation needs
+          |&rho;| &ge; 0.83 before it means anything, and nothing here reaches
+          that. An earlier version of this page asserted that disclosure does
+          not track resources. It should not have. The finding this study
+          actually supports is taxonomic, not correlational &mdash; four
+          distinguishable ways of failing the public-display duty, each with a
+          different policy remedy. That does not depend on sample size, and it
+          is the stronger claim.
         </p>
         <p>
           <strong>Manila is deliberately excluded.</strong> It appears in the
@@ -127,11 +146,14 @@ export default function PolicyReadiness() {
         </p>
         <Plain label="Shorter version">
           <p style={{ margin: 0 }}>
-            These are the six places the fault actually runs through or beside,
-            picked so that the biggest and the smallest local governments in
-            Metro Manila are both in the set. That way, if they turn out to
-            differ in how much they publish, we can tell whether it is about money and staffing. It is not. Manila is left out because
-            the fault misses it.
+            These are six places in the fault&rsquo;s shaking zone, picked so that
+            the biggest and the smallest local governments in Metro Manila are
+            both in the set. They are not simply the six nearest to the fault
+            &mdash; several closer ones sit outside the sample. Six is too few to
+            say whether publishing habits follow money and staffing, so we do
+            not claim that. What six is enough for is showing that there are
+            several distinct ways to fail the same duty. Manila is left out
+            because the fault misses it.
           </p>
         </Plain>
 

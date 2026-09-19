@@ -104,8 +104,12 @@ preview builds are unaffected.
       for **8 of 35 LGUs** (PSA city-level GDP, roughly 85% of NCR output).
       The remaining 27 fall back to population × regional per-capita output,
       so every scenario JSON reports `"weighting": "mixed_grdp_population"`.
-      Fill the rest, and verify `population_2020` against the PSA 2020 Census
-      (values were entered from memory and must be checked).
+      Fill the rest from PSA city-level GRDP releases.
+- [x] `population_2020` verified against PSA 2020 CPH releases for all 35 LGUs
+      (19 Sep 2026, no corrections needed). The 17 NCR values sum exactly to
+      the PSA regional total of 13,484,462, which `scripts/verify_claims.py`
+      re-checks on every run. Provenance and the weaker chain on 7 corridor
+      LGUs are recorded in `model/data/external/POPULATION_SOURCES.md`.
 - [ ] `GDP_DEFLATOR_2018_TO_2024 = 1.30` in `src/scenarios.py` is a placeholder
       that multiplies the entire exposure base. Replace with the exact PSA
       implicit price deflator and cite the release.

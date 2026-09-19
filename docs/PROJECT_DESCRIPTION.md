@@ -65,8 +65,9 @@ query interface publicly.
 An open-source research instrument with two coupled layers.
 
 **Layer 1 — scenario loss model.** Probabilistic direct-loss estimation for a
-West Valley Fault M7.2 rupture across 35 LGUs (17 NCR cities plus 18
-fault-corridor LGUs in Rizal, Bulacan and Cavite).
+West Valley Fault M7.2 rupture across 35 LGUs: the 17 of Metro Manila (16
+cities plus the municipality of Pateros), and 18 fault-corridor LGUs in
+Bulacan, Rizal, Laguna and Cavite.
 
 - Exposure × fragility Monte Carlo, v0.3
 - Fragility calibrated by approximate Bayesian computation on the 1990 Luzon
