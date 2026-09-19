@@ -26,9 +26,14 @@
  *   LLM_API_KEY   (falls back to GROQ_API_KEY)
  *   LLM_MODEL     default openai/gpt-oss-120b
  *   LLM_BASE_URL  default https://api.groq.com/openai/v1
+ *
+ * Rate limiting (src/lib/ratelimit.ts) is applied just before the LLM call.
+ * It is a no-op until an Upstash Redis store is connected, so the endpoint
+ * keeps working in local development with no store configured.
  */
 import { NextRequest, NextResponse } from "next/server";
 import chunksData from "../../../../scripts/rag/chunks.json";
+import { checkRateLimit, clientIp } from "@/lib/ratelimit";
 
 // ---------- types ----------
 
@@ -500,6 +505,35 @@ export async function POST(req: NextRequest) {
         sources: [],
         refused: filtered.label,
       });
+    }
+
+    // Rate limiting sits HERE, deliberately late: after the emergency
+    // short-circuit and the scope prefilter, immediately before the only
+    // branch that spends tokens.
+    //
+    // An active-emergency question must NEVER be refused for quota reasons —
+    // that path returns hotline numbers and costs nothing. Scope refusals are
+    // likewise free, so throttling them would only punish people for asking
+    // the wrong thing. What needs protecting is the LLM call.
+    const limit = await checkRateLimit(clientIp(req.headers));
+    if (!limit.allowed) {
+      return NextResponse.json(
+        {
+          error:
+            limit.reason === "per_ip"
+              ? "You have made several queries in a short time. This is a small " +
+                "research tool on a free inference tier — please wait a few " +
+                "minutes and try again."
+              : "This research tool has reached its query limit for today. It " +
+                "runs on a free inference tier. Please try again tomorrow.",
+          retry_after_seconds: limit.retryAfterSeconds,
+          rate_limited: limit.reason,
+        },
+        {
+          status: 429,
+          headers: { "Retry-After": String(limit.retryAfterSeconds) },
+        }
+      );
     }
 
     const mentionsPilot = PILOT_LGUS.some((lgu) =>
