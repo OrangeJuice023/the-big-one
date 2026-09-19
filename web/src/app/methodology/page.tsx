@@ -216,11 +216,10 @@ export default function Methodology() {
           corridor municipalities like Antipolo and Rodriguez); no
           liquefaction, site amplification, or fire-following modeling; the
           fault trace is the authoritative GEM WVF trace (Styron &amp; Pagani 2020, CC-BY-SA). Wiring it in for v0.3 lifted the national M7.2
-          P50 by +2.7% ($44.2B &rarr; $45.4B, ratio 0.95&times; the $48B
-          MMEIRS/World Bank anchor), with mean per-LGU MMI shifts &le;&plusmn;0.1
-          but per-LGU maxima of ~0.45 MMI / &plusmn;7.5 km Rrup; and annual
-          output scaled by a capital ratio remains an imperfect proxy for
-          building stock value.
+          P50 by +2.7% ($44.2B &rarr; $45.4B), with mean per-LGU MMI shifts
+          &le;&plusmn;0.1 but per-LGU maxima of ~0.45 MMI / &plusmn;7.5 km Rrup;
+          and annual output scaled by a capital ratio remains an imperfect proxy
+          for building stock value.
         </p>
         <Plain>
           <p style={{ marginTop: 0 }}>

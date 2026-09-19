@@ -251,8 +251,8 @@ function IntervalChart() {
         </g>
       ))}
       <rect x={xs(14e9)} y={bar - 11} width={xs(106.4e9) - xs(14e9)} height="22" fill={ACCENT} opacity="0.2" rx="3" />
-      <line x1={xs(45.4e9)} y1={bar - 15} x2={xs(45.4e9)} y2={bar + 15} stroke={ACCENT} strokeWidth="2.6" />
-      <text x={xs(45.4e9)} y={bar - 21} textAnchor="middle" fontSize="12" fill={ACCENT} fontWeight="600">$45.4B</text>
+      <line x1={xs(48.2e9)} y1={bar - 15} x2={xs(48.2e9)} y2={bar + 15} stroke={ACCENT} strokeWidth="2.6" />
+      <text x={xs(48.2e9)} y={bar - 21} textAnchor="middle" fontSize="12" fill={ACCENT} fontWeight="600">$48.2B</text>
       <text x={xs(14e9)} y={bar + 27} textAnchor="middle" fontSize="10" fill="currentColor" opacity="0.7">P10 $14B</text>
       <text x={xs(106.4e9)} y={bar + 27} textAnchor="middle" fontSize="10" fill="currentColor" opacity="0.7">P90 $106B</text>
       <text x={P.l} y={P.t - 12} fontSize="11" fill="currentColor" opacity="0.75">
@@ -281,7 +281,7 @@ function BaselineChart() {
 
   const rows: { label: string; p10: number; p50: number; p90: number; accent: boolean }[] = [
     { label: 'exposure-blind gradient boosting', p10: 28e6, p50: 401e6, p90: 8429e6, accent: false },
-    { label: 'this hybrid model', p10: 14e9, p50: 45.4e9, p90: 106.4e9, accent: true },
+    { label: 'this hybrid model', p10: 15.7e9, p50: 48.2e9, p90: 111.3e9, accent: true },
   ];
 
   return (
@@ -314,9 +314,9 @@ function BaselineChart() {
           </g>
         );
       })}
-      <line x1={xs(401e6)} y1={P.t + 30} x2={xs(45.4e9)} y2={P.t + 30}
+      <line x1={xs(401e6)} y1={P.t + 30} x2={xs(48.2e9)} y2={P.t + 30}
         stroke={ACCENT} strokeWidth="1" strokeDasharray="3 3" opacity="0.75" />
-      <text x={(xs(401e6) + xs(45.4e9)) / 2} y={P.t + 24} textAnchor="middle"
+      <text x={(xs(401e6) + xs(48.2e9)) / 2} y={P.t + 24} textAnchor="middle"
         fontSize="11" fill={ACCENT} fontWeight="600">113× apart</text>
     </svg>
   );
@@ -366,7 +366,7 @@ export default function ArithmeticPage() {
         <h1>The arithmetic, shown</h1>
         <p>
           A magnitude 7.2 West Valley Fault rupture gives a median direct loss of{' '}
-          <strong>US$45.4 billion</strong>, with a 10th&ndash;90th percentile
+          <strong>US$48.2 billion</strong>, with a 10th&ndash;90th percentile
           range of <strong>US$14.0B to US$106.4B</strong>. This page is every step
           that produces those numbers, with the values a reader can check.
         </p>
@@ -635,8 +635,8 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
         <BaselineChart />
         <p>
           The exposure-blind model predicts <strong>US$401 million</strong> where
-          the hybrid predicts <strong>US$45.4 billion</strong>. That is{' '}
-          <strong>113 times smaller, 2.05 orders of magnitude.</strong> Even its
+          the hybrid predicts <strong>US$48.2 billion</strong>. That is{' '}
+          <strong>120 times smaller, 2.08 orders of magnitude.</strong> Even its
           90th percentile, US$8.4B, sits well below the hybrid&rsquo;s 10th.
         </p>
         <p>
@@ -737,7 +737,7 @@ d(8.14) \;=\; \frac{0.361}{1 + e^{-1.4\,(8.14 - 8.881)}} \;&=\; 0.0948 \\[3pt]
             </tr>
             <tr>
               <td style={{ ...td, fontWeight: 600 }}>this model, M7.2 median</td>
-              <td style={{ ...td, textAlign: 'right', fontFamily: 'ui-monospace, monospace', fontWeight: 600 }}>US$45.4B</td>
+              <td style={{ ...td, textAlign: 'right', fontFamily: 'ui-monospace, monospace', fontWeight: 600 }}>US$48.2B</td>
               <td style={{ ...td, color: ACCENT, fontWeight: 600 }}>ratio 0.95&times;</td>
             </tr>
           </tbody>

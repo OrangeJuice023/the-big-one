@@ -277,6 +277,52 @@ def check_cross_layer(scen: dict[float, dict]) -> None:
 
 # ---------------------------------------------------------------- scorecard
 
+def check_model_configuration() -> None:
+    """The estimator's own settings, checked against what the documents claim.
+
+    N_EPISTEMIC was 60 through v0.3, where the M7.2 P50 varied by $2.7B across
+    seeds. A paper about uncertainty quantification cannot publish a headline
+    whose Monte Carlo error exceeds the differences it is reporting, so the
+    setting is pinned and checked here rather than left to drift quietly.
+    """
+    src = read_text(HERE / "src" / "scenarios.py")
+
+    m = re.search(r"^N_EPISTEMIC\s*=\s*(\d+)", src, re.M)
+    n_epi = int(m.group(1)) if m else 0
+    check(
+        n_epi >= 500,
+        "N_EPISTEMIC large enough for stable tail quantiles",
+        f"{n_epi} (60 gave sd $2.7B on the M7.2 P50; 500 gives $1.0B)",
+    )
+
+    check(
+        "rupture_segment" in src,
+        "rupture extent scales with magnitude",
+        "magnitude-dependent" if "rupture_segment" in src
+        else "FULL TRACE AT ALL MAGNITUDES — flattens the loss-magnitude curve",
+    )
+
+    # The changelog is the only place the v0.3/v0.4 difference is reconciled
+    # against the submitted abstract. If the headline moves again without it
+    # being updated, the site and the abstract silently disagree.
+    changelog = read_text(ROOT / "CHANGELOG.md")
+    scen = load_scenarios()
+    d = scen.get(7.2)
+    if d and changelog:
+        p50_b = d["national_loss_usd"]["q50"] / 1e9
+        stated = f"{p50_b:.1f}"
+        check(
+            stated in changelog,
+            "CHANGELOG states the current M7.2 headline",
+            f"${stated}B" + ("" if stated in changelog else "  <-- NOT in CHANGELOG"),
+        )
+        check(
+            "45.4" in changelog and "NCDSPP" in changelog,
+            "CHANGELOG preserves the figure the submitted abstract used",
+            "v0.3 recorded" if "45.4" in changelog else "MISSING",
+        )
+
+
 def check_scorecard() -> None:
     if not SCORECARD.exists():
         return
@@ -327,6 +373,7 @@ def main() -> None:
     check_exposure_provenance()
     check_pilot_selection(scen)
     check_cross_layer(scen)
+    check_model_configuration()
     check_scorecard()
 
     width = max(len(n) for _, n, _ in results) + 2

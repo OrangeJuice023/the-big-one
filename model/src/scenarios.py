@@ -31,7 +31,15 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from src.gmpe import clamp_mmi, distance_to_fault_km, load_fault_trace, mmi, mmi_sigma
+from src.gmpe import (
+    clamp_mmi,
+    distance_to_fault_km,
+    load_fault_trace,
+    mmi,
+    mmi_sigma,
+    rupture_length_km,
+    rupture_segment,
+)
 
 HERE = Path(__file__).resolve().parents[1]
 EXPOSURE = HERE / "data" / "external" / "exposure_ncr.csv"
@@ -69,13 +77,29 @@ MDR_MAX_MEAN, MDR_MAX_SD = 0.35, 0.08
 M0_MEAN, M0_SD = 9.0, 0.4
 MDR_SLOPE = 1.4
 
+# ---- rupture geometry -------------------------------------------------------
+# Where along the trace the rupture is centred, as a fraction of trace length.
+# 0.5 is the midpoint: a neutral choice that does not position the break to
+# maximise or minimise Metro Manila loss. The population-weighted exposure
+# centroid projects to 0.562, so the two are close; src/sensitivity.py can vary
+# this. Placement matters because the same magnitude on the same fault gives
+# very different losses depending on which segment breaks, and that is a
+# scenario assumption rather than a physical constant.
+RUPTURE_CENTRE_FRACTION = 0.5
+
 # ---- aleatoric structure ----------------------------------------------------
 # Intra-event spatial correlation of ground-motion residuals: one common
 # (event-wide) term plus site terms. rho = share of variance that is common.
 SPATIAL_RHO = 0.5
 
 # ---- Monte Carlo size (nested: epistemic x aleatoric) ------------------------
-N_EPISTEMIC = 60
+# N_EPISTEMIC was 60 through v0.3. At that size the P10/P90 of the epistemic
+# layer rest on about six draws each, and the M7.2 P50 varied by a standard
+# deviation of $2.7B across seeds ($42.9-58.5B over 100 seeds) - larger than
+# the differences the scenarios are meant to show. At 500 the spread falls to
+# $1.0B. This costs seconds and is the single cheapest improvement to the
+# published intervals.
+N_EPISTEMIC = 500
 N_ALEATORIC = 60
 SEED = 42
 
@@ -87,10 +111,13 @@ def mdr(mmi_val: np.ndarray, mdr_max: float, m0: float) -> np.ndarray:
 def load_exposure() -> tuple[pd.DataFrame, str]:
     exposure = pd.read_csv(EXPOSURE)
     trace = load_fault_trace(FAULT)
-    exposure["rrup_km"] = [
+    # Full-trace distance, retained for reference and for the maximum-magnitude
+    # case. Per-magnitude distances come from rrup_for_magnitude() below.
+    exposure["rrup_km_full_trace"] = [
         distance_to_fault_km(r.centroid_lat, r.centroid_lon, trace)
         for r in exposure.itertuples()
     ]
+    exposure["rrup_km"] = exposure["rrup_km_full_trace"]
     pc = exposure["region"].map(REGION_PC_GRDP_PHP)
     if pc.isna().any():
         missing = exposure.loc[pc.isna(), "region"].unique()
@@ -112,6 +139,22 @@ def load_exposure() -> tuple[pd.DataFrame, str]:
     return exposure, weighting
 
 
+def rrup_for_magnitude(exposure: pd.DataFrame, magnitude: float) -> np.ndarray:
+    """Rupture distance to the segment that actually breaks at this magnitude.
+
+    Measuring to the whole 99 km mapped trace at every magnitude was the cause
+    of an implausibly flat loss-magnitude curve (M6.0 came out at 62% of the
+    M7.2 loss). An M6.0 ruptures about 14 km of fault; sites 40 km along strike
+    from that break are not 1 km from the source.
+    """
+    trace = load_fault_trace(FAULT)
+    seg = rupture_segment(trace, magnitude, RUPTURE_CENTRE_FRACTION)
+    return np.array([
+        distance_to_fault_km(r.centroid_lat, r.centroid_lon, seg)
+        for r in exposure.itertuples()
+    ])
+
+
 def load_posterior() -> pd.DataFrame | None:
     """ABC-calibrated fragility posterior (src.calibrate), if present.
     When available, epistemic draws come from data-informed samples instead
@@ -126,8 +169,9 @@ def run_mc(exposure: pd.DataFrame, magnitude: float, rng: np.random.Generator,
     """Nested MC. Returns per-draw national losses (epi x alea) and per-LGU
     flattened draws, in PHP."""
     n_lgu = len(exposure)
-    med_mmi = np.array([clamp_mmi(mmi(magnitude, r)) for r in exposure["rrup_km"]])
-    sigma = np.array([mmi_sigma(r) for r in exposure["rrup_km"]])
+    rrup = rrup_for_magnitude(exposure, magnitude)
+    med_mmi = np.array([clamp_mmi(mmi(magnitude, r)) for r in rrup])
+    sigma = np.array([mmi_sigma(r) for r in rrup])
     capital_base = exposure["grdp_php"].to_numpy()
 
     national = np.empty((N_EPISTEMIC, N_ALEATORIC))

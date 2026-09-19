@@ -88,7 +88,10 @@ export default function LossMap({ scenario, onSelectLgu, simToken = 0 }: Props) 
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const maplibregl = (await import('maplibre-gl')).default;
+      // maplibre-gl v6 dropped the default export; the module namespace is
+      // the API surface now. Upgraded from v4 for GHSA (XSS sanitizer bypass
+      // in DOM.sanitize) — see the audit note in package.json history.
+      const maplibregl = await import('maplibre-gl');
       await import('maplibre-gl/dist/maplibre-gl.css' as any).catch(() => {});
       if (cancelled || !containerRef.current || mapRef.current) return;
 
