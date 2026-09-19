@@ -15,7 +15,7 @@ Coefficients cross-checked against the GEM OpenQuake engine implementation
     sigma = s1 + s2 / (1 + (Rrup/s3)^2)
 
 Valid range per the paper: Mw 5.0-7.9, Rrup < 300 km. Our scenario range
-(M6.5-7.6, Metro Manila distances < ~60 km) sits comfortably inside it.
+(M6.0-7.5, Metro Manila distances < ~60 km) sits comfortably inside it.
 
 Known simplification (documented in docs/methodology.md): we approximate Rrup
 with the 2-D distance from each LGU centroid to the surface fault trace

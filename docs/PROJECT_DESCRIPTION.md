@@ -76,7 +76,7 @@ fault-corridor LGUs in Rizal, Bulacan and Cavite).
   the swap moved the national P50 by +2.7%
 - **National median direct loss: USD 45.4B at M7.2**, a ratio of 0.95 against
   the USD 48B MMEIRS / World Bank anchor
-- Live map at the-big-one-swart.vercel.app; deterministic rebuild from seed 42
+- Live map at the-big-one-one.vercel.app; deterministic rebuild from seed 42
 
 **Layer 2 — RA 10121 compliance and disclosure audit.** Six pilot LGUs scored
 against eight core obligations, by document.
@@ -260,7 +260,7 @@ refuses to predict earthquakes.
 
 `github.com/OrangeJuice023/the-big-one` — model, web app, policy-layer corpus,
 ledger, attribution record, and RAG pipeline. Live at
-`the-big-one-swart.vercel.app`.
+`the-big-one-one.vercel.app`.
 
 ---
 

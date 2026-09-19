@@ -53,9 +53,9 @@ export default function Methodology() {
 
         <h2>Exposure</h2>
         <p>
-          Thirty-five LGUs: all seventeen NCR cities and the municipality of
-          Pateros, plus eighteen fault-corridor LGUs in Bulacan, Rizal, Laguna,
-          and Cavite. Exposure value per LGU is annual economic output scaled
+          Thirty-five LGUs: the seventeen of Metro Manila (sixteen cities and
+          the municipality of Pateros), plus eighteen fault-corridor LGUs in
+          Bulacan, Rizal, Laguna, and Cavite. Exposure value per LGU is annual economic output scaled
           by a capital-output ratio. Where the PSA publishes city-level GDP
           (eight NCR cities covering roughly 85% of the regional economy,
           2024 Provincial Product Accounts), those figures are used, adjusted

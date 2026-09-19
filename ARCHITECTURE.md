@@ -8,9 +8,14 @@ all data sources, map tiles, model training, and hosting are free.
 
 ## 1. Design Principles
 
-1. **Precompute, don't serve a model.** The only runtime input is magnitude (M6.5–M7.6,
-   0.1 steps = 12 scenarios). All 12 are computed offline in Python and shipped as static
-   JSON. Vercel serves a static Next.js app — no serverless ML, no cold starts, no cost.
+1. **Precompute, don't serve a model.** The only runtime input is magnitude (M6.0–M7.2 in
+   0.1 steps, plus an M7.5 stress test = 14 scenarios). All 14 are computed offline in
+   Python and shipped as static JSON. No model is served at request time and no ML runs in
+   a serverless function.
+
+   One exception, added later: `/api/ask` is a server route backing the grounded query
+   tool over the policy corpus. It runs BM25 retrieval in pure JS and calls an external
+   LLM, so `output: 'export'` was removed. Every other page is still statically rendered.
 2. **Uncertainty is a feature.** Every loss figure ships as a P10 / P50 / P90 range
    (quantile regression), never a single number. This is what makes the research page
    defensible.
@@ -43,7 +48,7 @@ big-one-loss-model/
 │   │   │                            #   Joyner-Boore distance from fault trace per LGU centroid
 │   │   ├── train.py                 # LightGBM quantile models (α = 0.1, 0.5, 0.9)
 │   │   ├── validate.py              # holdout metrics + MMEIRS/World Bank sanity check
-│   │   └── scenarios.py             # loop M6.5→7.6, run GMPE → model → per-LGU losses,
+│   │   └── scenarios.py             # loop M6.0→7.2 + M7.5, GMPE → fragility → per-LGU losses,
 │   │                                #   emit JSON to ../web/public/data/scenarios/
 │   ├── notebooks/                   # EDA only — nothing in web depends on these
 │   │   ├── 01_training_data_eda.ipynb
@@ -58,7 +63,7 @@ big-one-loss-model/
 │   ├── next.config.js               # output: 'export' → fully static, no server functions
 │   ├── public/
 │   │   ├── data/
-│   │   │   ├── scenarios/           # m65.json … m76.json (per-LGU losses + quantiles)
+│   │   │   ├── scenarios/           # m60.json … m72.json + m75.json (per-LGU losses + quantiles)
 │   │   │   ├── lgu-boundaries.geojson   # simplified (mapshaper) to keep payload small
 │   │   │   └── fault-trace.geojson
 │   ├── src/

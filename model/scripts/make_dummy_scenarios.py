@@ -31,6 +31,28 @@ def damage_ratio(intensity: float) -> float:
 
 
 def main() -> None:
+    # GUARD: this script writes to the same paths as src/scenarios.py. Those
+    # files now hold REAL model output (every one carries "synthetic": false),
+    # so an accidental run here would silently replace published estimates
+    # with a toy exponential formula and the site would keep serving them
+    # under a banner nobody reads twice. Refuse unless forced.
+    existing = sorted((WEB_DATA / "scenarios").glob("m*.json"))
+    real = []
+    for path in existing:
+        try:
+            if json.loads(path.read_text()).get("synthetic") is False:
+                real.append(path.name)
+        except (OSError, ValueError):
+            continue
+    if real and "--force" not in sys.argv:
+        raise SystemExit(
+            f"refusing to overwrite {len(real)} real scenario file(s) "
+            f"({', '.join(real[:3])}{'...' if len(real) > 3 else ''}).\n"
+            "These are model output, not placeholders. Re-run with --force "
+            "only if you genuinely want to replace them with synthetic data, "
+            "and regenerate with `python -m src.scenarios` afterwards."
+        )
+
     exposure = pd.read_csv(HERE / "data" / "external" / "exposure_ncr.csv")
     trace = load_fault_trace(HERE / "data" / "external" / "wvf_trace_approx.geojson")
     exposure["rrup_km"] = [
